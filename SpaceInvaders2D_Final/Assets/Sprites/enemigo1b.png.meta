@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c07ab77caf8695947b800e2c0f7bd0b3
+guid: 5287b06abf970ea4689e57cdca1e3d1a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6302563758487680414
-    second: nave_0
+      213: 4845971960912690345
+    second: enemigo1b_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -115,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: nave_0
+      name: enemigo1b_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 96
-        height: 48
+        width: 66
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,8 +130,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 26a471177abc888a0800000000000000
-      internalID: -6302563758487680414
+      spriteID: 9ac34b9c2d9504340800000000000000
+      internalID: 4845971960912690345
       vertices: []
       indices: 
       edges: []
@@ -140,7 +140,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -150,7 +150,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      nave_0: -6302563758487680414
+      enemigo1b_0: 4845971960912690345
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
