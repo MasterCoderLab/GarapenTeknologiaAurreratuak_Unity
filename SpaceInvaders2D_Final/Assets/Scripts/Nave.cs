@@ -22,6 +22,17 @@ public class Nave : MonoBehaviour
     [SerializeField] UnityEngine.UI.Text textoPuntos;
 
 
+    // =========================
+    // 2. HOBEKUNTZA: TIROEN COOLDOWN-A
+    // =========================
+
+    // Tiro bakoitzaren arteko gutxieneko denbora segundotan.
+    [SerializeField] float cooldownDisparo = 0.5f;
+
+    // Hurrengo tiroa noiz egin daitekeen gordetzen du.
+    private float siguienteDisparo = 0f;
+
+
     /// <summary>
     /// Objektua sortzen denean behin exekutatzen da.
     /// </summary>
@@ -46,14 +57,33 @@ public class Nave : MonoBehaviour
             0,
             0);
 
+
+        // =========================
+        // 1. HOBEKUNTZA: PANTAILAREN MUGAK
+        // =========================
+
         // Navearen X posizioa pantailaren mugen barruan mantentzen da.
         Vector3 posicion = transform.position;
+
+        // X posizioa -4 eta 4 arteko balioetara mugatzen da.
         posicion.x = Mathf.Clamp(posicion.x, -4f, 4f);
+
+        // Mugatutako posizioa naveari aplikatzen zaio.
         transform.position = posicion;
 
-        // Fire1 botoia sakatzen denean tiro bat sortzen da.
-        if (Input.GetButtonDown("Fire1"))
+
+        // =========================
+        // 2. HOBEKUNTZA: TIROEN COOLDOWN-A
+        // =========================
+
+        // Fire1 sakatzen bada eta cooldown-a amaitu bada,
+        // tiro berri bat sortzen da.
+        if (Input.GetButtonDown("Fire1") &&
+            Time.time >= siguienteDisparo)
         {
+            // Hurrengo tiroa egin ahal izango den unea kalkulatzen da.
+            siguienteDisparo = Time.time + cooldownDisparo;
+
             textoPuntos.text = "Has disparado";
 
             // Tiroaren soinua erreproduzitzen da.
@@ -68,7 +98,8 @@ public class Nave : MonoBehaviour
             // Tiroari goranzko abiadura ematen zaio.
             disparo.gameObject
                 .GetComponent<Rigidbody2D>()
-                .linearVelocity = new Vector2(0, velocidadDisparo);
+                .linearVelocity =
+                new Vector2(0, velocidadDisparo);
         }
     }
 
@@ -76,7 +107,9 @@ public class Nave : MonoBehaviour
     /// <summary>
     /// Naveak beste Collider2D batekin talka egiten duenean exekutatzen da.
     /// </summary>
-    /// <param name="collision">Navearekin talka egin duen objektuaren Collider2D-a.</param>
+    /// <param name="collision">
+    /// Navearekin talka egin duen objektuaren Collider2D-a.
+    /// </param>
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("Pum");
