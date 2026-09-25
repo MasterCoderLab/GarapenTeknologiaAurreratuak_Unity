@@ -5,7 +5,7 @@ using UnityEngine;
 
 /// <summary>
 /// Jokalariaren navea kudeatzen duen klasea.
-/// Mugimendua, tiroak eta talkak kontrolatzen ditu.
+/// Mugimendua, tiroak, talkak eta puntuazioa kontrolatzen ditu.
 /// </summary>
 public class Nave : MonoBehaviour
 {
@@ -18,7 +18,7 @@ public class Nave : MonoBehaviour
     // Tiroa sortzeko erabiliko den prefaba.
     [SerializeField] Transform prefabDisparo;
 
-    // Pantailan informazioa erakusteko testua.
+    // Pantailan puntuazioa erakusteko testua.
     [SerializeField] UnityEngine.UI.Text textoPuntos;
 
 
@@ -33,12 +33,21 @@ public class Nave : MonoBehaviour
     private float siguienteDisparo = 0f;
 
 
+    // =========================
+    // 5. HOBEKUNTZA: PUNTUAZIO ERREALA
+    // =========================
+
+    // Jokalariaren uneko puntuazioa gordetzen du.
+    private int puntos = 0;
+
+
     /// <summary>
     /// Objektua sortzen denean behin exekutatzen da.
+    /// Hasierako puntuazioa pantailan erakusten du.
     /// </summary>
     void Start()
     {
-
+        ActualizarTextoPuntos();
     }
 
 
@@ -66,7 +75,10 @@ public class Nave : MonoBehaviour
         Vector3 posicion = transform.position;
 
         // X posizioa -4 eta 4 arteko balioetara mugatzen da.
-        posicion.x = Mathf.Clamp(posicion.x, -4f, 4f);
+        posicion.x = Mathf.Clamp(
+            posicion.x,
+            -4f,
+            4f);
 
         // Mugatutako posizioa naveari aplikatzen zaio.
         transform.position = posicion;
@@ -82,9 +94,8 @@ public class Nave : MonoBehaviour
             Time.time >= siguienteDisparo)
         {
             // Hurrengo tiroa egin ahal izango den unea kalkulatzen da.
-            siguienteDisparo = Time.time + cooldownDisparo;
-
-            textoPuntos.text = "Has disparado";
+            siguienteDisparo =
+                Time.time + cooldownDisparo;
 
             // Tiroaren soinua erreproduzitzen da.
             GetComponent<AudioSource>().Play();
@@ -101,6 +112,33 @@ public class Nave : MonoBehaviour
                 .linearVelocity =
                 new Vector2(0, velocidadDisparo);
         }
+    }
+
+
+    // =========================
+    // 5. HOBEKUNTZA: PUNTUAZIO ERREALA
+    // =========================
+
+    /// <summary>
+    /// Jokalariaren puntuazioari emandako puntu kopurua gehitzen dio.
+    /// </summary>
+    /// <param name="cantidad">
+    /// Gehitu beharreko puntu kopurua.
+    /// </param>
+    public void SumarPuntos(int cantidad)
+    {
+        puntos += cantidad;
+
+        ActualizarTextoPuntos();
+    }
+
+
+    /// <summary>
+    /// Pantailako puntuazio-testua eguneratzen du.
+    /// </summary>
+    private void ActualizarTextoPuntos()
+    {
+        textoPuntos.text = "Puntos: " + puntos;
     }
 
 
