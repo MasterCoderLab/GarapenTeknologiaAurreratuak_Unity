@@ -1,0 +1,48 @@
+SPACE INVADERS 2D - EGINDAKO HOBEKUNTZAK
+========================================
+
+Proiektuan, tutorialaren hasierako bertsioaren gainean hainbat hobekuntza gehitu dira:
+
+1. NABEAREN MUGIMENDUAREN MUGAK
+Jokalariaren naveak ezin du pantailaren muga ikusgarrietatik kanpora joan.
+
+2. TIROEN COOLDOWN-A
+Tiro bakoitzaren artean gutxieneko denbora bat gehitu da, jokalariak etengabe tiro egitea saihesteko.
+
+3. ETSAIEN TIROAK
+Etsaiek beren tiroak sortzen dituzte jokalariaren norabidean.
+
+4. ETSAIEN TIROEK KALTEA EGITEA
+Etsaien tiroek jokalariaren navea jo dezakete eta bizitza bat kendu.
+
+5. PUNTUAZIO SISTEMA ERREALA
+Puntuazio sistema bat gehitu da.
+Suntsitutako etsai bakoitzak 100 puntu ematen ditu eta markagailua automatikoki eguneratzen da.
+
+6. BIZITZEN SISTEMA
+Jokalariak 3 bizitzarekin hasten du partida.
+Etsai baten tiroak jotzen duenean, bizitza bat galtzen du.
+
+7. GAME OVER SISTEMA
+Bizitzak 0-ra iristen direnean, partida amaitzen da eta Game Over eszena kargatzen da.
+
+8. BERRIRO SAIATZEKO BOTOIA
+Game Over pantailan "REINTENTAR" botoia gehitu da.
+Botoi horrekin Nivel1 berriro kargatzen da eta partida berriro has daiteke.
+
+9. ETSAIEN ABIADURA DESBERDINAK
+Hobekuntza gehigarri gisa, hegazkin/etsaietako bati gainerakoekiko abiadura desberdina ezarri zaio.
+Horrela, etsaien mugimenduan bariazio handiagoa dago.
+
+10. WINDOWS-ERAKO EXEKUTAGARRIA
+Proiektua Windows 64 bit-erako konpilatu da eta honako eszenak barne hartzen ditu:
+- Bienvenida
+- Nivel1
+- GameOver
+
+KONTROLAK
+---------
+Mugimendua: ezker/eskuin geziak edo Unity-n konfiguratutako kontrol horizontalak.
+Tiroa: Fire1.
+
+Proiektua Unity 6.6 (6000.6.0f1) erabiliz garatu da.

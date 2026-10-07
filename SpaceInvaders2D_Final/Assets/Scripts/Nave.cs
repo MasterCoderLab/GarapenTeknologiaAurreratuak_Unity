@@ -2,10 +2,11 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// Jokalariaren navea kudeatzen duen klasea.
-/// Mugimendua, tiroak, talkak eta puntuazioa kontrolatzen ditu.
+/// Mugimendua, tiroak, talkak, puntuazioa eta bizitzak kontrolatzen ditu.
 /// </summary>
 public class Nave : MonoBehaviour
 {
@@ -20,6 +21,9 @@ public class Nave : MonoBehaviour
 
     // Pantailan puntuazioa erakusteko testua.
     [SerializeField] UnityEngine.UI.Text textoPuntos;
+
+    // Pantailan bizitzak erakusteko testua.
+    [SerializeField] UnityEngine.UI.Text textoVidas;
 
 
     // =========================
@@ -41,13 +45,22 @@ public class Nave : MonoBehaviour
     private int puntos = 0;
 
 
+    // =========================
+    // 6. HOBEKUNTZA: BIZITZEN SISTEMA ETA GAME OVER
+    // =========================
+
+    // Jokalariaren hasierako bizitza kopurua.
+    private int vidas = 3;
+
+
     /// <summary>
     /// Objektua sortzen denean behin exekutatzen da.
-    /// Hasierako puntuazioa pantailan erakusten du.
+    /// Hasierako puntuazioa eta bizitzak pantailan erakusten ditu.
     /// </summary>
     void Start()
     {
         ActualizarTextoPuntos();
+        ActualizarTextoVidas();
     }
 
 
@@ -139,6 +152,39 @@ public class Nave : MonoBehaviour
     private void ActualizarTextoPuntos()
     {
         textoPuntos.text = "Puntos: " + puntos;
+    }
+
+
+    // =========================
+    // 6. HOBEKUNTZA: BIZITZEN SISTEMA ETA GAME OVER
+    // =========================
+
+    /// <summary>
+    /// Jokalariari bizitza bat kentzen dio.
+    /// Bizitzarik geratzen ez bada, Game Over eszena kargatzen du.
+    /// </summary>
+    public void PerderVida()
+    {
+        // Bizitza bat kentzen zaio jokalariari.
+        vidas--;
+
+        // Pantailako bizitzen testua eguneratzen da.
+        ActualizarTextoVidas();
+
+        // Bizitzarik geratzen ez bada, partida amaitzen da.
+        if (vidas <= 0)
+        {
+            SceneManager.LoadScene("GameOver");
+        }
+    }
+
+
+    /// <summary>
+    /// Pantailako bizitzen testua eguneratzen du.
+    /// </summary>
+    private void ActualizarTextoVidas()
+    {
+        textoVidas.text = "Vidas: " + vidas;
     }
 
 
