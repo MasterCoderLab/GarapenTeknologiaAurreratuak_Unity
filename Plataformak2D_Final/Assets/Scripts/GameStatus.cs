@@ -1,33 +1,41 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿
 using UnityEngine;
 
+/// <summary>
+/// Jokoaren egoera orokorra gordetzen du.
+/// Puntuazioa, bizitzak eta mailaren informazioa
+/// eszena desberdinen artean mantentzen ditu.
+/// </summary>
 public class GameStatus : MonoBehaviour
 {
+    // Joko osoan GameStatus instantzia bakarra mantentzen da.
+    private static GameStatus instancia;
+
+    // Jokalariaren hasierako datuak.
     public int puntos = 0;
     public int vidas = 3;
+
+    // Mailen informazioa.
     public int nivelActual = 1;
     public int nivelMasAlto = 3;
 
+    /// <summary>
+    /// GameStatus instantzia bakarra dagoela ziurtatzen du.
+    /// Eszena aldatzean jokoaren datuak mantentzen ditu.
+    /// </summary>
     private void Awake()
     {
-        int gameStatusCount = FindObjectsOfType<GameStatus>().Length;
-
-        if (gameStatusCount > 1)
+        // Aurretik beste instantzia bat badago, berria ezabatzen da.
+        if (instancia != null && instancia != this)
+        {
             Destroy(gameObject);
-        else
-            DontDestroyOnLoad(gameObject);
-    }
+            return;
+        }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+        // Instantzia nagusia gordetzen da.
+        instancia = this;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        // Objektua eszena-aldaketetan ez suntsitzeko ezartzen da.
+        DontDestroyOnLoad(gameObject);
     }
 }
