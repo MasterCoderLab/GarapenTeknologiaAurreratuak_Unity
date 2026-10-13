@@ -364,6 +364,7 @@ GameObject:
   - component: {fileID: 106304168}
   - component: {fileID: 106304169}
   - component: {fileID: 106304170}
+  - component: {fileID: 106304171}
   m_Layer: 0
   m_Name: shortplatform (8)
   m_TagString: Untagged
@@ -519,6 +520,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &106304171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 106304166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05bfd652763c8219594532136d8c032a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlataformaMovil
+  desplazamiento: {x: 0.7, y: 0}
+  velocidad: 0.5
 --- !u!1001 &106390550
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -812,6 +827,7 @@ GameObject:
   - component: {fileID: 383296950}
   - component: {fileID: 383296951}
   - component: {fileID: 383296952}
+  - component: {fileID: 383296953}
   m_Layer: 0
   m_Name: shortplatform (9)
   m_TagString: Untagged
@@ -967,6 +983,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &383296953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 383296948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05bfd652763c8219594532136d8c032a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlataformaMovil
+  desplazamiento: {x: 0, y: 0.5}
+  velocidad: 0.4
 --- !u!1001 &403315169
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1212,6 +1242,7 @@ GameObject:
   - component: {fileID: 470256076}
   - component: {fileID: 470256077}
   - component: {fileID: 470256078}
+  - component: {fileID: 470256079}
   m_Layer: 0
   m_Name: shortplatform (11)
   m_TagString: Untagged
@@ -1367,6 +1398,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &470256079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470256074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05bfd652763c8219594532136d8c032a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlataformaMovil
+  desplazamiento: {x: 0.5, y: 0.2}
+  velocidad: 0.35
 --- !u!1 &565734538
 GameObject:
   m_ObjectHideFlags: 0
@@ -2561,11 +2606,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2211655694887381862, guid: 7e1f7cf31971eec4e9a0d725aaa3b574, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.10426521
+      value: 0.10906792
       objectReference: {fileID: 0}
     - target: {fileID: 2211655694887381862, guid: 7e1f7cf31971eec4e9a0d725aaa3b574, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.00006377697
+      value: -0.00006699562
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3350,7 +3395,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 15.0000305, y: -10.111023}
+  m_AnchoredPosition: {x: 15, y: -10.111023}
   m_SizeDelta: {x: 230, y: 40}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1121658820
@@ -5656,6 +5701,7 @@ GameObject:
   - component: {fileID: 2073351383}
   - component: {fileID: 2073351384}
   - component: {fileID: 2073351385}
+  - component: {fileID: 2073351386}
   m_Layer: 0
   m_Name: shortplatform (10)
   m_TagString: Untagged
@@ -5811,6 +5857,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2073351386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2073351381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05bfd652763c8219594532136d8c032a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlataformaMovil
+  desplazamiento: {x: 0.5, y: 0}
+  velocidad: 0.35
 --- !u!1 &2081485176
 GameObject:
   m_ObjectHideFlags: 0

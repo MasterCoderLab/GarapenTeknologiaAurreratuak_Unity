@@ -11,8 +11,8 @@ public class Player : MonoBehaviour
     // Mugimenduaren eta jauziaren balio finkoak.
     // Balio hauek kodean definitzen dira, Inspector-eko
     // aurretik gordetako balioek ez ditzaten ordezkatu.
-    private const float VelocidadHorizontal = 3.5f;
-    private const float ImpulsoSalto = 4.5f;
+    private const float VelocidadHorizontal = 2.9f;
+    private const float ImpulsoSalto = 4.3f;
     private const float DistanciaSuelo = 0.08f;
 
     // Jokalariaren hasierako posizioa.
