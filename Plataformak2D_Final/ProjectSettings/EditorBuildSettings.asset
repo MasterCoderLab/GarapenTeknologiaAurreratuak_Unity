@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Nivel3.unity
     guid: 3a40433c12a88ee41b3917b595b934e3
+  - enabled: 1
+    path: Assets/Scenes/Victoria.unity
+    guid: 434e47292aa96b45e911ccb776e69dcb
   m_configObjects: {}

@@ -2,16 +2,16 @@
 using UnityEngine;
 
 /// <summary>
-/// Jokoaren egoera orokorra gordetzen du.
+/// Jokoaren egoera orokorra kudeatzen du.
 /// Puntuazioa, bizitzak eta mailaren informazioa
-/// eszena desberdinen artean mantentzen ditu.
+/// eszena-aldaketetan mantentzen ditu.
 /// </summary>
 public class GameStatus : MonoBehaviour
 {
-    // Joko osoan GameStatus instantzia bakarra mantentzen da.
-    private static GameStatus instancia;
+    // Joko osoan erabiliko den instantzia bakarra.
+    public static GameStatus Instancia { get; private set; }
 
-    // Jokalariaren hasierako datuak.
+    // Jokalariaren datuak.
     public int puntos = 0;
     public int vidas = 3;
 
@@ -20,22 +20,34 @@ public class GameStatus : MonoBehaviour
     public int nivelMasAlto = 3;
 
     /// <summary>
-    /// GameStatus instantzia bakarra dagoela ziurtatzen du.
-    /// Eszena aldatzean jokoaren datuak mantentzen ditu.
+    /// GameStatus instantzia bakarra mantentzen du
+    /// eta eszena berrietan datuak ez galtzea ziurtatzen du.
     /// </summary>
     private void Awake()
     {
-        // Aurretik beste instantzia bat badago, berria ezabatzen da.
-        if (instancia != null && instancia != this)
+        // Beste instantzia bat badago, berria ezabatzen da.
+        if (Instancia != null && Instancia != this)
         {
             Destroy(gameObject);
             return;
         }
 
         // Instantzia nagusia gordetzen da.
-        instancia = this;
+        Instancia = this;
 
-        // Objektua eszena-aldaketetan ez suntsitzeko ezartzen da.
+        // Objektua eszena-aldaketetan mantentzen da.
         DontDestroyOnLoad(gameObject);
+    }
+
+    /// <summary>
+    /// Instantzia nagusia suntsitzen denean
+    /// erreferentzia estatikoa garbitzen du.
+    /// </summary>
+    private void OnDestroy()
+    {
+        if (Instancia == this)
+        {
+            Instancia = null;
+        }
     }
 }

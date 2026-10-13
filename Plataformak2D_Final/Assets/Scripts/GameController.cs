@@ -26,19 +26,27 @@ public class GameController : MonoBehaviour
     [SerializeField] private Text textoBizitzak;
 
     /// <summary>
-    /// Maila hastean, jokoaren datuak berreskuratzen ditu,
+    /// Maila hastean, jokoaren egoera iraunkorra eskuratzen du,
     /// uneko maila identifikatzen du eta HUDa eguneratzen du.
     /// </summary>
     private void Start()
     {
-        // Jokoaren egoera orokorra eskuratzen da.
-        gameStatus = FindFirstObjectByType<GameStatus>();
+        // Eszena guztietan mantentzen den GameStatus instantzia eskuratzen da.
+        gameStatus = GameStatus.Instancia;
+
+        // GameStatus instantzia existitzen dela egiaztatzen da.
+        if (gameStatus == null)
+        {
+            Debug.LogError("GameStatus instantzia ez da aurkitu.");
+            enabled = false;
+            return;
+        }
 
         // Mailako diamante kopurua kalkulatzen da.
         itemsRestantes = FindObjectsByType<Diamante>(
             FindObjectsSortMode.None).Length;
 
-        // Aurreko mailetako puntuazioa eta bizitzak berreskuratzen dira.
+        // Gordetako puntuazioa eta bizitzak berreskuratzen dira.
         puntos = gameStatus.puntos;
         vidas = gameStatus.vidas;
 
@@ -49,7 +57,7 @@ public class GameController : MonoBehaviour
         if (escenaIzena.StartsWith("Nivel") &&
             int.TryParse(escenaIzena.Substring(5), out int mailaZenbakia))
         {
-            // Uneko maila benetako eszenaren arabera ezartzen da.
+            // Benetako eszenaren arabera uneko maila ezartzen da.
             nivelActual = mailaZenbakia;
 
             // Jokoaren egoera orokorra sinkronizatzen da.
@@ -62,10 +70,16 @@ public class GameController : MonoBehaviour
         }
 
         // Game Over mezua hasieran ezkutatzen da.
-        textoGameOver.enabled = false;
+        if (textoGameOver != null)
+        {
+            textoGameOver.enabled = false;
+        }
 
         // HUDaren hasierako balioak erakusten dira.
         ActualizarHUD();
+
+        // Gordetako puntuazioa kontsolan erakusten da.
+        Debug.Log("Hasierako puntuak: " + gameStatus.puntos);
     }
 
     /// <summary>
@@ -82,19 +96,33 @@ public class GameController : MonoBehaviour
 
     /// <summary>
     /// Jokalariak diamante bat jasotzen duenean puntuazioa
-    /// eta geratzen diren diamanteen kopurua eguneratzen ditu.
+    /// egoera iraunkorrean gordetzen du eta HUDa eguneratzen du.
     /// </summary>
     public void AnotarItemRecogido()
     {
-        // Jasotako diamante bakoitzak hamar puntu ematen ditu.
-        puntos += 10;
-        gameStatus.puntos = puntos;
+        // GameStatus instantzia iraunkorra eskuratzen da.
+        GameStatus egoera = GameStatus.Instancia;
 
-        // Mailan geratzen diren diamanteen kopurua murrizten da.
+        // Instantzia existitzen dela egiaztatzen da.
+        if (egoera == null)
+        {
+            Debug.LogError("GameStatus instantzia ez da aurkitu.");
+            return;
+        }
+
+        // Diamante bakoitzak hamar puntu ematen ditu.
+        // Puntuak zuzenean egoera iraunkorrean gordetzen dira.
+        egoera.puntos += 10;
+
+        // HUDaren puntuazioa gordetako balioarekin sinkronizatzen da.
+        puntos = egoera.puntos;
+
+        // Geratzen diren diamanteen kopurua murrizten da.
         itemsRestantes--;
 
-        Debug.Log("Puntos: " + puntos);
-        Debug.Log("Items restantes: " + itemsRestantes);
+        // Gordetako puntuazioa kontsolan erakusten da.
+        Debug.Log("Puntuak gordeta: " + egoera.puntos);
+        Debug.Log("Geratzen diren diamanteak: " + itemsRestantes);
 
         // Pantailako datuak eguneratzen dira.
         ActualizarHUD();
@@ -108,18 +136,35 @@ public class GameController : MonoBehaviour
 
     /// <summary>
     /// Jokalariak bizitza bat galtzen duenean egoera
-    /// eguneratzen du eta pertsonaia berriro kokatzen du.
+    /// iraunkorra eguneratzen du eta pertsonaia berriro kokatzen du.
     /// </summary>
     public void PerderVida()
     {
+        // GameStatus instantzia iraunkorra eskuratzen da.
+        GameStatus egoera = GameStatus.Instancia;
+
+        // Instantzia existitzen dela egiaztatzen da.
+        if (egoera == null)
+        {
+            Debug.LogError("GameStatus instantzia ez da aurkitu.");
+            return;
+        }
+
         // Jokalariaren bizitza kopurua murrizten da.
-        vidas--;
-        gameStatus.vidas = vidas;
+        egoera.vidas--;
+
+        // HUDaren bizitzak gordetako balioarekin sinkronizatzen dira.
+        vidas = egoera.vidas;
 
         // Jokalaria hasierako posiziora itzultzen da.
-        FindFirstObjectByType<Player>().Recolocar();
+        Player jokalaria = FindFirstObjectByType<Player>();
 
-        Debug.Log("Vidas: " + vidas);
+        if (jokalaria != null)
+        {
+            jokalaria.Recolocar();
+        }
+
+        Debug.Log("Bizitzak: " + vidas);
 
         // Bizitzen kopurua pantailan eguneratzen da.
         ActualizarHUD();
@@ -165,7 +210,10 @@ public class GameController : MonoBehaviour
     private IEnumerator TerminarPartida()
     {
         // Partida amaitu dela adierazten duen mezua erakusten da.
-        textoGameOver.enabled = true;
+        if (textoGameOver != null)
+        {
+            textoGameOver.enabled = true;
+        }
 
         // Jokoaren abiadura moteltzen da.
         Time.timeScale = 0.1f;
@@ -181,24 +229,35 @@ public class GameController : MonoBehaviour
     }
 
     /// <summary>
-    /// Hurrengo mailara igarotzen da. Azken maila gainditzean,
-    /// lehenengo mailara itzultzen da.
+    /// Hurrengo mailara igarotzen da.
+    /// Azken maila gainditzean garaipen-pantaila kargatzen du.
     /// </summary>
     public void AvanzarNivel()
     {
-        // Uneko mailaren zenbakia handitzen da.
-        nivelActual++;
+        // GameStatus instantzia iraunkorra eskuratzen da.
+        GameStatus egoera = GameStatus.Instancia;
 
-        // Azken maila gainditu bada, lehenengo mailara itzultzen da.
-        if (nivelActual > gameStatus.nivelMasAlto)
+        // Instantzia existitzen dela egiaztatzen da.
+        if (egoera == null)
         {
-            nivelActual = 1;
+            Debug.LogError("GameStatus instantzia ez da aurkitu.");
+            return;
         }
 
-        // Hurrengo maila jokoaren egoera orokorrean gordetzen da.
-        gameStatus.nivelActual = nivelActual;
+        // Azken maila gainditu bada, garaipen-pantaila kargatzen da.
+        if (nivelActual >= egoera.nivelMasAlto)
+        {
+            SceneManager.LoadScene("Victoria");
+            return;
+        }
 
-        // Dagokion eszena kargatzen da.
+        // Hurrengo mailaren zenbakia kalkulatzen da.
+        nivelActual++;
+
+        // Jokoaren egoera orokorra eguneratzen da.
+        egoera.nivelActual = nivelActual;
+
+        // Hurrengo mailari dagokion eszena kargatzen da.
         SceneManager.LoadScene("Nivel" + nivelActual);
     }
 }
