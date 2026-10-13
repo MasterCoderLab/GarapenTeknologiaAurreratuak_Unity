@@ -5,3 +5,9 @@
 **/Logs/
 **/UserSettings/
 **/obj/
+
+# Unity / Visual Studio / VS Code
+**/.vscode/
+**/*.csproj
+**/*.sln
+**/*.slnx
