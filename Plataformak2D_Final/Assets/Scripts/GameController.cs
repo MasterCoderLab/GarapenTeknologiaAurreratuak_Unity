@@ -17,6 +17,9 @@ public class GameController : MonoBehaviour
 
     private GameStatus gameStatus;
 
+    // Jokalariak kaltea jasotzean erabiliko den soinua.
+    private AudioClip sonidoDano;
+
     [Header("Game Over")]
     [SerializeField] private Text textoGameOver;
 
@@ -27,7 +30,8 @@ public class GameController : MonoBehaviour
 
     /// <summary>
     /// Maila hastean, jokoaren egoera iraunkorra eskuratzen du,
-    /// uneko maila identifikatzen du eta HUDa eguneratzen du.
+    /// uneko maila identifikatzen du, soinuak prestatzen ditu
+    /// eta HUDa eguneratzen du.
     /// </summary>
     private void Start()
     {
@@ -40,6 +44,15 @@ public class GameController : MonoBehaviour
             Debug.LogError("GameStatus instantzia ez da aurkitu.");
             enabled = false;
             return;
+        }
+
+        // Kaltearen soinu-efektua Resources karpetatik kargatzen da.
+        sonidoDano = Resources.Load<AudioClip>("Audio/Dano");
+
+        // Soinua aurkitu ez bada, abisua erakusten da.
+        if (sonidoDano == null)
+        {
+            Debug.LogWarning("Kaltearen soinua ez da aurkitu: Audio/Dano");
         }
 
         // Mailako diamante kopurua kalkulatzen da.
@@ -136,7 +149,8 @@ public class GameController : MonoBehaviour
 
     /// <summary>
     /// Jokalariak bizitza bat galtzen duenean egoera
-    /// iraunkorra eguneratzen du eta pertsonaia berriro kokatzen du.
+    /// iraunkorra eguneratzen du, kaltearen soinua erreproduzitzen du
+    /// eta pertsonaia berriro kokatzen du.
     /// </summary>
     public void PerderVida()
     {
@@ -155,6 +169,17 @@ public class GameController : MonoBehaviour
 
         // HUDaren bizitzak gordetako balioarekin sinkronizatzen dira.
         vidas = egoera.vidas;
+
+        // Bizitzak geratzen badira, kaltearen soinua erreproduzitzen da.
+        // Azken bizitza galtzean, Game Over soinua erabiliko da.
+        if (vidas > 0 && sonidoDano != null && Camera.main != null)
+        {
+            AudioSource.PlayClipAtPoint(
+                sonidoDano,
+                Camera.main.transform.position,
+                0.7f
+            );
+        }
 
         // Jokalaria hasierako posiziora itzultzen da.
         Player jokalaria = FindFirstObjectByType<Player>();
@@ -201,8 +226,9 @@ public class GameController : MonoBehaviour
     }
 
     /// <summary>
-    /// Game Over mezua erakusten du eta hiru segundoren
-    /// ondoren menu nagusira itzultzen da.
+    /// Game Over mezua erakusten du, soinu-efektua
+    /// erreproduzitzen du eta hiru segundoren ondoren
+    /// menu nagusira itzultzen da.
     /// </summary>
     /// <returns>
     /// Partida amaitzeko korutinaren exekuzioa.
@@ -213,6 +239,12 @@ public class GameController : MonoBehaviour
         if (textoGameOver != null)
         {
             textoGameOver.enabled = true;
+        }
+
+        // Game Over soinu-efektua erreproduzitzen da.
+        if (AudioJuego.Instancia != null)
+        {
+            AudioJuego.Instancia.ReproducirGameOver();
         }
 
         // Jokoaren abiadura moteltzen da.
