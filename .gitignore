@@ -11,3 +11,7 @@
 **/*.csproj
 **/*.sln
 **/*.slnx
+/Laberintoa3D_Final/Assets/Creep Horror Creature/
+/Laberintoa3D_Final/Assets/Creep Horror Creature.meta
+/Laberintoa3D_Final/Assets/ThirdParty/UnityAssetStore/
+/Laberintoa3D_Final/Assets/ThirdParty/UnityAssetStore.meta
