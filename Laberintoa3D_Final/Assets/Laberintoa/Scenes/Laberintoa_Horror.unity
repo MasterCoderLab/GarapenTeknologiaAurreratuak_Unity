@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 16917161}
   - component: {fileID: 16917167}
   - component: {fileID: 16917166}
+  - component: {fileID: 16917168}
   m_Layer: 0
   m_Name: Enemigo
   m_TagString: Untagged
@@ -301,6 +302,22 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &16917168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16917160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 060406fe77fd0dbebb064e3c001395f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HorrorEnemyAnimation
+  animators:
+  - {fileID: 506569339}
+  - {fileID: 506569338}
+  attackDuration: 1.5
 --- !u!1001 &46965357
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -365,6 +382,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Creep3_Visual
       objectReference: {fileID: 0}
+    - target: {fileID: 8979022353975496759, guid: f3978c44f7fb36246b698fdea7f77528, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: d7ebbc9c90010901ba195dee995c2cfd, type: 2}
+    - target: {fileID: 8979022355182249155, guid: f3978c44f7fb36246b698fdea7f77528, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: d7ebbc9c90010901ba195dee995c2cfd, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -373,6 +398,16 @@ PrefabInstance:
 --- !u!4 &46965358 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6899769094566875521, guid: f3978c44f7fb36246b698fdea7f77528, type: 3}
+  m_PrefabInstance: {fileID: 46965357}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &46965359 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8979022353975496759, guid: f3978c44f7fb36246b698fdea7f77528, type: 3}
+  m_PrefabInstance: {fileID: 46965357}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &46965360 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8979022355182249155, guid: f3978c44f7fb36246b698fdea7f77528, type: 3}
   m_PrefabInstance: {fileID: 46965357}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &47258490
@@ -1093,6 +1128,7 @@ GameObject:
   - component: {fileID: 200313052}
   - component: {fileID: 200313057}
   - component: {fileID: 200313056}
+  - component: {fileID: 200313058}
   m_Layer: 0
   m_Name: Enemigo_Creep2
   m_TagString: Untagged
@@ -1260,6 +1296,22 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &200313058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200313050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 060406fe77fd0dbebb064e3c001395f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HorrorEnemyAnimation
+  animators:
+  - {fileID: 2069673510}
+  - {fileID: 2069673509}
+  attackDuration: 1.5
 --- !u!1 &200344073
 GameObject:
   m_ObjectHideFlags: 0
@@ -1982,6 +2034,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 16917165}
     m_Modifications:
+    - target: {fileID: 86951044, guid: af9f138ca1214ae41beb955d1406704e, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: d7ebbc9c90010901ba195dee995c2cfd, type: 2}
+    - target: {fileID: 1556312176, guid: af9f138ca1214ae41beb955d1406704e, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: d7ebbc9c90010901ba195dee995c2cfd, type: 2}
     - target: {fileID: 2547632407910942000, guid: af9f138ca1214ae41beb955d1406704e, type: 3}
       propertyPath: m_Name
       value: Creep1_Visual
@@ -2046,6 +2106,16 @@ PrefabInstance:
 --- !u!4 &506569337 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2547632407910942002, guid: af9f138ca1214ae41beb955d1406704e, type: 3}
+  m_PrefabInstance: {fileID: 506569336}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &506569338 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 86951044, guid: af9f138ca1214ae41beb955d1406704e, type: 3}
+  m_PrefabInstance: {fileID: 506569336}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &506569339 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1556312176, guid: af9f138ca1214ae41beb955d1406704e, type: 3}
   m_PrefabInstance: {fileID: 506569336}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &507226546
@@ -7793,6 +7863,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7440230003808341372, guid: 82430f94fd1381c43878fce981a5aa43, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: d7ebbc9c90010901ba195dee995c2cfd, type: 2}
+    - target: {fileID: 7440230004507457928, guid: 82430f94fd1381c43878fce981a5aa43, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: d7ebbc9c90010901ba195dee995c2cfd, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7801,6 +7879,16 @@ PrefabInstance:
 --- !u!4 &2069673508 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4907239047242697930, guid: 82430f94fd1381c43878fce981a5aa43, type: 3}
+  m_PrefabInstance: {fileID: 2069673507}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2069673509 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7440230003808341372, guid: 82430f94fd1381c43878fce981a5aa43, type: 3}
+  m_PrefabInstance: {fileID: 2069673507}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2069673510 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7440230004507457928, guid: 82430f94fd1381c43878fce981a5aa43, type: 3}
   m_PrefabInstance: {fileID: 2069673507}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2072217573
@@ -7818,6 +7906,7 @@ GameObject:
   - component: {fileID: 2072217575}
   - component: {fileID: 2072217580}
   - component: {fileID: 2072217579}
+  - component: {fileID: 2072217581}
   m_Layer: 0
   m_Name: Enemigo_Creep3
   m_TagString: Untagged
@@ -7985,6 +8074,22 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &2072217581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2072217573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 060406fe77fd0dbebb064e3c001395f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HorrorEnemyAnimation
+  animators:
+  - {fileID: 46965360}
+  - {fileID: 46965359}
+  attackDuration: 1.5
 --- !u!1 &2143499735
 GameObject:
   m_ObjectHideFlags: 0

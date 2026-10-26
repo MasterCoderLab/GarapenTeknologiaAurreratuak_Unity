@@ -8,6 +8,7 @@ using UnityEngine.AI;
 [RequireComponent(typeof(NavMeshAgent))]
 public sealed class HorrorEnemyAI : MonoBehaviour
 {
+    public event System.Action AttackPerformed;
     public Transform player;
     public Vector3 sectorCenter;
     public Vector2 halfSectorSize = new Vector2(8.5f, 6f);
@@ -67,6 +68,7 @@ public sealed class HorrorEnemyAI : MonoBehaviour
                 nextAttack = Time.time + attackCooldown;
                 // Une honetan PerderVida() metodoak Debug.Log bakarrik egiten du.
                 player.gameObject.SendMessage("PerderVida", SendMessageOptions.DontRequireReceiver);
+                AttackPerformed?.Invoke();
                 Debug.Log("HORROR_AI_ATTACK: " + name);
             }
             return;
