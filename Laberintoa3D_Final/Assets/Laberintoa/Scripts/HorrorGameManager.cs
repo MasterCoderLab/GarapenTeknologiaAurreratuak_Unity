@@ -18,6 +18,7 @@ public sealed class HorrorGameManager : MonoBehaviour
 
     public bool Ended => ended;
     public int Lives => lives;
+    public int DefeatedCount => defeated;
 
     public void Configure(HorrorPlayerMovement playerMovement, HorrorShotgun gun,
         HorrorEnemyHealth[] enemyHealth)
@@ -81,10 +82,6 @@ public sealed class HorrorGameManager : MonoBehaviour
     private void OnGUI()
     {
         EnsureStyles();
-        GUI.Box(new Rect(14, 12, 560, 112), "");
-        GUI.Label(new Rect(26, 22, 530, 26), "BIZITZAK  " + lives + "/3    ETSAIAK  " + defeated + "/3", smallStyle);
-        GUI.Label(new Rect(26, 48, 530, 26), shotgun != null ? shotgun.StatusText : "Aurkitu eskopeta", smallStyle);
-        GUI.Label(new Rect(26, 76, 530, 24), "WASD: mugitu  ESPAZIOA: jauzi  F: linterna  E: hartu", GUI.skin.label);
         if (ended)
         {
             Rect centered = new Rect(Screen.width / 2f - 280, Screen.height / 2f - 80, 560, 160);

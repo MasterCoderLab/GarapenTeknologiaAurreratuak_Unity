@@ -11,7 +11,7 @@ public sealed class HorrorPlayerMovement : MonoBehaviour
     [SerializeField] private float turnSpeed = 115f;
     private Rigidbody body;
     private float forwardInput;
-    private float turnInput;
+    private float lateralInput;
     private float saguBiraketaZain;
 
     /// <summary>
@@ -36,15 +36,16 @@ public sealed class HorrorPlayerMovement : MonoBehaviour
     {
         // Proiektuak Active Input Handling = Both dauka; mugimendu klasikoa mantentzen dugu.
         forwardInput = Input.GetAxisRaw("Vertical");
-        turnInput = Input.GetAxisRaw("Horizontal");
+        lateralInput = Input.GetAxisRaw("Horizontal");
     }
 
     private void FixedUpdate()
     {
-        float biraketa = turnInput * turnSpeed * Time.fixedDeltaTime + saguBiraketaZain;
+        float biraketa = saguBiraketaZain;
         saguBiraketaZain = 0f;
         body.MoveRotation(body.rotation * Quaternion.Euler(0f, biraketa, 0f));
-        Vector3 desired = transform.forward * (forwardInput * speed);
+        Vector3 desired = Vector3.ClampMagnitude(
+            transform.forward * forwardInput + transform.right * lateralInput, 1f) * speed;
         Vector3 current = body.linearVelocity;
         body.linearVelocity = new Vector3(desired.x, current.y, desired.z);
     }

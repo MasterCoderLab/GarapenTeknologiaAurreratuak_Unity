@@ -1212,7 +1212,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HorrorEnemyHealth
   manager: {fileID: 780351421}
-  hitPoints: 2
+  hitPoints: 3
+  buruarenAltuera: 0.8
+  buruarenErradioa: 0.16
 --- !u!1 &19454557
 GameObject:
   m_ObjectHideFlags: 0
@@ -4556,7 +4558,7 @@ GameObject:
   - component: {fileID: 133310265}
   - component: {fileID: 133310267}
   - component: {fileID: 133310266}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: HB3_Kulata
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5581,8 +5583,8 @@ Light:
   serializedVersion: 13
   m_Type: 2
   m_Color: {r: 0.33, g: 0.49, b: 0.76, a: 1}
-  m_Intensity: 0.35
-  m_Range: 12
+  m_Intensity: 0.58
+  m_Range: 16
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize2D: {x: 0.5, y: 0.5}
@@ -7006,7 +7008,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HorrorEnemyHealth
   manager: {fileID: 780351421}
-  hitPoints: 2
+  hitPoints: 3
+  buruarenAltuera: 0.8
+  buruarenErradioa: 0.16
 --- !u!1 &200344073
 GameObject:
   m_ObjectHideFlags: 0
@@ -14068,7 +14072,7 @@ GameObject:
   - component: {fileID: 375397320}
   - component: {fileID: 375397322}
   - component: {fileID: 375397321}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: HB4_LinternaGorputza
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24911,7 +24915,7 @@ Light:
   serializedVersion: 13
   m_Type: 2
   m_Color: {r: 0.95, g: 0.16, b: 0.12, a: 1}
-  m_Intensity: 0.6
+  m_Intensity: 0.27
   m_Range: 6
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -25716,7 +25720,7 @@ Light:
   serializedVersion: 13
   m_Type: 1
   m_Color: {r: 0.37, g: 0.49, b: 1, a: 1}
-  m_Intensity: 0.13
+  m_Intensity: 0.29
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -25857,7 +25861,7 @@ Light:
   serializedVersion: 13
   m_Type: 2
   m_Color: {r: 0.95, g: 0.16, b: 0.12, a: 1}
-  m_Intensity: 0.6
+  m_Intensity: 0.27
   m_Range: 6
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -29685,7 +29689,7 @@ Light:
   serializedVersion: 13
   m_Type: 2
   m_Color: {r: 0.95, g: 0.16, b: 0.12, a: 1}
-  m_Intensity: 0.6
+  m_Intensity: 0.27
   m_Range: 6
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -30576,7 +30580,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 813420206}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: HB3_EscopetaEnMano
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35444,6 +35448,10 @@ GameObject:
   - component: {fileID: 963194230}
   - component: {fileID: 963194231}
   - component: {fileID: 963194232}
+  - component: {fileID: 963194233}
+  - component: {fileID: 963194234}
+  - component: {fileID: 963194236}
+  - component: {fileID: 963194235}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -35498,7 +35506,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 3221225471
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -35526,6 +35534,7 @@ Transform:
   - {fileID: 1153049688}
   - {fileID: 813420206}
   - {fileID: 1726426444}
+  - {fileID: 1774077514}
   m_Father: {fileID: 1730834240}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &963194229
@@ -35544,7 +35553,8 @@ MonoBehaviour:
   m_RequiresDepthTextureOption: 2
   m_RequiresOpaqueTextureOption: 2
   m_CameraType: 0
-  m_Cameras: []
+  m_Cameras:
+  - {fileID: 1774077516}
   m_RendererIndex: -1
   m_VolumeLayerMask:
     serializedVersion: 2
@@ -35625,6 +35635,78 @@ MonoBehaviour:
   bertikalSentikortasuna: 1.8
   goikoMuga: 72
   behekoMuga: 72
+--- !u!114 &963194233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eadce475a77799115bd086309bdd9de3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HorrorViewmodelSafety
+  eskopeta: {fileID: 813420206}
+  linterna: {fileID: 1726426444}
+  jokalaria: {fileID: 1730834240}
+  arriskuDistantzia: 1.3
+  leuntasuna: 9
+--- !u!114 &963194234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ebd68ec7c6d26ae98ac1c49d071442f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HorrorAtmosphereV9
+  jokalaria: {fileID: 1730834240}
+  linterna: {fileID: 1153049689}
+  ilargia: {fileID: 705507994}
+  bunkerrekoTeilatuak:
+  - {fileID: 347407203}
+  - {fileID: 1509301576}
+  - {fileID: 2087243392}
+  - {fileID: 432616142}
+  bunkerLainoDentsitatea: 0.15
+  bunkerIlargiIntentsitatea: 0.045
+  basokoLinternaIrismena: 28
+  basokoLinternaIntentsitatea: 14
+  trantsizioAbiadura: 0.85
+--- !u!114 &963194235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cd13aaa9250f63b1ab93c4dcf64ac93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HorrorBunkerDarknessV10
+  giroa: {fileID: 963194234}
+  linterna: {fileID: 1153049689}
+  itzalitaOpakutasuna: 0.69
+  trantsizioa: 2.7
+--- !u!114 &963194236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a01053b880b18b04dae9e688a74d8f3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HorrorHUDV10
+  kudeatzailea: {fileID: 780351421}
+  eskopeta: {fileID: 963194231}
 --- !u!1 &965542900
 GameObject:
   m_ObjectHideFlags: 0
@@ -42481,7 +42563,7 @@ GameObject:
   - component: {fileID: 1146318836}
   - component: {fileID: 1146318838}
   - component: {fileID: 1146318837}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: HB4_LinternaKristala
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53131,7 +53213,7 @@ Light:
   serializedVersion: 13
   m_Type: 2
   m_Color: {r: 0.95, g: 0.16, b: 0.12, a: 1}
-  m_Intensity: 0.6
+  m_Intensity: 0.27
   m_Range: 6
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -56596,8 +56678,8 @@ Light:
   serializedVersion: 13
   m_Type: 2
   m_Color: {r: 0.33, g: 0.49, b: 0.76, a: 1}
-  m_Intensity: 0.35
-  m_Range: 12
+  m_Intensity: 0.58
+  m_Range: 16
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize2D: {x: 0.5, y: 0.5}
@@ -64258,7 +64340,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1726426444}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: HB4_LinternaIkusgai
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -66211,6 +66293,134 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1774054700}
   m_Mesh: {fileID: 4300000, guid: fb37d2e120c9fd605a56b1809dde54dd, type: 2}
+--- !u!1 &1774077513
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1774077514}
+  - component: {fileID: 1774077516}
+  - component: {fileID: 1774077515}
+  m_Layer: 0
+  m_Name: HB7_LehenPlanokoKamera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1774077514
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1774077513}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 963194228}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1774077515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1774077513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalCameraData
+  m_RenderShadows: 0
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 1
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
+  m_Version: 2
+--- !u!20 &1774077516
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1774077513}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.015
+  far clip plane: 4
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 1073741824
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
 --- !u!1 &1775713787
 GameObject:
   m_ObjectHideFlags: 0
@@ -68397,7 +68607,7 @@ Light:
   serializedVersion: 13
   m_Type: 2
   m_Color: {r: 1, g: 0.1, b: 0.06, a: 1}
-  m_Intensity: 1.8
+  m_Intensity: 1.25
   m_Range: 5
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -69748,7 +69958,7 @@ GameObject:
   - component: {fileID: 1882037632}
   - component: {fileID: 1882037634}
   - component: {fileID: 1882037633}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: HB3_Canon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74370,7 +74580,7 @@ GameObject:
   - component: {fileID: 2001364178}
   - component: {fileID: 2001364180}
   - component: {fileID: 2001364179}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: HB4_LinternaBurua
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76845,7 +77055,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HorrorEnemyHealth
   manager: {fileID: 780351421}
-  hitPoints: 2
+  hitPoints: 3
+  buruarenAltuera: 0.8
+  buruarenErradioa: 0.16
 --- !u!1 &2073706003
 GameObject:
   m_ObjectHideFlags: 0
@@ -77263,7 +77475,7 @@ GameObject:
   - component: {fileID: 2079437123}
   - component: {fileID: 2079437125}
   - component: {fileID: 2079437124}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: HB3_Bascula
   m_TagString: Untagged
   m_Icon: {fileID: 0}

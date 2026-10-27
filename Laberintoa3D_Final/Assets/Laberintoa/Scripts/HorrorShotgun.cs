@@ -23,6 +23,11 @@ public sealed class HorrorShotgun : MonoBehaviour
     private bool reloading;
     private float flashUntil;
 
+    public bool Collected => collected;
+    public bool IsReloading => reloading;
+    public int Loaded => loaded;
+    public int Reserve => reserve;
+
     public string StatusText
     {
         get
@@ -96,7 +101,7 @@ public sealed class HorrorShotgun : MonoBehaviour
         {
             if (player != null && hit.transform.IsChildOf(player)) continue;
             HorrorEnemyHealth enemy = hit.collider.GetComponentInParent<HorrorEnemyHealth>();
-            if (enemy != null) enemy.TakeShot();
+            if (enemy != null) enemy.TakeShot(cam.transform.position, cam.transform.forward, hit.point);
             break; // El primer objeto real bloquea los disparos (paredes incluidas).
         }
         Debug.Log("HORROR_SHOT: shells=" + loaded + ", reserve=" + reserve);
