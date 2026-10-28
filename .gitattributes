@@ -1,0 +1,2 @@
+Laberintoa3D_Final/Assets/Laberintoa/Horror/AudioV13/*.wav filter=lfs diff=lfs merge=lfs -text
+Laberintoa3D_Final/Assets/Resources/HorrorAudioV13b/*.wav filter=lfs diff=lfs merge=lfs -text

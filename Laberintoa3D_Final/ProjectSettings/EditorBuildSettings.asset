@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Laberintoa/Scenes/Hasiera.unity
+    guid: 7c515bf2821cc2b1399b3140ba248b4a
+  - enabled: 1
     path: Assets/Laberintoa/Scenes/Laberintoa_Horror.unity
     guid: 936f7edb4f63a1d5f8b256ea0aa8f9a7
   m_configObjects:

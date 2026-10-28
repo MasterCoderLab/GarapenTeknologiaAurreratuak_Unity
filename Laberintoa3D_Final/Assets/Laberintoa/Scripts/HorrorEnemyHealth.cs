@@ -142,6 +142,6 @@ public sealed class HorrorEnemyHealth : MonoBehaviour
                 alignment = TextAnchor.MiddleCenter };
             estiloa.normal.textColor = Color.white;
         }
-        GUI.Label(new Rect(x, y - 6f, 112f, 16f), "ETSAIA  " + hitPoints + "/3", estiloa);
+        GUI.Label(new Rect(x, y - 6f, 112f, 16f), "ETSAIA", estiloa);
     }
 }

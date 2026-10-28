@@ -35677,6 +35677,8 @@ MonoBehaviour:
   basokoLinternaIrismena: 28
   basokoLinternaIntentsitatea: 14
   trantsizioAbiadura: 0.85
+  v11BunkerLainoDentsitatea: 0.135
+  v11BunkerIlargia: 0.009
 --- !u!114 &963194235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35691,7 +35693,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::HorrorBunkerDarknessV10
   giroa: {fileID: 963194234}
   linterna: {fileID: 1153049689}
-  itzalitaOpakutasuna: 0.69
+  ertzekoOpakutasuna: 0.36
   trantsizioa: 2.7
 --- !u!114 &963194236
 MonoBehaviour:
@@ -36853,6 +36855,59 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 991114391}
   m_Mesh: {fileID: 4300000, guid: fb37d2e120c9fd605a56b1809dde54dd, type: 2}
+--- !u!1 &991260553
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 991260555}
+  - component: {fileID: 991260554}
+  m_Layer: 0
+  m_Name: HB13_Audio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &991260554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991260553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ee43e9a9a71e7199a3b28e1ea22cb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HorrorAudioV13
+  menuGiroa: {fileID: 8300000, guid: c40325e6c6ce57286b9d7cc3760caa7c, type: 3}
+  bunkerGiroa: {fileID: 8300000, guid: 7d77de4993bcfc423a0d570ec2ba1b00, type: 3}
+  basoGiroa: {fileID: 8300000, guid: 3b4d257a0fa9c180db1c5009140849f5, type: 3}
+  pausoa: {fileID: 8300000, guid: 21e239d521b29b665937913517585736, type: 3}
+  tiroa: {fileID: 8300000, guid: 5a3da8c749949e27aa59adb5dc2bed38, type: 3}
+  birkarga: {fileID: 8300000, guid: 88a89d498583fa77ba09b95fc609f542, type: 3}
+  etsaia: {fileID: 8300000, guid: e8855883e75ceb51690a2b71ff3fa868, type: 3}
+  kolpea: {fileID: 8300000, guid: 2273d1ffbfdb1d5aaa39d6be0eda8066, type: 3}
+  amaiera: {fileID: 8300000, guid: 4222ab07da77ca851994ddfd7a8999cf, type: 3}
+--- !u!4 &991260555
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991260553}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &991437269
 GameObject:
   m_ObjectHideFlags: 0
@@ -79638,3 +79693,4 @@ SceneRoots:
   - {fileID: 424466332}
   - {fileID: 780351422}
   - {fileID: 149650034}
+  - {fileID: 991260555}

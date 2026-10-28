@@ -1,0 +1,43 @@
+{
+  "selected": {
+    "shotgun": "sounds/shotty.wav",
+    "reload": "ShotgunSounds/4 Shell Reload.mp3",
+    "monster": [
+      "Monster-Sounds-Volume-2/Monster-1.wav",
+      "Monster-Sounds-Volume-2/Monster-2.wav",
+      "Monster-Sounds-Volume-2/Monster-3.wav"
+    ],
+    "forest_steps": [
+      "leaves01.ogg",
+      "leaves02.ogg",
+      "mud02.ogg",
+      "gravel.ogg"
+    ],
+    "damage": "ogg/hit1.ogg",
+    "ending": "ogg/die1.ogg"
+  },
+  "sha256": {
+    "menu_ambience.wav": "46ac04e09abd69e1ee455073617b7d20abdf2b38cc070d97a6d0fa146f108576",
+    "bunker_ambience.wav": "52e85bb8bb6c771ff4c0b193f3af4494193e6f3da36a384c67a5c1addda463b1",
+    "forest_ambience.wav": "4d62141930eb6cdec7787448d2806cc07c79e804825de745bccc5995608055a8",
+    "footstep.wav": "ed5439ad23aa650130c1e092f88e785aa341ae6d39365ae81cfde7a55bc9032e",
+    "shotgun.wav": "0f25569c27524886789cff52726cf83fabd92aa704cf2a6f4fd85330a163d022",
+    "reload.wav": "2434d7ff895d85ffad3b51e82c670d67213a2bd2c6b8c5d1cd74ce48a155ba85",
+    "monster.wav": "2c93c3b07be1d6f5d563050ba12f962277645617c2a37824b37ed4aba38b0f1b",
+    "damage.wav": "38e7d61a0e4c317b3655346c37624506f2f4e5af630f7b4b1586bccc28e24336",
+    "ending.wav": "8f65203732191346554198c7606885dfbfefd23fe05e04a34feda5ec9f5eb6be",
+    "concrete_01.wav": "ed5439ad23aa650130c1e092f88e785aa341ae6d39365ae81cfde7a55bc9032e",
+    "concrete_02.wav": "1b757e175c39b8f46dbf42a388bc00b4d3f48476b396b8acae33cc7426d8204b",
+    "concrete_03.wav": "35097c779ff028ddae4dac0235581737475f501d4757c4a8d398475a55b99b6a",
+    "concrete_04.wav": "fa92653c758734e106f877ea8ee12e173f717a8e452d1926ebe87cc413605032",
+    "concrete_05.wav": "55cac9c55fc238e3b148b1e95fa9ed2896029d573a0adaaf45c89721c4b6e177",
+    "concrete_06.wav": "904791d8a45df55e6a289b76894bc48fdb5255ecc8baedf731f3c9caf77a6d1f",
+    "forest_01.wav": "d1691f667199d454e6444f9e4ef12db6cac169a6126bf86ee96fb70e0ad85344",
+    "forest_02.wav": "e2aff393e70e2198fb66d6dbf2de13870b32ed29f287e749f45d0fa4667700d4",
+    "forest_03.wav": "bc6da465b769458b575fa914482aea3f380ed8966870ddc51d594498baf2822c",
+    "forest_04.wav": "3d5a07c45c513eaa630db1f212a42c9d17761321bd72551fee49cc06f023b110",
+    "monster_01.wav": "2c93c3b07be1d6f5d563050ba12f962277645617c2a37824b37ed4aba38b0f1b",
+    "monster_02.wav": "23c467d65f058532500bff9d5073848509e87d1c047096f1e9a56f4328c1adb6",
+    "monster_03.wav": "2826a550e1d703ac12826098c535c587b9011bdea89feb260694a764c404b319"
+  }
+}
