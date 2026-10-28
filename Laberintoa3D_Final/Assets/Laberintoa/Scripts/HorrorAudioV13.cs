@@ -154,9 +154,10 @@ public sealed class HorrorAudioV13 : MonoBehaviour
         }
         if (jokoa != null)
         {
-            if (jokoa.Lives < azkenBizitzak) Jo(kolpea, .72f);
-            if (jokoa.DefeatedCount > azkenEtsaiak) Jo(etsaia, .46f);
-            if (jokoa.Ended && !azkenAmaiera) Jo(amaiera, .48f);
+            if (jokoa.Lives < azkenBizitzak && !jokoa.Ended) Jo(kolpea, .72f);
+            if (jokoa.DefeatedCount > azkenEtsaiak && !jokoa.Ended) Jo(etsaia, .46f);
+            if (jokoa.Ended && !azkenAmaiera)
+                Jo(jokoa.DefeatedCount >= 3 ? amaiera : etsaia, .85f); // GARAIPENA: amaiera; PORROTA: marrua.
             azkenBizitzak = jokoa.Lives;
             azkenEtsaiak = jokoa.DefeatedCount;
             azkenAmaiera = jokoa.Ended;
