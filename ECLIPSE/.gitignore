@@ -1,0 +1,16 @@
+# ECLIPSE — se suma al .gitignore de la raíz del repo (que ya ignora Library/, Temp/, Logs/, obj/, UserSettings/…)
+
+# Assets de terceros con licencia que no permite publicarlos (kit, controlador)
+/Assets/ThirdParty/
+/Assets/ThirdParty.meta
+
+# Paquetes originales y builds: van a la copia de seguridad, no al repo
+*.unitypackage
+/Builds/
+/Build/
+
+# Ajustes locales de Claude Code (las reglas compartidas están en .claude/settings.json)
+/.claude/settings.local.json
+
+# Capturas en bruto (las elegidas para la memoria van en docs/)
+/Recordings/
