@@ -29,7 +29,7 @@ Este archivo lo leen **todos** los agentes que trabajan en `ECLIPSE/`. Claude Co
 | `.unity`, `.prefab`, `.meta`, `.asset`, `.mat`, `.controller`, `.anim`, `.lighting` | **Nunca** editar como texto el YAML. Los cambios en escenas y assets se hacen con herramientas de Editor (sección 5) o los hace Ion en Unity |
 
 - **Git:** nunca `push`, `reset --hard`, `clean`, `rebase` ni borrar ramas. **Los commits los hace Ion** después de probar en Play.
-- **Batchmode:** solo con Unity cerrado para este proyecto. Comprobar antes que no existe `Library/UnityLockfile`.
+- **Batchmode:** solo con Unity cerrado para este proyecto. Comprobar antes que no existe `Temp/UnityLockfile`.
 - **Terceros:** no descargar, instalar ni importar nada sin que Ion lo apruebe. Revisar en solo lectura antes de abrir en Unity: un paquete con scripts de `Editor/` ejecuta código al importarlo.
 - **No inventar:** distinguir siempre **comprobado**, **hipótesis** y **pendiente**. Si no se ha probado en Unity, no está hecho.
 
