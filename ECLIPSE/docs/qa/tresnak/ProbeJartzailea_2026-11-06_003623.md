@@ -1,0 +1,13 @@
+# ProbeJartzailea: Aurrebista
+
+- **Data:** 2026-11-06 00:36:23
+- **Eszena:** Assets/_Eclipse/Eszenak/01_Instalazioa.unity
+- **Sektorea:** Sektorea2
+- **Gelak:** 3
+- **Aldaketak:** 6
+
+## Gelak (3)
+
+- Sektorea2/Gela_S2_Korridorea: kaxa (10.88, 2.77, 3.20); RP_Gela_S2_Korridorea sortu; LPG_Gela_S2_Korridorea sortu (24 probe)
+- Sektorea2/Gela_S2_Fusibleak: kaxa (9.32, 5.00, 10.96); RP_Gela_S2_Fusibleak sortu; LPG_Gela_S2_Fusibleak sortu (60 probe)
+- Sektorea2/Gela_S2_Sorgailua: kaxa (18.94, 5.00, 18.46); RP_Gela_S2_Sorgailua sortu; LPG_Gela_S2_Sorgailua sortu (180 probe)

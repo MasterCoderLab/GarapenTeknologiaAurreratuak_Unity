@@ -26,6 +26,7 @@ namespace Eclipse.EditorTresnak
         private const float HormaMarjina = 0.3f;
         private const float SabaiMarjina = 0.1f;
         private const float Tolerantzia = 0.001f;
+        private const float ProbeErradioa = 0.2f;
         private static readonly float[] Altuerak = { 0.5f, 1.7f };
 
         private sealed class GelaPlana
@@ -61,10 +62,16 @@ namespace Eclipse.EditorTresnak
                 return;
             }
 
+            AurrebistaErroan(erroa);
+        }
+
+        internal static bool AurrebistaErroan(GameObject erroa)
+        {
             Analisia analisia = Analizatu(erroa);
             var informea = new Informea(Tresna, Marka, "Aurrebista", erroa);
             InformeaBete(informea, analisia, erroa.transform);
-            informea.AmaituOndo($"{analisia.Aldaketak} aldaketa {analisia.Planak.Count} gelatan (ez da ezer aldatu)");
+            informea.AmaituOndo($"{erroa.name}: {analisia.Aldaketak} aldaketa {analisia.Planak.Count} gelatan (ez da ezer aldatu)");
+            return true;
         }
 
         [MenuItem(Menua + "Aplikatu")]
@@ -76,6 +83,11 @@ namespace Eclipse.EditorTresnak
                 return;
             }
 
+            AplikatuErroan(erroa);
+        }
+
+        internal static bool AplikatuErroan(GameObject erroa)
+        {
             Analisia analisia = Analizatu(erroa);
             var informea = new Informea(Tresna, Marka, "Aplikatu", erroa);
             InformeaBete(informea, analisia, erroa.transform);
@@ -106,7 +118,7 @@ namespace Eclipse.EditorTresnak
             {
                 Undo.RevertAllDownToGroup(taldea);
                 informea.AmaituErrorearekin(salbuespena.Message);
-                return;
+                return false;
             }
 
             if (analisia.Aldaketak > 0)
@@ -121,10 +133,11 @@ namespace Eclipse.EditorTresnak
             if (egiaztapena.Aldaketak > 0)
             {
                 informea.AmaituErrorearekin($"Aplikatu ondoren {egiaztapena.Aldaketak} aldaketa geratzen dira: ez da idenpotentea gela horietan");
-                return;
+                return false;
             }
 
-            informea.AmaituOndo($"{analisia.Aldaketak} aldaketa {analisia.Planak.Count} gelatan");
+            informea.AmaituOndo($"{erroa.name}: {analisia.Aldaketak} aldaketa {analisia.Planak.Count} gelatan");
+            return true;
         }
 
         private static Analisia Analizatu(GameObject erroa)
@@ -171,7 +184,7 @@ namespace Eclipse.EditorTresnak
                     analisia.Oharrak.Add($"{bidea}: BoxCollider-a aktibo dago eta ez da trigger: kapsula blokeatuko du. Markatu trigger gisa edo desaktibatu.");
                 }
 
-                Vector3[] puntuak = SareaKalkulatu(kaxa.size, bidea, analisia.Oharrak);
+                Vector3[] puntuak = SareaKalkulatu(kaxa.center, kaxa.size, bidea, analisia.Oharrak);
                 if (puntuak.Length == 0)
                 {
                     analisia.Oharrak.Add($"{bidea}: altuera ({kaxa.size.y:0.##} m) txikiegia da Light Probe-entzat; omitituta.");
@@ -217,8 +230,10 @@ namespace Eclipse.EditorTresnak
         /// Light Probe sarea, kaxaren erdiarekiko: tarte finkoa, zentratua, hormetatik urrun.
         /// Oinarria kaxaren behealdea da (zorua).
         /// </summary>
-        private static Vector3[] SareaKalkulatu(Vector3 tamaina, string bidea, List<string> oharrak)
+        private static Vector3[] SareaKalkulatu(Vector3 erdia, Vector3 tamaina, string bidea, List<string> oharrak)
         {
+            Physics.SyncTransforms();
+            int barruan = 0;
             float[] xOffsetak = ArdatzekoOffsetak(tamaina.x);
             float[] zOffsetak = ArdatzekoOffsetak(tamaina.z);
             var puntuak = new List<Vector3>();
@@ -236,9 +251,21 @@ namespace Eclipse.EditorTresnak
                 {
                     foreach (float z in zOffsetak)
                     {
+                        // Solido baten barruko probe-a beltz gelditzen da eta inguruko objektuak iluntzen ditu.
+                        if (Physics.CheckSphere(erdia + new Vector3(x, y, z), ProbeErradioa, Physics.DefaultRaycastLayers, QueryTriggerInteraction.Ignore))
+                        {
+                            barruan++;
+                            continue;
+                        }
+
                         puntuak.Add(new Vector3(x, y, z));
                     }
                 }
+            }
+
+            if (barruan > 0)
+            {
+                oharrak.Add($"{bidea}: {barruan} probe solidoen barruan geratzen ziren; kenduta.");
             }
 
             return puntuak.ToArray();

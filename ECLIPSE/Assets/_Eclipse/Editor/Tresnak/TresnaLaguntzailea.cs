@@ -85,6 +85,11 @@ namespace Eclipse.EditorTresnak
         private readonly StringBuilder _edukia = new StringBuilder();
 
         public Informea(string tresna, string marka, string modua, GameObject erroa)
+            : this(tresna, marka, modua, erroa.scene.path, erroa.name)
+        {
+        }
+
+        public Informea(string tresna, string marka, string modua, string eszena, string esparrua)
         {
             _tresna = tresna;
             _marka = marka;
@@ -93,8 +98,8 @@ namespace Eclipse.EditorTresnak
             _edukia.AppendLine($"# {tresna}: {modua}");
             _edukia.AppendLine();
             _edukia.AppendLine($"- **Data:** {DateTime.Now:yyyy-MM-dd HH:mm:ss}");
-            _edukia.AppendLine($"- **Eszena:** {erroa.scene.path}");
-            _edukia.AppendLine($"- **Sektorea:** {erroa.name}");
+            _edukia.AppendLine($"- **Eszena:** {eszena}");
+            _edukia.AppendLine($"- **Sektorea:** {esparrua}");
         }
 
         public void Lerroa(string testua)
@@ -144,7 +149,13 @@ namespace Eclipse.EditorTresnak
             {
                 string karpeta = Path.GetFullPath(Path.Combine(Application.dataPath, "..", "docs", "qa", "tresnak"));
                 Directory.CreateDirectory(karpeta);
-                string bidea = Path.Combine(karpeta, $"{_tresna}_{DateTime.Now:yyyy-MM-dd_HHmmss}.md");
+                string oinarria = $"{_tresna}_{DateTime.Now:yyyy-MM-dd_HHmmss}";
+                string bidea = Path.Combine(karpeta, $"{oinarria}.md");
+                for (int i = 2; File.Exists(bidea); i++)
+                {
+                    bidea = Path.Combine(karpeta, $"{oinarria}_{i}.md");
+                }
+
                 File.WriteAllText(bidea, _edukia.ToString());
                 return bidea;
             }

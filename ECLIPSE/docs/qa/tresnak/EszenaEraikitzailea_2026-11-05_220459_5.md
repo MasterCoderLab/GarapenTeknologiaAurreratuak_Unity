@@ -1,0 +1,326 @@
+# EszenaEraikitzailea: Sektorea1 eraiki: Aplikatu
+
+- **Data:** 2026-11-05 22:04:59
+- **Eszena:** Assets/_Eclipse/Eszenak/01_Instalazioa.unity
+- **Sektorea:** Sektorea1
+
+## Salak (3)
+
+- Gela_S1_Sarrera: zorua 5 x 7 lauza (9.62 x 10.50 m); barrua 7.62 x 8.51 m; altuera 2.00 m
+- Gela_S1_Korridorea: zorua 6 x 3 lauza (11.54 x 4.50 m); barrua 9.54 x 2.51 m; altuera 2.00 m
+- Gela_S1_Laborategia: zorua 7 x 7 lauza (13.46 x 10.50 m); barrua 11.47 x 8.51 m; altuera 2.00 m
+
+## Modulu erabiliak (12)
+
+- Box1: (1.49, 0.75, 1.29) m; 0 collider
+- Box3: (0.83, 0.65, 0.67) m; 0 collider
+- Container_Big: (1.44, 1.44, 1.53) m; 2 collider
+- Container_BigOpen: (1.44, 1.44, 1.53) m; 1 collider
+- Container_small: (1.59, 0.87, 0.94) m; 1 collider
+- DoorFrame: (1.23, 1.85, 0.10) m; 0 collider
+- Floor1: (1.92, 0.12, 1.50) m; 0 collider
+- Old_computer: (1.20, 1.42, 2.06) m; 1 collider
+- Rack: (2.97, 1.02, 3.32) m; 2 collider
+- Supply_box: (6.92, 4.86, 4.42) m; 7 collider
+- Wall12: (0.12, 2.00, 3.00) m; 0 collider
+- WallDoor: (2.80, 2.80, 1.00) m; 0 collider
+
+## Oharrak (18)
+
+- Hormen altuera 2.00 m da: baxua kapsula eta sorbalda-kamerarako.
+- WallDoor (2.80 m) eta Wall12 (2.00 m) altuera desberdinak dira: WallDoor eskalatuko da.
+- Box1: ez du Collider-ik, kapsulak zeharkatuko du.
+- Box3: ez du Collider-ik, kapsulak zeharkatuko du.
+- DoorFrame: ez du Collider-ik, kapsulak zeharkatuko du.
+- Floor1: ez du Collider-ik, kapsulak zeharkatuko du.
+- Wall12: ez du Collider-ik, kapsulak zeharkatuko du.
+- WallDoor: ez du Collider-ik, kapsulak zeharkatuko du.
+- Sarrera: Wall12 panelak 1.28 eskalan (3.85 m betetzeko).
+- Sarrera: Wall12 panelak 1.28 eskalan (3.85 m betetzeko).
+- Korridorea: Wall12 panelak 0.28 eskalan (0.85 m betetzeko).
+- Korridorea: Wall12 panelak 0.28 eskalan (0.85 m betetzeko).
+- Korridorea: Wall12 panelak 0.28 eskalan (0.85 m betetzeko).
+- Korridorea: Wall12 panelak 0.28 eskalan (0.85 m betetzeko).
+- Laborategia: Wall12 panelak 1.28 eskalan (3.85 m betetzeko).
+- Laborategia: Wall12 panelak 1.28 eskalan (3.85 m betetzeko).
+- Sarrera/Supply_box: ez da sartzen ((4.42, 4.86, 6.92) m); omitituta.
+- Laborategia/Supply_box: ez da sartzen ((6.92, 4.86, 4.42) m); omitituta.
+
+**Aldaketak guztira: 274** (274 sortu, 0 eguneratu, 0 ezabatu)
+
+## Sortzeko edo sortuak (274)
+
+- Sektorea1/Geometria/
+- Sektorea1/Geometria/Sarrera/
+- Sektorea1/Geometria/Sarrera/Zorua/
+- Sektorea1/Geometria/Sarrera/Zorua/Floor1__000
+- Sektorea1/Geometria/Sarrera/Zorua/Floor1__001
+- Sektorea1/Geometria/Sarrera/Zorua/Floor1__002
+- Sektorea1/Geometria/Sarrera/Zorua/Floor1__003
+- Sektorea1/Geometria/Sarrera/Zorua/Floor1__004
+- Sektorea1/Geometria/Sarrera/Zorua/Floor1__005
+- Sektorea1/Geometria/Sarrera/Zorua/Floor1__006
+- Sektorea1/Geometria/Sarrera/Zorua/Floor1__007
+- Sektorea1/Geometria/Sarrera/Zorua/Floor1__008
+- Sektorea1/Geometria/Sarrera/Zorua/Floor1__009
+- Sektorea1/Geometria/Sarrera/Zorua/Floor1__010
+- Sektorea1/Geometria/Sarrera/Zorua/Floor1__011
+- Sektorea1/Geometria/Sarrera/Zorua/Floor1__012
+- Sektorea1/Geometria/Sarrera/Zorua/Floor1__013
+- Sektorea1/Geometria/Sarrera/Zorua/Floor1__014
+- Sektorea1/Geometria/Sarrera/Zorua/Floor1__015
+- Sektorea1/Geometria/Sarrera/Zorua/Floor1__016
+- Sektorea1/Geometria/Sarrera/Zorua/Floor1__017
+- Sektorea1/Geometria/Sarrera/Zorua/Floor1__018
+- Sektorea1/Geometria/Sarrera/Zorua/Floor1__019
+- Sektorea1/Geometria/Sarrera/Zorua/Floor1__020
+- Sektorea1/Geometria/Sarrera/Zorua/Floor1__021
+- Sektorea1/Geometria/Sarrera/Zorua/Floor1__022
+- Sektorea1/Geometria/Sarrera/Zorua/Floor1__023
+- Sektorea1/Geometria/Sarrera/Zorua/Floor1__024
+- Sektorea1/Geometria/Sarrera/Zorua/Floor1__025
+- Sektorea1/Geometria/Sarrera/Zorua/Floor1__026
+- Sektorea1/Geometria/Sarrera/Zorua/Floor1__027
+- Sektorea1/Geometria/Sarrera/Zorua/Floor1__028
+- Sektorea1/Geometria/Sarrera/Zorua/Floor1__029
+- Sektorea1/Geometria/Sarrera/Zorua/Floor1__030
+- Sektorea1/Geometria/Sarrera/Zorua/Floor1__031
+- Sektorea1/Geometria/Sarrera/Zorua/Floor1__032
+- Sektorea1/Geometria/Sarrera/Zorua/Floor1__033
+- Sektorea1/Geometria/Sarrera/Zorua/Floor1__034
+- Sektorea1/Geometria/Sarrera/Hormak/
+- Sektorea1/Geometria/Sarrera/Hormak/Wall12__000
+- Sektorea1/Geometria/Sarrera/Hormak/Wall12__001
+- Sektorea1/Geometria/Sarrera/Hormak/Wall12__002
+- Sektorea1/Geometria/Sarrera/Hormak/Wall12__003
+- Sektorea1/Geometria/Sarrera/Hormak/Wall12__004
+- Sektorea1/Geometria/Sarrera/Hormak/Wall12__005
+- Sektorea1/Geometria/Sarrera/Hormak/Wall12__006
+- Sektorea1/Geometria/Sarrera/Hormak/Wall12__007
+- Sektorea1/Geometria/Sarrera/Hormak/Wall12__008
+- Sektorea1/Geometria/Sarrera/Hormak/Wall12__009
+- Sektorea1/Geometria/Sarrera/Hormak/Wall12__010
+- Sektorea1/Geometria/Sarrera/Hormak/WallDoor__000
+- Sektorea1/Geometria/Sarrera/Hormak/Wall12__011
+- Sektorea1/Geometria/Sarrera/Hormak/DoorFrame__000
+- Sektorea1/Geometria/Sarrera/Sabaia/
+- Sektorea1/Geometria/Sarrera/Sabaia/Floor1__000
+- Sektorea1/Geometria/Sarrera/Sabaia/Floor1__001
+- Sektorea1/Geometria/Sarrera/Sabaia/Floor1__002
+- Sektorea1/Geometria/Sarrera/Sabaia/Floor1__003
+- Sektorea1/Geometria/Sarrera/Sabaia/Floor1__004
+- Sektorea1/Geometria/Sarrera/Sabaia/Floor1__005
+- Sektorea1/Geometria/Sarrera/Sabaia/Floor1__006
+- Sektorea1/Geometria/Sarrera/Sabaia/Floor1__007
+- Sektorea1/Geometria/Sarrera/Sabaia/Floor1__008
+- Sektorea1/Geometria/Sarrera/Sabaia/Floor1__009
+- Sektorea1/Geometria/Sarrera/Sabaia/Floor1__010
+- Sektorea1/Geometria/Sarrera/Sabaia/Floor1__011
+- Sektorea1/Geometria/Sarrera/Sabaia/Floor1__012
+- Sektorea1/Geometria/Sarrera/Sabaia/Floor1__013
+- Sektorea1/Geometria/Sarrera/Sabaia/Floor1__014
+- Sektorea1/Geometria/Sarrera/Sabaia/Floor1__015
+- Sektorea1/Geometria/Sarrera/Sabaia/Floor1__016
+- Sektorea1/Geometria/Sarrera/Sabaia/Floor1__017
+- Sektorea1/Geometria/Sarrera/Sabaia/Floor1__018
+- Sektorea1/Geometria/Sarrera/Sabaia/Floor1__019
+- Sektorea1/Geometria/Sarrera/Sabaia/Floor1__020
+- Sektorea1/Geometria/Sarrera/Sabaia/Floor1__021
+- Sektorea1/Geometria/Sarrera/Sabaia/Floor1__022
+- Sektorea1/Geometria/Sarrera/Sabaia/Floor1__023
+- Sektorea1/Geometria/Sarrera/Sabaia/Floor1__024
+- Sektorea1/Geometria/Sarrera/Sabaia/Floor1__025
+- Sektorea1/Geometria/Sarrera/Sabaia/Floor1__026
+- Sektorea1/Geometria/Sarrera/Sabaia/Floor1__027
+- Sektorea1/Geometria/Sarrera/Sabaia/Floor1__028
+- Sektorea1/Geometria/Sarrera/Sabaia/Floor1__029
+- Sektorea1/Geometria/Sarrera/Sabaia/Floor1__030
+- Sektorea1/Geometria/Sarrera/Sabaia/Floor1__031
+- Sektorea1/Geometria/Sarrera/Sabaia/Floor1__032
+- Sektorea1/Geometria/Sarrera/Sabaia/Floor1__033
+- Sektorea1/Geometria/Sarrera/Sabaia/Floor1__034
+- Sektorea1/Geometria/Korridorea/
+- Sektorea1/Geometria/Korridorea/Zorua/
+- Sektorea1/Geometria/Korridorea/Zorua/Floor1__000
+- Sektorea1/Geometria/Korridorea/Zorua/Floor1__001
+- Sektorea1/Geometria/Korridorea/Zorua/Floor1__002
+- Sektorea1/Geometria/Korridorea/Zorua/Floor1__003
+- Sektorea1/Geometria/Korridorea/Zorua/Floor1__004
+- Sektorea1/Geometria/Korridorea/Zorua/Floor1__005
+- Sektorea1/Geometria/Korridorea/Zorua/Floor1__006
+- Sektorea1/Geometria/Korridorea/Zorua/Floor1__007
+- Sektorea1/Geometria/Korridorea/Zorua/Floor1__008
+- Sektorea1/Geometria/Korridorea/Zorua/Floor1__009
+- Sektorea1/Geometria/Korridorea/Zorua/Floor1__010
+- Sektorea1/Geometria/Korridorea/Zorua/Floor1__011
+- Sektorea1/Geometria/Korridorea/Zorua/Floor1__012
+- Sektorea1/Geometria/Korridorea/Zorua/Floor1__013
+- Sektorea1/Geometria/Korridorea/Zorua/Floor1__014
+- Sektorea1/Geometria/Korridorea/Zorua/Floor1__015
+- Sektorea1/Geometria/Korridorea/Zorua/Floor1__016
+- Sektorea1/Geometria/Korridorea/Zorua/Floor1__017
+- Sektorea1/Geometria/Korridorea/Hormak/
+- Sektorea1/Geometria/Korridorea/Hormak/Wall12__000
+- Sektorea1/Geometria/Korridorea/Hormak/Wall12__001
+- Sektorea1/Geometria/Korridorea/Hormak/Wall12__002
+- Sektorea1/Geometria/Korridorea/Hormak/Wall12__003
+- Sektorea1/Geometria/Korridorea/Hormak/Wall12__004
+- Sektorea1/Geometria/Korridorea/Hormak/Wall12__005
+- Sektorea1/Geometria/Korridorea/Hormak/Wall12__006
+- Sektorea1/Geometria/Korridorea/Hormak/Wall12__007
+- Sektorea1/Geometria/Korridorea/Hormak/Wall12__008
+- Sektorea1/Geometria/Korridorea/Hormak/WallDoor__000
+- Sektorea1/Geometria/Korridorea/Hormak/Wall12__009
+- Sektorea1/Geometria/Korridorea/Hormak/DoorFrame__000
+- Sektorea1/Geometria/Korridorea/Hormak/Wall12__010
+- Sektorea1/Geometria/Korridorea/Hormak/WallDoor__001
+- Sektorea1/Geometria/Korridorea/Hormak/Wall12__011
+- Sektorea1/Geometria/Korridorea/Hormak/DoorFrame__001
+- Sektorea1/Geometria/Korridorea/Sabaia/
+- Sektorea1/Geometria/Korridorea/Sabaia/Floor1__000
+- Sektorea1/Geometria/Korridorea/Sabaia/Floor1__001
+- Sektorea1/Geometria/Korridorea/Sabaia/Floor1__002
+- Sektorea1/Geometria/Korridorea/Sabaia/Floor1__003
+- Sektorea1/Geometria/Korridorea/Sabaia/Floor1__004
+- Sektorea1/Geometria/Korridorea/Sabaia/Floor1__005
+- Sektorea1/Geometria/Korridorea/Sabaia/Floor1__006
+- Sektorea1/Geometria/Korridorea/Sabaia/Floor1__007
+- Sektorea1/Geometria/Korridorea/Sabaia/Floor1__008
+- Sektorea1/Geometria/Korridorea/Sabaia/Floor1__009
+- Sektorea1/Geometria/Korridorea/Sabaia/Floor1__010
+- Sektorea1/Geometria/Korridorea/Sabaia/Floor1__011
+- Sektorea1/Geometria/Korridorea/Sabaia/Floor1__012
+- Sektorea1/Geometria/Korridorea/Sabaia/Floor1__013
+- Sektorea1/Geometria/Korridorea/Sabaia/Floor1__014
+- Sektorea1/Geometria/Korridorea/Sabaia/Floor1__015
+- Sektorea1/Geometria/Korridorea/Sabaia/Floor1__016
+- Sektorea1/Geometria/Korridorea/Sabaia/Floor1__017
+- Sektorea1/Geometria/Laborategia/
+- Sektorea1/Geometria/Laborategia/Zorua/
+- Sektorea1/Geometria/Laborategia/Zorua/Floor1__000
+- Sektorea1/Geometria/Laborategia/Zorua/Floor1__001
+- Sektorea1/Geometria/Laborategia/Zorua/Floor1__002
+- Sektorea1/Geometria/Laborategia/Zorua/Floor1__003
+- Sektorea1/Geometria/Laborategia/Zorua/Floor1__004
+- Sektorea1/Geometria/Laborategia/Zorua/Floor1__005
+- Sektorea1/Geometria/Laborategia/Zorua/Floor1__006
+- Sektorea1/Geometria/Laborategia/Zorua/Floor1__007
+- Sektorea1/Geometria/Laborategia/Zorua/Floor1__008
+- Sektorea1/Geometria/Laborategia/Zorua/Floor1__009
+- Sektorea1/Geometria/Laborategia/Zorua/Floor1__010
+- Sektorea1/Geometria/Laborategia/Zorua/Floor1__011
+- Sektorea1/Geometria/Laborategia/Zorua/Floor1__012
+- Sektorea1/Geometria/Laborategia/Zorua/Floor1__013
+- Sektorea1/Geometria/Laborategia/Zorua/Floor1__014
+- Sektorea1/Geometria/Laborategia/Zorua/Floor1__015
+- Sektorea1/Geometria/Laborategia/Zorua/Floor1__016
+- Sektorea1/Geometria/Laborategia/Zorua/Floor1__017
+- Sektorea1/Geometria/Laborategia/Zorua/Floor1__018
+- Sektorea1/Geometria/Laborategia/Zorua/Floor1__019
+- Sektorea1/Geometria/Laborategia/Zorua/Floor1__020
+- Sektorea1/Geometria/Laborategia/Zorua/Floor1__021
+- Sektorea1/Geometria/Laborategia/Zorua/Floor1__022
+- Sektorea1/Geometria/Laborategia/Zorua/Floor1__023
+- Sektorea1/Geometria/Laborategia/Zorua/Floor1__024
+- Sektorea1/Geometria/Laborategia/Zorua/Floor1__025
+- Sektorea1/Geometria/Laborategia/Zorua/Floor1__026
+- Sektorea1/Geometria/Laborategia/Zorua/Floor1__027
+- Sektorea1/Geometria/Laborategia/Zorua/Floor1__028
+- Sektorea1/Geometria/Laborategia/Zorua/Floor1__029
+- Sektorea1/Geometria/Laborategia/Zorua/Floor1__030
+- Sektorea1/Geometria/Laborategia/Zorua/Floor1__031
+- Sektorea1/Geometria/Laborategia/Zorua/Floor1__032
+- Sektorea1/Geometria/Laborategia/Zorua/Floor1__033
+- Sektorea1/Geometria/Laborategia/Zorua/Floor1__034
+- Sektorea1/Geometria/Laborategia/Zorua/Floor1__035
+- Sektorea1/Geometria/Laborategia/Zorua/Floor1__036
+- Sektorea1/Geometria/Laborategia/Zorua/Floor1__037
+- Sektorea1/Geometria/Laborategia/Zorua/Floor1__038
+- Sektorea1/Geometria/Laborategia/Zorua/Floor1__039
+- Sektorea1/Geometria/Laborategia/Zorua/Floor1__040
+- Sektorea1/Geometria/Laborategia/Zorua/Floor1__041
+- Sektorea1/Geometria/Laborategia/Zorua/Floor1__042
+- Sektorea1/Geometria/Laborategia/Zorua/Floor1__043
+- Sektorea1/Geometria/Laborategia/Zorua/Floor1__044
+- Sektorea1/Geometria/Laborategia/Zorua/Floor1__045
+- Sektorea1/Geometria/Laborategia/Zorua/Floor1__046
+- Sektorea1/Geometria/Laborategia/Zorua/Floor1__047
+- Sektorea1/Geometria/Laborategia/Zorua/Floor1__048
+- Sektorea1/Geometria/Laborategia/Hormak/
+- Sektorea1/Geometria/Laborategia/Hormak/Wall12__000
+- Sektorea1/Geometria/Laborategia/Hormak/Wall12__001
+- Sektorea1/Geometria/Laborategia/Hormak/Wall12__002
+- Sektorea1/Geometria/Laborategia/Hormak/Wall12__003
+- Sektorea1/Geometria/Laborategia/Hormak/Wall12__004
+- Sektorea1/Geometria/Laborategia/Hormak/Wall12__005
+- Sektorea1/Geometria/Laborategia/Hormak/Wall12__006
+- Sektorea1/Geometria/Laborategia/Hormak/Wall12__007
+- Sektorea1/Geometria/Laborategia/Hormak/Wall12__008
+- Sektorea1/Geometria/Laborategia/Hormak/WallDoor__000
+- Sektorea1/Geometria/Laborategia/Hormak/Wall12__009
+- Sektorea1/Geometria/Laborategia/Hormak/DoorFrame__000
+- Sektorea1/Geometria/Laborategia/Hormak/Wall12__010
+- Sektorea1/Geometria/Laborategia/Hormak/Wall12__011
+- Sektorea1/Geometria/Laborategia/Hormak/Wall12__012
+- Sektorea1/Geometria/Laborategia/Hormak/Wall12__013
+- Sektorea1/Geometria/Laborategia/Sabaia/
+- Sektorea1/Geometria/Laborategia/Sabaia/Floor1__000
+- Sektorea1/Geometria/Laborategia/Sabaia/Floor1__001
+- Sektorea1/Geometria/Laborategia/Sabaia/Floor1__002
+- Sektorea1/Geometria/Laborategia/Sabaia/Floor1__003
+- Sektorea1/Geometria/Laborategia/Sabaia/Floor1__004
+- Sektorea1/Geometria/Laborategia/Sabaia/Floor1__005
+- Sektorea1/Geometria/Laborategia/Sabaia/Floor1__006
+- Sektorea1/Geometria/Laborategia/Sabaia/Floor1__007
+- Sektorea1/Geometria/Laborategia/Sabaia/Floor1__008
+- Sektorea1/Geometria/Laborategia/Sabaia/Floor1__009
+- Sektorea1/Geometria/Laborategia/Sabaia/Floor1__010
+- Sektorea1/Geometria/Laborategia/Sabaia/Floor1__011
+- Sektorea1/Geometria/Laborategia/Sabaia/Floor1__012
+- Sektorea1/Geometria/Laborategia/Sabaia/Floor1__013
+- Sektorea1/Geometria/Laborategia/Sabaia/Floor1__014
+- Sektorea1/Geometria/Laborategia/Sabaia/Floor1__015
+- Sektorea1/Geometria/Laborategia/Sabaia/Floor1__016
+- Sektorea1/Geometria/Laborategia/Sabaia/Floor1__017
+- Sektorea1/Geometria/Laborategia/Sabaia/Floor1__018
+- Sektorea1/Geometria/Laborategia/Sabaia/Floor1__019
+- Sektorea1/Geometria/Laborategia/Sabaia/Floor1__020
+- Sektorea1/Geometria/Laborategia/Sabaia/Floor1__021
+- Sektorea1/Geometria/Laborategia/Sabaia/Floor1__022
+- Sektorea1/Geometria/Laborategia/Sabaia/Floor1__023
+- Sektorea1/Geometria/Laborategia/Sabaia/Floor1__024
+- Sektorea1/Geometria/Laborategia/Sabaia/Floor1__025
+- Sektorea1/Geometria/Laborategia/Sabaia/Floor1__026
+- Sektorea1/Geometria/Laborategia/Sabaia/Floor1__027
+- Sektorea1/Geometria/Laborategia/Sabaia/Floor1__028
+- Sektorea1/Geometria/Laborategia/Sabaia/Floor1__029
+- Sektorea1/Geometria/Laborategia/Sabaia/Floor1__030
+- Sektorea1/Geometria/Laborategia/Sabaia/Floor1__031
+- Sektorea1/Geometria/Laborategia/Sabaia/Floor1__032
+- Sektorea1/Geometria/Laborategia/Sabaia/Floor1__033
+- Sektorea1/Geometria/Laborategia/Sabaia/Floor1__034
+- Sektorea1/Geometria/Laborategia/Sabaia/Floor1__035
+- Sektorea1/Geometria/Laborategia/Sabaia/Floor1__036
+- Sektorea1/Geometria/Laborategia/Sabaia/Floor1__037
+- Sektorea1/Geometria/Laborategia/Sabaia/Floor1__038
+- Sektorea1/Geometria/Laborategia/Sabaia/Floor1__039
+- Sektorea1/Geometria/Laborategia/Sabaia/Floor1__040
+- Sektorea1/Geometria/Laborategia/Sabaia/Floor1__041
+- Sektorea1/Geometria/Laborategia/Sabaia/Floor1__042
+- Sektorea1/Geometria/Laborategia/Sabaia/Floor1__043
+- Sektorea1/Geometria/Laborategia/Sabaia/Floor1__044
+- Sektorea1/Geometria/Laborategia/Sabaia/Floor1__045
+- Sektorea1/Geometria/Laborategia/Sabaia/Floor1__046
+- Sektorea1/Geometria/Laborategia/Sabaia/Floor1__047
+- Sektorea1/Geometria/Laborategia/Sabaia/Floor1__048
+- Sektorea1/Geometria/Sarrera/Propak/
+- Sektorea1/Geometria/Sarrera/Propak/Container_Big__000
+- Sektorea1/Geometria/Sarrera/Propak/Container_small__000
+- Sektorea1/Geometria/Sarrera/Propak/Box1__000
+- Sektorea1/Geometria/Korridorea/Propak/
+- Sektorea1/Geometria/Korridorea/Propak/Container_small__000
+- Sektorea1/Geometria/Laborategia/Propak/
+- Sektorea1/Geometria/Laborategia/Propak/Old_computer__000
+- Sektorea1/Geometria/Laborategia/Propak/Rack__000
+- Sektorea1/Geometria/Laborategia/Propak/Container_BigOpen__000
+- Sektorea1/Geometria/Laborategia/Propak/Box3__000

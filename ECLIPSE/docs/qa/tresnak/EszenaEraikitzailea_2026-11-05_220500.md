@@ -1,0 +1,355 @@
+# EszenaEraikitzailea: Blockout S2-S3: Aplikatu
+
+- **Data:** 2026-11-05 22:04:59
+- **Eszena:** Assets/_Eclipse/Eszenak/01_Instalazioa.unity
+- **Sektorea:** Sektorea2, Sektorea3
+
+## Salak (5)
+
+- Gela_S2_Fusibleak: zorua 4 x 5 lauza (7.69 x 7.50 m); barrua 5.70 x 5.51 m; altuera 2.00 m
+- Gela_S2_Korridorea: zorua 4 x 3 lauza (7.69 x 4.50 m); barrua 5.70 x 2.51 m; altuera 2.00 m
+- Gela_S2_Sorgailua: zorua 8 x 8 lauza (15.39 x 12.00 m); barrua 13.39 x 10.01 m; altuera 2.00 m
+- Gela_S3_Korridorea: zorua 5 x 3 lauza (9.62 x 4.50 m); barrua 7.62 x 2.51 m; altuera 2.00 m
+- Gela_S3_Erreaktorea: zorua 9 x 12 lauza (17.31 x 18.00 m); barrua 15.31 x 16.01 m; altuera 2.00 m
+
+## Modulu erabiliak (4)
+
+- DoorFrame: (1.23, 1.85, 0.10) m; 0 collider
+- Floor1: (1.92, 0.12, 1.50) m; 0 collider
+- Wall12: (0.12, 2.00, 3.00) m; 0 collider
+- WallDoor: (2.80, 2.80, 1.00) m; 0 collider
+
+## Oharrak (12)
+
+- Hormen altuera 2.00 m da: baxua kapsula eta sorbalda-kamerarako.
+- WallDoor (2.80 m) eta Wall12 (2.00 m) altuera desberdinak dira: WallDoor eskalatuko da.
+- DoorFrame: ez du Collider-ik, kapsulak zeharkatuko du.
+- Floor1: ez du Collider-ik, kapsulak zeharkatuko du.
+- Wall12: ez du Collider-ik, kapsulak zeharkatuko du.
+- WallDoor: ez du Collider-ik, kapsulak zeharkatuko du.
+- Korridorea: Wall12 panelak 0.28 eskalan (0.85 m betetzeko).
+- Korridorea: Wall12 panelak 0.28 eskalan (0.85 m betetzeko).
+- Korridorea: Wall12 panelak 0.28 eskalan (0.85 m betetzeko).
+- Korridorea: Wall12 panelak 0.28 eskalan (0.85 m betetzeko).
+- Korridorea: Wall12 panelak 0.28 eskalan (0.85 m betetzeko).
+- Korridorea: Wall12 panelak 0.28 eskalan (0.85 m betetzeko).
+
+**Aldaketak guztira: 315** (315 sortu, 0 eguneratu, 0 ezabatu)
+
+## Sortzeko edo sortuak (315)
+
+- Sektorea2/Geometria/
+- Sektorea2/Geometria/Fusibleak/
+- Sektorea2/Geometria/Fusibleak/Zorua/
+- Sektorea2/Geometria/Fusibleak/Zorua/Floor1__000
+- Sektorea2/Geometria/Fusibleak/Zorua/Floor1__001
+- Sektorea2/Geometria/Fusibleak/Zorua/Floor1__002
+- Sektorea2/Geometria/Fusibleak/Zorua/Floor1__003
+- Sektorea2/Geometria/Fusibleak/Zorua/Floor1__004
+- Sektorea2/Geometria/Fusibleak/Zorua/Floor1__005
+- Sektorea2/Geometria/Fusibleak/Zorua/Floor1__006
+- Sektorea2/Geometria/Fusibleak/Zorua/Floor1__007
+- Sektorea2/Geometria/Fusibleak/Zorua/Floor1__008
+- Sektorea2/Geometria/Fusibleak/Zorua/Floor1__009
+- Sektorea2/Geometria/Fusibleak/Zorua/Floor1__010
+- Sektorea2/Geometria/Fusibleak/Zorua/Floor1__011
+- Sektorea2/Geometria/Fusibleak/Zorua/Floor1__012
+- Sektorea2/Geometria/Fusibleak/Zorua/Floor1__013
+- Sektorea2/Geometria/Fusibleak/Zorua/Floor1__014
+- Sektorea2/Geometria/Fusibleak/Zorua/Floor1__015
+- Sektorea2/Geometria/Fusibleak/Zorua/Floor1__016
+- Sektorea2/Geometria/Fusibleak/Zorua/Floor1__017
+- Sektorea2/Geometria/Fusibleak/Zorua/Floor1__018
+- Sektorea2/Geometria/Fusibleak/Zorua/Floor1__019
+- Sektorea2/Geometria/Fusibleak/Hormak/
+- Sektorea2/Geometria/Fusibleak/Hormak/Wall12__000
+- Sektorea2/Geometria/Fusibleak/Hormak/Wall12__001
+- Sektorea2/Geometria/Fusibleak/Hormak/Wall12__002
+- Sektorea2/Geometria/Fusibleak/Hormak/Wall12__003
+- Sektorea2/Geometria/Fusibleak/Hormak/Wall12__004
+- Sektorea2/Geometria/Fusibleak/Hormak/Wall12__005
+- Sektorea2/Geometria/Fusibleak/Hormak/Wall12__006
+- Sektorea2/Geometria/Fusibleak/Hormak/Wall12__007
+- Sektorea2/Geometria/Fusibleak/Hormak/Wall12__008
+- Sektorea2/Geometria/Fusibleak/Hormak/Wall12__009
+- Sektorea2/Geometria/Fusibleak/Hormak/WallDoor__000
+- Sektorea2/Geometria/Fusibleak/Hormak/Wall12__010
+- Sektorea2/Geometria/Korridorea/
+- Sektorea2/Geometria/Korridorea/Zorua/
+- Sektorea2/Geometria/Korridorea/Zorua/Floor1__000
+- Sektorea2/Geometria/Korridorea/Zorua/Floor1__001
+- Sektorea2/Geometria/Korridorea/Zorua/Floor1__002
+- Sektorea2/Geometria/Korridorea/Zorua/Floor1__003
+- Sektorea2/Geometria/Korridorea/Zorua/Floor1__004
+- Sektorea2/Geometria/Korridorea/Zorua/Floor1__005
+- Sektorea2/Geometria/Korridorea/Zorua/Floor1__006
+- Sektorea2/Geometria/Korridorea/Zorua/Floor1__007
+- Sektorea2/Geometria/Korridorea/Zorua/Floor1__008
+- Sektorea2/Geometria/Korridorea/Zorua/Floor1__009
+- Sektorea2/Geometria/Korridorea/Zorua/Floor1__010
+- Sektorea2/Geometria/Korridorea/Zorua/Floor1__011
+- Sektorea2/Geometria/Korridorea/Hormak/
+- Sektorea2/Geometria/Korridorea/Hormak/Wall12__000
+- Sektorea2/Geometria/Korridorea/Hormak/Wall12__001
+- Sektorea2/Geometria/Korridorea/Hormak/Wall12__002
+- Sektorea2/Geometria/Korridorea/Hormak/Wall12__003
+- Sektorea2/Geometria/Korridorea/Hormak/Wall12__004
+- Sektorea2/Geometria/Korridorea/Hormak/Wall12__005
+- Sektorea2/Geometria/Korridorea/Hormak/Wall12__006
+- Sektorea2/Geometria/Korridorea/Hormak/WallDoor__000
+- Sektorea2/Geometria/Korridorea/Hormak/Wall12__007
+- Sektorea2/Geometria/Korridorea/Hormak/Wall12__008
+- Sektorea2/Geometria/Korridorea/Hormak/WallDoor__001
+- Sektorea2/Geometria/Korridorea/Hormak/Wall12__009
+- Sektorea2/Geometria/Sorgailua/
+- Sektorea2/Geometria/Sorgailua/Zorua/
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__000
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__001
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__002
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__003
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__004
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__005
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__006
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__007
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__008
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__009
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__010
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__011
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__012
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__013
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__014
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__015
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__016
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__017
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__018
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__019
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__020
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__021
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__022
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__023
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__024
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__025
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__026
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__027
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__028
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__029
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__030
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__031
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__032
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__033
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__034
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__035
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__036
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__037
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__038
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__039
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__040
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__041
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__042
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__043
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__044
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__045
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__046
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__047
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__048
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__049
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__050
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__051
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__052
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__053
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__054
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__055
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__056
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__057
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__058
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__059
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__060
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__061
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__062
+- Sektorea2/Geometria/Sorgailua/Zorua/Floor1__063
+- Sektorea2/Geometria/Sorgailua/Hormak/
+- Sektorea2/Geometria/Sorgailua/Hormak/Wall12__000
+- Sektorea2/Geometria/Sorgailua/Hormak/Wall12__001
+- Sektorea2/Geometria/Sorgailua/Hormak/Wall12__002
+- Sektorea2/Geometria/Sorgailua/Hormak/Wall12__003
+- Sektorea2/Geometria/Sorgailua/Hormak/Wall12__004
+- Sektorea2/Geometria/Sorgailua/Hormak/Wall12__005
+- Sektorea2/Geometria/Sorgailua/Hormak/Wall12__006
+- Sektorea2/Geometria/Sorgailua/Hormak/Wall12__007
+- Sektorea2/Geometria/Sorgailua/Hormak/Wall12__008
+- Sektorea2/Geometria/Sorgailua/Hormak/Wall12__009
+- Sektorea2/Geometria/Sorgailua/Hormak/Wall12__010
+- Sektorea2/Geometria/Sorgailua/Hormak/Wall12__011
+- Sektorea2/Geometria/Sorgailua/Hormak/WallDoor__000
+- Sektorea2/Geometria/Sorgailua/Hormak/Wall12__012
+- Sektorea2/Geometria/Sorgailua/Hormak/Wall12__013
+- Sektorea2/Geometria/Sorgailua/Hormak/Wall12__014
+- Sektorea2/Geometria/Sorgailua/Hormak/Wall12__015
+- Sektorea2/Geometria/Sorgailua/Hormak/Wall12__016
+- Sektorea2/Geometria/Sorgailua/Hormak/Wall12__017
+- Sektorea3/Geometria/
+- Sektorea3/Geometria/Korridorea/
+- Sektorea3/Geometria/Korridorea/Zorua/
+- Sektorea3/Geometria/Korridorea/Zorua/Floor1__000
+- Sektorea3/Geometria/Korridorea/Zorua/Floor1__001
+- Sektorea3/Geometria/Korridorea/Zorua/Floor1__002
+- Sektorea3/Geometria/Korridorea/Zorua/Floor1__003
+- Sektorea3/Geometria/Korridorea/Zorua/Floor1__004
+- Sektorea3/Geometria/Korridorea/Zorua/Floor1__005
+- Sektorea3/Geometria/Korridorea/Zorua/Floor1__006
+- Sektorea3/Geometria/Korridorea/Zorua/Floor1__007
+- Sektorea3/Geometria/Korridorea/Zorua/Floor1__008
+- Sektorea3/Geometria/Korridorea/Zorua/Floor1__009
+- Sektorea3/Geometria/Korridorea/Zorua/Floor1__010
+- Sektorea3/Geometria/Korridorea/Zorua/Floor1__011
+- Sektorea3/Geometria/Korridorea/Zorua/Floor1__012
+- Sektorea3/Geometria/Korridorea/Zorua/Floor1__013
+- Sektorea3/Geometria/Korridorea/Zorua/Floor1__014
+- Sektorea3/Geometria/Korridorea/Hormak/
+- Sektorea3/Geometria/Korridorea/Hormak/Wall12__000
+- Sektorea3/Geometria/Korridorea/Hormak/Wall12__001
+- Sektorea3/Geometria/Korridorea/Hormak/Wall12__002
+- Sektorea3/Geometria/Korridorea/Hormak/Wall12__003
+- Sektorea3/Geometria/Korridorea/Hormak/Wall12__004
+- Sektorea3/Geometria/Korridorea/Hormak/Wall12__005
+- Sektorea3/Geometria/Korridorea/Hormak/Wall12__006
+- Sektorea3/Geometria/Korridorea/Hormak/Wall12__007
+- Sektorea3/Geometria/Korridorea/Hormak/Wall12__008
+- Sektorea3/Geometria/Korridorea/Hormak/WallDoor__000
+- Sektorea3/Geometria/Korridorea/Hormak/Wall12__009
+- Sektorea3/Geometria/Erreaktorea/
+- Sektorea3/Geometria/Erreaktorea/Zorua/
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__000
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__001
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__002
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__003
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__004
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__005
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__006
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__007
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__008
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__009
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__010
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__011
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__012
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__013
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__014
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__015
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__016
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__017
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__018
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__019
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__020
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__021
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__022
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__023
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__024
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__025
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__026
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__027
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__028
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__029
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__030
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__031
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__032
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__033
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__034
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__035
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__036
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__037
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__038
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__039
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__040
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__041
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__042
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__043
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__044
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__045
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__046
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__047
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__048
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__049
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__050
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__051
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__052
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__053
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__054
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__055
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__056
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__057
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__058
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__059
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__060
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__061
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__062
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__063
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__064
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__065
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__066
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__067
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__068
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__069
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__070
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__071
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__072
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__073
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__074
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__075
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__076
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__077
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__078
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__079
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__080
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__081
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__082
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__083
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__084
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__085
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__086
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__087
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__088
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__089
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__090
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__091
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__092
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__093
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__094
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__095
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__096
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__097
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__098
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__099
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__100
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__101
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__102
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__103
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__104
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__105
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__106
+- Sektorea3/Geometria/Erreaktorea/Zorua/Floor1__107
+- Sektorea3/Geometria/Erreaktorea/Hormak/
+- Sektorea3/Geometria/Erreaktorea/Hormak/Wall12__000
+- Sektorea3/Geometria/Erreaktorea/Hormak/Wall12__001
+- Sektorea3/Geometria/Erreaktorea/Hormak/Wall12__002
+- Sektorea3/Geometria/Erreaktorea/Hormak/Wall12__003
+- Sektorea3/Geometria/Erreaktorea/Hormak/Wall12__004
+- Sektorea3/Geometria/Erreaktorea/Hormak/Wall12__005
+- Sektorea3/Geometria/Erreaktorea/Hormak/Wall12__006
+- Sektorea3/Geometria/Erreaktorea/Hormak/Wall12__007
+- Sektorea3/Geometria/Erreaktorea/Hormak/Wall12__008
+- Sektorea3/Geometria/Erreaktorea/Hormak/Wall12__009
+- Sektorea3/Geometria/Erreaktorea/Hormak/Wall12__010
+- Sektorea3/Geometria/Erreaktorea/Hormak/Wall12__011
+- Sektorea3/Geometria/Erreaktorea/Hormak/Wall12__012
+- Sektorea3/Geometria/Erreaktorea/Hormak/Wall12__013
+- Sektorea3/Geometria/Erreaktorea/Hormak/Wall12__014
+- Sektorea3/Geometria/Erreaktorea/Hormak/WallDoor__000
+- Sektorea3/Geometria/Erreaktorea/Hormak/Wall12__015
+- Sektorea3/Geometria/Erreaktorea/Hormak/Wall12__016
+- Sektorea3/Geometria/Erreaktorea/Hormak/Wall12__017
+- Sektorea3/Geometria/Erreaktorea/Hormak/Wall12__018
+- Sektorea3/Geometria/Erreaktorea/Hormak/Wall12__019
+- Sektorea3/Geometria/Erreaktorea/Hormak/Wall12__020
+- Sektorea3/Geometria/Erreaktorea/Hormak/Wall12__021
+- Sektorea3/Geometria/Erreaktorea/Hormak/Wall12__022
+- Sektorea3/Geometria/Erreaktorea/Hormak/Wall12__023

@@ -1,0 +1,19 @@
+# ProbeJartzailea: Aurrebista
+
+- **Data:** 2026-11-06 00:50:50
+- **Eszena:** Assets/_Eclipse/Eszenak/01_Instalazioa.unity
+- **Sektorea:** Sektorea1
+- **Gelak:** 3
+- **Aldaketak:** 3
+
+## Gelak (3)
+
+- Sektorea1/Gela_S1_Korridorea: kaxa (14.63, 2.77, 3.20); RP_Gela_S1_Korridorea aldaketarik gabe; LPG_Gela_S1_Korridorea eguneratu (24 probe)
+- Sektorea1/Gela_S1_Sarrera: kaxa (11.73, 5.00, 10.96); RP_Gela_S1_Sarrera aldaketarik gabe; LPG_Gela_S1_Sarrera eguneratu (70 probe)
+- Sektorea1/Gela_S1_Laborategia: kaxa (18.94, 5.00, 18.46); RP_Gela_S1_Laborategia aldaketarik gabe; LPG_Gela_S1_Laborategia eguneratu (159 probe)
+
+## Oharrak (3)
+
+- Sektorea1/Gela_S1_Korridorea: 8 probe solidoen barruan geratzen ziren; kenduta.
+- Sektorea1/Gela_S1_Sarrera: 2 probe solidoen barruan geratzen ziren; kenduta.
+- Sektorea1/Gela_S1_Laborategia: 21 probe solidoen barruan geratzen ziren; kenduta.

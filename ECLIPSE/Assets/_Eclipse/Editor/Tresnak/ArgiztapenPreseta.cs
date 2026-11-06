@@ -53,10 +53,16 @@ namespace Eclipse.EditorTresnak
                 return;
             }
 
+            AurrebistaErroan(erroa);
+        }
+
+        internal static bool AurrebistaErroan(GameObject erroa)
+        {
             Analisia analisia = Analizatu(erroa);
             var informea = new Informea(Tresna, Marka, "Aurrebista", erroa);
             InformeaBete(informea, analisia, "Aldatuko diren objektuak");
-            informea.AmaituOndo($"{analisia.Aldatzekoak.Count} aldaketa flag-etan, {analisia.UV2Modeloak.Count} modelo UV2rik gabe (ez da ezer aldatu)");
+            informea.AmaituOndo($"{erroa.name}: {analisia.Aldatzekoak.Count} aldaketa flag-etan, {analisia.UV2Modeloak.Count} modelo UV2rik gabe (ez da ezer aldatu)");
+            return true;
         }
 
         [MenuItem(Menua + "Aplikatu flagak")]
@@ -68,6 +74,11 @@ namespace Eclipse.EditorTresnak
                 return;
             }
 
+            FlagakErroan(erroa);
+        }
+
+        internal static bool FlagakErroan(GameObject erroa)
+        {
             Analisia analisia = Analizatu(erroa);
             var informea = new Informea(Tresna, Marka, "Aplikatu flagak", erroa);
 
@@ -95,7 +106,7 @@ namespace Eclipse.EditorTresnak
                 Undo.RevertAllDownToGroup(taldea);
                 InformeaBete(informea, analisia, "Aldatu nahi ziren objektuak (desegin dira)");
                 informea.AmaituErrorearekin(salbuespena.Message);
-                return;
+                return false;
             }
 
             if (analisia.Aldatzekoak.Count > 0)
@@ -104,7 +115,8 @@ namespace Eclipse.EditorTresnak
             }
 
             InformeaBete(informea, analisia, "Aldatutako objektuak");
-            informea.AmaituOndo($"{analisia.Aldatzekoak.Count} aldaketa flag-etan");
+            informea.AmaituOndo($"{erroa.name}: {analisia.Aldatzekoak.Count} aldaketa flag-etan");
+            return true;
         }
 
         [MenuItem(Menua + "Aktibatu UV2 (.meta aldatzen du)")]
@@ -122,21 +134,27 @@ namespace Eclipse.EditorTresnak
                 return;
             }
 
+            UV2Erroan(erroa, false);
+        }
+
+        /// <param name="baimenduta">True: Ion-ek komando-lerroan baimendu du (batch); false: elkarrizketa erakutsi.</param>
+        internal static bool UV2Erroan(GameObject erroa, bool baimenduta)
+        {
             Analisia analisia = Analizatu(erroa);
             var informea = new Informea(Tresna, Marka, "Aktibatu UV2", erroa);
             List<string> modeloak = analisia.UV2Modeloak.Keys.ToList();
 
             if (modeloak.Count == 0)
             {
-                informea.AmaituOndo("0 aldaketa: ez dago UV2 behar duen modelorik");
-                return;
+                informea.AmaituOndo($"{erroa.name}: 0 aldaketa: ez dago UV2 behar duen modelorik");
+                return true;
             }
 
-            if (!Baieztatu(modeloak))
+            if (!baimenduta && !Baieztatu(modeloak))
             {
                 informea.Atala("UV2 behar duten modeloak (ez da ezer aldatu)", UV2Lerroak(analisia));
                 informea.AmaituOndo("Utzita: 0 aldaketa");
-                return;
+                return true;
             }
 
             var aldatuak = new List<string>();
@@ -162,7 +180,7 @@ namespace Eclipse.EditorTresnak
             {
                 informea.Atala("Aldatutako modeloak (.meta)", aldatuak);
                 informea.AmaituErrorearekin(salbuespena.Message);
-                return;
+                return false;
             }
 
             List<string> hutsak = modeloak.Where(bidea => !UV2Zuzena(bidea)).ToList();
@@ -173,10 +191,11 @@ namespace Eclipse.EditorTresnak
             {
                 informea.Atala("Inportatu ondoren UV2rik gabe", hutsak);
                 informea.AmaituErrorearekin($"{hutsak.Count} modeloak ez du UV2rik inportatu ondoren");
-                return;
+                return false;
             }
 
-            informea.AmaituOndo($"{aldatuak.Count} modelo aldatuta eta egiaztatuta");
+            informea.AmaituOndo($"{erroa.name}: {aldatuak.Count} modelo aldatuta eta egiaztatuta");
+            return true;
         }
 
         private static Analisia Analizatu(GameObject erroa)
