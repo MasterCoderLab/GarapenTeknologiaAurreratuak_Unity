@@ -17,7 +17,7 @@ namespace Eclipse.Misioak
         {
             if (beste is CharacterController && _kudeatzailea != null)
             {
-                _kudeatzailea.BildumaLortu();
+                _kudeatzailea.BildumaLortu(name);
                 gameObject.SetActive(false);
             }
         }

@@ -4,13 +4,29 @@
 
 ## Ahora
 
-- **Fase:** 3 — Construcción de los tres niveles (`Mision01_Laborategia`, `Mision02_Energia`, `Mision03_Erreaktorea`)
-- **Rama:** `feature/eclipse`
+- **Fase:** HUD, navegación, mapa e inventario base sobre las tres misiones (`Mision01_Laborategia`, `Mision02_Energia`, `Mision03_Erreaktorea`)
+- **Rama:** `feature/eclipse-hud`, desde `4454050c`, **sin commits**
 - **Kits:** `Sci Fi Modular Pack` (MagixBox) y `Sci-Fi Old rusty props PBR` (KMProd), en `Assets/ThirdParty/`, convertidos a URP
-- **Siguiente paso:** Ion recorre las tres misiones en Play (explorador + E en terminales) y valida proporciones, ambiente y FPS. Pendiente de decisión: añadir las escenas a Build Profiles (`ProjectSettings`, requiere autorización).
+- **Siguiente paso:** Ion prueba el HUD en Play (lista en "Para Ion en Play") y decide si publica. Pendiente de decisión: añadir las escenas a Build Profiles (`ProjectSettings`, requiere autorización).
 
 ## Hecho
 
+- 06/11 — **HUD, marcadores, mapa e inventario base (fases A–E), sin tocar escenas.** Todo se crea en Play desde `LevelManager.Start`; si el HUD falla, sigue el OnGUI anterior (esa vía de respaldo existe, pero no se ha probado).
+  - **A, HUD:** `Scriptak/Hud/HudKudeatzailea.cs` y `HudFabrika.cs`, uGUI con `Text` y letra `LegacyRuntime`, porque TMP pide importar Essential Resources (mejora pendiente). Misión, objetivo, fase y barra, ruta, datu-nukleoak, salida, aviso de E, avisos y controles. Reutiliza `MisioLogika` y `LevelManager`; no duplica objetivos.
+  - **B, marcadores:** `HudMarkatzaileak.cs` y `HelburuHautaketa.cs` (puros y con tests). Solo terminales de la fase actual, salida al terminar, 2 datu-nukleoak a menos de 25 m y barreras cerradas a menos de 15 m. Fuera de pantalla van al borde con flecha.
+  - **C, mapa:** `MapaPanela.cs`, `Nabigazioa/NabigazioSarea.cs` (grafo dirigido y A*, puro) y `NabigazioEraikitzailea.cs`. **El grafo no se deduce de los nombres:** es la misma inundación con cápsula que validó el robot, en Play, y lo que no se alcanza no existe. Los nombres `Gela_C_Pasilloa_A_B` solo se contrastan: diagnóstico 0 avisos en las tres. Sin ruta, no se dibuja línea y se avisa. Se ven paredes internas y obstáculos; dos plantas en M2 y M3 (flechas para cambiar).
+  - **D, inventario:** `Inbentarioa/{Inbentarioa,GameSession,GameManager}.cs` y `Hud/InbentarioPanela.cs`. Tab, 4 accesos rápidos (1–4), mochila de 12, datu-nukleoak en la misión y en total. Empieza vacío: hoy no existe ningún objeto recogible ni arma. `ElementuDatuak.EmpPistolaId` reserva el id sin entregarlo. `GameManager` (`DontDestroyOnLoad`) conserva la sesión entre misiones.
+  - **Corregido:** `MisioTerminala.JokalariaBarruan` quedaba activo si el `CharacterController` se desactivaba dentro del trigger, y permitía completar un terminal lejano con E. Ahora comprueba también que las cajas se solapen.
+  - **Herramienta nueva:** `EszenaEraikitzailea.HudProba.cs` (`BatchHudProba -eclipseMaila N`, `BatchJokalariKonpilazioa`).
+  - **Comprobado (batch, no validación de Ion):**
+    - EditMode 42/42 (9 anteriores + 33 nuevos).
+    - HUD en Play con teclado virtual: M1 57/57, M2 65/65, M3 60/60. Incluye M/Tab/Esc, E bloqueada con el mapa abierto, aviso de E, datu-nukleo real, bloqueo de la salida y giro de 360° con 0 marcadores fuera de pantalla.
+    - Robot que recorre **las líneas que dibuja el mapa** pulsando E: M1 207 m, M2 392 m, M3 305 m; 130 tramos, 0 cruzan una pared siguiendo el suelo; carga la misión siguiente, el HUD se crea de nuevo y los datu-nukleoak persisten.
+    - El grafo tarda 390–560 ms al cargar (batch) y sus nodos coinciden con la inundación en M2 (10934; M3 9625 frente a 9624 de la prueba anterior).
+    - Scripts de jugador compilados sin `DEVELOPMENT_BUILD` (StandaloneLinux64, sin build).
+    - Regresión: robot original M1 211 m, M2 394 m, M3 311 m; interacción M2 y M3 correctas; M1 solo falla en las 3 vistas conocidas de `PF_DatuNukleoa`. Estas dos regresiones se ejecutaron antes de los últimos retoques, que solo tocaron la simplificación de rutas y textos del HUD.
+    - Hashes de las 5 escenas intactos; 0 cambios en `ProjectSettings`, `Packages`, `ThirdParty`, `.unity` y `.lighting`.
+    - Informes: `docs/qa/tresnak/EszenaEraikitzailea_2026-11-06_{114233,114411,114536}.md`. Capturas: `docs/qa/kapturak/HUD_*`.
 - 06/11 — **Comprobaciones pendientes de la fase 3 (batch; informes en `docs/qa/tresnak/`, herramienta `EszenaEraikitzailea.Egiaztapena.cs`):**
   - **Occlusion culling:** prueba controlada, misma vista con y sin oclusión, comparada píxel a píxel, solo desde puntos transitables y con cámara en 1.ª y 3.ª persona. Antes: 624 de 1184 vistas en M3 perdían geometría (hasta 8746 px). Causa: piezas finas marcadas como oclusores. Corregido (solo paredes y cascos ocluyen; suelo, pared y techo de sala se dibujan siempre) y recalculado. Ahora: 6 de 4112 vistas, 112 px como máximo. Desde dentro de un sólido sigue ocultando; el jugador no puede estar ahí.
   - **Tiempos:** los 17 ms de `Bobinak` y `AzkenBorroka` no se reproducen: medianas 4,7 y 5,2 ms en 25 pasadas. Hay picos de 40–80 ms repartidos al azar por cualquier vista, no ligados a la geometría; causa sin determinar (la prueba reserva memoria en cada pasada). Peor mediana con oclusión: 9,0 ms. Es tiempo en batch a 1280×720 con lectura de píxeles: **no equivale a FPS**. La oclusión ayuda en vistas cargadas (M1 `Esnatzea` 10,5→6,8; M3 `Laberintoa` 8,2→4,6) y apenas en otras.
@@ -108,16 +124,25 @@
 - **Light Probes casi negras:** 69, casi todas en `Mantentzea` (M1 40, M2 4, M3 23). Son zonas oscuras a propósito; un robot futuro se vería muy oscuro ahí. Revisar al añadir enemigos.
 - **Oclusión residual:** 6 vistas con 1–112 px de diferencia. En uso real no debería notarse; atención si aparece algo al girar en `Borroka` de M1.
 - **Explorador temporal:** en M1, 3 de 4704 vistas en 3.ª persona dejan la cámara dentro de `PF_DatuNukleoa` (colisión de malla cóncava). En torno al 20 % de las vistas, la cámara se acerca a menos de 1 m de la cabeza por falta de sitio (mínimo 0,17 m). A tener en cuenta en el diseño de la cámara definitiva.
-- **`JokalariaBarruan`** queda activo si se desactiva el `CharacterController` dentro de un trigger. Hoy solo ocurriría al recolocar tras una caída. Tener en cuenta con el jugador definitivo.
+- **HUD, limitaciones:** maquetado y comprobado solo en 16:9 (1920×1080 y 1280×720). El inventario se maneja con teclado: no hay `EventSystem` ni clic. No pausa el juego (la estrategia lo pide; sin enemigos aún no afecta). Con varios objetivos juntos, los marcadores pueden solaparse: los lejanos solo muestran icono. Las rutas toman el camino más corto y pueden pasar cerca de las paredes, aunque sin tocarlas.
 - **Visual:** las pantallas son rectángulos lisos sin contenido; M1 se ve muy contrastado y poco azul. Sin el explorador real no se han valorado en movimiento.
 - **Herramientas, limitaciones:** Aurrebista no cuenta los objetos de misión (se sincronizan en Aplikatu). `BatchMailaPrestatu`, `BatchMailaBake` y `BatchOklusioDoitu` son solo batch, guardan la escena y no siguen el patrón Aurrebista/Aplikatu de `AGENTS.md`.
 
 ## Para Ion en Play (no se puede automatizar en batch)
 
+- **HUD:** con el mapa o el inventario abiertos, WASD y ratón no deben mover ni girar (en batch el cursor no se bloquea y no se puede probar). Al cerrar con Esc, el cursor debe volver a quedar capturado; en el Editor, Unity libera el cursor con Esc y puede hacer falta un clic.
+- **HUD:** legibilidad real, marcadores al moverse, FPS con el HUD activo y si la pausa de ~0,5 s al cargar cada misión se nota.
 - Bloqueo de cursor: **V, Esc y clic** dependen de él; y WASD/ratón en el flujo normal (lo automático invoca los métodos directamente).
 - **FPS reales** (Game view → Stats) en M1 `Esnatzea`, M2 `Pasilloa` y M3 `Erreaktorea`.
 - Sensación de la cámara en 3.ª persona, el ambiente y las proporciones.
 - Ctrl+Z real y los menús `ECLIPSE/Mailak/…`.
+
+## Pendiente para la versión ejecutable del profesor
+
+- **Build Profiles:** añadir las tres escenas (`ProjectSettings`, necesita autorización). Sin ello, la misión siguiente no carga.
+- **Jugador:** el explorador solo existe en Editor o `DEVELOPMENT_BUILD`. Una build normal arranca **sin jugador**: hay que compilar como Development Build o tener el jugador definitivo.
+- **Final de M3:** solo muestra un aviso; no hay pantalla final ni forma de salir del juego (tampoco menú ni pausa).
+- **Probar la build:** nada de esto se ha ejecutado fuera del Editor.
 
 ## Decisiones para Ion
 

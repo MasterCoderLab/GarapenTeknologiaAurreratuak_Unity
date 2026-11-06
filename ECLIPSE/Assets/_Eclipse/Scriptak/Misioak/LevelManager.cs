@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Eclipse.Hud;
+using Eclipse.Inbentarioak;
 using Eclipse.Jokoa;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -12,7 +14,7 @@ namespace Eclipse.Misioak
 {
     /// <summary>
     /// Sektore bakoitzeko bat: misioaren hasiera, helburuak, blokeoak eta irteera. Jokalaria Spawn_Jokalaria puntuan sortzen du.
-    /// Oraingoz esploratzailea erabiltzen du eta HUD behin-behinekoa marrazten du.
+    /// Oraingoz esploratzailea erabiltzen du. HUD-a HudKudeatzailea da; OnGUI zaharra hark huts egiten badu bakarrik marrazten da.
     /// </summary>
     public sealed class LevelManager : MonoBehaviour
     {
@@ -42,6 +44,21 @@ namespace Eclipse.Misioak
 
         public bool MisioaAmaituta => _amaierakoa;
 
+        public Vector3 SpawnPuntua => _spawn != null ? _spawn.position : transform.position;
+
+        public int Bildumak => _bildumak;
+
+        public int BildumakGuztira => _bildumakGuztira;
+
+        /// <summary>Oraingo oharra, edo null iraungi bada.</summary>
+        public string UnekoOharra => Time.time < _oharraAmaiera ? _oharra : null;
+
+        /// <summary>HUD berria martxan dago: OnGUI zaharrak ez du marrazten.</summary>
+        public bool HudAktibo { get; set; }
+
+        /// <summary>Mapa edo inbentarioa irekita: terminalek ez dute E tekla irakurtzen.</summary>
+        public bool InterfazeaIrekita { get; set; }
+
         private void Awake()
         {
             _logika = new MisioLogika(_faseak.Select(fasea => new MisioFasea(fasea.Deskribapena, fasea.Helburuak)));
@@ -51,6 +68,7 @@ namespace Eclipse.Misioak
         private void Start()
         {
             JokalariaSortu();
+            HudaSortu();
             GameEvents.JakinaraziSektoreaHasi(_sektorea);
             Debug.Log($"ECL_MISIOA_HASI {_misioIzena}");
         }
@@ -73,9 +91,10 @@ namespace Eclipse.Misioak
             return emaitza;
         }
 
-        public void BildumaLortu()
+        public void BildumaLortu(string id)
         {
             _bildumak++;
+            GameManager.Saioa.BildumaErregistratu($"{SceneManager.GetActiveScene().name}/{id}");
             OharraErakutsi($"Datu-nukleoa: {_bildumak} / {_bildumakGuztira}");
         }
 
@@ -97,6 +116,21 @@ namespace Eclipse.Misioak
             Debug.Log($"ECL_MISIOA_OK {_misioIzena}");
             GameEvents.JakinaraziSektoreaAmaitu(_sektorea);
             HurrengoaKargatu();
+        }
+
+        /// <summary>HUD-ak huts egiten badu ere misioak jarraitu behar du: orduan OnGUI zaharra geratzen da.</summary>
+        private void HudaSortu()
+        {
+            try
+            {
+                HudKudeatzailea.Sortu(this);
+                HudAktibo = true;
+            }
+            catch (Exception salbuespena)
+            {
+                Debug.LogError($"ECL_HUD_ERROR {salbuespena}");
+                HudAktibo = false;
+            }
         }
 
         private void JokalariaSortu()
@@ -149,7 +183,7 @@ namespace Eclipse.Misioak
 
         private void OnGUI()
         {
-            if (_logika == null)
+            if (_logika == null || HudAktibo)
             {
                 return;
             }

@@ -1,0 +1,68 @@
+# EszenaEraikitzailea: Mision03_Erreaktorea: HUD, mapa eta inbentarioa (Play, sarrera birtuala)
+
+- **Data:** 2026-11-06 11:45:36
+- **Eszena:** Assets/_Eclipse/Eszenak/Mision03_Erreaktorea.unity
+- **Sektorea:** Sektorea3
+
+## Emaitzak (60)
+
+- ONDO: LevelManager-ek HUD-a sortu du 
+- ONDO: Sarea erabilgarria 9625 nodo, 68026 alderdi, 31 gela, 1 blokeo, 475 ms
+- ONDO: Diagnostikoa hutsik 
+- ONDO: Hesi guztiek alderdiak mozten dituzte Din_Blokeoa_Pasilloa_AzkenBorroka_Irteera: 18
+- ONDO: Solairuak 2
+- ONDO: Helburu-testua logikatik dator Egonkortu erreaktorea hiru kontsoletatik
+- ONDO: Fasearen aurrerapena 1. fasea / 2   |   Helburuak: 0 / 3
+- ONDO: Datu-nukleoen kontagailua Datu-nukleoak: 0 / 4
+- ONDO: Irteera itxita hasieran IRTEERA ITXITA
+- ONDO: M: mapa ireki eta sarrera blokeatu modua Mapa
+- ONDO: Maparen ibilbideak puntuak ditu 8 puntu, 78 m
+- ONDO: Esc: mapa itxi modua Jokoa
+- ONDO: Tab: inbentarioa ireki modua Inbentarioa
+- ONDO: M inbentariotik: mapara pasatu modua Mapa
+- ONDO: M: mapa itxi modua Jokoa
+- ONDO: Tab birritan: itxita modua Jokoa
+- ONDO: 1 hutsik dagoen ranuran: ez du ezer hautatzen 
+- ONDO: Arma fikziorik ez 
+- ONDO: Jokalaria terminalaren trigger-ean 
+- ONDO: E abisua terminal aktiboan [E]  Beheko kontsola egonkortu
+- ONDO: Mapa irekita, E-k ez du helbururik betetzen 
+- ONDO: Beste faseko terminala: ez dago prest Larrialdi-protokoloa desaktibatu: oraindik ez dago prest
+- ONDO: Abisua desagertzen da irtetean 
+- ONDO: Datu-nukleoa sarean Din_Bilduma_01
+- ONDO: Datu-nukleoa bildu da 1 / 4
+- ONDO: HUD-ak kontagailua eguneratu du Datu-nukleoak: 1 / 4
+- ONDO: Saioak zenbatu du 1
+- ONDO: Bildutakoa hautaketatik kanpo 
+- ONDO: Terminal aktiboak bakarrik markatuta 3 terminal
+- ONDO: Irteera ez dago markatuta misioa amaitu arte 
+- ONDO: Pantaila ez dago beteta 3 markatzaile
+- ONDO: Bira osoan: pantailatik kanpo 0 0 kanpoan, 20 barruan, 88 ertzean geziarekin
+- ONDO: Bira osoan: barruan eta ertzean egon da 
+- ONDO: Kamera nagusia badago 
+- ONDO: Irteera sarean dago 
+- ONDO: Hesi itxiekin ez dago ibilbiderik irteerara 
+- ONDO: Hesiak irekita ibilbidea badago 156 m
+- ONDO: Ibilbidea: Hegoaldeko kontsola egonkortu 78 m, 8 puntu (153 nodotik)
+- ONDO: Ibilbidea terminalaren barruan amaitzen da: hegoa (78.20, 3.05, 34.00)
+- ONDO: E-k helburua bete du: hegoa 
+- ONDO: Betetako markatzailea desagertu da: hegoa 
+- ONDO: Ibilbidea: Iparreko kontsola egonkortu 12 m, 5 puntu (25 nodotik)
+- ONDO: Ibilbidea terminalaren barruan amaitzen da: iparra (78.20, 3.05, 40.97)
+- ONDO: E-k helburua bete du: iparra 
+- ONDO: Betetako markatzailea desagertu da: iparra 
+- ONDO: Ibilbidea: Beheko kontsola egonkortu 28 m, 11 puntu (48 nodotik)
+- ONDO: Ibilbidea terminalaren barruan amaitzen da: behea (77.23, 0.05, 28.13)
+- ONDO: E-k helburua bete du: behea 
+- ONDO: Betetako markatzailea desagertu da: behea 
+- ONDO: Ibilbidea: Larrialdi-protokoloa desaktibatu 77 m, 12 puntu (144 nodotik)
+- ONDO: Ibilbidea terminalaren barruan amaitzen da: protokoloa (29.03, 0.05, 65.20)
+- ONDO: E-k helburua bete du: protokoloa 
+- ONDO: Betetako markatzailea desagertu da: protokoloa 
+- ONDO: Misioa amaituta: irteera markatuta 
+- ONDO: Misioa amaituta: hesiak irekita 
+- ONDO: HUD: irteera irekita IRTEERA IREKITA
+- ONDO: Ibilbidea: Irteera 118 m, 9 puntu (232 nodotik)
+- ONDO: Tarte marraztuek ez dute ezer zeharkatzen 40 tarte, 0 talka 
+- ONDO: Terminal guztiak ibilbidez 4, 305 m
+- ONDO: Misioa amaitu da irteeran ibilbidearen barruan

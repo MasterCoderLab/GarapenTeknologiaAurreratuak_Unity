@@ -101,6 +101,24 @@ namespace Eclipse.Proba
         private float _pitch;
         private float _abiaduraY;
         private bool _hirugarrena;
+        private bool _sarreraBlokeatuta;
+
+        /// <summary>Interfaze bat irekita: ez mugitu, ez begiratu, kurtsorea askatu. Ixtean kurtsorea berriz hartzen da.</summary>
+        public bool SarreraBlokeatuta
+        {
+            get => _sarreraBlokeatuta;
+            set
+            {
+                if (_sarreraBlokeatuta != value)
+                {
+                    _sarreraBlokeatuta = value;
+                    KurtsoreaBlokeatu(!value);
+                }
+            }
+        }
+
+        /// <summary>HUD berriak bere kontrol-laguntza du: OnGUI lerroa ez marraztu.</summary>
+        public bool OnGuiEzkutatu { get; set; }
 
         public static void Sortu(Vector3 posizioa, Quaternion biraketa)
         {
@@ -174,6 +192,13 @@ namespace Eclipse.Proba
                 return;
             }
 
+            if (_sarreraBlokeatuta)
+            {
+                // Grabitatea bakarrik: jokalaria ez da airean geratzen.
+                Mugitu(null);
+                return;
+            }
+
             if (teklatua.escapeKey.wasPressedThisFrame)
             {
                 KurtsoreaBlokeatu(false);
@@ -222,6 +247,11 @@ namespace Eclipse.Proba
 
         private void OnGUI()
         {
+            if (OnGuiEzkutatu)
+            {
+                return;
+            }
+
             string kurtsorea = Cursor.lockState == CursorLockMode.Locked ? "Esc: kurtsorea askatu" : "Egin klik jokoan kurtsorea hartzeko";
             GUI.Label(new Rect(10f, 10f, 700f, 24f), $"WASD: mugitu  |  Shift: korrika  |  V: kamera ({(_hirugarrena ? "3." : "1.")} pertsona)  |  {kurtsorea}");
         }

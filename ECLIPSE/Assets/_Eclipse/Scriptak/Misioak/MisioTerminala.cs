@@ -17,9 +17,23 @@ namespace Eclipse.Misioak
         [SerializeField] private LevelManager _kudeatzailea;
         [SerializeField] private Light _adierazlea;
 
+        private Collider _barrukoa;
+        private BoxCollider _kaxa;
+
         public string Helburua => _helburua;
 
-        public bool JokalariaBarruan { get; private set; }
+        public string Izena => _izena;
+
+        /// <summary>
+        /// Kaxak ere gainjarri behar dira: CharacterController-a desaktibatzeak (adib. erorketa baten ondoren hasierara itzultzean)
+        /// ez du OnTriggerExit pizten, eta bestela urrutitik erabil liteke terminala.
+        /// </summary>
+        public bool JokalariaBarruan => _barrukoa != null && _barrukoa.enabled && _kaxa != null && _kaxa.bounds.Intersects(_barrukoa.bounds);
+
+        private void Awake()
+        {
+            _kaxa = GetComponent<BoxCollider>();
+        }
 
         private void OnEnable()
         {
@@ -39,7 +53,7 @@ namespace Eclipse.Misioak
         private void Update()
         {
             Keyboard teklatua = Keyboard.current;
-            if (JokalariaBarruan && teklatua != null && teklatua.eKey.wasPressedThisFrame)
+            if (JokalariaBarruan && teklatua != null && teklatua.eKey.wasPressedThisFrame && (_kudeatzailea == null || !_kudeatzailea.InterfazeaIrekita))
             {
                 Erabili();
             }
@@ -54,15 +68,20 @@ namespace Eclipse.Misioak
         {
             if (beste is CharacterController)
             {
-                JokalariaBarruan = true;
+                _barrukoa = beste;
             }
+        }
+
+        private void OnTriggerStay(Collider beste)
+        {
+            OnTriggerEnter(beste);
         }
 
         private void OnTriggerExit(Collider beste)
         {
             if (beste is CharacterController)
             {
-                JokalariaBarruan = false;
+                _barrukoa = null;
             }
         }
 
@@ -84,7 +103,7 @@ namespace Eclipse.Misioak
 
         private void OnGUI()
         {
-            if (!JokalariaBarruan || _kudeatzailea == null || _kudeatzailea.Logika == null || _kudeatzailea.Logika.BetetaDago(_helburua))
+            if (!JokalariaBarruan || _kudeatzailea == null || _kudeatzailea.HudAktibo || _kudeatzailea.Logika == null || _kudeatzailea.Logika.BetetaDago(_helburua))
             {
                 return;
             }
