@@ -466,6 +466,14 @@ namespace Eclipse.EditorTresnak
                     P("Irteera", "Container_Big", -1f, 0.9f),
                 },
                 Apaingarriak = ap.ToArray(),
+                KolisioAzkenak = new[]
+                {
+                    // Hirugarren sorgailuaren hodi bertikalak iparraldeko pasabidea zeharkatzen du (4,4-5,8 m): oztopoa da eta alboan 1,6 m libre geratzen dira.
+                    new MailaKolisio { Sala = "Sorgailuak", X = 14.1f, Y = 5.1f, Z = 12.5f, Tamaina = new Vector3(0.5f, 1.4f, 0.5f) },
+                    // Hegoaldeko eta iparraldeko pasabideak zeharkatzen dituen hodi etzana (6,025-6,375 m; pasabidea 4,6 m-ra): 1,425 m libre azpian.
+                    // Zutik (1,8 m) talka egiten du eta makurtuta (1,1 m) pasatzen da. Hodi hau ez da mugitu.
+                    new MailaKolisio { Sala = "Sorgailuak", X = 15.5f, Y = 6.2f, Z = 10.5f, Tamaina = new Vector3(0.35f, 0.35f, 18.75f) },
+                },
                 Kamerak = new[]
                 {
                     K("Sarbidea", 0.4f, 10.4f, 2.5f, 12.5f),

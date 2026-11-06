@@ -1,0 +1,74 @@
+# EszenaEraikitzailea: Mision01_Laborategia: HUD, mapa eta inbentarioa (Play, sarrera birtuala)
+
+- **Data:** 2026-11-06 12:47:40
+- **Eszena:** Assets/_Eclipse/Eszenak/Mision01_Laborategia.unity
+- **Sektorea:** Sektorea1
+
+## Emaitzak (66)
+
+- ONDO: LevelManager-ek HUD-a sortu du 
+- ONDO: Sarea erabilgarria 9743 nodo, 67613 alderdi, 40 gela, 1 blokeo, 393 ms
+- ONDO: Diagnostikoa hutsik 
+- ONDO: Hesi guztiek alderdiak mozten dituzte Din_Blokeoa_Pasilloa_Kontrola_J6: 28
+- ONDO: Solairuak 1
+- ONDO: Helburu-testua logikatik dator Lortu segurtasun-kodea zerbitzari-gelan
+- ONDO: Fasearen aurrerapena 1. fasea / 2   |   Helburuak: 0 / 1
+- ONDO: Datu-nukleoen kontagailua Datu-nukleoak: 0 / 4
+- ONDO: Irteera itxita hasieran IRTEERA ITXITA
+- ONDO: M: mapa ireki eta sarrera blokeatu modua Mapa
+- ONDO: Maparen ibilbideak puntuak ditu 14 puntu, 107 m
+- ONDO: Esc: mapa itxi modua Jokoa
+- ONDO: Tab: inbentarioa ireki modua Inbentarioa
+- ONDO: M inbentariotik: mapara pasatu modua Mapa
+- ONDO: M: mapa itxi modua Jokoa
+- ONDO: Tab birritan: itxita modua Jokoa
+- ONDO: 1 hutsik dagoen ranuran: ez du ezer hautatzen 
+- ONDO: Arma fikziorik ez 
+- ONDO: Jokalaria terminalaren trigger-ean 
+- ONDO: E abisua terminal aktiboan [E]  Segurtasun-kodea deskargatu
+- ONDO: Mapa irekita, E-k ez du helbururik betetzen 
+- ONDO: Beste faseko terminala: ez dago prest Energiarako sarbidea desblokeatu: oraindik ez dago prest
+- ONDO: Abisua desagertzen da irtetean 
+- ONDO: Datu-nukleoa sarean Din_Bilduma_02
+- ONDO: Datu-nukleoa bildu da 1 / 4
+- ONDO: HUD-ak kontagailua eguneratu du Datu-nukleoak: 1 / 4
+- ONDO: Saioak zenbatu du 1
+- ONDO: Bildutakoa hautaketatik kanpo 
+- ONDO: Terminal aktiboak bakarrik markatuta 1 terminal
+- ONDO: Irteera ez dago markatuta misioa amaitu arte 
+- ONDO: Pantaila ez dago beteta 2 markatzaile
+- ONDO: Bira osoan: pantailatik kanpo 0 0 kanpoan, 14 barruan, 58 ertzean geziarekin
+- ONDO: Bira osoan: barruan eta ertzean egon da 
+- ONDO: Kamera nagusia badago 
+- ONDO: Irteera sarean dago 
+- ONDO: Hesi itxiekin ez dago ibilbiderik irteerara 
+- ONDO: Hesiak irekita ibilbidea badago 179 m
+- ONDO: Zuriunea: jauzia 1.00 m
+- ONDO: Jauzia: lurrera itzuli da y 0.05
+- ONDO: Airean ez dago bigarren jauzirik 1.00 m
+- ONDO: Ctrl: makurtu altuera 1.10
+- ONDO: Ctrl: begiak behera 
+- ONDO: Makurtuta ez dago jauzirik 0.00 m
+- ONDO: Makurtuta motelago 1.50 m/s
+- ONDO: Makurtuta ez dago korrikarik 1.50 m/s
+- ONDO: Ctrl askatuta: zutik altuera 1.80
+- ONDO: Ibilbidea: Segurtasun-kodea deskargatu 107 m, 14 puntu (206 nodotik)
+- ONDO: Ibilbidea terminalaren barruan amaitzen da: kodea (76.03, 0.05, 46.70)
+- ONDO: E-k helburua bete du: kodea 
+- ONDO: Betetako markatzailea desagertu da: kodea 
+- ONDO: Ibilbidea: Energiarako sarbidea desblokeatu 65 m, 16 puntu (121 nodotik)
+- ONDO: Ibilbidea terminalaren barruan amaitzen da: segurtasuna (62.95, 0.05, 102.20)
+- ONDO: E-k helburua bete du: segurtasuna 
+- ONDO: Betetako markatzailea desagertu da: segurtasuna 
+- ONDO: Misioa amaituta: irteera markatuta 
+- ONDO: Misioa amaituta: hesiak irekita 
+- ONDO: HUD: irteera irekita IRTEERA IREKITA
+- ONDO: Ibilbidea: Irteera 43 m, 11 puntu (78 nodotik)
+- ONDO: Tarte marraztuek ez dute ezer zeharkatzen 38 tarte, 0 talka 
+- ONDO: Terminal guztiak ibilbidez 2, 207 m
+- ONDO: Misioa amaitu da irteeran ibilbidearen barruan
+- ONDO: Hurrengo eszena kargatu da Mision02_Energia
+- ONDO: HUD berria sortu da hurrengo misioan 
+- ONDO: Datu-nukleoek iraun dute misio-aldaketan 1
+- ONDO: GameManager bakarra 
+- ONDO: Mapa irekita ez dago hasieran 

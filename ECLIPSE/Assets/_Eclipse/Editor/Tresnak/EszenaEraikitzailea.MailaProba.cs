@@ -18,7 +18,8 @@ namespace Eclipse.EditorTresnak
     {
         private const float UholdeUrratsa = 0.5f;
         private const float KapsulaErradioa = 0.3f;
-        private const float KapsulaAltuera = 1.8f;
+        private const float MakurAltuera = 1.1f;
+        private const float MakurIkuspegia = 1.5f;
         private const float MailaIgoera = 0.3f;
         private const int UholdeGehienez = 600000;
         private const int UholdeAzpiurratsak = 5;
@@ -47,16 +48,31 @@ namespace Eclipse.EditorTresnak
 
         private static bool KapsulaLibre(Vector3 oinak)
         {
+            // Jokalaria makur daiteke: oztopo baxuen azpitik pasatzen dena eskuragarri dago.
             // Oinen tartea (0,3 m) libre: CharacterController-ak maila hori igotzen du, eta mailadietan hurrengo mailak ez du trabatzen.
             // Kapsularen behealdea biribila da eta oztopo baxuetara gehiegi hurbilduko litzateke: xafla laua gehitzen da oinen mailan.
             return !Physics.CheckCapsule(
                     oinak + Vector3.up * (MailaIgoera + KapsulaErradioa + 0.02f),
-                    oinak + Vector3.up * (KapsulaAltuera - KapsulaErradioa + 0.05f),
+                    oinak + Vector3.up * (MakurAltuera - KapsulaErradioa + 0.05f),
                     KapsulaErradioa, Physics.DefaultRaycastLayers, QueryTriggerInteraction.Ignore)
                 && !Physics.CheckBox(
                     oinak + Vector3.up * (MailaIgoera + 0.06f),
                     new Vector3(0.3f, 0.04f, 0.3f),
                     Quaternion.identity, Physics.DefaultRaycastLayers, QueryTriggerInteraction.Ignore);
+        }
+
+        /// <summary>Aurrean zutik kabitzen ez bada, robotak makurtu behar du. Mailadietan ere makurtzen da batzuetan: ez du ibilbidea aldatzen.</summary>
+        internal static bool RobotakMakurtuBehar(Vector3 oinak, Vector3 norabidea)
+        {
+            for (float d = 0f; d <= MakurIkuspegia; d += 0.25f)
+            {
+                if (!Proba.EsploratzaileKontrola.ZutikLibre(oinak + norabidea * d))
+                {
+                    return true;
+                }
+            }
+
+            return false;
         }
 
         /// <summary>Jokalariak hasieratik irits daitekeen guztia: 0,5 m-ko sarea, 0,3 m-ko maila igo, erortzeak onartuta (norabide bakarrean).</summary>
@@ -615,6 +631,7 @@ namespace Eclipse.EditorTresnak
             private const float Geldirik = 6f;
 
             private CharacterController _kontrolagailua;
+            private Proba.EsploratzaileKontrola _esploratzailea;
             private LevelManager _kudeatzailea;
             private List<RobotZatia> _zatiak;
             private int _zatia;
@@ -632,6 +649,7 @@ namespace Eclipse.EditorTresnak
             public void Hasi(List<RobotZatia> zatiak, LevelManager kudeatzailea)
             {
                 _kontrolagailua = GetComponent<CharacterController>();
+                _esploratzailea = GetComponent<Proba.EsploratzaileKontrola>();
                 _kudeatzailea = kudeatzailea;
                 _zatiak = zatiak;
                 _aurrerapena = Time.time;
@@ -690,6 +708,7 @@ namespace Eclipse.EditorTresnak
                     return;
                 }
 
+                _esploratzailea.MakurtuEzarri(RobotakMakurtuBehar(transform.position, alde.normalized));
                 Vector3 aurretik = transform.position;
                 Vector3 mugimendua = alde.normalized * Mathf.Min(Abiadura * Time.deltaTime, distantzia) + Vector3.down * (9.8f * Time.deltaTime);
                 _kontrolagailua.Move(mugimendua);

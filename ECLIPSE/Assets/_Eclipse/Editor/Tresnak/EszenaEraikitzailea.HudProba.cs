@@ -47,6 +47,38 @@ namespace Eclipse.EditorTresnak
             }
         }
 
+        /// <summary>
+        /// Mision02_Energia-n hodien bi kolisioak gehitu, kontrol zehatzarekin: aurrebistak 2 aldaketa bakarrik aurkitu behar ditu,
+        /// bestela ez da ezer aplikatzen ez gordetzen. Kolisioek ez dute renderer-ik: ez dute argiztapena ukitzen.
+        /// </summary>
+        public static void BatchM2HodiKolisioak()
+        {
+            const int Espero = 2;
+            int kodea = 1;
+            try
+            {
+                MailaDef d = Mision02();
+                EditorSceneManager.OpenScene(d.Bidea, OpenSceneMode.Single);
+                if (!MailaExekutatu(d, false) || _azkenAldaketak != Espero)
+                {
+                    Debug.LogError($"{HudMarka}_ERROR Aurrebista: {_azkenAldaketak} aldaketa, {Espero} espero ziren. Ez da ezer aplikatu.");
+                }
+                else if (MailaExekutatu(d, true) && EditorSceneManager.SaveScene(SceneManager.GetActiveScene()))
+                {
+                    EditorSceneManager.OpenScene(d.Bidea, OpenSceneMode.Single);
+                    bool bigarrena = MailaExekutatu(d, false);
+                    Debug.Log($"{HudMarka}_{(bigarrena && _azkenAldaketak == 0 ? "OK" : "ERROR")} M2 kolisioak: aplikatuta; bigarren aurrebista {_azkenAldaketak} aldaketa.");
+                    kodea = bigarrena && _azkenAldaketak == 0 ? 0 : 1;
+                }
+            }
+            catch (Exception salbuespena)
+            {
+                Debug.LogError($"{HudMarka}_ERROR {salbuespena}");
+            }
+
+            EditorApplication.Exit(kodea);
+        }
+
         /// <summary>Jokalariaren scriptak konpilatu, build-ik egin gabe: UNITY_EDITOR eta DEVELOPMENT_BUILD gabe ere konpilatzen dela egiaztatzeko.</summary>
         public static void BatchJokalariKonpilazioa()
         {
@@ -226,6 +258,12 @@ namespace Eclipse.EditorTresnak
                 yield return BildumaProbatu();
                 yield return MarkatzaileakProbatu();
                 IrteeraBlokeoaProbatu();
+                yield return MugimenduaProbatu();
+                if (_maila.Izena == "Mision02_Energia")
+                {
+                    yield return HodiakProbatu();
+                }
+
                 yield return Robota();
             }
 
@@ -398,6 +436,154 @@ namespace Eclipse.EditorTresnak
                 Oharra("Kamera nagusia badago", kamera != null);
             }
 
+            /// <summary>Batch-ean kurtsorea ezin da blokeatu: osagaia geldituta, Mugitu benetako teklatu-egoerarekin deitzen da, fotograma bakoitzean behin.</summary>
+            private IEnumerator Ibili(float segundoak, Action fotograma, params Key[] teklak)
+            {
+                System.Reflection.MethodInfo mugitu = typeof(EsploratzaileKontrola).GetMethod("Mugitu", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic);
+                Teklak(teklak);
+                yield return null;
+                float amaiera = Time.realtimeSinceStartup + segundoak;
+                while (Time.realtimeSinceStartup < amaiera)
+                {
+                    mugitu.Invoke(_kontrola, new object[] { _teklatua });
+                    fotograma?.Invoke();
+                    yield return null;
+                }
+
+                Teklak();
+                yield return null;
+            }
+
+            private float LibreYaw(Vector3 oinak, float luzera)
+            {
+                for (float yaw = 0f; yaw < 360f; yaw += 15f)
+                {
+                    Vector3 norabidea = Quaternion.Euler(0f, yaw, 0f) * Vector3.forward;
+                    if (!Physics.CapsuleCast(oinak + Vector3.up * 0.65f, oinak + Vector3.up * 1.5f, 0.32f, norabidea, luzera, Physics.DefaultRaycastLayers, QueryTriggerInteraction.Ignore))
+                    {
+                        return yaw;
+                    }
+                }
+
+                return 0f;
+            }
+
+            private IEnumerator MugimenduaProbatu()
+            {
+                _kontrola.enabled = false;
+                Vector3 hasiera = _cc.transform.position;
+                float yaw = LibreYaw(hasiera, 6f);
+                yield return Kokatu(hasiera, yaw);
+                float y0 = _cc.transform.position.y;
+                float gailurra = y0;
+                void Gailurra() => gailurra = Mathf.Max(gailurra, _cc.transform.position.y);
+
+                yield return Ibili(1.1f, Gailurra, Key.Space);
+                Oharra("Zuriunea: jauzia", gailurra - y0 > 0.8f && gailurra - y0 < 1.15f, $"{gailurra - y0:0.00} m");
+                Oharra("Jauzia: lurrera itzuli da", _cc.isGrounded && Mathf.Abs(_cc.transform.position.y - y0) < 0.1f, $"y {_cc.transform.position.y:0.00}");
+
+                // Airean bigarren aldiz sakatuta: ez du berriro jauzi egiten.
+                gailurra = y0;
+                yield return Ibili(0.15f, Gailurra, Key.Space);
+                yield return Ibili(0.9f, Gailurra, Key.Space);
+                Oharra("Airean ez dago bigarren jauzirik", gailurra - y0 < 1.15f, $"{gailurra - y0:0.00} m");
+
+                yield return Ibili(0.5f, null, Key.LeftCtrl);
+                Oharra("Ctrl: makurtu", Mathf.Abs(_kontrola.UnekoAltuera - 1.1f) < 0.01f && Mathf.Abs(_cc.height - 1.1f) < 0.01f, $"altuera {_cc.height:0.00}");
+                Oharra("Ctrl: begiak behera", Mathf.Abs(_cc.transform.Find("Burua").localPosition.y - 0.95f) < 0.01f);
+
+                gailurra = y0;
+                yield return Ibili(0.6f, Gailurra, Key.LeftCtrl, Key.Space);
+                Oharra("Makurtuta ez dago jauzirik", gailurra - y0 < 0.05f, $"{gailurra - y0:0.00} m");
+
+                yield return Kokatu(hasiera, yaw);
+                Vector3 a = _cc.transform.position;
+                float t0 = Time.realtimeSinceStartup;
+                yield return Ibili(1f, null, Key.LeftCtrl, Key.W);
+                float abiadura = Vector3.Distance(a, _cc.transform.position) / (Time.realtimeSinceStartup - t0);
+                Oharra("Makurtuta motelago", abiadura > 1.1f && abiadura < 1.6f, $"{abiadura:0.00} m/s");
+
+                yield return Kokatu(hasiera, yaw);
+                a = _cc.transform.position;
+                t0 = Time.realtimeSinceStartup;
+                yield return Ibili(1f, null, Key.LeftCtrl, Key.LeftShift, Key.W);
+                abiadura = Vector3.Distance(a, _cc.transform.position) / (Time.realtimeSinceStartup - t0);
+                Oharra("Makurtuta ez dago korrikarik", abiadura < 1.6f, $"{abiadura:0.00} m/s");
+
+                yield return Ibili(0.5f, null);
+                Oharra("Ctrl askatuta: zutik", Mathf.Abs(_cc.height - 1.8f) < 0.01f, $"altuera {_cc.height:0.00}");
+                yield return Kokatu(hasiera);
+                _kontrola.enabled = true;
+            }
+
+            /// <summary>Hodien benetako kolisioak, M2-ko neurriekin: pasabidea 4,6 m-ra, hodia 58,125 m-ko X-an eta bertikala (52,875; 46,875).</summary>
+            private IEnumerator HodiakProbatu()
+            {
+                const float Pasabidea = 4.65f;
+                _kontrola.enabled = false;
+                Vector3 hasiera = _cc.transform.position;
+
+                // Hegoaldeko pasabidea, mailaditik ekialdera.
+                yield return Kokatu(new Vector3(57.45f, Pasabidea, 31.2f), 90f);
+                yield return Ibili(1.2f, null, Key.W);
+                float x = _cc.transform.position.x;
+                Oharra("Hegoaldea: zutik, __005 hodiak gelditzen du", x < 57.8f && x > 57.4f, $"x {x:0.00}");
+                yield return Ibili(2f, null, Key.LeftCtrl, Key.W);
+                x = _cc.transform.position.x;
+                Oharra("Hegoaldea: makurtuta, azpitik pasatzen da", x > 58.6f, $"x {x:0.00}");
+                yield return Ibili(0.5f, null);
+                Oharra("Hegoaldea: pasatu ondoren zutik", Mathf.Abs(_cc.height - 1.8f) < 0.01f, $"altuera {_cc.height:0.00}");
+
+                // Hodiaren azpian Ctrl askatuta: ez da zutitzen, eta ez du hodia zeharkatzen.
+                yield return Ibili(0.5f, null, Key.LeftCtrl);
+                yield return Kokatu(new Vector3(58.125f, Pasabidea, 31.2f), 90f);
+                yield return Ibili(0.6f, null);
+                Oharra("Azpian Ctrl askatuta: makurtuta jarraitzen du", _cc.height < 1.15f, $"altuera {_cc.height:0.00}");
+                yield return Ibili(0.6f, null, Key.Space);
+                Oharra("Azpian: jauzi ezin da", _cc.transform.position.y < Pasabidea + 0.1f, $"y {_cc.transform.position.y:0.00}");
+                yield return Ibili(1.2f, null, Key.W);
+                x = _cc.transform.position.x;
+                yield return Ibili(0.5f, null);
+                Oharra("Azpitik irtetean zutitzen da", x > 58.5f && Mathf.Abs(_cc.height - 1.8f) < 0.01f, $"x {x:0.00}, altuera {_cc.height:0.00}");
+
+                // Iparraldeko pasabidea, ekialdetik mendebaldera.
+                yield return Kokatu(new Vector3(59.5f, Pasabidea, 47.55f), 270f);
+                yield return Ibili(1.2f, null, Key.W);
+                x = _cc.transform.position.x;
+                Oharra("Iparraldea: zutik, __005 hodiak gelditzen du", x > 58.45f, $"x {x:0.00}");
+                yield return Ibili(2f, null, Key.LeftCtrl, Key.W);
+                x = _cc.transform.position.x;
+                Oharra("Iparraldea: makurtuta, azpitik pasatzen da", x < 57.7f, $"x {x:0.00}");
+                yield return Ibili(0.5f, null);
+
+                // __002 hodi bertikala: talka, eta alboan pasabidea libre.
+                yield return Kokatu(new Vector3(54.5f, Pasabidea, 46.875f), 270f);
+                yield return Ibili(1.2f, null, Key.W);
+                x = _cc.transform.position.x;
+                Oharra("__002 hodi bertikalak gelditzen du", x > 53.2f, $"x {x:0.00}");
+                yield return Ibili(0.8f, null, Key.Space, Key.W);
+                x = _cc.transform.position.x;
+                Oharra("__002: jauzita ere ezin da gainetik pasa", x > 53.2f, $"x {x:0.00}");
+                yield return Kokatu(new Vector3(54.5f, Pasabidea, 47.9f), 270f);
+                yield return Ibili(1.5f, null, Key.W);
+                x = _cc.transform.position.x;
+                // Hodia 52,875-ean dago; aurrerago terminalaren kontsolak gelditzen du (50,44-an).
+                Oharra("__002: alboan zutik pasatzen da", x < 52.3f, $"x {x:0.00}");
+
+                // Ekialdeko pasabidea: goiko hodien azpitik zutik.
+                yield return Kokatu(new Vector3(66.3f, Pasabidea, 43.5f), 0f);
+                yield return Ibili(1.2f, null, Key.W);
+                float z = _cc.transform.position.z;
+                Oharra("__004 (2,13 m): zutik azpitik", z > 46f && _cc.height > 1.79f, $"z {z:0.00}");
+                yield return Kokatu(new Vector3(66.3f, Pasabidea, 35f), 0f);
+                yield return Ibili(1.2f, null, Key.W);
+                z = _cc.transform.position.z;
+                Oharra("Laranja __000 (1,75 m): zutik azpitik, kolisiorik gabe", z > 37.5f && _cc.height > 1.79f, $"z {z:0.00}");
+
+                yield return Kokatu(hasiera);
+                _kontrola.enabled = true;
+            }
+
             private void IrteeraBlokeoaProbatu()
             {
                 NabigazioDatuak datuak = _hud.Helburuak.Datuak;
@@ -436,7 +622,8 @@ namespace Eclipse.EditorTresnak
                     }
 
                     p.y = zorua.point.y;
-                    if (Physics.Linecast(aurrekoa + Vector3.up, p + Vector3.up, out RaycastHit jo, Physics.DefaultRaycastLayers, QueryTriggerInteraction.Ignore))
+                    // Makurtuta dagoen gorputzaren erdian: hodi baxuen azpitik pasatzen diren tarteak baliozkoak dira.
+                    if (Physics.Linecast(aurrekoa + Vector3.up * 0.6f, p + Vector3.up * 0.6f, out RaycastHit jo, Physics.DefaultRaycastLayers, QueryTriggerInteraction.Ignore))
                     {
                         return $"horma {p}: {jo.collider.name}";
                     }
@@ -466,6 +653,7 @@ namespace Eclipse.EditorTresnak
                 int terminalak = 0;
                 string aurrekoNagusia = null;
                 bool atzeraEginda = false;
+                bool makurAbisua = false;
 
                 while (true)
                 {
@@ -488,7 +676,25 @@ namespace Eclipse.EditorTresnak
                     aurrekoNagusia = nagusia.Id;
                     float bideLuzera = helburuak.BideLuzera;
                     sarea.Sinplifikatu(helburuak.Bidea, helburuak.BlokeoItxiak, puntuak);
-                    Oharra($"Ibilbidea: {nagusia.Izena}", puntuak.Count >= 1, $"{bideLuzera:0} m, {puntuak.Count} puntu ({helburuak.Bidea.Count} nodotik)");
+                    Oharra($"Ibilbidea: {nagusia.Izena}", puntuak.Count >= 1, $"{bideLuzera:0} m, {puntuak.Count} puntu ({helburuak.Bidea.Count} nodotik){(helburuak.BideanMakurtu ? ", makurtuta" : string.Empty)}");
+                    if (helburuak.BideanMakurtu)
+                    {
+                        var kausak = new List<string>();
+                        foreach (int n in helburuak.Bidea.Where(sarea.MakurtuBehar))
+                        {
+                            Vector3 p = sarea.Posizioa(n);
+                            Collider[] joak = Physics.OverlapCapsule(p + Vector3.up * 0.62f, p + Vector3.up * 1.55f, 0.3f, Physics.DefaultRaycastLayers, QueryTriggerInteraction.Ignore);
+                            string kausa = joak.Length > 0 ? $"{joak[0].transform.parent?.parent?.name}/{joak[0].name} {joak[0].bounds.center} {joak[0].bounds.size}" : "?";
+                            kausak.Add($"y={p.y:0.0} {kausa}");
+                        }
+
+                        Lerroak.Add($"OHARRA: makurtzeko nodoak ({kausak.Count}): {string.Join(" | ", kausak.Distinct().Take(8))}");
+                    }
+
+                    if (_maila.Izena == "Mision02_Energia" && nagusia.Id == "pasabidea")
+                    {
+                        Oharra("Maparen ibilbideak hodiaren azpitik pasatzen du", helburuak.BideanMakurtu);
+                    }
 
                     for (int i = 1; i < puntuak.Count; i++)
                     {
@@ -525,6 +731,13 @@ namespace Eclipse.EditorTresnak
                                 Oharra("Robota trabatuta ibilbide marraztuan", false, $"{_cc.transform.position} -> {puntua}");
                                 Amaitu();
                                 yield break;
+                            }
+
+                            _kontrola.MakurtuEzarri(RobotakMakurtuBehar(_cc.transform.position, alde.normalized));
+                            if (!makurAbisua && _hud.EAbisua != null && _hud.EAbisua.Contains("[Ctrl]"))
+                            {
+                                makurAbisua = true;
+                                yield return Argazkia("makurtu_abisua");
                             }
 
                             Vector3 aurretik = _cc.transform.position;
@@ -575,6 +788,11 @@ namespace Eclipse.EditorTresnak
                 }
 
                 bool irteeraIritsi = MisioaItxita;
+                if (_maila.Izena == "Mision02_Energia")
+                {
+                    Oharra("HUD-ak [Ctrl] abisua erakutsi du hodira iristean", makurAbisua);
+                }
+
                 Oharra("Tarte marraztuek ez dute ezer zeharkatzen", talkak == 0, $"{tarteak} tarte, {talkak} talka {lehenTalka}");
                 Oharra("Terminal guztiak ibilbidez", terminalak == _maila.Misioa.Terminalak.Length, $"{terminalak}, {ibilia:0} m");
 

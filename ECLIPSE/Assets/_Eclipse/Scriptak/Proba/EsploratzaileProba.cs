@@ -81,8 +81,12 @@ namespace Eclipse.Proba
     public sealed class EsploratzaileKontrola : MonoBehaviour
     {
         private const float Altuera = 1.8f;
+        private const float MakurAltuera = 1.1f;
+        private const float BegiTartea = 0.15f;
+        private const float AltueraAbiadura = 5f;
+        private const float MakurAbiadura = 1.5f;
+        private const float JauziAbiadura = 6.26f;
         private const float Erradioa = 0.3f;
-        private const float BegiAltuera = 1.65f;
         private const float Abiadura = 3f;
         private const float KorrikaAbiadura = 6f;
         private const float Grabitatea = -19.6f;
@@ -102,6 +106,8 @@ namespace Eclipse.Proba
         private float _abiaduraY;
         private bool _hirugarrena;
         private bool _sarreraBlokeatuta;
+        private bool _makurtuNahi;
+        private float _altuera = Altuera;
 
         /// <summary>Interfaze bat irekita: ez mugitu, ez begiratu, kurtsorea askatu. Ixtean kurtsorea berriz hartzen da.</summary>
         public bool SarreraBlokeatuta
@@ -115,6 +121,23 @@ namespace Eclipse.Proba
                     KurtsoreaBlokeatu(!value);
                 }
             }
+        }
+
+        public float UnekoAltuera => _altuera;
+
+        /// <summary>Makurtuta edo zutitzen: oraindik ezin da korrika egin ez jauzi.</summary>
+        public bool Makurtuta => _makurtuNahi || _altuera < Altuera;
+
+        /// <summary>Teklatutik kanpo makurtzeko (probak). Teklatua irakurtzen den fotograman, teklak agintzen du.</summary>
+        public void MakurtuEzarri(bool makurtu) => _makurtuNahi = makurtu;
+
+        /// <summary>Oin-posizio honetan zutik jar daiteke: makurtuta dagoen kapsularen gainean ez dago ezer.</summary>
+        public static bool ZutikLibre(Vector3 oinak)
+        {
+            return !Physics.CheckCapsule(
+                oinak + Vector3.up * (MakurAltuera - Erradioa),
+                oinak + Vector3.up * (Altuera - Erradioa + 0.05f),
+                Erradioa - 0.01f, Physics.DefaultRaycastLayers, QueryTriggerInteraction.Ignore);
         }
 
         /// <summary>HUD berriak bere kontrol-laguntza du: OnGUI lerroa ez marraztu.</summary>
@@ -166,7 +189,7 @@ namespace Eclipse.Proba
 
             _burua = new GameObject("Burua").transform;
             _burua.SetParent(transform, false);
-            _burua.localPosition = Vector3.up * BegiAltuera;
+            _burua.localPosition = Vector3.up * (Altuera - BegiTartea);
 
             _kamera = Camera.main;
             if (_kamera == null)
@@ -253,7 +276,7 @@ namespace Eclipse.Proba
             }
 
             string kurtsorea = Cursor.lockState == CursorLockMode.Locked ? "Esc: kurtsorea askatu" : "Egin klik jokoan kurtsorea hartzeko";
-            GUI.Label(new Rect(10f, 10f, 700f, 24f), $"WASD: mugitu  |  Shift: korrika  |  V: kamera ({(_hirugarrena ? "3." : "1.")} pertsona)  |  {kurtsorea}");
+            GUI.Label(new Rect(10f, 10f, 700f, 24f), $"WASD: mugitu  |  Shift: korrika  |  Ctrl: makurtu  |  Zuriunea: jauzi  |  V: kamera ({(_hirugarrena ? "3." : "1.")} pertsona)  |  {kurtsorea}");
         }
 
         private void Begiratu(Vector2 delta)
@@ -267,17 +290,35 @@ namespace Eclipse.Proba
         {
             var sarrera = Vector2.zero;
             bool korrika = false;
+            bool jauzi = false;
             if (teklatua != null)
             {
+                _makurtuNahi = teklatua.leftCtrlKey.isPressed;
+                jauzi = teklatua.spaceKey.wasPressedThisFrame;
                 sarrera.x = (teklatua.dKey.isPressed ? 1f : 0f) - (teklatua.aKey.isPressed ? 1f : 0f);
                 sarrera.y = (teklatua.wKey.isPressed ? 1f : 0f) - (teklatua.sKey.isPressed ? 1f : 0f);
                 korrika = teklatua.shiftKey.isPressed;
             }
 
+            AltueraEguneratu();
+            bool makurtuta = Makurtuta;
             Vector3 norabidea = Vector3.ClampMagnitude(transform.right * sarrera.x + transform.forward * sarrera.y, 1f);
-            _abiaduraY = _kontrolagailua.isGrounded ? -2f : _abiaduraY + Grabitatea * Time.deltaTime;
-            Vector3 abiadura = norabidea * (korrika ? KorrikaAbiadura : Abiadura) + Vector3.up * _abiaduraY;
-            _kontrolagailua.Move(abiadura * Time.deltaTime);
+            if (_kontrolagailua.isGrounded)
+            {
+                _abiaduraY = jauzi && !makurtuta ? JauziAbiadura : -2f;
+            }
+            else
+            {
+                _abiaduraY += Grabitatea * Time.deltaTime;
+            }
+
+            float lurAbiadura = makurtuta ? MakurAbiadura : korrika ? KorrikaAbiadura : Abiadura;
+            CollisionFlags talkak = _kontrolagailua.Move((norabidea * lurAbiadura + Vector3.up * _abiaduraY) * Time.deltaTime);
+            if ((talkak & CollisionFlags.Above) != 0 && _abiaduraY > 0f)
+            {
+                // Burua jo du: jauzia hor amaitzen da.
+                _abiaduraY = 0f;
+            }
 
             if (transform.position.y < ErorketaMuga)
             {
@@ -287,6 +328,23 @@ namespace Eclipse.Proba
                 _kontrolagailua.enabled = true;
                 _abiaduraY = 0f;
             }
+        }
+
+        /// <summary>Altuera pixkanaka aldatzen da, oinak lekuan direla. Gainean zerbait badago, ez da zutitzen, tekla askatuta ere.</summary>
+        private void AltueraEguneratu()
+        {
+            float helburua = _makurtuNahi || (_altuera < Altuera && !ZutikLibre(transform.position)) ? MakurAltuera : Altuera;
+            if (Mathf.Approximately(_altuera, helburua))
+            {
+                return;
+            }
+
+            _altuera = Mathf.MoveTowards(_altuera, helburua, AltueraAbiadura * Time.deltaTime);
+            _kontrolagailua.height = _altuera;
+            _kontrolagailua.center = Vector3.up * (_altuera * 0.5f);
+            _gorputza.transform.localPosition = Vector3.up * (_altuera * 0.5f);
+            _gorputza.transform.localScale = new Vector3(Erradioa * 2f, _altuera * 0.5f, Erradioa * 2f);
+            _burua.localPosition = Vector3.up * (_altuera - BegiTartea);
         }
 
         private void KameraModuaEzarri(bool hirugarrena)

@@ -24,6 +24,7 @@ namespace Eclipse.Hud
     {
         private const float TerminalAltuera = 1.4f;
         private const float HelburuErradioa = 3.5f;
+        private const float MakurAbisua = 3f;
         private const float JokalariErradioa = 3f;
         private const float BirkalkuluTartea = 1f;
         private const float HautaketaTartea = 0.2f;
@@ -65,6 +66,12 @@ namespace Eclipse.Hud
         public float BideLuzera { get; private set; }
 
         public IReadOnlyList<bool> BlokeoItxiak => _blokeoItxiak;
+
+        /// <summary>Ibilbideak nonbait makurtzea eskatzen du.</summary>
+        public bool BideanMakurtu { get; private set; }
+
+        /// <summary>Ibilbidearen makurtzeko gunea oso hurbil dago: abisua erakutsi.</summary>
+        public bool MakurtzekoGuneaHurbil { get; private set; }
 
         public Vector3 JokalariPosizioa => _jokalaria != null ? _jokalaria.position : Vector3.zero;
 
@@ -108,6 +115,20 @@ namespace Eclipse.Hud
             }
 
             Hautatuak = HelburuHautaketa.Hautatu(_kudeatzailea.Logika, _jokalaria.position, Hautagaiak());
+            MakurtzekoGuneaHurbil = false;
+            if (Bidea.Count > 0)
+            {
+                NabigazioSarea sarea = Datuak.Sarea;
+                foreach (int nodoa in Bidea)
+                {
+                    if (sarea.MakurtuBehar(nodoa) && Vector3.Distance(sarea.Posizioa(nodoa), _jokalaria.position) <= MakurAbisua)
+                    {
+                        MakurtzekoGuneaHurbil = true;
+                        break;
+                    }
+                }
+            }
+
             if (ibilbideaBehartu || Time.unscaledTime >= _hurrengoKalkulua)
             {
                 _hurrengoKalkulua = Time.unscaledTime + BirkalkuluTartea;
@@ -152,6 +173,7 @@ namespace Eclipse.Hud
             List<HelburuHautagaia> hautagaiak = Hautatuak.Where(h => h.Mota == HelburuMota.Terminala || h.Mota == HelburuMota.Irteera).ToList();
             Bidea.Clear();
             BideLuzera = 0f;
+            BideanMakurtu = false;
             Nagusia = hautagaiak.FirstOrDefault();
             Egoera = NagusiaDago ? BideEgoera.BiderikEz : BideEgoera.Ezezaguna;
             if (!NagusiaDago || !Datuak.Erabilgarria)
@@ -182,6 +204,7 @@ namespace Eclipse.Hud
                     Bidea.Clear();
                     Bidea.AddRange(_proba);
                     BideLuzera = luzera;
+                    BideanMakurtu = _proba.Any(sarea.MakurtuBehar);
                     Egoera = BideEgoera.Ondo;
                 }
             }

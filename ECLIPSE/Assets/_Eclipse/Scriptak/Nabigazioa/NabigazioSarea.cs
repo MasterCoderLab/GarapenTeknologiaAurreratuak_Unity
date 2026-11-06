@@ -26,13 +26,16 @@ namespace Eclipse.Nabigazioa
     /// <summary>
     /// Grafo nabigagarria, Unity-ren eszenatik kanpo: nodoak ibil daitezkeen sare-puntuak dira eta alderdiak norabidedunak
     /// (erorketa batek ez du itzulera ematen). A* bilaketak blokeo itxiak saihesten ditu; ibilbiderik ez badago, ez du bat asmatzen.
+    /// Makurtzea eskatzen duten nodoak garestiagoak dira: ibilbidea haietatik doa, beharrezkoa bada bakarrik.
     /// </summary>
     public sealed class NabigazioSarea
     {
+        private const float MakurKostua = 2f;
         private const float AlboTartea = 0.49f;
         private const float AlboAltuera = 0.6f;
 
         private readonly Vector3[] _nodoak;
+        private readonly bool[] _makurtu;
         private readonly int[] _hasierak;
         private readonly int[] _helmugak;
         private readonly float[] _kostuak;
@@ -45,7 +48,7 @@ namespace Eclipse.Nabigazioa
         private readonly List<(float F, int Nodoa)> _pila = new List<(float, int)>();
         private int _bilaketa;
 
-        public NabigazioSarea(float urratsa, IReadOnlyList<Vector3> nodoak, IReadOnlyList<SareAlderdia> alderdiak, int blokeoKopurua = 0)
+        public NabigazioSarea(float urratsa, IReadOnlyList<Vector3> nodoak, IReadOnlyList<SareAlderdia> alderdiak, int blokeoKopurua = 0, IReadOnlyList<bool> makurtuBehar = null)
         {
             if (urratsa <= 0f)
             {
@@ -55,9 +58,11 @@ namespace Eclipse.Nabigazioa
             Urratsa = urratsa;
             BlokeoKopurua = blokeoKopurua;
             _nodoak = new Vector3[nodoak.Count];
+            _makurtu = new bool[nodoak.Count];
             for (int i = 0; i < nodoak.Count; i++)
             {
                 _nodoak[i] = nodoak[i];
+                _makurtu[i] = makurtuBehar != null && makurtuBehar[i];
                 (int, int) gakoa = Gelaxka(nodoak[i]);
                 if (!_gelaxkak.TryGetValue(gakoa, out List<int> zerrenda))
                 {
@@ -89,7 +94,7 @@ namespace Eclipse.Nabigazioa
                 SareAlderdia alderdia = alderdiak[i];
                 int lekua = _hasierak[alderdia.Nondik] + idazteko[alderdia.Nondik]++;
                 _helmugak[lekua] = alderdia.Nora;
-                _kostuak[lekua] = Vector3.Distance(_nodoak[alderdia.Nondik], _nodoak[alderdia.Nora]);
+                _kostuak[lekua] = Vector3.Distance(_nodoak[alderdia.Nondik], _nodoak[alderdia.Nora]) * (_makurtu[alderdia.Nora] ? MakurKostua : 1f);
                 _blokeoak[lekua] = alderdia.Blokeoa;
             }
 
@@ -108,6 +113,9 @@ namespace Eclipse.Nabigazioa
         public int AlderdiKopurua => _helmugak.Length;
 
         public Vector3 Posizioa(int nodoa) => _nodoak[nodoa];
+
+        /// <summary>Nodo honetan ezin da zutik egon: makurtuta bakarrik pasatzen da.</summary>
+        public bool MakurtuBehar(int nodoa) => _makurtu[nodoa];
 
         /// <summary>Nodo hurbilena erradio horretan, edo -1. Altuera gehiago pisatzen du, solairuen artean nahastu ez dadin.</summary>
         public int Hurbilena(Vector3 puntua, float erradioa, float altueraPisua = 3f)
@@ -232,8 +240,16 @@ namespace Eclipse.Nabigazioa
             while (aingura < bidea.Count - 1)
             {
                 int azkena = aingura + 1;
-                for (int j = azkena + 1; j < bidea.Count && LerroaLibre(bidea[aingura], bidea[j], blokeoItxiak); j++)
+                bool makurtuBidean = _makurtu[bidea[azkena]];
+                for (int j = azkena + 1; j < bidea.Count; j++)
                 {
+                    // Atajo batek ez du makurtzea ekarri behar, jatorrizko bideak ere eskatzen ez badu.
+                    makurtuBidean |= _makurtu[bidea[j]];
+                    if (!LerroaLibre(bidea[aingura], bidea[j], blokeoItxiak, makurtuBidean))
+                    {
+                        break;
+                    }
+
                     azkena = j;
                 }
 
@@ -246,7 +262,7 @@ namespace Eclipse.Nabigazioa
         /// Zuzena bi nodoen artean, gelaxkaz gelaxka: pauso bakoitzak benetako alderdi ibilgarri bat behar du,
         /// eta lerroaren bi aldeetako gelaxkek ibilgarriak izan behar dute, oztopoak ez ukitzeko.
         /// </summary>
-        public bool LerroaLibre(int nondik, int nora, IReadOnlyList<bool> blokeoItxiak)
+        public bool LerroaLibre(int nondik, int nora, IReadOnlyList<bool> blokeoItxiak, bool makurtuOnartu = true)
         {
             Vector3 a = _nodoak[nondik];
             Vector3 b = _nodoak[nora];
@@ -270,7 +286,7 @@ namespace Eclipse.Nabigazioa
                 }
 
                 int hurrengoa = Auzokoa(uneko, gelaxka, blokeoItxiak);
-                if (hurrengoa < 0)
+                if (hurrengoa < 0 || (!makurtuOnartu && _makurtu[hurrengoa]))
                 {
                     return false;
                 }

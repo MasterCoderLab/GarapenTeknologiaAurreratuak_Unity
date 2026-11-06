@@ -136,6 +136,71 @@ namespace Eclipse.Tests
             Assert.That(sarea.Hurbilena(new Vector3(0, 3, 0), 1f), Is.EqualTo(-1));
         }
 
+        /// <summary>Bi bide 0-tik 3-ra: goikoa labur eta makurtuta (1), behekoa luzeago eta zutik (2).</summary>
+        private static NabigazioSarea MakurSarea(bool goikoaDago = true)
+        {
+            var nodoak = new List<Vector3>
+            {
+                new Vector3(0, 0, 0), new Vector3(2, 0, 1), new Vector3(2, 0, -2), new Vector3(4, 0, 0),
+            };
+            var alderdiak = new List<SareAlderdia> { new SareAlderdia(0, 2), new SareAlderdia(2, 3) };
+            if (goikoaDago)
+            {
+                alderdiak.Add(new SareAlderdia(0, 1));
+                alderdiak.Add(new SareAlderdia(1, 3));
+            }
+
+            return new NabigazioSarea(1f, nodoak, alderdiak, 0, new[] { false, true, false, false });
+        }
+
+        [Test]
+        public void Makurtu_ZutikekoBideaLehenesten_Da_KostuAgatik()
+        {
+            var bidea = new List<int>();
+            Assert.That(MakurSarea().BideaBilatu(0, 3, null, bidea), Is.True);
+            Assert.That(bidea, Is.EqualTo(new[] { 0, 2, 3 }), "bide laburragoa makurtuta dago eta garestiagoa da");
+        }
+
+        [Test]
+        public void Makurtu_BideBakarraBada_EzDaEzinezkoa()
+        {
+            var nodoak = new List<Vector3> { new Vector3(0, 0, 0), new Vector3(1, 0, 0), new Vector3(2, 0, 0) };
+            var sarea = new NabigazioSarea(1f, nodoak, new[] { new SareAlderdia(0, 1), new SareAlderdia(1, 2) }, 0, new[] { false, true, false });
+            var bidea = new List<int>();
+            Assert.That(sarea.BideaBilatu(0, 2, null, bidea), Is.True);
+            Assert.That(bidea.Any(sarea.MakurtuBehar), Is.True);
+            Assert.That(sarea.BideLuzera(bidea), Is.EqualTo(2f).Within(0.001f), "luzera metroetan da, ez kostuan");
+        }
+
+        [Test]
+        public void Makurtu_AtajoakEzDakar_BideakEskatzenEzBadu()
+        {
+            // Zuzena 1. gelaxkatik doa, makurtuta; zutikeko bideak inguratu egiten du.
+            var nodoak = new List<Vector3>
+            {
+                new Vector3(0, 0, 0), new Vector3(1, 0, 0), new Vector3(2, 0, 0),
+                new Vector3(0, 0, 1), new Vector3(1, 0, 1), new Vector3(2, 0, 1),
+                new Vector3(0, 0, -1), new Vector3(1, 0, -1), new Vector3(2, 0, -1),
+            };
+            var alderdiak = new List<SareAlderdia>();
+            for (int a = 0; a < nodoak.Count; a++)
+            {
+                for (int b = 0; b < nodoak.Count; b++)
+                {
+                    if (a != b && Vector3.Distance(nodoak[a], nodoak[b]) < 1.5f)
+                    {
+                        alderdiak.Add(new SareAlderdia(a, b));
+                    }
+                }
+            }
+
+            var makurtu = new bool[nodoak.Count];
+            makurtu[1] = true;
+            var sarea = new NabigazioSarea(1f, nodoak, alderdiak, 0, makurtu);
+            Assert.That(sarea.LerroaLibre(0, 2, null, false), Is.False);
+            Assert.That(sarea.LerroaLibre(0, 2, null), Is.True);
+        }
+
         [Test]
         public void IndizeBaliogabeak_EzDuteHutsEgiten()
         {

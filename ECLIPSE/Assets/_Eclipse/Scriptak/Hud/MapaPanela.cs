@@ -26,6 +26,7 @@ namespace Eclipse.Hud
         private static readonly Color32 GelaIbilgarria = new Color32(32, 70, 88, 255);
         private static readonly Color32 PasilloIbilgarria = new Color32(24, 52, 66, 255);
         private static readonly Color32 Ertza = new Color32(90, 205, 235, 255);
+        private static readonly Color32 MakurGunea = new Color32(150, 105, 30, 255);
 
         private readonly HudFabrika _f;
         private readonly HelburuKudeatzailea _helburuak;
@@ -282,7 +283,7 @@ namespace Eclipse.Hud
                     betetakoak.Add((Mathf.RoundToInt(p.x / NabigazioEraikitzailea.Urratsa), Mathf.RoundToInt(p.z / NabigazioEraikitzailea.Urratsa)));
                     int gela = _datuak.NodoGelak[n];
                     bool pasilloa = gela >= 0 && _datuak.Gelak[gela].Pasilloa;
-                    Laukia(p.x - Erdia, p.z - Erdia, p.x + Erdia, p.z + Erdia, pasilloa ? PasilloIbilgarria : GelaIbilgarria);
+                    Laukia(p.x - Erdia, p.z - Erdia, p.x + Erdia, p.z + Erdia, sarea.MakurtuBehar(n) ? MakurGunea : pasilloa ? PasilloIbilgarria : GelaIbilgarria);
                 }
 
                 // Ertzak: ibili ezin den gelaxka baten ondoan marra argia. Horrela hormak eta oztopoak irakurtzen dira.
@@ -474,6 +475,11 @@ namespace Eclipse.Hud
                 case BideEgoera.Ondo:
                     testua.Append($"Ibilbidea: {_helburuak.BideLuzera:0} m\n");
                     testua.Append(BidekoGelak());
+                    if (_helburuak.BideanMakurtu)
+                    {
+                        testua.Append('\n').Append(Nabarmendu("Ibilbidean makurtu behar da [Ctrl]", HudKoloreak.Anbarra));
+                    }
+
                     break;
                 case BideEgoera.BiderikEz:
                     testua.Append(Nabarmendu("Ez dago ibilbide ziurrik hemendik. Helburua mapan dago, baina ez da lerrorik marrazten.", HudKoloreak.Gorria));
@@ -520,22 +526,23 @@ namespace Eclipse.Hud
 
         private void LegendaSortu(RectTransform albokoa)
         {
-            (Sprite Ikonoa, Color Kolorea, string Testua)[] lerroak =
+            (Sprite Ikonoa, Color Kolorea, string Testua, float Altuera)[] lerroak =
             {
-                (_f.Gezia, HudKoloreak.Zuria, "Zu"),
-                (_f.Erronboa, HudKoloreak.Anbarra, "Helburu aktiboa"),
-                (_f.Karratua, HudKoloreak.Anbarra, "Ibilbide gomendatua"),
-                (_f.Eraztuna, HudKoloreak.Ziana, "Datu-nukleoa"),
-                (_f.Irteera, HudKoloreak.Zuria, "Irteera (gorria: itxita)"),
-                (_f.Gurutzea, HudKoloreak.Gorria, "Hesi itxia"),
-                (_f.Gezia, HudKoloreak.Grisa, "I: iparra"),
+                (_f.Gezia, HudKoloreak.Zuria, "Zu", 24f),
+                (_f.Erronboa, HudKoloreak.Anbarra, "Helburu aktiboa", 24f),
+                (_f.Karratua, HudKoloreak.Anbarra, "Ibilbide gomendatua", 6f),
+                (_f.Karratua, MakurGunea, "Makurtzeko gunea", 18f),
+                (_f.Eraztuna, HudKoloreak.Ziana, "Datu-nukleoa", 24f),
+                (_f.Irteera, HudKoloreak.Zuria, "Irteera (gorria: itxita)", 24f),
+                (_f.Gurutzea, HudKoloreak.Gorria, "Hesi itxia", 24f),
+                (_f.Gezia, HudKoloreak.Grisa, "I: iparra", 24f),
             };
 
             for (int i = 0; i < lerroak.Length; i++)
             {
-                float y = 330f - i * 38f;
+                float y = 360f - i * 38f;
                 Image ikonoa = _f.Irudia("Legenda", albokoa, lerroak[i].Ikonoa, lerroak[i].Kolorea);
-                HudFabrika.Kokatu(ikonoa.rectTransform, Vector2.zero, new Vector2(0.5f, 0.5f), new Vector2(44f, y), new Vector2(24f, lerroak[i].Ikonoa == _f.Karratua ? 6f : 24f));
+                HudFabrika.Kokatu(ikonoa.rectTransform, Vector2.zero, new Vector2(0.5f, 0.5f), new Vector2(44f, y), new Vector2(24f, lerroak[i].Altuera));
                 Text testua = _f.Testua("LegendaTestua", albokoa, 22, HudKoloreak.Grisa, TextAnchor.MiddleLeft);
                 testua.text = lerroak[i].Testua;
                 HudFabrika.Kokatu(testua.rectTransform, Vector2.zero, new Vector2(0f, 0.5f), new Vector2(70f, y), new Vector2(410f, 32f));

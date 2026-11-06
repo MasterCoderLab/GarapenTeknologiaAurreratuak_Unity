@@ -4,13 +4,22 @@
 
 ## Ahora
 
-- **Fase:** HUD, navegación, mapa e inventario base sobre las tres misiones (`Mision01_Laborategia`, `Mision02_Energia`, `Mision03_Erreaktorea`)
-- **Rama:** `feature/eclipse-hud`, desde `4454050c`, **sin commits**
+- **Fase:** agacharse, salto y colisiones de tuberías en M2 (sobre HUD, mapa e inventario ya publicados)
+- **Rama:** `feature/eclipse-hud`, sobre `c4e99915`; estos cambios están **sin commit**
 - **Kits:** `Sci Fi Modular Pack` (MagixBox) y `Sci-Fi Old rusty props PBR` (KMProd), en `Assets/ThirdParty/`, convertidos a URP
-- **Siguiente paso:** Ion prueba el HUD en Play (lista en "Para Ion en Play") y decide si publica. Pendiente de decisión: añadir las escenas a Build Profiles (`ProjectSettings`, requiere autorización).
+- **Siguiente paso:** Ion prueba agacharse y saltar en Play con Vulkan, y decide si publica. Pendiente de decisión: añadir las escenas a Build Profiles (`ProjectSettings`, requiere autorización).
 
 ## Hecho
 
+- 06/11 — **Agacharse, salto y colisiones de tuberías en M2** (decisión de Ion: mantener `PF_Hodia_Grisa__005` donde está y pasar agachado, en vez de subirla).
+  - **Movimiento (común a las tres misiones, `EsploratzaileProba.cs`):** Ctrl izquierdo mientras se mantiene: altura 1,10 m, 1,5 m/s, sin correr ni saltar; no se levanta si hay algo encima. Espacio: salto de 1,00 m, solo desde el suelo; el impulso se corta si choca la cabeza.
+  - **Colliders añadidos en `Mision02_Energia` (`KolisioAzkenak` en `MailaDatuak`, para que sobrevivan a una regeneración):**
+    - `Geometria/Sorgailuak/Kolisioak/Kolisioa__130`: `BoxCollider` 0,5 × 1,4 × 0,5 m en (52,875; 5,1; 46,875), sobre `PF_Hodia_Grisa__002` (vertical, atraviesa la pasarela norte; quedan 1,6 m libres al lado).
+    - `Geometria/Sorgailuak/Kolisioak/Kolisioa__131`: `BoxCollider` 0,35 × 0,35 × 18,75 m en (58,125; 6,2; 39,375), sobre `PF_Hodia_Grisa__005` (pasarelas sur y norte; 1,425 m libres debajo).
+    - Sin collider, a propósito: `__004` (2,13 m sobre la pasarela, se pasa de pie) y `PF_Hodia_Laranja__000` (1,75 m: roza la cabeza 5 cm; con collider obligaría a agacharse por 5 cm).
+  - **Escena:** se aplicó con `BatchM2HodiKolisioak`, que solo guarda si la vista previa da exactamente 2 cambios. Diff de `Mision02_Energia.unity`: 108 líneas añadidas, 0 eliminadas. Segunda vista previa: 0 cambios. Copia previa en `~/ECLIPSE_babeskopia/m2_kolisioak_*`. Lightmaps, LightingData, oclusión, Reflection Probes, materiales y prefabs: hash idéntico. M1 y M3: hash idéntico.
+  - **Grafo y mapa:** la inundación usa la altura agachado y marca los nodos donde no se cabe de pie (M2 79, M1 18, M3 2), con coste doble para que solo se elijan si hacen falta. Se ven en ámbar en el mapa. El HUD avisa `[Ctrl] Makurtu azpitik pasatzeko` a menos de 3 m y añade `[Ctrl] Makurtu` y `[Zuriunea] Jauzi` a los controles.
+  - **Comprobado (batch, no validación de Ion):** EditMode 45/45. HUD y colisiones en Play: M1 66/66, M2 89/89, M3 69/69. Con colliders reales en M2: de pie choca con `__005` en ambas pasarelas (se detiene en x 57,60 y 58,65), agachado pasa; bajo la tubería, soltar Ctrl no levanta ni permite saltar; `__002` detiene también saltando y se rodea de pie; `__004` y la naranja se pasan de pie. Robot por las líneas del mapa en M2: 393 m, 4 terminales, salida y carga de M3; 58 tramos, 0 cruzan pared. Robot original: M1 211 m, M2 395 m, M3 311 m. Interacción: M2 y M3 correctas; M1 solo falla en las 3 vistas conocidas de `PF_DatuNukleoa`. Informe final de M2: `docs/qa/tresnak/EszenaEraikitzailea_2026-11-06_130302.md`.
 - 06/11 — **HUD, marcadores, mapa e inventario base (fases A–E), sin tocar escenas.** Todo se crea en Play desde `LevelManager.Start`; si el HUD falla, sigue el OnGUI anterior (esa vía de respaldo existe, pero no se ha probado).
   - **A, HUD:** `Scriptak/Hud/HudKudeatzailea.cs` y `HudFabrika.cs`, uGUI con `Text` y letra `LegacyRuntime`, porque TMP pide importar Essential Resources (mejora pendiente). Misión, objetivo, fase y barra, ruta, datu-nukleoak, salida, aviso de E, avisos y controles. Reutiliza `MisioLogika` y `LevelManager`; no duplica objetivos.
   - **B, marcadores:** `HudMarkatzaileak.cs` y `HelburuHautaketa.cs` (puros y con tests). Solo terminales de la fase actual, salida al terminar, 2 datu-nukleoak a menos de 25 m y barreras cerradas a menos de 15 m. Fuera de pantalla van al borde con flecha.
@@ -130,6 +139,8 @@
 
 ## Para Ion en Play (no se puede automatizar en batch)
 
+- **Agacharse y saltar:** sensación de altura, velocidad y cámara al agacharse (1.ª y 3.ª persona) y con el ratón y las teclas reales. En batch se invoca `Mugitu` directamente y el robot fuerza el agachado.
+- **Ctrl en el Editor:** comprobar si Ctrl+W, Ctrl+S, etc. activan atajos del Editor durante Play. En una build no debería afectar.
 - **HUD:** con el mapa o el inventario abiertos, WASD y ratón no deben mover ni girar (en batch el cursor no se bloquea y no se puede probar). Al cerrar con Esc, el cursor debe volver a quedar capturado; en el Editor, Unity libera el cursor con Esc y puede hacer falta un clic.
 - **HUD:** legibilidad real, marcadores al moverse, FPS con el HUD activo y si la pausa de ~0,5 s al cargar cada misión se nota.
 - Bloqueo de cursor: **V, Esc y clic** dependen de él; y WASD/ratón en el flujo normal (lo automático invoca los métodos directamente).
@@ -146,6 +157,7 @@
 
 ## Decisiones para Ion
 
+- **Tubería naranja `PF_Hodia_Laranja__000`:** sin collider; roza la cabeza 5 cm en la pasarela este. Con collider se pasaría agachado. Queda sin tocar salvo que Ion lo pida.
 - **Salida sin indicador visual:** la sala `Irteera` no tiene nada que marque la salida (solo el trigger y el texto del HUD). ¿Puerta, señal o baliza? No se ha añadido por no ser un defecto, sino diseño.
 - **Build Profiles:** añadir las tres escenas (`ProjectSettings`). En el Editor la transición funciona sin ello; en una build, no.
 - **Oclusión o no:** queda activa. Si en Play se ve algo raro, `BatchOklusioKendu` la retira sin tocar la iluminación.

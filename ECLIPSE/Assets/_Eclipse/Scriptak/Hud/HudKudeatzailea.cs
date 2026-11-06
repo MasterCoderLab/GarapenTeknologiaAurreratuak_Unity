@@ -202,7 +202,14 @@ namespace Eclipse.Hud
         private void TerminalAbisua()
         {
             MisioTerminala terminala = Helburuak.TerminalBarruan();
-            _eKaxa.gameObject.SetActive(terminala != null);
+            bool makurtu = terminala == null && Helburuak.MakurtzekoGuneaHurbil;
+            _eKaxa.gameObject.SetActive(terminala != null || makurtu);
+            if (makurtu)
+            {
+                _eTestua.text = "[Ctrl]  Makurtu azpitik pasatzeko";
+                _eTestua.color = HudKoloreak.Anbarra;
+            }
+
             if (terminala == null)
             {
                 return;
@@ -329,9 +336,9 @@ namespace Eclipse.Hud
 
         private void KontrolakSortu()
         {
-            RectTransform panela = HudFabrika.Kokatu(_fabrika.Panela("Kontrolak", _jokoGeruza, HudKoloreak.ZianIluna), Vector2.zero, Vector2.zero, new Vector2(24f, 24f), new Vector2(720f, 66f));
+            RectTransform panela = HudFabrika.Kokatu(_fabrika.Panela("Kontrolak", _jokoGeruza, HudKoloreak.ZianIluna), Vector2.zero, Vector2.zero, new Vector2(24f, 24f), new Vector2(720f, 92f));
             Text testua = _fabrika.Testua("Testua", panela, 20, HudKoloreak.Grisa, TextAnchor.MiddleLeft);
-            testua.text = "[M] Mapa     [Tab] Inbentarioa     [Esc] Itxi / kurtsorea\n[E] Erabili     [V] Lehen / hirugarren pertsona     [Shift] Korrika";
+            testua.text = "[M] Mapa     [Tab] Inbentarioa     [Esc] Itxi / kurtsorea\n[E] Erabili     [V] Lehen / hirugarren pertsona\n[Shift] Korrika     [Ctrl] Makurtu     [Zuriunea] Jauzi";
             RectTransform rect = testua.rectTransform;
             HudFabrika.Bete(rect);
             rect.offsetMin = new Vector2(18f, 4f);

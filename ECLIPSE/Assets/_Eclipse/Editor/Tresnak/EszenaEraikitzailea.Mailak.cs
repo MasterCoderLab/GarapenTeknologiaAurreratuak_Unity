@@ -405,6 +405,12 @@ namespace Eclipse.EditorTresnak
 
             MailaPropak(sektorea, d, gelak, m, n, ateak, plana);
             MisioaPlanifikatu(sektorea, d, m, n, misioa, plana);
+
+            // Azkenean planifikatzen dira: lehendik dauden Kolisioa__NNN izenak ez dira aldatzen eta eszenan kolisioak gehitzea besterik ez da.
+            foreach (MailaKolisio k in d.KolisioAzkenak)
+            {
+                KolisioGehitu(sektorea, k.Sala, new Vector3(k.X * n.Panela, k.Y, k.Z * n.Panela), k.Tamaina);
+            }
         }
 
         private static float SalaAltuera(MailaGela g, Neurriak n) => g.Altuera > 0f ? g.Altuera : n.PanelAltuera * g.Ilarak;
@@ -1489,6 +1495,7 @@ namespace Eclipse.EditorTresnak
             public MailaEskailera[] Eskailerak = Array.Empty<MailaEskailera>();
             public MailaApaingarri[] Apaingarriak = Array.Empty<MailaApaingarri>();
             public MailaKolisio[] KolisioGehigarriak = Array.Empty<MailaKolisio>();
+            public MailaKolisio[] KolisioAzkenak = Array.Empty<MailaKolisio>();
             public MailaArgi[] ArgiGehigarriak = Array.Empty<MailaArgi>();
             public MailaKamera[] Kamerak = Array.Empty<MailaKamera>();
             public MisioDef Misioa = new MisioDef();

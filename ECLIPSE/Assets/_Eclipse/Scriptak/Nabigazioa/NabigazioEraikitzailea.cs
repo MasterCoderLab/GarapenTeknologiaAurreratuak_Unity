@@ -40,8 +40,9 @@ namespace Eclipse.Nabigazioa
 
     /// <summary>
     /// Sarea Play-n eraikitzen du, benetako kolisioekin, BatchMailaProbatu-ren uholde bera erabiliz: 0,5 m-ko sarea,
-    /// jokalariaren kapsula, 0,3 m-ko mailak eta erorketak norabide bakarrean. Hormak eta barruko hormak horrela errespetatzen dira,
+    /// jokalariaren kapsula makurtuta, 0,3 m-ko mailak eta erorketak norabide bakarrean. Hormak eta barruko hormak horrela errespetatzen dira,
     /// eta ez da konexiorik asmatzen: iristen ez dena ez dago sarean, eta diagnostikoan agertzen da.
+    /// Zutik kabitzen ez den nodoa markatuta geratzen da, ibilbideak hodi baxu baten azpitik pasa daitezen abisuarekin.
     /// </summary>
     public static class NabigazioEraikitzailea
     {
@@ -49,6 +50,7 @@ namespace Eclipse.Nabigazioa
 
         private const float KapsulaErradioa = 0.3f;
         private const float KapsulaAltuera = 1.8f;
+        private const float MakurAltuera = 1.1f;
         private const float MailaIgoera = 0.3f;
         private const float OinErradioa = 0.25f;
         private const int Azpiurratsak = 5;
@@ -72,11 +74,13 @@ namespace Eclipse.Nabigazioa
             List<Collider> hesiak = datuak.Blokeoak.SelectMany(b => b.Atea.GetComponentsInChildren<Collider>()).Where(k => k.enabled && !k.isTrigger).ToList();
             var nodoak = new List<Vector3>();
             var alderdiak = new List<SareAlderdia>();
+            List<bool> makurtu = null;
             try
             {
                 hesiak.ForEach(k => k.enabled = false);
                 Physics.SyncTransforms();
                 Uholdea(hasiera, nodoak, alderdiak, datuak.Diagnostikoa);
+                makurtu = nodoak.Select(n => !KapsulaLibre(n, KapsulaAltuera)).ToList();
             }
             finally
             {
@@ -87,7 +91,7 @@ namespace Eclipse.Nabigazioa
             if (nodoak.Count > 0)
             {
                 BlokeoakMarkatu(datuak, nodoak, alderdiak);
-                datuak.Sarea = new NabigazioSarea(Urratsa, nodoak, alderdiak, datuak.Blokeoak.Count);
+                datuak.Sarea = new NabigazioSarea(Urratsa, nodoak, alderdiak, datuak.Blokeoak.Count, makurtu);
                 NodoakGeletanSartu(datuak);
                 Diagnostikatu(datuak, alderdiak);
             }
@@ -97,7 +101,7 @@ namespace Eclipse.Nabigazioa
             }
 
             datuak.Milisegundoak = neurgailua.ElapsedMilliseconds;
-            string laburpena = $"{SceneManager.GetActiveScene().name}: {nodoak.Count} nodo, {alderdiak.Count} alderdi, {datuak.Gelak.Count} gela, {datuak.Blokeoak.Count} blokeo, {datuak.Milisegundoak} ms, {datuak.Diagnostikoa.Count} ohar";
+            string laburpena = $"{SceneManager.GetActiveScene().name}: {nodoak.Count} nodo ({makurtu?.Count(m => m) ?? 0} makurtuta), {alderdiak.Count} alderdi, {datuak.Gelak.Count} gela, {datuak.Blokeoak.Count} blokeo, {datuak.Milisegundoak} ms, {datuak.Diagnostikoa.Count} ohar";
             if (datuak.Erabilgarria)
             {
                 Debug.Log($"ECL_NABIGAZIOA_OK {laburpena}");
@@ -154,11 +158,11 @@ namespace Eclipse.Nabigazioa
             }
         }
 
-        private static bool KapsulaLibre(Vector3 oinak)
+        private static bool KapsulaLibre(Vector3 oinak, float altuera = MakurAltuera)
         {
             return !Physics.CheckCapsule(
                     oinak + Vector3.up * (MailaIgoera + KapsulaErradioa + 0.02f),
-                    oinak + Vector3.up * (KapsulaAltuera - KapsulaErradioa + 0.05f),
+                    oinak + Vector3.up * (altuera - KapsulaErradioa + 0.05f),
                     KapsulaErradioa, Physics.DefaultRaycastLayers, QueryTriggerInteraction.Ignore)
                 && !Physics.CheckBox(
                     oinak + Vector3.up * (MailaIgoera + 0.06f),
