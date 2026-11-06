@@ -329,9 +329,9 @@ namespace Eclipse.Hud
 
         private void KontrolakSortu()
         {
-            RectTransform panela = HudFabrika.Kokatu(_fabrika.Panela("Kontrolak", _jokoGeruza, HudKoloreak.ZianIluna), Vector2.zero, Vector2.zero, new Vector2(24f, 24f), new Vector2(560f, 66f));
+            RectTransform panela = HudFabrika.Kokatu(_fabrika.Panela("Kontrolak", _jokoGeruza, HudKoloreak.ZianIluna), Vector2.zero, Vector2.zero, new Vector2(24f, 24f), new Vector2(720f, 66f));
             Text testua = _fabrika.Testua("Testua", panela, 20, HudKoloreak.Grisa, TextAnchor.MiddleLeft);
-            testua.text = "[M] Mapa     [Tab] Inbentarioa     [Esc] Itxi / kurtsorea\n[E] Erabili     [V] Kamera     [Shift] Korrika";
+            testua.text = "[M] Mapa     [Tab] Inbentarioa     [Esc] Itxi / kurtsorea\n[E] Erabili     [V] Lehen / hirugarren pertsona     [Shift] Korrika";
             RectTransform rect = testua.rectTransform;
             HudFabrika.Bete(rect);
             rect.offsetMin = new Vector2(18f, 4f);
