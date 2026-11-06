@@ -198,6 +198,24 @@ namespace Eclipse.EditorTresnak
             return true;
         }
 
+        private static bool MailakoSalbuespena(Transform t)
+        {
+            if (t.name.StartsWith("PF_Beira", StringComparison.Ordinal) || t.name == "Hesia")
+            {
+                return true;
+            }
+
+            for (Transform uneko = t; uneko != null; uneko = uneko.parent)
+            {
+                if (uneko.name.StartsWith("Pasilloa_", StringComparison.Ordinal))
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
         private static Analisia Analizatu(GameObject erroa)
         {
             var analisia = new Analisia();
@@ -219,6 +237,12 @@ namespace Eclipse.EditorTresnak
                         analisia.Oharrak.Add($"{bidea}: dinamikoa da ({dinamikoArrazoia}) baina flag estatikoak ditu; ez zaizkio kendu, begiratu eskuz.");
                     }
 
+                    continue;
+                }
+
+                // Mailetako salbuespenak: pasilloak eta beirak lightmap-etik kanpo daude nahita (docs/estado.md).
+                if (MailakoSalbuespena(objektua.transform))
+                {
                     continue;
                 }
 

@@ -16,7 +16,7 @@ namespace Eclipse.EditorTresnak
     /// Aset-ak kodez sortzen dira (ez dago YAML editatzerik) eta ez dute ThirdParty ukitzen.
     /// Aset-en aldaketak ez dira Ctrl+Z-rekin desegiten; eszenakoak bai, Undo talde bakarrean.
     /// </summary>
-    public static class EszenaPropioa
+    public static partial class EszenaPropioa
     {
         private const string Tresna = "EszenaPropioa";
         private const string Marka = "ECL_ESZENAPROPIOA";

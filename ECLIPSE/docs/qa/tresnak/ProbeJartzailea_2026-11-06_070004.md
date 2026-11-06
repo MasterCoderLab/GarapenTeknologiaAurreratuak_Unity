@@ -1,0 +1,73 @@
+# ProbeJartzailea: Aurrebista
+
+- **Data:** 2026-11-06 07:00:04
+- **Eszena:** Assets/_Eclipse/Eszenak/Mision02_Energia.unity
+- **Sektorea:** Sektorea2
+- **Gelak:** 40
+- **Aldaketak:** 80
+
+## Gelak (40)
+
+- Sektorea2/Gela_Sarbidea: kaxa (10.96, 5.00, 10.96); RP_Gela_Sarbidea sortu; LPG_Gela_Sarbidea sortu (72 probe)
+- Sektorea2/Gela_J1: kaxa (3.46, 5.00, 3.46); RP_Gela_J1 sortu; LPG_Gela_J1 sortu (8 probe)
+- Sektorea2/Gela_J2: kaxa (3.46, 5.00, 3.46); RP_Gela_J2 sortu; LPG_Gela_J2 sortu (8 probe)
+- Sektorea2/Gela_J3: kaxa (3.46, 5.00, 3.46); RP_Gela_J3 sortu; LPG_Gela_J3 sortu (8 probe)
+- Sektorea2/Gela_J4: kaxa (3.46, 5.00, 3.46); RP_Gela_J4 sortu; LPG_Gela_J4 sortu (8 probe)
+- Sektorea2/Gela_J5: kaxa (3.46, 5.00, 3.46); RP_Gela_J5 sortu; LPG_Gela_J5 sortu (8 probe)
+- Sektorea2/Gela_J6: kaxa (3.46, 5.00, 3.46); RP_Gela_J6 sortu; LPG_Gela_J6 sortu (8 probe)
+- Sektorea2/Gela_Sorgailuak: kaxa (18.46, 7.50, 18.46); RP_Gela_Sorgailuak sortu; LPG_Gela_Sorgailuak sortu (133 probe)
+- Sektorea2/Gela_Kontrola: kaxa (18.46, 5.00, 10.96); RP_Gela_Kontrola sortu; LPG_Gela_Kontrola sortu (107 probe)
+- Sektorea2/Gela_Biltegia: kaxa (14.71, 5.00, 10.96); RP_Gela_Biltegia sortu; LPG_Gela_Biltegia sortu (70 probe)
+- Sektorea2/Gela_Hodiak: kaxa (10.96, 7.50, 14.71); RP_Gela_Hodiak sortu; LPG_Gela_Hodiak sortu (86 probe)
+- Sektorea2/Gela_Fusibleak1: kaxa (18.46, 5.00, 10.96); RP_Gela_Fusibleak1 sortu; LPG_Gela_Fusibleak1 sortu (103 probe)
+- Sektorea2/Gela_Fusibleak2: kaxa (18.46, 5.00, 10.96); RP_Gela_Fusibleak2 sortu; LPG_Gela_Fusibleak2 sortu (106 probe)
+- Sektorea2/Gela_Bobinak: kaxa (14.71, 5.00, 18.46); RP_Gela_Bobinak sortu; LPG_Gela_Bobinak sortu (110 probe)
+- Sektorea2/Gela_Osagaiak: kaxa (14.71, 5.00, 10.96); RP_Gela_Osagaiak sortu; LPG_Gela_Osagaiak sortu (93 probe)
+- Sektorea2/Gela_Mantentzea: kaxa (18.46, 3.20, 14.71); RP_Gela_Mantentzea sortu; LPG_Gela_Mantentzea sortu (140 probe)
+- Sektorea2/Gela_Irteera: kaxa (18.46, 5.00, 10.96); RP_Gela_Irteera sortu; LPG_Gela_Irteera sortu (107 probe)
+- Sektorea2/Gela_C_Pasilloa_Sarbidea_J1: kaxa (22.50, 2.77, 3.20); RP_Gela_C_Pasilloa_Sarbidea_J1 sortu; LPG_Gela_C_Pasilloa_Sarbidea_J1 sortu (40 probe)
+- Sektorea2/Gela_C_Pasilloa_J1_Sorgailuak: kaxa (11.25, 2.77, 3.20); RP_Gela_C_Pasilloa_J1_Sorgailuak sortu; LPG_Gela_C_Pasilloa_J1_Sorgailuak sortu (24 probe)
+- Sektorea2/Gela_C_Pasilloa_J1_J2: kaxa (3.20, 2.77, 15.00); RP_Gela_C_Pasilloa_J1_J2 sortu; LPG_Gela_C_Pasilloa_J1_J2 sortu (32 probe)
+- Sektorea2/Gela_C_Pasilloa_J3_J1: kaxa (3.20, 2.77, 22.50); RP_Gela_C_Pasilloa_J3_J1 sortu; LPG_Gela_C_Pasilloa_J3_J1 sortu (44 probe)
+- Sektorea2/Gela_C_Pasilloa_Sarbidea_Biltegia: kaxa (3.20, 2.77, 11.25); RP_Gela_C_Pasilloa_Sarbidea_Biltegia sortu; LPG_Gela_C_Pasilloa_Sarbidea_Biltegia sortu (16 probe)
+- Sektorea2/Gela_C_Pasilloa_J2_Biltegia: kaxa (18.75, 2.77, 3.20); RP_Gela_C_Pasilloa_J2_Biltegia sortu; LPG_Gela_C_Pasilloa_J2_Biltegia sortu (40 probe)
+- Sektorea2/Gela_C_Pasilloa_J2_Fusibleak1: kaxa (3.20, 2.77, 11.25); RP_Gela_C_Pasilloa_J2_Fusibleak1 sortu; LPG_Gela_C_Pasilloa_J2_Fusibleak1 sortu (16 probe)
+- Sektorea2/Gela_C_Pasilloa_J2_Kontrola: kaxa (11.25, 2.77, 3.20); RP_Gela_C_Pasilloa_J2_Kontrola sortu; LPG_Gela_C_Pasilloa_J2_Kontrola sortu (24 probe)
+- Sektorea2/Gela_C_Pasilloa_Sorgailuak_Kontrola: kaxa (3.20, 2.77, 11.25); RP_Gela_C_Pasilloa_Sorgailuak_Kontrola sortu; LPG_Gela_C_Pasilloa_Sorgailuak_Kontrola sortu (16 probe)
+- Sektorea2/Gela_C_Pasilloa_Sarbidea_Hodiak: kaxa (3.20, 2.77, 11.25); RP_Gela_C_Pasilloa_Sarbidea_Hodiak sortu; LPG_Gela_C_Pasilloa_Sarbidea_Hodiak sortu (16 probe)
+- Sektorea2/Gela_C_Pasilloa_Hodiak_J3: kaxa (22.50, 2.77, 3.20); RP_Gela_C_Pasilloa_Hodiak_J3 sortu; LPG_Gela_C_Pasilloa_Hodiak_J3 sortu (44 probe)
+- Sektorea2/Gela_C_Pasilloa_J3_Fusibleak2: kaxa (3.20, 2.77, 11.25); RP_Gela_C_Pasilloa_J3_Fusibleak2 sortu; LPG_Gela_C_Pasilloa_J3_Fusibleak2 sortu (16 probe)
+- Sektorea2/Gela_C_Pasilloa_J3_J4: kaxa (18.75, 2.77, 3.20); RP_Gela_C_Pasilloa_J3_J4 sortu; LPG_Gela_C_Pasilloa_J3_J4 sortu (40 probe)
+- Sektorea2/Gela_C_Pasilloa_J4_Sorgailuak: kaxa (3.20, 2.77, 11.25); RP_Gela_C_Pasilloa_J4_Sorgailuak sortu; LPG_Gela_C_Pasilloa_J4_Sorgailuak sortu (24 probe)
+- Sektorea2/Gela_C_Pasilloa_J4_J5: kaxa (22.50, 2.77, 3.20); RP_Gela_C_Pasilloa_J4_J5 sortu; LPG_Gela_C_Pasilloa_J4_J5 sortu (44 probe)
+- Sektorea2/Gela_C_Pasilloa_J5_Bobinak: kaxa (3.20, 2.77, 11.25); RP_Gela_C_Pasilloa_J5_Bobinak sortu; LPG_Gela_C_Pasilloa_J5_Bobinak sortu (16 probe)
+- Sektorea2/Gela_C_Pasilloa_Sorgailuak_Bobinak: kaxa (11.25, 2.77, 3.20); RP_Gela_C_Pasilloa_Sorgailuak_Bobinak sortu; LPG_Gela_C_Pasilloa_Sorgailuak_Bobinak sortu (16 probe)
+- Sektorea2/Gela_C_Pasilloa_J5_Mantentzea: kaxa (3.20, 2.77, 11.25); RP_Gela_C_Pasilloa_J5_Mantentzea sortu; LPG_Gela_C_Pasilloa_J5_Mantentzea sortu (24 probe)
+- Sektorea2/Gela_C_Pasilloa_Fusibleak2_Mantentzea: kaxa (26.25, 2.77, 3.20); RP_Gela_C_Pasilloa_Fusibleak2_Mantentzea sortu; LPG_Gela_C_Pasilloa_Fusibleak2_Mantentzea sortu (52 probe)
+- Sektorea2/Gela_C_Pasilloa_Fusibleak1_Osagaiak: kaxa (11.25, 2.77, 3.20); RP_Gela_C_Pasilloa_Fusibleak1_Osagaiak sortu; LPG_Gela_C_Pasilloa_Fusibleak1_Osagaiak sortu (24 probe)
+- Sektorea2/Gela_C_Pasilloa_Kontrola_Osagaiak: kaxa (3.20, 2.77, 11.25); RP_Gela_C_Pasilloa_Kontrola_Osagaiak sortu; LPG_Gela_C_Pasilloa_Kontrola_Osagaiak sortu (16 probe)
+- Sektorea2/Gela_C_Pasilloa_Kontrola_J6: kaxa (11.25, 2.77, 3.20); RP_Gela_C_Pasilloa_Kontrola_J6 sortu; LPG_Gela_C_Pasilloa_Kontrola_J6 sortu (16 probe)
+- Sektorea2/Gela_C_Pasilloa_J6_Irteera: kaxa (3.20, 2.77, 11.25); RP_Gela_C_Pasilloa_J6_Irteera sortu; LPG_Gela_C_Pasilloa_J6_Irteera sortu (24 probe)
+
+## Oharrak (20)
+
+- Sektorea2/Gela_Sorgailuak: 29 probe solidoen barruan geratzen ziren; kenduta.
+- Sektorea2/Gela_Kontrola: 1 probe solidoen barruan geratzen ziren; kenduta.
+- Sektorea2/Gela_Biltegia: 26 probe solidoen barruan geratzen ziren; kenduta.
+- Sektorea2/Gela_Hodiak: 10 probe solidoen barruan geratzen ziren; kenduta.
+- Sektorea2/Gela_Fusibleak1: 5 probe solidoen barruan geratzen ziren; kenduta.
+- Sektorea2/Gela_Fusibleak2: 2 probe solidoen barruan geratzen ziren; kenduta.
+- Sektorea2/Gela_Bobinak: 34 probe solidoen barruan geratzen ziren; kenduta.
+- Sektorea2/Gela_Osagaiak: 3 probe solidoen barruan geratzen ziren; kenduta.
+- Sektorea2/Gela_Mantentzea: 4 probe solidoen barruan geratzen ziren; kenduta.
+- Sektorea2/Gela_Irteera: 1 probe solidoen barruan geratzen ziren; kenduta.
+- Sektorea2/Gela_C_Pasilloa_Sarbidea_J1: 4 probe solidoen barruan geratzen ziren; kenduta.
+- Sektorea2/Gela_C_Pasilloa_Sarbidea_Biltegia: 8 probe solidoen barruan geratzen ziren; kenduta.
+- Sektorea2/Gela_C_Pasilloa_J2_Fusibleak1: 8 probe solidoen barruan geratzen ziren; kenduta.
+- Sektorea2/Gela_C_Pasilloa_Sorgailuak_Kontrola: 8 probe solidoen barruan geratzen ziren; kenduta.
+- Sektorea2/Gela_C_Pasilloa_Sarbidea_Hodiak: 8 probe solidoen barruan geratzen ziren; kenduta.
+- Sektorea2/Gela_C_Pasilloa_J3_Fusibleak2: 8 probe solidoen barruan geratzen ziren; kenduta.
+- Sektorea2/Gela_C_Pasilloa_J5_Bobinak: 8 probe solidoen barruan geratzen ziren; kenduta.
+- Sektorea2/Gela_C_Pasilloa_Sorgailuak_Bobinak: 8 probe solidoen barruan geratzen ziren; kenduta.
+- Sektorea2/Gela_C_Pasilloa_Kontrola_Osagaiak: 8 probe solidoen barruan geratzen ziren; kenduta.
+- Sektorea2/Gela_C_Pasilloa_Kontrola_J6: 8 probe solidoen barruan geratzen ziren; kenduta.

@@ -1394,8 +1394,16 @@ namespace Eclipse.EditorTresnak
                 return true;
             }
 
-            Transform orria = SemeaBilatu(instantzia, pieza.Ezkutatu);
-            return orria == null || !orria.gameObject.activeSelf;
+            foreach (string izena in pieza.Ezkutatu.Split('|'))
+            {
+                Transform orria = SemeaBilatu(instantzia, izena);
+                if (orria != null && orria.gameObject.activeSelf)
+                {
+                    return false;
+                }
+            }
+
+            return true;
         }
 
         private static void OrriaEzkutatu(Transform instantzia, Pieza pieza)
@@ -1405,10 +1413,18 @@ namespace Eclipse.EditorTresnak
                 return;
             }
 
-            GameObject orria = SemeaBilatu(instantzia, pieza.Ezkutatu).gameObject;
-            Undo.RecordObject(orria, pieza.Izena);
-            orria.SetActive(false);
-            PrefabUtility.RecordPrefabInstancePropertyModifications(orria);
+            foreach (string izena in pieza.Ezkutatu.Split('|'))
+            {
+                Transform orria = SemeaBilatu(instantzia, izena);
+                if (orria == null || !orria.gameObject.activeSelf)
+                {
+                    continue;
+                }
+
+                Undo.RecordObject(orria.gameObject, pieza.Izena);
+                orria.gameObject.SetActive(false);
+                PrefabUtility.RecordPrefabInstancePropertyModifications(orria.gameObject);
+            }
         }
 
         private static void TransformEzarri(Transform transformazioa, Pieza pieza)

@@ -1,0 +1,55 @@
+# ProbeJartzailea: Aurrebista
+
+- **Data:** 2026-11-06 06:38:44
+- **Eszena:** Assets/_Eclipse/Eszenak/Mision03_Erreaktorea.unity
+- **Sektorea:** Sektorea3
+- **Gelak:** 31
+- **Aldaketak:** 0
+
+## Gelak (31)
+
+- Sektorea3/Gela_Segurtasuna: kaxa (10.96, 5.00, 10.96); RP_Gela_Segurtasuna aldaketarik gabe; LPG_Gela_Segurtasuna aldaketarik gabe (72 probe)
+- Sektorea3/Gela_Deskontaminazioa: kaxa (7.21, 5.00, 10.96); RP_Gela_Deskontaminazioa aldaketarik gabe; LPG_Gela_Deskontaminazioa aldaketarik gabe (48 probe)
+- Sektorea3/Gela_J1: kaxa (3.46, 5.00, 3.46); RP_Gela_J1 aldaketarik gabe; LPG_Gela_J1 aldaketarik gabe (8 probe)
+- Sektorea3/Gela_J2: kaxa (3.46, 5.00, 3.46); RP_Gela_J2 aldaketarik gabe; LPG_Gela_J2 aldaketarik gabe (8 probe)
+- Sektorea3/Gela_J3: kaxa (3.46, 5.00, 3.46); RP_Gela_J3 aldaketarik gabe; LPG_Gela_J3 aldaketarik gabe (8 probe)
+- Sektorea3/Gela_J4: kaxa (3.46, 5.00, 3.46); RP_Gela_J4 aldaketarik gabe; LPG_Gela_J4 aldaketarik gabe (8 probe)
+- Sektorea3/Gela_J5: kaxa (3.46, 5.00, 3.46); RP_Gela_J5 aldaketarik gabe; LPG_Gela_J5 aldaketarik gabe (8 probe)
+- Sektorea3/Gela_J6: kaxa (3.46, 5.00, 3.46); RP_Gela_J6 aldaketarik gabe; LPG_Gela_J6 aldaketarik gabe (8 probe)
+- Sektorea3/Gela_Erreaktorea: kaxa (22.21, 10.00, 22.21); RP_Gela_Erreaktorea aldaketarik gabe; LPG_Gela_Erreaktorea aldaketarik gabe (206 probe)
+- Sektorea3/Gela_Kontrola1: kaxa (14.71, 5.00, 10.96); RP_Gela_Kontrola1 aldaketarik gabe; LPG_Gela_Kontrola1 aldaketarik gabe (93 probe)
+- Sektorea3/Gela_Kontrola2: kaxa (14.71, 5.00, 10.96); RP_Gela_Kontrola2 aldaketarik gabe; LPG_Gela_Kontrola2 aldaketarik gabe (94 probe)
+- Sektorea3/Gela_Mantentzea: kaxa (18.46, 3.20, 18.46); RP_Gela_Mantentzea aldaketarik gabe; LPG_Gela_Mantentzea aldaketarik gabe (146 probe)
+- Sektorea3/Gela_AzkenBorroka: kaxa (25.96, 7.50, 18.46); RP_Gela_AzkenBorroka aldaketarik gabe; LPG_Gela_AzkenBorroka aldaketarik gabe (209 probe)
+- Sektorea3/Gela_Irteera: kaxa (14.71, 5.00, 10.96); RP_Gela_Irteera aldaketarik gabe; LPG_Gela_Irteera aldaketarik gabe (96 probe)
+- Sektorea3/Gela_C_Pasilloa_Segurtasuna_Deskontaminazioa: kaxa (22.50, 2.77, 3.20); RP_Gela_C_Pasilloa_Segurtasuna_Deskontaminazioa aldaketarik gabe; LPG_Gela_C_Pasilloa_Segurtasuna_Deskontaminazioa aldaketarik gabe (40 probe)
+- Sektorea3/Gela_C_Pasilloa_Deskontaminazioa_J1: kaxa (11.25, 2.77, 3.20); RP_Gela_C_Pasilloa_Deskontaminazioa_J1 aldaketarik gabe; LPG_Gela_C_Pasilloa_Deskontaminazioa_J1 aldaketarik gabe (16 probe)
+- Sektorea3/Gela_C_Pasilloa_J1_Erreaktorea: kaxa (11.25, 2.77, 3.20); RP_Gela_C_Pasilloa_J1_Erreaktorea aldaketarik gabe; LPG_Gela_C_Pasilloa_J1_Erreaktorea aldaketarik gabe (24 probe)
+- Sektorea3/Gela_C_Pasilloa_J1_J2: kaxa (3.20, 2.77, 18.75); RP_Gela_C_Pasilloa_J1_J2 aldaketarik gabe; LPG_Gela_C_Pasilloa_J1_J2 aldaketarik gabe (40 probe)
+- Sektorea3/Gela_C_Pasilloa_J3_J1: kaxa (3.20, 2.77, 22.50); RP_Gela_C_Pasilloa_J3_J1 aldaketarik gabe; LPG_Gela_C_Pasilloa_J3_J1 aldaketarik gabe (44 probe)
+- Sektorea3/Gela_C_Pasilloa_J2_J4: kaxa (18.75, 2.77, 3.20); RP_Gela_C_Pasilloa_J2_J4 aldaketarik gabe; LPG_Gela_C_Pasilloa_J2_J4 aldaketarik gabe (40 probe)
+- Sektorea3/Gela_C_Pasilloa_J3_J5: kaxa (18.75, 2.77, 3.20); RP_Gela_C_Pasilloa_J3_J5 aldaketarik gabe; LPG_Gela_C_Pasilloa_J3_J5 aldaketarik gabe (40 probe)
+- Sektorea3/Gela_C_Pasilloa_J4_Erreaktorea: kaxa (3.20, 2.77, 11.25); RP_Gela_C_Pasilloa_J4_Erreaktorea aldaketarik gabe; LPG_Gela_C_Pasilloa_J4_Erreaktorea aldaketarik gabe (16 probe)
+- Sektorea3/Gela_C_Pasilloa_J5_Erreaktorea: kaxa (3.20, 2.77, 11.25); RP_Gela_C_Pasilloa_J5_Erreaktorea aldaketarik gabe; LPG_Gela_C_Pasilloa_J5_Erreaktorea aldaketarik gabe (16 probe)
+- Sektorea3/Gela_C_Pasilloa_J2_Kontrola1: kaxa (15.00, 2.77, 3.20); RP_Gela_C_Pasilloa_J2_Kontrola1 aldaketarik gabe; LPG_Gela_C_Pasilloa_J2_Kontrola1 aldaketarik gabe (32 probe)
+- Sektorea3/Gela_C_Pasilloa_J3_Kontrola2: kaxa (15.00, 2.77, 3.20); RP_Gela_C_Pasilloa_J3_Kontrola2 aldaketarik gabe; LPG_Gela_C_Pasilloa_J3_Kontrola2 aldaketarik gabe (32 probe)
+- Sektorea3/Gela_C_Pasilloa_J5_Mantentzea: kaxa (18.75, 2.77, 3.20); RP_Gela_C_Pasilloa_J5_Mantentzea aldaketarik gabe; LPG_Gela_C_Pasilloa_J5_Mantentzea aldaketarik gabe (40 probe)
+- Sektorea3/Gela_C_Pasilloa_Erreaktorea_J6: kaxa (15.00, 2.77, 3.20); RP_Gela_C_Pasilloa_Erreaktorea_J6 aldaketarik gabe; LPG_Gela_C_Pasilloa_Erreaktorea_J6 aldaketarik gabe (24 probe)
+- Sektorea3/Gela_C_Pasilloa_J6_Mantentzea: kaxa (3.20, 2.77, 11.25); RP_Gela_C_Pasilloa_J6_Mantentzea aldaketarik gabe; LPG_Gela_C_Pasilloa_J6_Mantentzea aldaketarik gabe (24 probe)
+- Sektorea3/Gela_C_Pasilloa_J6_AzkenBorroka: kaxa (3.20, 2.77, 11.25); RP_Gela_C_Pasilloa_J6_AzkenBorroka aldaketarik gabe; LPG_Gela_C_Pasilloa_J6_AzkenBorroka aldaketarik gabe (24 probe)
+- Sektorea3/Gela_C_Pasilloa_J4_AzkenBorroka: kaxa (15.00, 2.77, 3.20); RP_Gela_C_Pasilloa_J4_AzkenBorroka aldaketarik gabe; LPG_Gela_C_Pasilloa_J4_AzkenBorroka aldaketarik gabe (32 probe)
+- Sektorea3/Gela_C_Pasilloa_AzkenBorroka_Irteera: kaxa (11.25, 2.77, 3.20); RP_Gela_C_Pasilloa_AzkenBorroka_Irteera aldaketarik gabe; LPG_Gela_C_Pasilloa_AzkenBorroka_Irteera aldaketarik gabe (16 probe)
+
+## Oharrak (11)
+
+- Sektorea3/Gela_Erreaktorea: 36 probe solidoen barruan geratzen ziren; kenduta.
+- Sektorea3/Gela_Kontrola1: 3 probe solidoen barruan geratzen ziren; kenduta.
+- Sektorea3/Gela_Kontrola2: 2 probe solidoen barruan geratzen ziren; kenduta.
+- Sektorea3/Gela_Mantentzea: 16 probe solidoen barruan geratzen ziren; kenduta.
+- Sektorea3/Gela_AzkenBorroka: 25 probe solidoen barruan geratzen ziren; kenduta.
+- Sektorea3/Gela_C_Pasilloa_Segurtasuna_Deskontaminazioa: 4 probe solidoen barruan geratzen ziren; kenduta.
+- Sektorea3/Gela_C_Pasilloa_Deskontaminazioa_J1: 8 probe solidoen barruan geratzen ziren; kenduta.
+- Sektorea3/Gela_C_Pasilloa_J4_Erreaktorea: 8 probe solidoen barruan geratzen ziren; kenduta.
+- Sektorea3/Gela_C_Pasilloa_J5_Erreaktorea: 8 probe solidoen barruan geratzen ziren; kenduta.
+- Sektorea3/Gela_C_Pasilloa_Erreaktorea_J6: 8 probe solidoen barruan geratzen ziren; kenduta.
+- Sektorea3/Gela_C_Pasilloa_AzkenBorroka_Irteera: 8 probe solidoen barruan geratzen ziren; kenduta.

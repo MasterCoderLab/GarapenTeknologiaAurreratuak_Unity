@@ -1416,6 +1416,7 @@ namespace Eclipse.EditorTresnak
             public Color Kolorea;
             public float Intentsitatea;
             public float Tartea;
+            public bool Pultsua;
         }
     }
 }

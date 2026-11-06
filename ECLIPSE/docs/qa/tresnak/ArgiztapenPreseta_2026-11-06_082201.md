@@ -1,0 +1,1645 @@
+# ArgiztapenPreseta: Aurrebista
+
+- **Data:** 2026-11-06 08:22:01
+- **Eszena:** Assets/_Eclipse/Eszenak/Mision03_Erreaktorea.unity
+- **Sektorea:** Sektorea3
+- **MeshRenderer-ak:** 2901
+- **Aldaketak flag-etan:** 1612
+- **Flag gehituak:** LightmapStatic, ReflectionProbeStatic
+
+## Aldatuko diren objektuak (1612)
+
+- Sektorea3/Geometria/Erreaktorea/Propak/PF_Beira_Zilindroa__000
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Zorua/PF_Plaka__000
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Zorua/PF_Plaka__001
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Zorua/Floor1__000
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Zorua/Floor1__001
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Zorua/Floor1__002
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Zorua/Floor1__003
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Zorua/Floor1__004
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Zorua/Floor1__005
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Zorua/Floor1__006
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Zorua/Floor1__007
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Zorua/Floor1__008
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Zorua/Floor1__009
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/ProfileDoor__000
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/ProfileDoor__000/WallDoor
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/ProfileDoor__000/DoorFrame
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/ProfileDoor__000/Light1
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/ProfileDoor__000/Light1 (1)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__000
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__000/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__000/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__000/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__000/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__000/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__000/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__000/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__000/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__000/Floor2
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__000/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__000/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__000/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__000/Wall1
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__000/Wall2
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__000/Wall3
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__000/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__000/Light2
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__000/TopWall4
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__000/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__000/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__000/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__001
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__001/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__001/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__001/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__001/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__001/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__001/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__001/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__001/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__001/Floor2
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__001/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__001/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__001/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__001/Wall1
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__001/Wall2
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__001/Wall3
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__001/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__001/Light2
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__001/TopWall4
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__001/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__001/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__001/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__002
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__002/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__002/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__002/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__002/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__002/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__002/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__002/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__002/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__002/Floor2
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__002/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__002/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__002/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__002/Wall1
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__002/Wall2
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__002/Wall3
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__002/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__002/Light2
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__002/TopWall4
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__002/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__002/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__002/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__003
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__003/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__003/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__003/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__003/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__003/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__003/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__003/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__003/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__003/Floor2
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__003/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__003/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__003/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__003/Wall1
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__003/Wall2
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__003/Wall3
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__003/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__003/Light2
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__003/TopWall4
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__003/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__003/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__003/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__004
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__004/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__004/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__004/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__004/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__004/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__004/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__004/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__004/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__004/Floor2
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__004/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__004/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__004/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__004/Wall1
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__004/Wall2
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__004/Wall3
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__004/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__004/Light2
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__004/TopWall4
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__004/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__004/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/Profile1__004/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Zorua/PF_Plaka__000
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Zorua/PF_Plaka__001
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Zorua/Floor1__000
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Zorua/Floor1__001
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Zorua/Floor1__002
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Zorua/Floor1__003
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/ProfileDoor__000
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/ProfileDoor__000/WallDoor
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/ProfileDoor__000/DoorFrame
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/ProfileDoor__000/Light1
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/ProfileDoor__000/Light1 (1)
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/ProfileDoor__001
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/ProfileDoor__001/WallDoor
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/ProfileDoor__001/DoorFrame
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/ProfileDoor__001/Light1
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/ProfileDoor__001/Light1 (1)
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/Profile1__000
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/Profile1__000/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/Profile1__000/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/Profile1__000/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/Profile1__000/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/Profile1__000/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/Profile1__000/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/Profile1__000/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/Profile1__000/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/Profile1__000/Floor2
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/Profile1__000/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/Profile1__000/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/Profile1__000/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/Profile1__000/Wall1
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/Profile1__000/Wall2
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/Profile1__000/Wall3
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/Profile1__000/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/Profile1__000/Light2
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/Profile1__000/TopWall4
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/Profile1__000/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/Profile1__000/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/Profile1__000/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/Profile1__001
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/Profile1__001/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/Profile1__001/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/Profile1__001/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/Profile1__001/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/Profile1__001/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/Profile1__001/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/Profile1__001/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/Profile1__001/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/Profile1__001/Floor2
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/Profile1__001/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/Profile1__001/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/Profile1__001/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/Profile1__001/Wall1
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/Profile1__001/Wall2
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/Profile1__001/Wall3
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/Profile1__001/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/Profile1__001/Light2
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/Profile1__001/TopWall4
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/Profile1__001/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/Profile1__001/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/Profile1__001/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Zorua/PF_Plaka__000
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Zorua/PF_Plaka__001
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Zorua/Floor1__000
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Zorua/Floor1__001
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Zorua/Floor1__002
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Zorua/Floor1__003
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Zorua/Floor1__004
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Zorua/Floor1__005
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__000
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__000/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__000/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__000/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__000/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__000/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__000/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__000/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__000/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__000/Floor2
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__000/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__000/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__000/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__000/Wall1
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__000/Wall2
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__000/Wall3
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__000/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__000/Light2
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__000/TopWall4
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__000/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__000/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__000/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__001
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__001/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__001/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__001/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__001/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__001/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__001/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__001/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__001/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__001/Floor2
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__001/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__001/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__001/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__001/Wall1
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__001/Wall2
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__001/Wall3
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__001/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__001/Light2
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__001/TopWall4
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__001/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__001/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__001/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__002
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__002/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__002/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__002/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__002/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__002/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__002/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__002/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__002/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__002/Floor2
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__002/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__002/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__002/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__002/Wall1
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__002/Wall2
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__002/Wall3
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__002/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__002/Light2
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__002/TopWall4
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__002/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__002/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Hodia/Profile1__002/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Propak/PF_Hodia_Grisa__000
+- Sektorea3/Geometria/Pasilloa_J1_Erreaktorea/Propak/PF_Hodia_Grisa__001
+- Sektorea3/Geometria/Pasilloa_J1_J2/Zorua/PF_Plaka__000
+- Sektorea3/Geometria/Pasilloa_J1_J2/Zorua/PF_Plaka__001
+- Sektorea3/Geometria/Pasilloa_J1_J2/Zorua/Floor1__000
+- Sektorea3/Geometria/Pasilloa_J1_J2/Zorua/Floor1__001
+- Sektorea3/Geometria/Pasilloa_J1_J2/Zorua/Floor1__002
+- Sektorea3/Geometria/Pasilloa_J1_J2/Zorua/Floor1__003
+- Sektorea3/Geometria/Pasilloa_J1_J2/Zorua/Floor1__004
+- Sektorea3/Geometria/Pasilloa_J1_J2/Zorua/Floor1__005
+- Sektorea3/Geometria/Pasilloa_J1_J2/Zorua/Floor1__006
+- Sektorea3/Geometria/Pasilloa_J1_J2/Zorua/Floor1__007
+- Sektorea3/Geometria/Pasilloa_J1_J2/Zorua/Floor1__008
+- Sektorea3/Geometria/Pasilloa_J1_J2/Zorua/Floor1__009
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__000
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__000/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__000/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__000/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__000/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__000/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__000/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__000/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__000/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__000/Floor2
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__000/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__000/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__000/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__000/Wall1
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__000/Wall2
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__000/Wall3
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__000/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__000/Light2
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__000/TopWall4
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__000/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__000/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__000/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__001
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__001/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__001/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__001/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__001/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__001/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__001/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__001/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__001/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__001/Floor2
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__001/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__001/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__001/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__001/Wall1
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__001/Wall2
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__001/Wall3
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__001/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__001/Light2
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__001/TopWall4
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__001/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__001/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__001/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__002
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__002/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__002/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__002/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__002/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__002/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__002/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__002/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__002/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__002/Floor2
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__002/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__002/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__002/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__002/Wall1
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__002/Wall2
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__002/Wall3
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__002/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__002/Light2
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__002/TopWall4
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__002/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__002/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__002/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__003
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__003/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__003/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__003/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__003/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__003/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__003/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__003/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__003/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__003/Floor2
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__003/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__003/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__003/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__003/Wall1
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__003/Wall2
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__003/Wall3
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__003/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__003/Light2
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__003/TopWall4
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__003/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__003/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__003/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__004
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__004/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__004/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__004/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__004/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__004/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__004/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__004/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__004/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__004/Floor2
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__004/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__004/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__004/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__004/Wall1
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__004/Wall2
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__004/Wall3
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__004/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__004/Light2
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__004/TopWall4
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__004/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__004/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Hodia/Profile1__004/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J1_J2/Propak/PF_Hodia_Grisa__000
+- Sektorea3/Geometria/Pasilloa_J1_J2/Propak/PF_Hodia_Grisa__001
+- Sektorea3/Geometria/Pasilloa_J3_J1/Zorua/PF_Plaka__000
+- Sektorea3/Geometria/Pasilloa_J3_J1/Zorua/PF_Plaka__001
+- Sektorea3/Geometria/Pasilloa_J3_J1/Zorua/Floor1__000
+- Sektorea3/Geometria/Pasilloa_J3_J1/Zorua/Floor1__001
+- Sektorea3/Geometria/Pasilloa_J3_J1/Zorua/Floor1__002
+- Sektorea3/Geometria/Pasilloa_J3_J1/Zorua/Floor1__003
+- Sektorea3/Geometria/Pasilloa_J3_J1/Zorua/Floor1__004
+- Sektorea3/Geometria/Pasilloa_J3_J1/Zorua/Floor1__005
+- Sektorea3/Geometria/Pasilloa_J3_J1/Zorua/Floor1__006
+- Sektorea3/Geometria/Pasilloa_J3_J1/Zorua/Floor1__007
+- Sektorea3/Geometria/Pasilloa_J3_J1/Zorua/Floor1__008
+- Sektorea3/Geometria/Pasilloa_J3_J1/Zorua/Floor1__009
+- Sektorea3/Geometria/Pasilloa_J3_J1/Zorua/Floor1__010
+- Sektorea3/Geometria/Pasilloa_J3_J1/Zorua/Floor1__011
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__000
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__000/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__000/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__000/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__000/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__000/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__000/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__000/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__000/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__000/Floor2
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__000/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__000/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__000/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__000/Wall1
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__000/Wall2
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__000/Wall3
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__000/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__000/Light2
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__000/TopWall4
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__000/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__000/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__000/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__001
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__001/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__001/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__001/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__001/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__001/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__001/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__001/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__001/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__001/Floor2
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__001/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__001/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__001/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__001/Wall1
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__001/Wall2
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__001/Wall3
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__001/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__001/Light2
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__001/TopWall4
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__001/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__001/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__001/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__002
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__002/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__002/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__002/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__002/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__002/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__002/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__002/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__002/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__002/Floor2
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__002/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__002/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__002/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__002/Wall1
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__002/Wall2
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__002/Wall3
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__002/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__002/Light2
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__002/TopWall4
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__002/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__002/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__002/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__003
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__003/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__003/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__003/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__003/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__003/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__003/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__003/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__003/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__003/Floor2
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__003/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__003/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__003/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__003/Wall1
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__003/Wall2
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__003/Wall3
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__003/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__003/Light2
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__003/TopWall4
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__003/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__003/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__003/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__004
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__004/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__004/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__004/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__004/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__004/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__004/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__004/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__004/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__004/Floor2
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__004/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__004/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__004/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__004/Wall1
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__004/Wall2
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__004/Wall3
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__004/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__004/Light2
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__004/TopWall4
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__004/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__004/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__004/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__005
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__005/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__005/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__005/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__005/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__005/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__005/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__005/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__005/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__005/Floor2
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__005/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__005/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__005/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__005/Wall1
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__005/Wall2
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__005/Wall3
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__005/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__005/Light2
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__005/TopWall4
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__005/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__005/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Hodia/Profile1__005/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J3_J1/Propak/PF_Hodia_Grisa__000
+- Sektorea3/Geometria/Pasilloa_J3_J1/Propak/PF_Hodia_Grisa__001
+- Sektorea3/Geometria/Pasilloa_J2_J4/Zorua/PF_Plaka__000
+- Sektorea3/Geometria/Pasilloa_J2_J4/Zorua/PF_Plaka__001
+- Sektorea3/Geometria/Pasilloa_J2_J4/Zorua/Floor1__000
+- Sektorea3/Geometria/Pasilloa_J2_J4/Zorua/Floor1__001
+- Sektorea3/Geometria/Pasilloa_J2_J4/Zorua/Floor1__002
+- Sektorea3/Geometria/Pasilloa_J2_J4/Zorua/Floor1__003
+- Sektorea3/Geometria/Pasilloa_J2_J4/Zorua/Floor1__004
+- Sektorea3/Geometria/Pasilloa_J2_J4/Zorua/Floor1__005
+- Sektorea3/Geometria/Pasilloa_J2_J4/Zorua/Floor1__006
+- Sektorea3/Geometria/Pasilloa_J2_J4/Zorua/Floor1__007
+- Sektorea3/Geometria/Pasilloa_J2_J4/Zorua/Floor1__008
+- Sektorea3/Geometria/Pasilloa_J2_J4/Zorua/Floor1__009
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__000
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__000/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__000/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__000/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__000/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__000/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__000/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__000/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__000/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__000/Floor2
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__000/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__000/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__000/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__000/Wall1
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__000/Wall2
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__000/Wall3
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__000/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__000/Light2
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__000/TopWall4
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__000/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__000/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__000/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__001
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__001/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__001/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__001/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__001/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__001/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__001/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__001/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__001/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__001/Floor2
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__001/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__001/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__001/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__001/Wall1
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__001/Wall2
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__001/Wall3
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__001/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__001/Light2
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__001/TopWall4
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__001/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__001/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__001/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__002
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__002/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__002/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__002/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__002/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__002/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__002/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__002/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__002/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__002/Floor2
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__002/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__002/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__002/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__002/Wall1
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__002/Wall2
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__002/Wall3
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__002/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__002/Light2
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__002/TopWall4
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__002/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__002/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__002/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__003
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__003/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__003/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__003/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__003/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__003/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__003/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__003/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__003/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__003/Floor2
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__003/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__003/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__003/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__003/Wall1
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__003/Wall2
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__003/Wall3
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__003/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__003/Light2
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__003/TopWall4
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__003/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__003/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__003/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__004
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__004/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__004/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__004/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__004/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__004/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__004/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__004/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__004/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__004/Floor2
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__004/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__004/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__004/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__004/Wall1
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__004/Wall2
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__004/Wall3
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__004/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__004/Light2
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__004/TopWall4
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__004/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__004/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_J2_J4/Hodia/Profile1__004/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Zorua/PF_Plaka__000
+- Sektorea3/Geometria/Pasilloa_J3_J5/Zorua/PF_Plaka__001
+- Sektorea3/Geometria/Pasilloa_J3_J5/Zorua/Floor1__000
+- Sektorea3/Geometria/Pasilloa_J3_J5/Zorua/Floor1__001
+- Sektorea3/Geometria/Pasilloa_J3_J5/Zorua/Floor1__002
+- Sektorea3/Geometria/Pasilloa_J3_J5/Zorua/Floor1__003
+- Sektorea3/Geometria/Pasilloa_J3_J5/Zorua/Floor1__004
+- Sektorea3/Geometria/Pasilloa_J3_J5/Zorua/Floor1__005
+- Sektorea3/Geometria/Pasilloa_J3_J5/Zorua/Floor1__006
+- Sektorea3/Geometria/Pasilloa_J3_J5/Zorua/Floor1__007
+- Sektorea3/Geometria/Pasilloa_J3_J5/Zorua/Floor1__008
+- Sektorea3/Geometria/Pasilloa_J3_J5/Zorua/Floor1__009
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__000
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__000/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__000/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__000/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__000/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__000/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__000/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__000/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__000/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__000/Floor2
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__000/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__000/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__000/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__000/Wall1
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__000/Wall2
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__000/Wall3
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__000/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__000/Light2
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__000/TopWall4
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__000/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__000/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__000/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__001
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__001/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__001/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__001/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__001/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__001/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__001/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__001/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__001/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__001/Floor2
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__001/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__001/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__001/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__001/Wall1
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__001/Wall2
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__001/Wall3
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__001/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__001/Light2
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__001/TopWall4
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__001/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__001/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__001/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__002
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__002/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__002/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__002/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__002/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__002/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__002/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__002/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__002/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__002/Floor2
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__002/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__002/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__002/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__002/Wall1
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__002/Wall2
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__002/Wall3
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__002/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__002/Light2
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__002/TopWall4
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__002/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__002/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__002/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__003
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__003/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__003/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__003/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__003/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__003/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__003/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__003/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__003/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__003/Floor2
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__003/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__003/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__003/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__003/Wall1
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__003/Wall2
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__003/Wall3
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__003/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__003/Light2
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__003/TopWall4
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__003/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__003/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__003/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__004
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__004/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__004/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__004/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__004/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__004/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__004/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__004/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__004/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__004/Floor2
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__004/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__004/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__004/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__004/Wall1
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__004/Wall2
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__004/Wall3
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__004/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__004/Light2
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__004/TopWall4
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__004/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__004/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_J3_J5/Hodia/Profile1__004/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Zorua/PF_Plaka__000
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Zorua/PF_Plaka__001
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Zorua/Floor1__000
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Zorua/Floor1__001
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Zorua/Floor1__002
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Zorua/Floor1__003
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/ProfileDoor__000
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/ProfileDoor__000/WallDoor
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/ProfileDoor__000/DoorFrame
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/ProfileDoor__000/Light1
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/ProfileDoor__000/Light1 (1)
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/ProfileDoor__001
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/ProfileDoor__001/WallDoor
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/ProfileDoor__001/DoorFrame
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/ProfileDoor__001/Light1
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/ProfileDoor__001/Light1 (1)
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/Profile1__000
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/Profile1__000/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/Profile1__000/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/Profile1__000/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/Profile1__000/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/Profile1__000/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/Profile1__000/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/Profile1__000/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/Profile1__000/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/Profile1__000/Floor2
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/Profile1__000/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/Profile1__000/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/Profile1__000/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/Profile1__000/Wall1
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/Profile1__000/Wall2
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/Profile1__000/Wall3
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/Profile1__000/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/Profile1__000/Light2
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/Profile1__000/TopWall4
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/Profile1__000/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/Profile1__000/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/Profile1__000/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/Profile1__001
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/Profile1__001/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/Profile1__001/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/Profile1__001/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/Profile1__001/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/Profile1__001/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/Profile1__001/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/Profile1__001/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/Profile1__001/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/Profile1__001/Floor2
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/Profile1__001/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/Profile1__001/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/Profile1__001/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/Profile1__001/Wall1
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/Profile1__001/Wall2
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/Profile1__001/Wall3
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/Profile1__001/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/Profile1__001/Light2
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/Profile1__001/TopWall4
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/Profile1__001/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/Profile1__001/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/Profile1__001/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Zorua/PF_Plaka__000
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Zorua/PF_Plaka__001
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Zorua/Floor1__000
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Zorua/Floor1__001
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Zorua/Floor1__002
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Zorua/Floor1__003
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/ProfileDoor__000
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/ProfileDoor__000/WallDoor
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/ProfileDoor__000/DoorFrame
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/ProfileDoor__000/Light1
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/ProfileDoor__000/Light1 (1)
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/ProfileDoor__001
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/ProfileDoor__001/WallDoor
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/ProfileDoor__001/DoorFrame
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/ProfileDoor__001/Light1
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/ProfileDoor__001/Light1 (1)
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/Profile1__000
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/Profile1__000/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/Profile1__000/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/Profile1__000/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/Profile1__000/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/Profile1__000/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/Profile1__000/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/Profile1__000/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/Profile1__000/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/Profile1__000/Floor2
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/Profile1__000/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/Profile1__000/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/Profile1__000/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/Profile1__000/Wall1
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/Profile1__000/Wall2
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/Profile1__000/Wall3
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/Profile1__000/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/Profile1__000/Light2
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/Profile1__000/TopWall4
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/Profile1__000/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/Profile1__000/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/Profile1__000/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/Profile1__001
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/Profile1__001/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/Profile1__001/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/Profile1__001/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/Profile1__001/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/Profile1__001/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/Profile1__001/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/Profile1__001/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/Profile1__001/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/Profile1__001/Floor2
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/Profile1__001/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/Profile1__001/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/Profile1__001/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/Profile1__001/Wall1
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/Profile1__001/Wall2
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/Profile1__001/Wall3
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/Profile1__001/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/Profile1__001/Light2
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/Profile1__001/TopWall4
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/Profile1__001/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/Profile1__001/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/Profile1__001/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Zorua/PF_Plaka__000
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Zorua/PF_Plaka__001
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Zorua/Floor1__000
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Zorua/Floor1__001
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Zorua/Floor1__002
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Zorua/Floor1__003
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Zorua/Floor1__004
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Zorua/Floor1__005
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Zorua/Floor1__006
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Zorua/Floor1__007
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__000
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__000/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__000/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__000/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__000/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__000/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__000/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__000/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__000/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__000/Floor2
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__000/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__000/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__000/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__000/Wall1
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__000/Wall2
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__000/Wall3
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__000/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__000/Light2
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__000/TopWall4
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__000/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__000/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__000/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__001
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__001/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__001/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__001/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__001/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__001/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__001/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__001/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__001/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__001/Floor2
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__001/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__001/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__001/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__001/Wall1
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__001/Wall2
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__001/Wall3
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__001/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__001/Light2
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__001/TopWall4
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__001/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__001/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__001/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__002
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__002/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__002/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__002/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__002/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__002/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__002/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__002/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__002/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__002/Floor2
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__002/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__002/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__002/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__002/Wall1
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__002/Wall2
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__002/Wall3
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__002/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__002/Light2
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__002/TopWall4
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__002/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__002/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__002/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__003
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__003/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__003/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__003/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__003/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__003/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__003/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__003/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__003/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__003/Floor2
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__003/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__003/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__003/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__003/Wall1
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__003/Wall2
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__003/Wall3
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__003/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__003/Light2
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__003/TopWall4
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__003/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__003/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_J2_Kontrola1/Hodia/Profile1__003/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Zorua/PF_Plaka__000
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Zorua/PF_Plaka__001
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Zorua/Floor1__000
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Zorua/Floor1__001
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Zorua/Floor1__002
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Zorua/Floor1__003
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Zorua/Floor1__004
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Zorua/Floor1__005
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Zorua/Floor1__006
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Zorua/Floor1__007
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__000
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__000/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__000/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__000/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__000/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__000/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__000/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__000/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__000/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__000/Floor2
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__000/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__000/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__000/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__000/Wall1
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__000/Wall2
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__000/Wall3
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__000/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__000/Light2
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__000/TopWall4
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__000/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__000/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__000/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__001
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__001/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__001/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__001/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__001/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__001/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__001/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__001/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__001/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__001/Floor2
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__001/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__001/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__001/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__001/Wall1
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__001/Wall2
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__001/Wall3
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__001/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__001/Light2
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__001/TopWall4
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__001/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__001/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__001/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__002
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__002/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__002/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__002/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__002/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__002/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__002/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__002/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__002/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__002/Floor2
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__002/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__002/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__002/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__002/Wall1
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__002/Wall2
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__002/Wall3
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__002/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__002/Light2
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__002/TopWall4
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__002/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__002/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__002/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__003
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__003/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__003/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__003/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__003/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__003/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__003/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__003/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__003/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__003/Floor2
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__003/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__003/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__003/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__003/Wall1
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__003/Wall2
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__003/Wall3
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__003/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__003/Light2
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__003/TopWall4
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__003/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__003/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_J3_Kontrola2/Hodia/Profile1__003/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Zorua/PF_Plaka__000
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Zorua/PF_Plaka__001
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Zorua/Floor1__000
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Zorua/Floor1__001
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Zorua/Floor1__002
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Zorua/Floor1__003
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Zorua/Floor1__004
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Zorua/Floor1__005
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Zorua/Floor1__006
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Zorua/Floor1__007
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Zorua/Floor1__008
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Zorua/Floor1__009
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__000
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__000/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__000/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__000/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__000/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__000/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__000/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__000/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__000/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__000/Floor2
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__000/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__000/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__000/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__000/Wall1
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__000/Wall2
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__000/Wall3
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__000/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__000/Light2
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__000/TopWall4
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__000/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__000/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__000/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__001
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__001/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__001/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__001/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__001/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__001/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__001/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__001/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__001/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__001/Floor2
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__001/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__001/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__001/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__001/Wall1
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__001/Wall2
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__001/Wall3
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__001/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__001/Light2
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__001/TopWall4
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__001/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__001/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__001/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__002
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__002/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__002/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__002/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__002/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__002/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__002/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__002/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__002/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__002/Floor2
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__002/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__002/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__002/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__002/Wall1
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__002/Wall2
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__002/Wall3
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__002/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__002/Light2
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__002/TopWall4
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__002/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__002/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__002/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__003
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__003/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__003/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__003/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__003/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__003/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__003/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__003/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__003/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__003/Floor2
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__003/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__003/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__003/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__003/Wall1
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__003/Wall2
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__003/Wall3
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__003/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__003/Light2
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__003/TopWall4
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__003/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__003/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__003/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__004
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__004/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__004/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__004/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__004/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__004/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__004/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__004/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__004/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__004/Floor2
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__004/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__004/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__004/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__004/Wall1
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__004/Wall2
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__004/Wall3
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__004/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__004/Light2
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__004/TopWall4
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__004/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__004/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Hodia/Profile1__004/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Propak/PF_Hodia_Grisa__000
+- Sektorea3/Geometria/Pasilloa_J5_Mantentzea/Propak/PF_Hodia_Grisa__001
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Zorua/PF_Plaka__000
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Zorua/PF_Plaka__001
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Zorua/Floor1__000
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Zorua/Floor1__001
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Zorua/Floor1__002
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Zorua/Floor1__003
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Zorua/Floor1__004
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Zorua/Floor1__005
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/ProfileDoor__000
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/ProfileDoor__000/WallDoor
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/ProfileDoor__000/DoorFrame
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/ProfileDoor__000/Light1
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/ProfileDoor__000/Light1 (1)
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/ProfileDoor__001
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/ProfileDoor__001/WallDoor
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/ProfileDoor__001/DoorFrame
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/ProfileDoor__001/Light1
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/ProfileDoor__001/Light1 (1)
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__000
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__000/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__000/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__000/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__000/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__000/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__000/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__000/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__000/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__000/Floor2
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__000/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__000/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__000/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__000/Wall1
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__000/Wall2
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__000/Wall3
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__000/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__000/Light2
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__000/TopWall4
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__000/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__000/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__000/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__001
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__001/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__001/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__001/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__001/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__001/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__001/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__001/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__001/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__001/Floor2
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__001/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__001/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__001/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__001/Wall1
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__001/Wall2
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__001/Wall3
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__001/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__001/Light2
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__001/TopWall4
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__001/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__001/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__001/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__002
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__002/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__002/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__002/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__002/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__002/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__002/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__002/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__002/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__002/Floor2
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__002/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__002/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__002/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__002/Wall1
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__002/Wall2
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__002/Wall3
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__002/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__002/Light2
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__002/TopWall4
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__002/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__002/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/Profile1__002/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Zorua/PF_Plaka__000
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Zorua/PF_Plaka__001
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Zorua/Floor1__000
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Zorua/Floor1__001
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Zorua/Floor1__002
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Zorua/Floor1__003
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Zorua/Floor1__004
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Zorua/Floor1__005
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__000
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__000/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__000/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__000/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__000/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__000/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__000/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__000/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__000/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__000/Floor2
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__000/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__000/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__000/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__000/Wall1
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__000/Wall2
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__000/Wall3
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__000/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__000/Light2
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__000/TopWall4
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__000/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__000/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__000/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__001
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__001/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__001/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__001/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__001/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__001/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__001/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__001/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__001/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__001/Floor2
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__001/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__001/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__001/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__001/Wall1
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__001/Wall2
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__001/Wall3
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__001/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__001/Light2
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__001/TopWall4
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__001/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__001/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__001/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__002
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__002/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__002/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__002/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__002/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__002/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__002/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__002/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__002/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__002/Floor2
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__002/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__002/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__002/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__002/Wall1
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__002/Wall2
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__002/Wall3
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__002/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__002/Light2
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__002/TopWall4
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__002/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__002/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_J6_Mantentzea/Hodia/Profile1__002/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Zorua/PF_Plaka__000
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Zorua/PF_Plaka__001
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Zorua/Floor1__000
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Zorua/Floor1__001
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Zorua/Floor1__002
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Zorua/Floor1__003
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Zorua/Floor1__004
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Zorua/Floor1__005
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__000
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__000/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__000/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__000/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__000/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__000/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__000/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__000/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__000/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__000/Floor2
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__000/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__000/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__000/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__000/Wall1
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__000/Wall2
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__000/Wall3
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__000/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__000/Light2
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__000/TopWall4
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__000/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__000/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__000/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__001
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__001/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__001/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__001/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__001/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__001/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__001/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__001/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__001/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__001/Floor2
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__001/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__001/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__001/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__001/Wall1
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__001/Wall2
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__001/Wall3
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__001/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__001/Light2
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__001/TopWall4
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__001/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__001/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__001/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__002
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__002/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__002/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__002/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__002/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__002/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__002/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__002/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__002/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__002/Floor2
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__002/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__002/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__002/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__002/Wall1
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__002/Wall2
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__002/Wall3
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__002/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__002/Light2
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__002/TopWall4
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__002/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__002/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_J6_AzkenBorroka/Hodia/Profile1__002/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Zorua/PF_Plaka__000
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Zorua/PF_Plaka__001
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Zorua/Floor1__000
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Zorua/Floor1__001
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Zorua/Floor1__002
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Zorua/Floor1__003
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Zorua/Floor1__004
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Zorua/Floor1__005
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Zorua/Floor1__006
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Zorua/Floor1__007
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__000
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__000/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__000/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__000/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__000/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__000/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__000/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__000/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__000/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__000/Floor2
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__000/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__000/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__000/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__000/Wall1
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__000/Wall2
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__000/Wall3
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__000/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__000/Light2
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__000/TopWall4
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__000/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__000/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__000/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__001
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__001/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__001/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__001/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__001/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__001/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__001/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__001/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__001/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__001/Floor2
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__001/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__001/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__001/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__001/Wall1
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__001/Wall2
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__001/Wall3
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__001/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__001/Light2
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__001/TopWall4
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__001/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__001/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__001/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__002
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__002/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__002/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__002/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__002/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__002/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__002/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__002/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__002/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__002/Floor2
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__002/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__002/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__002/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__002/Wall1
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__002/Wall2
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__002/Wall3
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__002/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__002/Light2
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__002/TopWall4
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__002/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__002/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__002/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__003
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__003/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__003/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__003/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__003/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__003/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__003/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__003/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__003/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__003/Floor2
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__003/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__003/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__003/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__003/Wall1
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__003/Wall2
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__003/Wall3
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__003/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__003/Light2
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__003/TopWall4
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__003/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__003/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Hodia/Profile1__003/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Propak/PF_Hodia_Grisa__000
+- Sektorea3/Geometria/Pasilloa_J4_AzkenBorroka/Propak/PF_Hodia_Grisa__001
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Zorua/PF_Plaka__000
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Zorua/PF_Plaka__001
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Zorua/Floor1__000
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Zorua/Floor1__001
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Zorua/Floor1__002
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Zorua/Floor1__003
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/ProfileDoor__000
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/ProfileDoor__000/WallDoor
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/ProfileDoor__000/DoorFrame
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/ProfileDoor__000/Light1
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/ProfileDoor__000/Light1 (1)
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/ProfileDoor__001
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/ProfileDoor__001/WallDoor
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/ProfileDoor__001/DoorFrame
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/ProfileDoor__001/Light1
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/ProfileDoor__001/Light1 (1)
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/Profile1__000
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/Profile1__000/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/Profile1__000/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/Profile1__000/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/Profile1__000/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/Profile1__000/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/Profile1__000/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/Profile1__000/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/Profile1__000/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/Profile1__000/Floor2
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/Profile1__000/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/Profile1__000/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/Profile1__000/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/Profile1__000/Wall1
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/Profile1__000/Wall2
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/Profile1__000/Wall3
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/Profile1__000/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/Profile1__000/Light2
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/Profile1__000/TopWall4
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/Profile1__000/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/Profile1__000/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/Profile1__000/SideWall1.1 (6)
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/Profile1__001
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/Profile1__001/SideFloor2 (2)
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/Profile1__001/SideFloor2 (2)/Bar
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/Profile1__001/SideFloor2 (3)
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/Profile1__001/SideFloor2 (3)/Bar
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/Profile1__001/SideFloor1 (2)
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/Profile1__001/SideFloor1 (3)
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/Profile1__001/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/Profile1__001/SideWall1.1
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/Profile1__001/Floor2
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/Profile1__001/Floor5 (1)
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/Profile1__001/Floor4 (2)
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/Profile1__001/Floor4 (3)
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/Profile1__001/Wall1
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/Profile1__001/Wall2
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/Profile1__001/Wall3
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/Profile1__001/TopWall4 (1)
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/Profile1__001/Light2
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/Profile1__001/TopWall4
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/Profile1__001/Wall12 (1)
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/Profile1__001/SideWall1.1 (5)
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/Profile1__001/SideWall1.1 (6)
+
+## Dinamikoak (omitituta) (19)
+
+- Sektorea3/Geometria/Pasilloa_Segurtasuna_Deskontaminazioa/Hodia/ProfileDoor__000/Door: izena 'Door'
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/ProfileDoor__000/Door: izena 'Door'
+- Sektorea3/Geometria/Pasilloa_Deskontaminazioa_J1/Hodia/ProfileDoor__001/Door: izena 'Door'
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/ProfileDoor__000/Door: izena 'Door'
+- Sektorea3/Geometria/Pasilloa_J4_Erreaktorea/Hodia/ProfileDoor__001/Door: izena 'Door'
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/ProfileDoor__000/Door: izena 'Door'
+- Sektorea3/Geometria/Pasilloa_J5_Erreaktorea/Hodia/ProfileDoor__001/Door: izena 'Door'
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/ProfileDoor__000/Door: izena 'Door'
+- Sektorea3/Geometria/Pasilloa_Erreaktorea_J6/Hodia/ProfileDoor__001/Door: izena 'Door'
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/ProfileDoor__000/Door: izena 'Door'
+- Sektorea3/Geometria/Pasilloa_AzkenBorroka_Irteera/Hodia/ProfileDoor__001/Door: izena 'Door'
+- Sektorea3/Misioa/Blokeoak/Din_Blokeoa_Pasilloa_AzkenBorroka_Irteera/Hesia: izena 'Din_Blokeoa_Pasilloa_AzkenBorroka_Irteera'
+- Sektorea3/Misioa/Bildumak/Din_Bilduma_00: izena 'Din_Bilduma_00'
+- Sektorea3/Misioa/Bildumak/Din_Bilduma_01: izena 'Din_Bilduma_01'
+- Sektorea3/Misioa/Bildumak/Din_Bilduma_02: izena 'Din_Bilduma_02'
+- Sektorea3/Misioa/Bildumak/Din_Bilduma_03: izena 'Din_Bilduma_03'
+- Sektorea3/Misioa/Mugikorrak/Din_PF_Din_Eraztuna_Ziana_00: izena 'Din_PF_Din_Eraztuna_Ziana_00'
+- Sektorea3/Misioa/Mugikorrak/Din_PF_Din_Eraztuna_Gorria_01: izena 'Din_PF_Din_Eraztuna_Gorria_01'
+- Sektorea3/Misioa/Mugikorrak/Din_PF_Din_Eraztuna_Ziana_02: izena 'Din_PF_Din_Eraztuna_Ziana_02'
