@@ -1,0 +1,594 @@
+# EszenaEraikitzailea: Prototipoa: Aplikatu
+
+- **Data:** 2026-11-06 03:22:07
+- **Eszena:** Assets/_Eclipse/Eszenak/02_PrototipoDiseinua.unity
+- **Sektorea:** Prototipoa
+
+```text
+ 22                 T T T               
+ 21                 T T T               
+ 20                   |                 
+ 19                   |                 
+ 18                   |                 
+ 17   + - - - - - - - + - - - - - +     
+ 16   |               |           |     
+ 15   |               |           |     
+ 14   |               |           |     
+ 13   |               |       B B B B B 
+ 12   |               |       B B B B B 
+ 11   |               + - - - B B B B B 
+ 10   |               |       B B B B B 
+  9   |               |       B B B B B 
+  8 H H H             |       B B B B B 
+  7 H H H - - - - - - +       |         
+  6 H H H             |       |         
+  5                   |       |         
+  4                   |       B B       
+  3           - - - - + - - - B B       
+  2                   |       B B       
+  1                   |                 
+  0                   |                 
+ -1                   K K               
+ -2                   K K               
+```
+
+## Salak (11)
+
+- Hasiera: 3 x 3 gelaxka = 11.25 x 11.25 m, altuera 5.00 m
+- J1: 1 x 1 gelaxka = 3.75 x 3.75 m, altuera 5.00 m
+- J2: 1 x 1 gelaxka = 3.75 x 3.75 m, altuera 5.00 m
+- J3: 1 x 1 gelaxka = 3.75 x 3.75 m, altuera 5.00 m
+- J4: 1 x 1 gelaxka = 3.75 x 3.75 m, altuera 5.00 m
+- J5: 1 x 1 gelaxka = 3.75 x 3.75 m, altuera 5.00 m
+- J6: 1 x 1 gelaxka = 3.75 x 3.75 m, altuera 5.00 m
+- Borroka: 5 x 6 gelaxka = 18.75 x 22.50 m, altuera 5.00 m
+- Biltegia: 2 x 3 gelaxka = 7.50 x 11.25 m, altuera 5.00 m
+- Teknikoa: 3 x 2 gelaxka = 11.25 x 7.50 m, altuera 5.00 m
+- Kutxa: 2 x 2 gelaxka = 7.50 x 7.50 m, altuera 5.00 m
+
+## Modulu erabiliak (30)
+
+- Box1: (1.86, 0.93, 1.61) m
+- Box3: (1.04, 0.81, 0.84) m
+- Container_Big: (1.44, 1.44, 1.53) m
+- Container_BigOpen: (1.44, 1.44, 1.53) m
+- Container_small: (1.59, 0.87, 0.94) m
+- Floor1: (2.40, 0.15, 1.88) m
+- Old_computer: (1.20, 1.42, 2.06) m
+- Oxygen_sint: (8.55, 4.12, 4.31) m
+- PF_ArgiPanela_Hotza: (2.00, 0.00, 1.00) m
+- PF_Seinalea_BILTEGIA: (3.20, 0.80, 0.00) m
+- PF_Seinalea_BORROKA: (3.20, 0.80, 0.00) m
+- PF_Seinalea_HASIERA: (3.20, 0.80, 0.00) m
+- PF_Seinalea_ITSUA: (3.20, 0.80, 0.00) m
+- PF_Seinalea_J1: (3.20, 0.80, 0.00) m
+- PF_Seinalea_J2: (3.20, 0.80, 0.00) m
+- PF_Seinalea_J3: (3.20, 0.80, 0.00) m
+- PF_Seinalea_J4: (3.20, 0.80, 0.00) m
+- PF_Seinalea_J5: (3.20, 0.80, 0.00) m
+- PF_Seinalea_J6: (3.20, 0.80, 0.00) m
+- PF_Seinalea_KUTXA: (3.20, 0.80, 0.00) m
+- PF_Seinalea_SARRERA: (3.20, 0.80, 0.00) m
+- PF_Seinalea_TEKNIKOA: (3.20, 0.80, 0.00) m
+- Profile1: (3.75, 3.75, 3.77) m
+- ProfileDoor: (3.75, 3.75, 1.31) m
+- ProfileEnd: (3.75, 3.75, 1.25) m
+- Rack: (2.97, 1.02, 3.32) m
+- Supply_box: (6.92, 4.86, 4.42) m
+- TopWall4: (2.54, 0.15, 1.88) m
+- Wall12: (0.15, 2.50, 3.75) m
+- WallIntersection: (0.58, 3.75, 3.75) m
+
+## Oharrak (15)
+
+- Pasilloa_Hasiera_J1: 5 x Profile1, luzeran x1.087
+- Pasilloa_J1_J2: 3 x Profile1, luzeran x0.922
+- Pasilloa_J3_J1: 3 x Profile1, luzeran x0.922
+- Pasilloa_J2_Borroka: 3 x Profile1, luzeran x0.922
+- Pasilloa_J3_Biltegia: 3 x Profile1, luzeran x0.922
+- Pasilloa_Biltegia_Borroka: 2 x Profile1, luzeran x1.050
+- Pasilloa_Borroka_J4: 2 x Profile1, luzeran x1.050
+- Pasilloa_J6_J4: 5 x Profile1, luzeran x0.953
+- Pasilloa_J2_J6: 5 x Profile1, luzeran x0.953
+- Pasilloa_J5_J6: 7 x Profile1, luzeran x0.967
+- Pasilloa_Hasiera_J5: 7 x Profile1, luzeran x1.062
+- Pasilloa_J6_Teknikoa: 2 x Profile1, luzeran x1.050
+- Pasilloa_Kutxa_J3: 2 x Profile1, luzeran x1.050
+- Pasilloa_J3_itsua: 3 x Profile1, luzeran x1.072
+- Biltegia/Container_Big: atearen pasabidea blokeatzen du; omitituta.
+- **Piezak:** 728; **kolisioak:** 257; **argi propioak:** 22
+
+**Aldaketak guztira: 483** (54 sortu, 392 eguneratu, 37 ezabatu)
+
+## Sortzeko edo sortuak (54)
+
+- Prototipoa/Geometria/Hasiera/Hormak/PF_Seinalea_J1__000
+- Prototipoa/Geometria/Hasiera/Hormak/PF_Seinalea_J5__000
+- Prototipoa/Geometria/J1/Hormak/PF_Seinalea_HASIERA__000
+- Prototipoa/Geometria/J1/Hormak/PF_Seinalea_J2__000
+- Prototipoa/Geometria/J1/Hormak/PF_Seinalea_J3__000
+- Prototipoa/Geometria/J2/Hormak/PF_Seinalea_BORROKA__000
+- Prototipoa/Geometria/J2/Hormak/PF_Seinalea_J6__000
+- Prototipoa/Geometria/J2/Hormak/PF_Seinalea_J1__000
+- Prototipoa/Geometria/J3/Hormak/PF_Seinalea_BILTEGIA__000
+- Prototipoa/Geometria/J3/Hormak/PF_Seinalea_ITSUA__000
+- Prototipoa/Geometria/J3/Hormak/PF_Seinalea_J1__000
+- Prototipoa/Geometria/J3/Hormak/PF_Seinalea_KUTXA__000
+- Prototipoa/Geometria/J4/Hormak/PF_Seinalea_J6__000
+- Prototipoa/Geometria/J4/Hormak/PF_Seinalea_BORROKA__000
+- Prototipoa/Geometria/J5/Hormak/PF_Seinalea_J6__000
+- Prototipoa/Geometria/J5/Hormak/PF_Seinalea_HASIERA__000
+- Prototipoa/Geometria/J6/Hormak/PF_Seinalea_J4__000
+- Prototipoa/Geometria/J6/Hormak/PF_Seinalea_J5__000
+- Prototipoa/Geometria/J6/Hormak/PF_Seinalea_TEKNIKOA__000
+- Prototipoa/Geometria/J6/Hormak/PF_Seinalea_J2__000
+- Prototipoa/Geometria/Borroka/Hormak/PF_Seinalea_J2__000
+- Prototipoa/Geometria/Borroka/Hormak/PF_Seinalea_J4__000
+- Prototipoa/Geometria/Borroka/Hormak/PF_Seinalea_BILTEGIA__000
+- Prototipoa/Geometria/Biltegia/Hormak/PF_Seinalea_J3__000
+- Prototipoa/Geometria/Biltegia/Hormak/PF_Seinalea_BORROKA__000
+- Prototipoa/Geometria/Teknikoa/Hormak/PF_Seinalea_J6__000
+- Prototipoa/Geometria/Kutxa/Hormak/PF_Seinalea_J3__000
+- Prototipoa/Geometria/Pasilloa_J2_Borroka/Hodia/Profile1__002
+- Prototipoa/Geometria/Pasilloa_J3_Biltegia/Hodia/Profile1__001
+- Prototipoa/Geometria/Pasilloa_J3_Biltegia/Hodia/Profile1__002
+- Prototipoa/Geometria/Pasilloa_Borroka_J4/Hodia/ProfileDoor__001
+- Prototipoa/Geometria/Pasilloa_Borroka_J4/Hodia/Profile1__001
+- Prototipoa/Geometria/Pasilloa_J2_J6/Hodia/Profile1__004
+- Prototipoa/Geometria/Pasilloa_Hasiera_J5/Hodia/Profile1__006
+- Prototipoa/Geometria/Pasilloa_J6_Teknikoa/Hodia/ProfileDoor__001
+- Prototipoa/Geometria/Pasilloa_J6_Teknikoa/Hodia/Profile1__001
+- Prototipoa/Geometria/Pasilloa_Kutxa_J3/Hodia/ProfileDoor__001
+- Prototipoa/Geometria/Pasilloa_Kutxa_J3/Hodia/Profile1__001
+- Prototipoa/Geometria/Pasilloa_J3_itsua/Hodia/ProfileDoor__000
+- Prototipoa/Geometria/Pasilloa_J3_itsua/Propak/
+- Prototipoa/Geometria/Pasilloa_J3_itsua/Propak/Container_Big__000
+- Prototipoa/Geometria/Borroka/Propak/Oxygen_sint__000
+- Prototipoa/Geometria/Pasilloa_Borroka_J4/Kolisioak/Kolisioa__007
+- Prototipoa/Geometria/Pasilloa_Borroka_J4/Kolisioak/Kolisioa__008
+- Prototipoa/Geometria/Pasilloa_Borroka_J4/Kolisioak/Kolisioa__009
+- Prototipoa/Geometria/Pasilloa_J6_Teknikoa/Kolisioak/Kolisioa__007
+- Prototipoa/Geometria/Pasilloa_J6_Teknikoa/Kolisioak/Kolisioa__008
+- Prototipoa/Geometria/Pasilloa_J6_Teknikoa/Kolisioak/Kolisioa__009
+- Prototipoa/Geometria/Pasilloa_Kutxa_J3/Kolisioak/Kolisioa__007
+- Prototipoa/Geometria/Pasilloa_Kutxa_J3/Kolisioak/Kolisioa__008
+- Prototipoa/Geometria/Pasilloa_Kutxa_J3/Kolisioak/Kolisioa__009
+- Prototipoa/Geometria/Pasilloa_J3_itsua/Kolisioak/Kolisioa__005
+- Prototipoa/Geometria/Pasilloa_J3_itsua/Kolisioak/Kolisioa__006
+- Prototipoa/Geometria/Pasilloa_J3_itsua/Kolisioak/Kolisioa__007
+
+## Eguneratzeko edo eguneratuak (392)
+
+- Prototipoa/Gela_P_J4: kaxa (3.46, 5.00, 3.46) m, trigger
+- Prototipoa/Gela_P_J5: kaxa (3.46, 5.00, 3.46) m, trigger
+- Prototipoa/Gela_P_J6: kaxa (3.46, 5.00, 3.46) m, trigger
+- Prototipoa/Gela_P_Biltegia: kaxa (7.21, 5.00, 10.96) m, trigger
+- Prototipoa/Gela_P_Teknikoa: kaxa (10.96, 5.00, 7.21) m, trigger
+- Prototipoa/Gela_P_Kutxa: kaxa (7.21, 5.00, 7.21) m, trigger
+- Prototipoa/Geometria/J4/Zorua/Floor1__000
+- Prototipoa/Geometria/J4/Sabaia/TopWall4__000
+- Prototipoa/Geometria/J4/Zorua/Floor1__001
+- Prototipoa/Geometria/J4/Sabaia/TopWall4__001
+- Prototipoa/Geometria/J4/Zorua/Floor1__002
+- Prototipoa/Geometria/J4/Sabaia/TopWall4__002
+- Prototipoa/Geometria/J4/Zorua/Floor1__003
+- Prototipoa/Geometria/J4/Sabaia/TopWall4__003
+- Prototipoa/Geometria/J4/Hormak/Wall12__000
+- Prototipoa/Geometria/J4/Hormak/Wall12__001
+- Prototipoa/Geometria/J4/Hormak/WallIntersection__000
+- Prototipoa/Geometria/J4/Hormak/Wall12__002
+- Prototipoa/Geometria/J4/Hormak/Wall12__003
+- Prototipoa/Geometria/J4/Hormak/Wall12__004
+- Prototipoa/Geometria/J4/Hormak/WallIntersection__001
+- Prototipoa/Geometria/J4/Hormak/Wall12__005
+- Prototipoa/Geometria/J4/Sabaia/PF_ArgiPanela_Hotza__000
+- Prototipoa/Geometria/J5/Zorua/Floor1__000
+- Prototipoa/Geometria/J5/Sabaia/TopWall4__000
+- Prototipoa/Geometria/J5/Zorua/Floor1__001
+- Prototipoa/Geometria/J5/Sabaia/TopWall4__001
+- Prototipoa/Geometria/J5/Zorua/Floor1__002
+- Prototipoa/Geometria/J5/Sabaia/TopWall4__002
+- Prototipoa/Geometria/J5/Zorua/Floor1__003
+- Prototipoa/Geometria/J5/Sabaia/TopWall4__003
+- Prototipoa/Geometria/J5/Hormak/WallIntersection__000
+- Prototipoa/Geometria/J5/Hormak/Wall12__000
+- Prototipoa/Geometria/J5/Hormak/Wall12__001
+- Prototipoa/Geometria/J5/Hormak/Wall12__002
+- Prototipoa/Geometria/J5/Hormak/Wall12__003
+- Prototipoa/Geometria/J5/Hormak/Wall12__004
+- Prototipoa/Geometria/J5/Hormak/WallIntersection__001
+- Prototipoa/Geometria/J5/Hormak/Wall12__005
+- Prototipoa/Geometria/J5/Sabaia/PF_ArgiPanela_Hotza__000
+- Prototipoa/Geometria/J6/Zorua/Floor1__000
+- Prototipoa/Geometria/J6/Sabaia/TopWall4__000
+- Prototipoa/Geometria/J6/Zorua/Floor1__001
+- Prototipoa/Geometria/J6/Sabaia/TopWall4__001
+- Prototipoa/Geometria/J6/Zorua/Floor1__002
+- Prototipoa/Geometria/J6/Sabaia/TopWall4__002
+- Prototipoa/Geometria/J6/Zorua/Floor1__003
+- Prototipoa/Geometria/J6/Sabaia/TopWall4__003
+- Prototipoa/Geometria/J6/Hormak/WallIntersection__000
+- Prototipoa/Geometria/J6/Hormak/Wall12__000
+- Prototipoa/Geometria/J6/Hormak/WallIntersection__001
+- Prototipoa/Geometria/J6/Hormak/Wall12__001
+- Prototipoa/Geometria/J6/Hormak/WallIntersection__002
+- Prototipoa/Geometria/J6/Hormak/Wall12__002
+- Prototipoa/Geometria/J6/Hormak/WallIntersection__003
+- Prototipoa/Geometria/J6/Hormak/Wall12__003
+- Prototipoa/Geometria/J6/Sabaia/PF_ArgiPanela_Hotza__000
+- Prototipoa/Geometria/Biltegia/Zorua/Floor1__000
+- Prototipoa/Geometria/Biltegia/Sabaia/TopWall4__000
+- Prototipoa/Geometria/Biltegia/Zorua/Floor1__001
+- Prototipoa/Geometria/Biltegia/Sabaia/TopWall4__001
+- Prototipoa/Geometria/Biltegia/Zorua/Floor1__002
+- Prototipoa/Geometria/Biltegia/Sabaia/TopWall4__002
+- Prototipoa/Geometria/Biltegia/Zorua/Floor1__003
+- Prototipoa/Geometria/Biltegia/Sabaia/TopWall4__003
+- Prototipoa/Geometria/Biltegia/Zorua/Floor1__004
+- Prototipoa/Geometria/Biltegia/Sabaia/TopWall4__004
+- Prototipoa/Geometria/Biltegia/Zorua/Floor1__005
+- Prototipoa/Geometria/Biltegia/Sabaia/TopWall4__005
+- Prototipoa/Geometria/Biltegia/Zorua/Floor1__006
+- Prototipoa/Geometria/Biltegia/Sabaia/TopWall4__006
+- Prototipoa/Geometria/Biltegia/Zorua/Floor1__007
+- Prototipoa/Geometria/Biltegia/Sabaia/TopWall4__007
+- Prototipoa/Geometria/Biltegia/Zorua/Floor1__008
+- Prototipoa/Geometria/Biltegia/Sabaia/TopWall4__008
+- Prototipoa/Geometria/Biltegia/Zorua/Floor1__009
+- Prototipoa/Geometria/Biltegia/Sabaia/TopWall4__009
+- Prototipoa/Geometria/Biltegia/Zorua/Floor1__010
+- Prototipoa/Geometria/Biltegia/Sabaia/TopWall4__010
+- Prototipoa/Geometria/Biltegia/Zorua/Floor1__011
+- Prototipoa/Geometria/Biltegia/Sabaia/TopWall4__011
+- Prototipoa/Geometria/Biltegia/Zorua/Floor1__012
+- Prototipoa/Geometria/Biltegia/Sabaia/TopWall4__012
+- Prototipoa/Geometria/Biltegia/Zorua/Floor1__013
+- Prototipoa/Geometria/Biltegia/Sabaia/TopWall4__013
+- Prototipoa/Geometria/Biltegia/Zorua/Floor1__014
+- Prototipoa/Geometria/Biltegia/Sabaia/TopWall4__014
+- Prototipoa/Geometria/Biltegia/Zorua/Floor1__015
+- Prototipoa/Geometria/Biltegia/Sabaia/TopWall4__015
+- Prototipoa/Geometria/Biltegia/Zorua/Floor1__016
+- Prototipoa/Geometria/Biltegia/Sabaia/TopWall4__016
+- Prototipoa/Geometria/Biltegia/Zorua/Floor1__017
+- Prototipoa/Geometria/Biltegia/Sabaia/TopWall4__017
+- Prototipoa/Geometria/Biltegia/Hormak/Wall12__000
+- Prototipoa/Geometria/Biltegia/Hormak/Wall12__001
+- Prototipoa/Geometria/Biltegia/Hormak/Wall12__002
+- Prototipoa/Geometria/Biltegia/Hormak/Wall12__003
+- Prototipoa/Geometria/Biltegia/Hormak/Wall12__004
+- Prototipoa/Geometria/Biltegia/Hormak/Wall12__005
+- Prototipoa/Geometria/Biltegia/Hormak/Wall12__006
+- Prototipoa/Geometria/Biltegia/Hormak/Wall12__007
+- Prototipoa/Geometria/Biltegia/Hormak/WallIntersection__000
+- Prototipoa/Geometria/Biltegia/Hormak/Wall12__008
+- Prototipoa/Geometria/Biltegia/Hormak/Wall12__009
+- Prototipoa/Geometria/Biltegia/Hormak/Wall12__010
+- Prototipoa/Geometria/Biltegia/Hormak/Wall12__011
+- Prototipoa/Geometria/Biltegia/Hormak/Wall12__012
+- Prototipoa/Geometria/Biltegia/Hormak/Wall12__013
+- Prototipoa/Geometria/Biltegia/Hormak/Wall12__014
+- Prototipoa/Geometria/Biltegia/Hormak/Wall12__015
+- Prototipoa/Geometria/Biltegia/Hormak/Wall12__016
+- Prototipoa/Geometria/Biltegia/Hormak/Wall12__017
+- Prototipoa/Geometria/Biltegia/Sabaia/PF_ArgiPanela_Hotza__000
+- Prototipoa/Geometria/Biltegia/Sabaia/PF_ArgiPanela_Hotza__001
+- Prototipoa/Geometria/Teknikoa/Zorua/Floor1__000
+- Prototipoa/Geometria/Teknikoa/Sabaia/TopWall4__000
+- Prototipoa/Geometria/Teknikoa/Zorua/Floor1__001
+- Prototipoa/Geometria/Teknikoa/Sabaia/TopWall4__001
+- Prototipoa/Geometria/Teknikoa/Zorua/Floor1__002
+- Prototipoa/Geometria/Teknikoa/Sabaia/TopWall4__002
+- Prototipoa/Geometria/Teknikoa/Zorua/Floor1__003
+- Prototipoa/Geometria/Teknikoa/Sabaia/TopWall4__003
+- Prototipoa/Geometria/Teknikoa/Zorua/Floor1__004
+- Prototipoa/Geometria/Teknikoa/Sabaia/TopWall4__004
+- Prototipoa/Geometria/Teknikoa/Zorua/Floor1__005
+- Prototipoa/Geometria/Teknikoa/Sabaia/TopWall4__005
+- Prototipoa/Geometria/Teknikoa/Zorua/Floor1__006
+- Prototipoa/Geometria/Teknikoa/Sabaia/TopWall4__006
+- Prototipoa/Geometria/Teknikoa/Zorua/Floor1__007
+- Prototipoa/Geometria/Teknikoa/Sabaia/TopWall4__007
+- Prototipoa/Geometria/Teknikoa/Zorua/Floor1__008
+- Prototipoa/Geometria/Teknikoa/Sabaia/TopWall4__008
+- Prototipoa/Geometria/Teknikoa/Zorua/Floor1__009
+- Prototipoa/Geometria/Teknikoa/Sabaia/TopWall4__009
+- Prototipoa/Geometria/Teknikoa/Zorua/Floor1__010
+- Prototipoa/Geometria/Teknikoa/Sabaia/TopWall4__010
+- Prototipoa/Geometria/Teknikoa/Zorua/Floor1__011
+- Prototipoa/Geometria/Teknikoa/Sabaia/TopWall4__011
+- Prototipoa/Geometria/Teknikoa/Zorua/Floor1__012
+- Prototipoa/Geometria/Teknikoa/Sabaia/TopWall4__012
+- Prototipoa/Geometria/Teknikoa/Zorua/Floor1__013
+- Prototipoa/Geometria/Teknikoa/Sabaia/TopWall4__013
+- Prototipoa/Geometria/Teknikoa/Zorua/Floor1__014
+- Prototipoa/Geometria/Teknikoa/Sabaia/TopWall4__014
+- Prototipoa/Geometria/Teknikoa/Zorua/Floor1__015
+- Prototipoa/Geometria/Teknikoa/Sabaia/TopWall4__015
+- Prototipoa/Geometria/Teknikoa/Zorua/Floor1__016
+- Prototipoa/Geometria/Teknikoa/Sabaia/TopWall4__016
+- Prototipoa/Geometria/Teknikoa/Zorua/Floor1__017
+- Prototipoa/Geometria/Teknikoa/Sabaia/TopWall4__017
+- Prototipoa/Geometria/Teknikoa/Zorua/Floor1__018
+- Prototipoa/Geometria/Teknikoa/Sabaia/TopWall4__018
+- Prototipoa/Geometria/Teknikoa/Zorua/Floor1__019
+- Prototipoa/Geometria/Teknikoa/Sabaia/TopWall4__019
+- Prototipoa/Geometria/Teknikoa/Hormak/Wall12__000
+- Prototipoa/Geometria/Teknikoa/Hormak/Wall12__001
+- Prototipoa/Geometria/Teknikoa/Hormak/Wall12__002
+- Prototipoa/Geometria/Teknikoa/Hormak/Wall12__003
+- Prototipoa/Geometria/Teknikoa/Hormak/Wall12__004
+- Prototipoa/Geometria/Teknikoa/Hormak/Wall12__005
+- Prototipoa/Geometria/Teknikoa/Hormak/Wall12__006
+- Prototipoa/Geometria/Teknikoa/Hormak/Wall12__007
+- Prototipoa/Geometria/Teknikoa/Hormak/Wall12__008
+- Prototipoa/Geometria/Teknikoa/Hormak/Wall12__009
+- Prototipoa/Geometria/Teknikoa/Hormak/Wall12__010
+- Prototipoa/Geometria/Teknikoa/Hormak/Wall12__011
+- Prototipoa/Geometria/Teknikoa/Hormak/Wall12__012
+- Prototipoa/Geometria/Teknikoa/Hormak/Wall12__013
+- Prototipoa/Geometria/Teknikoa/Hormak/Wall12__014
+- Prototipoa/Geometria/Teknikoa/Hormak/Wall12__015
+- Prototipoa/Geometria/Teknikoa/Hormak/WallIntersection__000
+- Prototipoa/Geometria/Teknikoa/Hormak/Wall12__016
+- Prototipoa/Geometria/Teknikoa/Hormak/Wall12__017
+- Prototipoa/Geometria/Teknikoa/Hormak/Wall12__018
+- Prototipoa/Geometria/Teknikoa/Sabaia/PF_ArgiPanela_Hotza__000
+- Prototipoa/Geometria/Teknikoa/Sabaia/PF_ArgiPanela_Hotza__001
+- Prototipoa/Geometria/Kutxa/Zorua/Floor1__000
+- Prototipoa/Geometria/Kutxa/Sabaia/TopWall4__000
+- Prototipoa/Geometria/Kutxa/Zorua/Floor1__001
+- Prototipoa/Geometria/Kutxa/Sabaia/TopWall4__001
+- Prototipoa/Geometria/Kutxa/Zorua/Floor1__002
+- Prototipoa/Geometria/Kutxa/Sabaia/TopWall4__002
+- Prototipoa/Geometria/Kutxa/Zorua/Floor1__003
+- Prototipoa/Geometria/Kutxa/Sabaia/TopWall4__003
+- Prototipoa/Geometria/Kutxa/Zorua/Floor1__004
+- Prototipoa/Geometria/Kutxa/Sabaia/TopWall4__004
+- Prototipoa/Geometria/Kutxa/Zorua/Floor1__005
+- Prototipoa/Geometria/Kutxa/Sabaia/TopWall4__005
+- Prototipoa/Geometria/Kutxa/Zorua/Floor1__006
+- Prototipoa/Geometria/Kutxa/Sabaia/TopWall4__006
+- Prototipoa/Geometria/Kutxa/Zorua/Floor1__007
+- Prototipoa/Geometria/Kutxa/Sabaia/TopWall4__007
+- Prototipoa/Geometria/Kutxa/Zorua/Floor1__008
+- Prototipoa/Geometria/Kutxa/Sabaia/TopWall4__008
+- Prototipoa/Geometria/Kutxa/Zorua/Floor1__009
+- Prototipoa/Geometria/Kutxa/Sabaia/TopWall4__009
+- Prototipoa/Geometria/Kutxa/Zorua/Floor1__010
+- Prototipoa/Geometria/Kutxa/Sabaia/TopWall4__010
+- Prototipoa/Geometria/Kutxa/Zorua/Floor1__011
+- Prototipoa/Geometria/Kutxa/Sabaia/TopWall4__011
+- Prototipoa/Geometria/Kutxa/Hormak/Wall12__000
+- Prototipoa/Geometria/Kutxa/Hormak/Wall12__001
+- Prototipoa/Geometria/Kutxa/Hormak/Wall12__002
+- Prototipoa/Geometria/Kutxa/Hormak/Wall12__003
+- Prototipoa/Geometria/Kutxa/Hormak/Wall12__004
+- Prototipoa/Geometria/Kutxa/Hormak/Wall12__005
+- Prototipoa/Geometria/Kutxa/Hormak/Wall12__006
+- Prototipoa/Geometria/Kutxa/Hormak/Wall12__007
+- Prototipoa/Geometria/Kutxa/Hormak/WallIntersection__000
+- Prototipoa/Geometria/Kutxa/Hormak/Wall12__008
+- Prototipoa/Geometria/Kutxa/Hormak/Wall12__009
+- Prototipoa/Geometria/Kutxa/Hormak/Wall12__010
+- Prototipoa/Geometria/Kutxa/Hormak/Wall12__011
+- Prototipoa/Geometria/Kutxa/Hormak/Wall12__012
+- Prototipoa/Geometria/Kutxa/Hormak/Wall12__013
+- Prototipoa/Geometria/Kutxa/Hormak/Wall12__014
+- Prototipoa/Geometria/Kutxa/Sabaia/PF_ArgiPanela_Hotza__000
+- Prototipoa/Geometria/Pasilloa_J2_Borroka/Hodia/Profile1__000
+- Prototipoa/Geometria/Pasilloa_J2_Borroka/Hodia/Profile1__001
+- Prototipoa/Geometria/Pasilloa_J3_Biltegia/Zorua/Floor1__001
+- Prototipoa/Geometria/Pasilloa_J3_Biltegia/Hodia/Profile1__000
+- Prototipoa/Geometria/Pasilloa_Borroka_J4/Zorua/Floor1__001
+- Prototipoa/Geometria/Pasilloa_Borroka_J4/Hodia/Profile1__000
+- Prototipoa/Geometria/Pasilloa_J6_J4/Zorua/Floor1__000
+- Prototipoa/Geometria/Pasilloa_J6_J4/Zorua/Floor1__001
+- Prototipoa/Geometria/Pasilloa_J6_J4/Hodia/Profile1__000
+- Prototipoa/Geometria/Pasilloa_J6_J4/Hodia/Profile1__001
+- Prototipoa/Geometria/Pasilloa_J6_J4/Hodia/Profile1__002
+- Prototipoa/Geometria/Pasilloa_J6_J4/Hodia/Profile1__003
+- Prototipoa/Geometria/Pasilloa_J6_J4/Hodia/Profile1__004
+- Prototipoa/Geometria/Pasilloa_J2_J6/Zorua/Floor1__001
+- Prototipoa/Geometria/Pasilloa_J2_J6/Hodia/Profile1__000
+- Prototipoa/Geometria/Pasilloa_J2_J6/Hodia/Profile1__001
+- Prototipoa/Geometria/Pasilloa_J2_J6/Hodia/Profile1__002
+- Prototipoa/Geometria/Pasilloa_J2_J6/Hodia/Profile1__003
+- Prototipoa/Geometria/Pasilloa_J5_J6/Zorua/Floor1__000
+- Prototipoa/Geometria/Pasilloa_J5_J6/Zorua/Floor1__001
+- Prototipoa/Geometria/Pasilloa_J5_J6/Hodia/Profile1__000
+- Prototipoa/Geometria/Pasilloa_J5_J6/Hodia/Profile1__001
+- Prototipoa/Geometria/Pasilloa_J5_J6/Hodia/Profile1__002
+- Prototipoa/Geometria/Pasilloa_J5_J6/Hodia/Profile1__003
+- Prototipoa/Geometria/Pasilloa_J5_J6/Hodia/Profile1__004
+- Prototipoa/Geometria/Pasilloa_J5_J6/Hodia/Profile1__005
+- Prototipoa/Geometria/Pasilloa_J5_J6/Hodia/Profile1__006
+- Prototipoa/Geometria/Pasilloa_Hasiera_J5/Zorua/Floor1__001
+- Prototipoa/Geometria/Pasilloa_Hasiera_J5/Hodia/Profile1__000
+- Prototipoa/Geometria/Pasilloa_Hasiera_J5/Hodia/Profile1__001
+- Prototipoa/Geometria/Pasilloa_Hasiera_J5/Hodia/Profile1__002
+- Prototipoa/Geometria/Pasilloa_Hasiera_J5/Hodia/Profile1__003
+- Prototipoa/Geometria/Pasilloa_Hasiera_J5/Hodia/Profile1__004
+- Prototipoa/Geometria/Pasilloa_Hasiera_J5/Hodia/Profile1__005
+- Prototipoa/Geometria/Pasilloa_J6_Teknikoa/Zorua/Floor1__000
+- Prototipoa/Geometria/Pasilloa_J6_Teknikoa/Zorua/Floor1__001
+- Prototipoa/Geometria/Pasilloa_J6_Teknikoa/Hodia/ProfileDoor__000
+- Prototipoa/Geometria/Pasilloa_J6_Teknikoa/Hodia/Profile1__000
+- Prototipoa/Geometria/Pasilloa_Kutxa_J3/Zorua/Floor1__000
+- Prototipoa/Geometria/Pasilloa_Kutxa_J3/Hodia/ProfileDoor__000
+- Prototipoa/Geometria/Pasilloa_Kutxa_J3/Hodia/Profile1__000
+- Prototipoa/Geometria/Pasilloa_J3_itsua/Hodia/Profile1__000
+- Prototipoa/Geometria/Pasilloa_J3_itsua/Hodia/Profile1__001
+- Prototipoa/Geometria/Pasilloa_J3_itsua/Hodia/Profile1__002
+- Prototipoa/Geometria/Borroka/Propak/Old_computer__000
+- Prototipoa/Geometria/Biltegia/Propak/Container_small__000
+- Prototipoa/Geometria/Biltegia/Propak/Box1__000
+- Prototipoa/Geometria/Teknikoa/Propak/Old_computer__000
+- Prototipoa/Geometria/Teknikoa/Propak/Rack__000
+- Prototipoa/Geometria/Kutxa/Propak/Box3__000
+- Prototipoa/Geometria/J4/Kolisioak/Kolisioa__000
+- Prototipoa/Geometria/J4/Kolisioak/Kolisioa__001
+- Prototipoa/Geometria/J4/Kolisioak/Kolisioa__002
+- Prototipoa/Geometria/J4/Kolisioak/Kolisioa__003
+- Prototipoa/Geometria/J4/Kolisioak/Kolisioa__004
+- Prototipoa/Geometria/J4/Kolisioak/Kolisioa__005
+- Prototipoa/Geometria/J4/Kolisioak/Kolisioa__006
+- Prototipoa/Geometria/J4/Kolisioak/Kolisioa__007
+- Prototipoa/Geometria/J4/Kolisioak/Kolisioa__008
+- Prototipoa/Geometria/J4/Kolisioak/Kolisioa__009
+- Prototipoa/Geometria/J5/Kolisioak/Kolisioa__000
+- Prototipoa/Geometria/J5/Kolisioak/Kolisioa__001
+- Prototipoa/Geometria/J5/Kolisioak/Kolisioa__002
+- Prototipoa/Geometria/J5/Kolisioak/Kolisioa__003
+- Prototipoa/Geometria/J5/Kolisioak/Kolisioa__004
+- Prototipoa/Geometria/J5/Kolisioak/Kolisioa__005
+- Prototipoa/Geometria/J5/Kolisioak/Kolisioa__006
+- Prototipoa/Geometria/J5/Kolisioak/Kolisioa__007
+- Prototipoa/Geometria/J5/Kolisioak/Kolisioa__008
+- Prototipoa/Geometria/J5/Kolisioak/Kolisioa__009
+- Prototipoa/Geometria/J6/Kolisioak/Kolisioa__000
+- Prototipoa/Geometria/J6/Kolisioak/Kolisioa__001
+- Prototipoa/Geometria/J6/Kolisioak/Kolisioa__002
+- Prototipoa/Geometria/J6/Kolisioak/Kolisioa__003
+- Prototipoa/Geometria/J6/Kolisioak/Kolisioa__004
+- Prototipoa/Geometria/J6/Kolisioak/Kolisioa__005
+- Prototipoa/Geometria/J6/Kolisioak/Kolisioa__006
+- Prototipoa/Geometria/J6/Kolisioak/Kolisioa__007
+- Prototipoa/Geometria/J6/Kolisioak/Kolisioa__008
+- Prototipoa/Geometria/J6/Kolisioak/Kolisioa__009
+- Prototipoa/Geometria/J6/Kolisioak/Kolisioa__010
+- Prototipoa/Geometria/J6/Kolisioak/Kolisioa__011
+- Prototipoa/Geometria/J6/Kolisioak/Kolisioa__012
+- Prototipoa/Geometria/J6/Kolisioak/Kolisioa__013
+- Prototipoa/Geometria/Biltegia/Kolisioak/Kolisioa__000
+- Prototipoa/Geometria/Biltegia/Kolisioak/Kolisioa__001
+- Prototipoa/Geometria/Biltegia/Kolisioak/Kolisioa__002
+- Prototipoa/Geometria/Biltegia/Kolisioak/Kolisioa__003
+- Prototipoa/Geometria/Biltegia/Kolisioak/Kolisioa__004
+- Prototipoa/Geometria/Biltegia/Kolisioak/Kolisioa__005
+- Prototipoa/Geometria/Biltegia/Kolisioak/Kolisioa__006
+- Prototipoa/Geometria/Biltegia/Kolisioak/Kolisioa__007
+- Prototipoa/Geometria/Biltegia/Kolisioak/Kolisioa__008
+- Prototipoa/Geometria/Biltegia/Kolisioak/Kolisioa__009
+- Prototipoa/Geometria/Biltegia/Kolisioak/Kolisioa__010
+- Prototipoa/Geometria/Biltegia/Kolisioak/Kolisioa__011
+- Prototipoa/Geometria/Biltegia/Kolisioak/Kolisioa__012
+- Prototipoa/Geometria/Biltegia/Kolisioak/Kolisioa__013
+- Prototipoa/Geometria/Biltegia/Kolisioak/Kolisioa__014
+- Prototipoa/Geometria/Biltegia/Kolisioak/Kolisioa__015
+- Prototipoa/Geometria/Teknikoa/Kolisioak/Kolisioa__000
+- Prototipoa/Geometria/Teknikoa/Kolisioak/Kolisioa__001
+- Prototipoa/Geometria/Teknikoa/Kolisioak/Kolisioa__002
+- Prototipoa/Geometria/Teknikoa/Kolisioak/Kolisioa__003
+- Prototipoa/Geometria/Teknikoa/Kolisioak/Kolisioa__004
+- Prototipoa/Geometria/Teknikoa/Kolisioak/Kolisioa__005
+- Prototipoa/Geometria/Teknikoa/Kolisioak/Kolisioa__006
+- Prototipoa/Geometria/Teknikoa/Kolisioak/Kolisioa__007
+- Prototipoa/Geometria/Teknikoa/Kolisioak/Kolisioa__008
+- Prototipoa/Geometria/Teknikoa/Kolisioak/Kolisioa__009
+- Prototipoa/Geometria/Teknikoa/Kolisioak/Kolisioa__010
+- Prototipoa/Geometria/Teknikoa/Kolisioak/Kolisioa__011
+- Prototipoa/Geometria/Teknikoa/Kolisioak/Kolisioa__012
+- Prototipoa/Geometria/Teknikoa/Kolisioak/Kolisioa__013
+- Prototipoa/Geometria/Kutxa/Kolisioak/Kolisioa__000
+- Prototipoa/Geometria/Kutxa/Kolisioak/Kolisioa__001
+- Prototipoa/Geometria/Kutxa/Kolisioak/Kolisioa__002
+- Prototipoa/Geometria/Kutxa/Kolisioak/Kolisioa__003
+- Prototipoa/Geometria/Kutxa/Kolisioak/Kolisioa__004
+- Prototipoa/Geometria/Kutxa/Kolisioak/Kolisioa__005
+- Prototipoa/Geometria/Kutxa/Kolisioak/Kolisioa__006
+- Prototipoa/Geometria/Kutxa/Kolisioak/Kolisioa__007
+- Prototipoa/Geometria/Kutxa/Kolisioak/Kolisioa__008
+- Prototipoa/Geometria/Kutxa/Kolisioak/Kolisioa__009
+- Prototipoa/Geometria/Kutxa/Kolisioak/Kolisioa__010
+- Prototipoa/Geometria/Kutxa/Kolisioak/Kolisioa__011
+- Prototipoa/Geometria/Pasilloa_J2_Borroka/Kolisioak/Kolisioa__000
+- Prototipoa/Geometria/Pasilloa_J2_Borroka/Kolisioak/Kolisioa__001
+- Prototipoa/Geometria/Pasilloa_J2_Borroka/Kolisioak/Kolisioa__002
+- Prototipoa/Geometria/Pasilloa_J2_Borroka/Kolisioak/Kolisioa__003
+- Prototipoa/Geometria/Pasilloa_J3_Biltegia/Kolisioak/Kolisioa__000
+- Prototipoa/Geometria/Pasilloa_J3_Biltegia/Kolisioak/Kolisioa__001
+- Prototipoa/Geometria/Pasilloa_J3_Biltegia/Kolisioak/Kolisioa__002
+- Prototipoa/Geometria/Pasilloa_J3_Biltegia/Kolisioak/Kolisioa__003
+- Prototipoa/Geometria/Pasilloa_Borroka_J4/Kolisioak/Kolisioa__003
+- Prototipoa/Geometria/Pasilloa_Borroka_J4/Kolisioak/Kolisioa__004
+- Prototipoa/Geometria/Pasilloa_Borroka_J4/Kolisioak/Kolisioa__005
+- Prototipoa/Geometria/Pasilloa_Borroka_J4/Kolisioak/Kolisioa__006
+- Prototipoa/Geometria/Pasilloa_J6_J4/Kolisioak/Kolisioa__000
+- Prototipoa/Geometria/Pasilloa_J6_J4/Kolisioak/Kolisioa__001
+- Prototipoa/Geometria/Pasilloa_J6_J4/Kolisioak/Kolisioa__002
+- Prototipoa/Geometria/Pasilloa_J6_J4/Kolisioak/Kolisioa__003
+- Prototipoa/Geometria/Pasilloa_J2_J6/Kolisioak/Kolisioa__000
+- Prototipoa/Geometria/Pasilloa_J2_J6/Kolisioak/Kolisioa__001
+- Prototipoa/Geometria/Pasilloa_J2_J6/Kolisioak/Kolisioa__002
+- Prototipoa/Geometria/Pasilloa_J2_J6/Kolisioak/Kolisioa__003
+- Prototipoa/Geometria/Pasilloa_J5_J6/Kolisioak/Kolisioa__000
+- Prototipoa/Geometria/Pasilloa_J5_J6/Kolisioak/Kolisioa__001
+- Prototipoa/Geometria/Pasilloa_J5_J6/Kolisioak/Kolisioa__002
+- Prototipoa/Geometria/Pasilloa_J5_J6/Kolisioak/Kolisioa__003
+- Prototipoa/Geometria/Pasilloa_Hasiera_J5/Kolisioak/Kolisioa__003
+- Prototipoa/Geometria/Pasilloa_Hasiera_J5/Kolisioak/Kolisioa__004
+- Prototipoa/Geometria/Pasilloa_Hasiera_J5/Kolisioak/Kolisioa__005
+- Prototipoa/Geometria/Pasilloa_Hasiera_J5/Kolisioak/Kolisioa__006
+- Prototipoa/Geometria/Pasilloa_J6_Teknikoa/Kolisioak/Kolisioa__000
+- Prototipoa/Geometria/Pasilloa_J6_Teknikoa/Kolisioak/Kolisioa__001
+- Prototipoa/Geometria/Pasilloa_J6_Teknikoa/Kolisioak/Kolisioa__002
+- Prototipoa/Geometria/Pasilloa_J6_Teknikoa/Kolisioak/Kolisioa__003
+- Prototipoa/Geometria/Pasilloa_J6_Teknikoa/Kolisioak/Kolisioa__004
+- Prototipoa/Geometria/Pasilloa_J6_Teknikoa/Kolisioak/Kolisioa__005
+- Prototipoa/Geometria/Pasilloa_J6_Teknikoa/Kolisioak/Kolisioa__006
+- Prototipoa/Geometria/Pasilloa_Kutxa_J3/Kolisioak/Kolisioa__000
+- Prototipoa/Geometria/Pasilloa_Kutxa_J3/Kolisioak/Kolisioa__001
+- Prototipoa/Geometria/Pasilloa_Kutxa_J3/Kolisioak/Kolisioa__002
+- Prototipoa/Geometria/Pasilloa_Kutxa_J3/Kolisioak/Kolisioa__003
+- Prototipoa/Geometria/Pasilloa_Kutxa_J3/Kolisioak/Kolisioa__004
+- Prototipoa/Geometria/Pasilloa_Kutxa_J3/Kolisioak/Kolisioa__005
+- Prototipoa/Geometria/Pasilloa_Kutxa_J3/Kolisioak/Kolisioa__006
+- Prototipoa/Geometria/Pasilloa_J3_itsua/Kolisioak/Kolisioa__000
+- Prototipoa/Geometria/Pasilloa_J3_itsua/Kolisioak/Kolisioa__001
+- Prototipoa/Geometria/Pasilloa_J3_itsua/Kolisioak/Kolisioa__002
+- Prototipoa/Geometria/Pasilloa_J3_itsua/Kolisioak/Kolisioa__003
+- Prototipoa/Geometria/Pasilloa_J3_itsua/Kolisioak/Kolisioa__004
+- Prototipoa/Geometria/Biltegia/Kolisioak/Kolisioa__016
+- Prototipoa/Geometria/Kutxa/Kolisioak/Kolisioa__012
+
+## Ezabatzeko edo ezabatuak (37)
+
+- Prototipoa/Geometria/Hasiera/Hormak/PF_Seinalea_HASIERA__000
+- Prototipoa/Geometria/Hasiera/Hormak/PF_Seinalea_HASIERA__001
+- Prototipoa/Geometria/J1/Hormak/PF_Seinalea_J1__000
+- Prototipoa/Geometria/J1/Hormak/PF_Seinalea_J1__001
+- Prototipoa/Geometria/J1/Hormak/PF_Seinalea_J1__002
+- Prototipoa/Geometria/J2/Hormak/PF_Seinalea_J2__000
+- Prototipoa/Geometria/J2/Hormak/PF_Seinalea_J2__001
+- Prototipoa/Geometria/J2/Hormak/PF_Seinalea_J2__002
+- Prototipoa/Geometria/J3/Hormak/PF_Seinalea_J3__000
+- Prototipoa/Geometria/J3/Hormak/PF_Seinalea_J3__001
+- Prototipoa/Geometria/J3/Hormak/PF_Seinalea_J3__002
+- Prototipoa/Geometria/J3/Hormak/PF_Seinalea_J3__003
+- Prototipoa/Geometria/J4/Hormak/PF_Seinalea_J4__000
+- Prototipoa/Geometria/J4/Hormak/PF_Seinalea_J4__001
+- Prototipoa/Geometria/J5/Hormak/PF_Seinalea_J5__000
+- Prototipoa/Geometria/J5/Hormak/PF_Seinalea_J5__001
+- Prototipoa/Geometria/J6/Hormak/PF_Seinalea_J6__000
+- Prototipoa/Geometria/J6/Hormak/PF_Seinalea_J6__001
+- Prototipoa/Geometria/J6/Hormak/PF_Seinalea_J6__002
+- Prototipoa/Geometria/J6/Hormak/PF_Seinalea_J6__003
+- Prototipoa/Geometria/Borroka/Hormak/PF_Seinalea_BORROKA__000
+- Prototipoa/Geometria/Borroka/Hormak/PF_Seinalea_BORROKA__001
+- Prototipoa/Geometria/Borroka/Hormak/PF_Seinalea_BORROKA__002
+- Prototipoa/Geometria/Biltegia/Hormak/PF_Seinalea_BILTEGIA__000
+- Prototipoa/Geometria/Biltegia/Hormak/PF_Seinalea_BILTEGIA__001
+- Prototipoa/Geometria/Biltegia/Propak/Container_Big__000
+- Prototipoa/Geometria/Teknikoa/Hormak/PF_Seinalea_TEKNIKOA__000
+- Prototipoa/Geometria/Kutxa/Hormak/PF_Seinalea_KUTXA__000
+- Prototipoa/Geometria/Pasilloa_J2_Borroka/Hodia/ProfileDoor__000
+- Prototipoa/Geometria/Pasilloa_J2_Borroka/Kolisioak/Kolisioa__004
+- Prototipoa/Geometria/Pasilloa_J2_Borroka/Kolisioak/Kolisioa__005
+- Prototipoa/Geometria/Pasilloa_J2_Borroka/Kolisioak/Kolisioa__006
+- Prototipoa/Geometria/Pasilloa_J3_Biltegia/Hodia/ProfileDoor__000
+- Prototipoa/Geometria/Pasilloa_J3_Biltegia/Kolisioak/Kolisioa__004
+- Prototipoa/Geometria/Pasilloa_J3_Biltegia/Kolisioak/Kolisioa__005
+- Prototipoa/Geometria/Pasilloa_J3_Biltegia/Kolisioak/Kolisioa__006
+- Prototipoa/Geometria/Pasilloa_J3_itsua/Hodia/Profile1__003
+- **Hodi-argi aldatuak:** 12; **argi propio aldatuak:** 22

@@ -513,6 +513,64 @@ namespace Eclipse.EditorTresnak
             informea.AmaituOndo($"E2 {modua} (eszena ez da gorde)");
         }
 
+        /// <summary>Prototipoaren argazkiak: planta (sabairik gabe) eta jokalariaren begietatik, eszena gorde gabe.</summary>
+        internal static List<string> PrototipoArgazkiak(IEnumerable<(string Izena, Vector3 Begia, Vector3 Helburua)> kamerak)
+        {
+            var neurketak = new List<string>();
+            Renderer[] rendererrak = UnityEngine.Object.FindObjectsByType<Renderer>(FindObjectsInactive.Exclude);
+            Scene eszena = SceneManager.GetActiveScene();
+            Directory.CreateDirectory(Karpeta);
+            Camera kamera = KameraSortu();
+            foreach ((string izena, Vector3 begia, Vector3 helburua) in kamerak)
+            {
+                kamera.transform.position = begia;
+                kamera.transform.rotation = Quaternion.LookRotation(helburua - begia);
+                Gorde(Argazkia(kamera, 1280, 720), $"{izena}.png");
+
+                // Bigarren errendatzea neurtzen da: lehenak shader-ak eta testurak prestatzen ditu.
+                var kronometroa = System.Diagnostics.Stopwatch.StartNew();
+                Argazkia(kamera, 1280, 720);
+                kronometroa.Stop();
+                Plane[] planoak = GeometryUtility.CalculateFrustumPlanes(kamera);
+                List<Renderer> ikusten = rendererrak.Where(r => r.enabled && GeometryUtility.TestPlanesAABB(planoak, r.bounds)).ToList();
+                neurketak.Add($"{izena}: {ikusten.Sum(Triangeluak)} triangelu, {ikusten.Count} renderer, {kronometroa.ElapsedMilliseconds} ms");
+            }
+
+            GameObject erroa = eszena.GetRootGameObjects().First(o => o.name == "Prototipoa");
+            Bounds kaxa = KaxaLortu(erroa);
+            ArgiNeutroa();
+
+            // Sekzio-planoa: hurbileko planoak 2,4 m-tik gora dagoena mozten du (sabaiak, hodien goialdea).
+            const float KameraAltuera = 60f;
+            const float MozketaAltuera = 2.4f;
+            kamera.orthographic = true;
+            kamera.orthographicSize = Mathf.Max(kaxa.size.z * 0.53f, kaxa.size.x * 0.53f * 9f / 16f);
+            kamera.nearClipPlane = KameraAltuera - MozketaAltuera;
+            kamera.farClipPlane = KameraAltuera + 5f;
+            kamera.transform.position = new Vector3(kaxa.center.x, KameraAltuera, kaxa.center.z);
+            kamera.transform.rotation = Quaternion.Euler(90f, 0f, 0f);
+            Gorde(Argazkia(kamera, 1600, 900), "P_planta.png");
+            return neurketak;
+        }
+
+        internal static long Triangeluak(Renderer renderer)
+        {
+            var iragazkia = renderer.GetComponent<MeshFilter>();
+            Mesh mesh = iragazkia != null ? iragazkia.sharedMesh : null;
+            if (mesh == null)
+            {
+                return 0;
+            }
+
+            long indizeak = 0;
+            for (int i = 0; i < mesh.subMeshCount; i++)
+            {
+                indizeak += mesh.GetIndexCount(i);
+            }
+
+            return indizeak / 3;
+        }
+
         private static int AtlasakGorde()
         {
             LightmapData[] mapak = LightmapSettings.lightmaps;

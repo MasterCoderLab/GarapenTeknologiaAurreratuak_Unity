@@ -15,7 +15,7 @@ namespace Eclipse.EditorTresnak
     /// Pieza bakoitza Unity barruan neurtzen da (Renderer.bounds) eta neurri horiekin kokatzen da.
     /// Sortutako piezek IZENA__000 izena dute: izen hori ez duten objektuak ez dira inoiz ukitzen.
     /// </summary>
-    public static class EszenaEraikitzailea
+    public static partial class EszenaEraikitzailea
     {
         private const string Tresna = "EszenaEraikitzailea";
         private const string Marka = "ECL_ESZENAERAIKITZAILEA";
@@ -1668,6 +1668,8 @@ namespace Eclipse.EditorTresnak
             public Vector3 Eskala;
             public Bounds Helburua;
             public string Ezkutatu;
+            public bool? HodiArgiaPiztuta;
+            public Color? HodiArgiKolorea;
         }
 
         private sealed class Aldaketak

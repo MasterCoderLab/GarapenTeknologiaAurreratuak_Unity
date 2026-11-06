@@ -68,6 +68,23 @@ namespace Eclipse.EditorTresnak
             EditorApplication.Exit(kodea);
         }
 
+        /// <summary>Seinale berri bat (testura, materiala eta prefab-a), mailen eraikitzaileentzat. Dagoeneko badago, hura itzultzen du.</summary>
+        private const int SeinaleLetrak = 8;
+
+        internal static GameObject SeinaleaPrefab(string testua)
+        {
+            var aldaketak = new List<string>();
+            KarpetaSortu(TesturaKarpeta);
+            KarpetaSortu(MaterialKarpeta);
+            string tIzena = $"T_Seinalea_{testua}";
+            // Testu laburrak erdian, letrak zabaldu gabe: zuriuneak hutsik marrazten dira.
+            string betea = testua.PadLeft((SeinaleLetrak + testua.Length) / 2).PadRight(SeinaleLetrak);
+            Testura(tIzena, TesturaProzedurala.Seinalea(betea), true, TextureWrapMode.Clamp, true, aldaketak);
+            Material m = Materiala($"M_Seinalea_{testua}", tIzena, tIzena, Color.white, new Color(1.2f, 1.2f, 1.2f), 0.1f, 0.3f, Vector2.one, MaterialGlobalIlluminationFlags.RealtimeEmissive, true, aldaketak);
+            var mesh = AssetDatabase.LoadAssetAtPath<Mesh>($"{EreduKarpeta}/SM_Seinalea.asset");
+            return mesh != null ? PrefabGorde($"PF_Seinalea_{testua}", mesh, m, false, true, aldaketak) : null;
+        }
+
         internal static bool Exekutatu(bool aplikatu)
         {
             string modua = aplikatu ? "Aplikatu" : "Aurrebista";
@@ -1122,6 +1139,15 @@ namespace Eclipse.EditorTresnak
             ['R'] = "11110 10001 10001 11110 10100 10010 10001", ['S'] = "01111 10000 10000 01110 00001 00001 11110",
             ['T'] = "11111 00100 00100 00100 00100 00100 00100", ['U'] = "10001 10001 10001 10001 10001 10001 01110",
             ['Z'] = "11111 00001 00010 00100 01000 10000 11111",
+            ['V'] = "10001 10001 10001 10001 10001 01010 00100", ['W'] = "10001 10001 10001 10101 10101 11011 10001",
+            ['X'] = "10001 10001 01010 00100 01010 10001 10001", ['Y'] = "10001 10001 01010 00100 00100 00100 00100",
+            ['H'] = "10001 10001 10001 11111 10001 10001 10001", ['J'] = "00111 00010 00010 00010 00010 10010 01100",
+            ['M'] = "10001 11011 10101 10101 10001 10001 10001", ['N'] = "10001 11001 10101 10011 10001 10001 10001",
+            ['0'] = "01110 10001 10011 10101 11001 10001 01110", ['1'] = "00100 01100 00100 00100 00100 00100 01110",
+            ['2'] = "01110 10001 00001 00010 00100 01000 11111", ['3'] = "11110 00001 00001 01110 00001 00001 11110",
+            ['4'] = "00010 00110 01010 10010 11111 00010 00010", ['5'] = "11111 10000 11110 00001 00001 10001 01110",
+            ['6'] = "00110 01000 10000 11110 10001 10001 01110", ['7'] = "11111 00001 00010 00100 01000 01000 01000",
+            ['8'] = "01110 10001 10001 01110 10001 10001 01110", ['9'] = "01110 10001 10001 01111 00001 00010 01100",
         };
 
         /// <summary>Testua (u,v) puntuan, laukizuzen batean zentratuta. Letra ezezaguna: hutsik.</summary>
