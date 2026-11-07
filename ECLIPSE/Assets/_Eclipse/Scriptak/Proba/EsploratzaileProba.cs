@@ -1,4 +1,3 @@
-#if UNITY_EDITOR || DEVELOPMENT_BUILD
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -7,7 +6,8 @@ namespace Eclipse.Proba
 {
     /// <summary>
     /// Behin-behineko esploratzailea, eszena probatzeko: ez da protagonista. Play-n bakarrik sortzen da
-    /// 01_Instalazioa eszenan, eta ezer ez da gordetzen eszenan. Azken build-etik kanpo geratzen da.
+    /// 01_Instalazioa eszenan, eta ezer ez da gordetzen eszenan. Kontrolatzailea build guztietan dago:
+    /// misioetan LevelManager-ek sortzen du jokalaria.
     /// </summary>
     public static class EsploratzaileAbiarazlea
     {
@@ -365,4 +365,3 @@ namespace Eclipse.Proba
         }
     }
 }
-#endif

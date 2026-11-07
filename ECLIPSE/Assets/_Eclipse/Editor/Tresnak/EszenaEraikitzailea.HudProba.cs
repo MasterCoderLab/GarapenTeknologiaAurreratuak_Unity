@@ -79,19 +79,32 @@ namespace Eclipse.EditorTresnak
             EditorApplication.Exit(kodea);
         }
 
-        /// <summary>Jokalariaren scriptak konpilatu, build-ik egin gabe: UNITY_EDITOR eta DEVELOPMENT_BUILD gabe ere konpilatzen dela egiaztatzeko.</summary>
+        /// <summary>
+        /// Jokalariaren scriptak konpilatu, build-ik egin gabe, DEVELOPMENT_BUILD gabe: jokalaria DLL-an dagoela eta autoprobatzailea ez dagoela
+        /// islapenez egiaztatzeko. Kontrol negatiboa: A0-ko Release zaharrean mota EZ da aurkitu behar.
+        /// </summary>
         public static void BatchJokalariKonpilazioa()
         {
             string karpeta = System.IO.Path.Combine("Temp", "HudJokalariKonpilazioa");
             var ezarpenak = new UnityEditor.Build.Player.ScriptCompilationSettings
             {
-                target = EditorUserBuildSettings.activeBuildTarget,
-                group = BuildPipeline.GetBuildTargetGroup(EditorUserBuildSettings.activeBuildTarget),
+                target = BuildTarget.StandaloneLinux64,
+                group = BuildTargetGroup.Standalone,
                 options = UnityEditor.Build.Player.ScriptCompilationOptions.None,
             };
             UnityEditor.Build.Player.ScriptCompilationResult emaitza = UnityEditor.Build.Player.PlayerBuildInterface.CompilePlayerScripts(ezarpenak, karpeta);
-            bool ondo = emaitza.assemblies.Contains("Eclipse.Runtime.dll");
-            Debug.Log($"{HudMarka}_{(ondo ? "OK" : "ERROR")} Jokalariaren scriptak ({ezarpenak.target}, garapenik gabe): {emaitza.assemblies.Count} ensanblatu; Eclipse.Runtime {(ondo ? "konpilatuta" : "EZ")}");
+            string dll = System.IO.Path.Combine(karpeta, "Eclipse.Runtime.dll");
+            bool konpilatuta = emaitza.assemblies.Contains("Eclipse.Runtime.dll") && System.IO.File.Exists(dll);
+            bool jokalaria = konpilatuta && DllMotaDu(dll, JokalariMota);
+            bool autoProba = konpilatuta && DllMotaDu(dll, AutoProbaMota);
+
+            string zaharra = System.IO.Directory.Exists("Build_Windows/ECLIPSE_Eszenatokia")
+                ? System.IO.Directory.GetFiles("Build_Windows/ECLIPSE_Eszenatokia", "Eclipse.Runtime.dll", System.IO.SearchOption.AllDirectories).FirstOrDefault()
+                : null;
+            string kontrola = zaharra == null ? "ez da exekutatu (Release zaharra ez dago)" : DllMotaDu(zaharra, JokalariMota) ? "HUTS: mota aurkitu du" : "ondo: ez du mota aurkitu";
+
+            bool ondo = jokalaria && !autoProba && !kontrola.StartsWith("HUTS", StringComparison.Ordinal);
+            Debug.Log($"{HudMarka}_{(ondo ? "OK" : "ERROR")} Jokalariaren scriptak ({ezarpenak.target}, garapenik gabe): {emaitza.assemblies.Count} ensanblatu; EsploratzaileKontrola={jokalaria}; AutoProbaQA={autoProba}; kontrol negatiboa: {kontrola}");
             EditorApplication.Exit(ondo ? 0 : 1);
         }
 

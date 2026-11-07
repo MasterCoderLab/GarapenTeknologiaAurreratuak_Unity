@@ -135,7 +135,6 @@ namespace Eclipse.Misioak
 
         private void JokalariaSortu()
         {
-#if UNITY_EDITOR || DEVELOPMENT_BUILD
             if (FindAnyObjectByType<CharacterController>() != null || _spawn == null)
             {
                 return;
@@ -149,7 +148,7 @@ namespace Eclipse.Misioak
             }
 
             Proba.EsploratzaileKontrola.Sortu(posizioa, _spawn.rotation);
-#endif
+            Debug.Log($"ECL_JOKALARIA_SORTUTA {posizioa} cc={FindAnyObjectByType<CharacterController>() != null} debug={Debug.isDebugBuild}");
         }
 
         private void HurrengoaKargatu()

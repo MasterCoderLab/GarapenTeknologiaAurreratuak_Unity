@@ -1,0 +1,99 @@
+# EszenaEraikitzailea: Mision02_Energia: HUD, mapa eta inbentarioa (Play, sarrera birtuala)
+
+- **Data:** 2026-11-07 03:52:11
+- **Eszena:** Assets/_Eclipse/Eszenak/Mision02_Energia.unity
+- **Sektorea:** Sektorea2
+
+## Emaitzak (91)
+
+- ONDO: LevelManager-ek HUD-a sortu du 
+- ONDO: Sarea erabilgarria 11013 nodo, 77251 alderdi, 40 gela, 1 blokeo, 507 ms
+- ONDO: Diagnostikoa hutsik 
+- ONDO: Hesi guztiek alderdiak mozten dituzte Din_Blokeoa_Pasilloa_Kontrola_J6: 18
+- ONDO: Solairuak 2
+- ONDO: Helburu-testua logikatik dator Berrezarri hiru energia-puntuak
+- ONDO: Fasearen aurrerapena 1. fasea / 2   |   Helburuak: 0 / 3
+- ONDO: Datu-nukleoen kontagailua Datu-nukleoak: 0 / 4
+- ONDO: Irteera itxita hasieran IRTEERA ITXITA
+- ONDO: M: mapa ireki eta sarrera blokeatu modua Mapa
+- ONDO: Maparen ibilbideak puntuak ditu 11 puntu, 70 m
+- ONDO: Esc: mapa itxi modua Jokoa
+- ONDO: Tab: inbentarioa ireki modua Inbentarioa
+- ONDO: M inbentariotik: mapara pasatu modua Mapa
+- ONDO: M: mapa itxi modua Jokoa
+- ONDO: Tab birritan: itxita modua Jokoa
+- ONDO: 1 hutsik dagoen ranuran: ez du ezer hautatzen 
+- ONDO: Arma fikziorik ez 
+- ONDO: Jokalaria terminalaren trigger-ean 
+- ONDO: E abisua terminal aktiboan [E]  1. fusible-koadroa aktibatu
+- ONDO: Mapa irekita, E-k ez du helbururik betetzen 
+- ONDO: Beste faseko terminala: ez dago prest Energia-sarea berrabiarazi: oraindik ez dago prest
+- ONDO: Abisua desagertzen da irtetean 
+- ONDO: Datu-nukleoa sarean Din_Bilduma_03
+- ONDO: Datu-nukleoa bildu da 1 / 4
+- ONDO: HUD-ak kontagailua eguneratu du Datu-nukleoak: 1 / 4
+- ONDO: Saioak zenbatu du 1
+- ONDO: Bildutakoa hautaketatik kanpo 
+- ONDO: Terminal aktiboak bakarrik markatuta 3 terminal
+- ONDO: Irteera ez dago markatuta misioa amaitu arte 
+- ONDO: Pantaila ez dago beteta 3 markatzaile
+- ONDO: Bira osoan: pantailatik kanpo 0 0 kanpoan, 20 barruan, 88 ertzean geziarekin
+- ONDO: Bira osoan: barruan eta ertzean egon da 
+- ONDO: Kamera nagusia badago 
+- ONDO: Irteera sarean dago 
+- ONDO: Hesi itxiekin ez dago ibilbiderik irteerara 
+- ONDO: Hesiak irekita ibilbidea badago 112 m
+- ONDO: Zuriunea: jauzia 1.00 m
+- ONDO: Jauzia: lurrera itzuli da y 0.05
+- ONDO: Airean ez dago bigarren jauzirik 1.00 m
+- ONDO: Ctrl: makurtu altuera 1.10
+- ONDO: Ctrl: begiak behera 
+- ONDO: Makurtuta ez dago jauzirik 0.00 m
+- ONDO: Makurtuta motelago 1.50 m/s
+- ONDO: Makurtuta ez dago korrikarik 1.50 m/s
+- ONDO: Ctrl askatuta: zutik altuera 1.80
+- ONDO: Hegoaldea: zutik, __005 hodiak gelditzen du x 57.60
+- ONDO: Hegoaldea: makurtuta, azpitik pasatzen da x 60.46
+- ONDO: Hegoaldea: pasatu ondoren zutik altuera 1.80
+- ONDO: Azpian Ctrl askatuta: makurtuta jarraitzen du altuera 1.10
+- ONDO: Azpian: jauzi ezin da y 4.65
+- ONDO: Azpitik irtetean zutitzen da x 61.05, altuera 1.80
+- ONDO: Iparraldea: zutik, __005 hodiak gelditzen du x 58.65
+- ONDO: Iparraldea: makurtuta, azpitik pasatzen da x 55.79
+- ONDO: __002 hodi bertikalak gelditzen du x 53.47
+- ONDO: __002: jauzita ere ezin da gainetik pasa x 53.40
+- ONDO: __002: alboan zutik pasatzen da x 51.82
+- ONDO: __004 (2,13 m): zutik azpitik z 47.10
+- ONDO: Laranja __000 (1,75 m): zutik azpitik, kolisiorik gabe z 38.60
+- ONDO: Ibilbidea: 2. fusible-koadroa aktibatu 70 m, 11 puntu (132 nodotik)
+- ONDO: Ibilbidea terminalaren barruan amaitzen da: fusibleak2 (39.73, 0.05, 1.63)
+- ONDO: E-k helburua bete du: fusibleak2 
+- ONDO: Betetako markatzailea desagertu da: fusibleak2 
+- ONDO: Ibilbidea: 1. fusible-koadroa aktibatu 87 m, 6 puntu (168 nodotik)
+- ONDO: Ibilbidea terminalaren barruan amaitzen da: fusibleak1 (31.13, 0.05, 83.73)
+- ONDO: E-k helburua bete du: fusibleak1 
+- ONDO: Betetako markatzailea desagertu da: fusibleak1 
+- ONDO: Ibilbidea: Sorgailu nagusia aktibatu 113 m, 16 puntu (215 nodotik), makurtuta
+- OHARRA: makurtzeko nodoak (4): y=4.6 Sorgailuak/Kolisioa__131 (58.13, 6.20, 39.38) (0.35, 0.35, 18.75)
+- ONDO: Maparen ibilbideak hodiaren azpitik pasatzen du 
+- ONDO: Ibilbidea terminalaren barruan amaitzen da: pasabidea (50.80, 4.65, 47.01)
+- ONDO: E-k helburua bete du: pasabidea 
+- ONDO: Betetako markatzailea desagertu da: pasabidea 
+- ONDO: Ibilbidea: Energia-sarea berrabiarazi 88 m, 20 puntu (165 nodotik), makurtuta
+- OHARRA: makurtzeko nodoak (4): y=4.6 Sorgailuak/Kolisioa__131 (58.13, 6.20, 39.38) (0.35, 0.35, 18.75)
+- ONDO: Ibilbidea terminalaren barruan amaitzen da: sarea (57.05, 0.05, 68.71)
+- ONDO: E-k helburua bete du: sarea 
+- ONDO: Betetako markatzailea desagertu da: sarea 
+- ONDO: Misioa amaituta: irteera markatuta 
+- ONDO: Misioa amaituta: hesiak irekita 
+- ONDO: HUD: irteera irekita IRTEERA IREKITA
+- ONDO: Ibilbidea: Irteera 46 m, 10 puntu (85 nodotik)
+- ONDO: HUD-ak [Ctrl] abisua erakutsi du hodira iristean 
+- ONDO: Tarte marraztuek ez dute ezer zeharkatzen 58 tarte, 0 talka 
+- ONDO: Terminal guztiak ibilbidez 4, 393 m
+- ONDO: Misioa amaitu da irteeran ibilbidearen barruan
+- ONDO: Hurrengo eszena kargatu da Mision03_Erreaktorea
+- ONDO: HUD berria sortu da hurrengo misioan 
+- ONDO: Datu-nukleoek iraun dute misio-aldaketan 1
+- ONDO: GameManager bakarra 
+- ONDO: Mapa irekita ez dago hasieran 

@@ -2,9 +2,7 @@ using Eclipse.Inbentarioak;
 using Eclipse.Jokoa;
 using Eclipse.Misioak;
 using Eclipse.Nabigazioa;
-#if UNITY_EDITOR || DEVELOPMENT_BUILD
 using Eclipse.Proba;
-#endif
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -28,9 +26,7 @@ namespace Eclipse.Hud
         private const float TestuTartea = 0.1f;
 
         private LevelManager _kudeatzailea;
-#if UNITY_EDITOR || DEVELOPMENT_BUILD
         private EsploratzaileKontrola _kontrola;
-#endif
         private HudFabrika _fabrika;
         private HudMarkatzaileak _markatzaileak;
         private MapaPanela _mapa;
@@ -101,12 +97,10 @@ namespace Eclipse.Hud
             _mapa.Erakutsi(modua == HudModua.Mapa);
             _inbentarioa.Erakutsi(modua == HudModua.Inbentarioa);
             _kudeatzailea.InterfazeaIrekita = irekita;
-#if UNITY_EDITOR || DEVELOPMENT_BUILD
             if (_kontrola != null)
             {
                 _kontrola.SarreraBlokeatuta = irekita;
             }
-#endif
 
             _ibilbideaZikina = true;
             _hurrengoTestua = 0f;
@@ -267,9 +261,7 @@ namespace Eclipse.Hud
         {
             _kudeatzailea = kudeatzailea;
             CharacterController jokalaria = FindAnyObjectByType<CharacterController>();
-#if UNITY_EDITOR || DEVELOPMENT_BUILD
             _kontrola = jokalaria != null ? jokalaria.GetComponent<EsploratzaileKontrola>() : null;
-#endif
             Vector3 hasiera = jokalaria != null ? jokalaria.transform.position : kudeatzailea.SpawnPuntua;
             NabigazioDatuak datuak = NabigazioEraikitzailea.Eraiki(hasiera);
             Helburuak = new HelburuKudeatzailea(kudeatzailea, datuak, jokalaria != null ? jokalaria.transform : null);
@@ -293,12 +285,10 @@ namespace Eclipse.Hud
             _inbentarioa = new InbentarioPanela(_fabrika, transform, _jokoGeruza, GameManager.Saioa, kudeatzailea);
             _mapa = new MapaPanela(_fabrika, transform, Helburuak, kudeatzailea);
 
-#if UNITY_EDITOR || DEVELOPMENT_BUILD
             if (_kontrola != null)
             {
                 _kontrola.OnGuiEzkutatu = true;
             }
-#endif
 
             Helburuak.Eguneratu(true);
             TestuakEguneratu();

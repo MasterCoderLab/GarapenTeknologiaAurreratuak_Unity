@@ -1,0 +1,64 @@
+# EszenaEraikitzailea: Release eta QA build-ak (Development gabe)
+
+- **Data:** 2026-11-07 04:06:18
+- **Eszena:** M1, M2, M3
+- **Sektorea:** StandaloneLinux64
+
+## Emaitzak (56)
+
+- INFO: activeBuildTarget hasieran: StandaloneWindows64
+- ONDO: build QA: Succeeded, 11.5 min, 1659 MB, 0 errore, aukerak None
+- ONDO: build Release: Succeeded, 0.4 min, 1659 MB, 0 errore, aukerak None
+- INFO: activeBuildTarget amaieran: StandaloneLinux64 (ez da inoiz automatikoki leheneratzen)
+- ONDO: [Sin interacción] QA: EsploratzaileKontrola DLL-an 
+- ONDO: [Sin interacción] QA: AutoProbaQA DLL-an 
+- ONDO: [Sin interacción] Release: EsploratzaileKontrola DLL-an 
+- ONDO: [Sin interacción] Release: AutoProbaQA EZ dago DLL-an 
+- ONDO: [Sin interacción] Release = QA - AutoProbaQA (motak) 60 mota Release-n; soilik QA: Eclipse.Proba.AutoProbaQA, Eclipse.Proba.AutoProbaQA+<Exekutatu>d__10; soilik Release: 
+- ONDO: [Sin interacción] QA: 3 eszenak bakarrik 
+- ONDO: [Sin interacción] Release: 3 eszenak bakarrik 
+- ONDO: [Simulado] QA: irteera-kodea 0
+- ONDO: [Simulado] QA: 0 akats log-ean 
+- ONDO: [Simulado] QA, ordena: ECL_AUTOPROBA_HASI debug=False kontrola=False
+- ONDO: [Simulado] QA, ordena: ECL_JOKALARIA_SORTUTA (5.63, 0.00, 5.63) cc=True debug=False
+- ONDO: [Simulado] QA, ordena: ECL_NABIGAZIOA_OK Mision01_Laborategia: 9743 nodo (18 makurtuta), 67613 alderdi, 40 gela, 1 blokeo, 366 ms, 0 ohar
+- ONDO: [Sin interacción] QA Mision01_Laborategia: grafoaren nodoak 9743 (Editorean 9743)
+- ONDO: [Simulado] QA, ordena: ECL_MISIOA_HASI 1. misioa: Laborategia
+- ONDO: [Simulado] QA, ordena: ECL_AUTOPROBA_ESZENA Mision01_Laborategia
+- ONDO: [Simulado] QA, ordena: ECL_AUTOPROBA_JOKALARIA Mision01_Laborategia cc=True kontrola=True
+- ONDO: [Simulado] QA, ordena: ECL_MISIOA_HELBURUA kodea
+- ONDO: [Simulado] QA, ordena: ECL_MISIOA_HELBURUA segurtasuna
+- ONDO: [Simulado] QA, ordena: ECL_MISIOA_OK 1. misioa: Laborategia
+- ONDO: [Simulado] QA, ordena: ECL_JOKALARIA_SORTUTA (5.63, 0.00, 43.13) cc=True debug=False
+- ONDO: [Simulado] QA, ordena: ECL_NABIGAZIOA_OK Mision02_Energia: 11013 nodo (79 makurtuta), 77251 alderdi, 40 gela, 1 blokeo, 413 ms, 0 ohar
+- ONDO: [Sin interacción] QA Mision02_Energia: grafoaren nodoak 11013 (Editorean 11013)
+- ONDO: [Simulado] QA, ordena: ECL_MISIOA_HASI 2. misioa: Energia
+- ONDO: [Simulado] QA, ordena: ECL_AUTOPROBA_ESZENA Mision02_Energia
+- ONDO: [Simulado] QA, ordena: ECL_AUTOPROBA_JOKALARIA Mision02_Energia cc=True kontrola=True
+- ONDO: [Simulado] QA, ordena: ECL_MISIOA_HELBURUA fusibleak1
+- ONDO: [Simulado] QA, ordena: ECL_MISIOA_HELBURUA fusibleak2
+- ONDO: [Simulado] QA, ordena: ECL_MISIOA_HELBURUA pasabidea
+- ONDO: [Simulado] QA, ordena: ECL_MISIOA_HELBURUA sarea
+- ONDO: [Simulado] QA, ordena: ECL_MISIOA_OK 2. misioa: Energia
+- ONDO: [Simulado] QA, ordena: ECL_JOKALARIA_SORTUTA (5.63, 0.00, 39.38) cc=True debug=False
+- ONDO: [Simulado] QA, ordena: ECL_NABIGAZIOA_OK Mision03_Erreaktorea: 9626 nodo (2 makurtuta), 68039 alderdi, 31 gela, 1 blokeo, 353 ms, 0 ohar
+- ONDO: [Sin interacción] QA Mision03_Erreaktorea: grafoaren nodoak 9626 (Editorean 9627)
+- ONDO: [Simulado] QA, ordena: ECL_MISIOA_HASI 3. misioa: Erreaktorea
+- ONDO: [Simulado] QA, ordena: ECL_AUTOPROBA_ESZENA Mision03_Erreaktorea
+- ONDO: [Simulado] QA, ordena: ECL_AUTOPROBA_JOKALARIA Mision03_Erreaktorea cc=True kontrola=True
+- ONDO: [Simulado] QA, ordena: ECL_MISIOA_HELBURUA hegoa
+- ONDO: [Simulado] QA, ordena: ECL_MISIOA_HELBURUA iparra
+- ONDO: [Simulado] QA, ordena: ECL_MISIOA_HELBURUA behea
+- ONDO: [Simulado] QA, ordena: ECL_MISIOA_HELBURUA protokoloa
+- ONDO: [Simulado] QA, ordena: ECL_MISIOA_OK 3. misioa: Erreaktorea
+- ONDO: [Simulado] QA, ordena: ECL_AUTOPROBA_AMAITUTA Mision03_Erreaktorea
+- INFO: QA, marken ordena erreala (33): ECL_AUTOPROBA_HASI -> ECL_JOKALARIA_SORTUTA -> ECL_NABIGAZIOA_OK -> ECL_MISIOA_HASI -> ECL_AUTOPROBA_ESZENA -> ECL_AUTOPROBA_JOKALARIA -> ECL_MISIOA_HELBURUA -> ECL_MISIOA_HELBURUA -> ECL_MISIOA_ATEA_IREKITA -> ECL_MISIOA_OK -> ECL_JOKALARIA_SORTUTA -> ECL_NABIGAZIOA_OK -> ECL_MISIOA_HASI -> ECL_AUTOPROBA_ESZENA -> ECL_AUTOPROBA_JOKALARIA -> ECL_MISIOA_HELBURUA -> ECL_MISIOA_HELBURUA -> ECL_MISIOA_HELBURUA -> ECL_MISIOA_HELBURUA -> ECL_MISIOA_ATEA_IREKITA -> ECL_MISIOA_OK -> ECL_JOKALARIA_SORTUTA -> ECL_NABIGAZIOA_OK -> ECL_MISIOA_HASI -> ECL_AUTOPROBA_ESZENA -> ECL_AUTOPROBA_JOKALARIA -> ECL_MISIOA_HELBURUA -> ECL_MISIOA_HELBURUA -> ECL_MISIOA_HELBURUA -> ECL_MISIOA_HELBURUA -> ECL_MISIOA_ATEA_IREKITA -> ECL_MISIOA_OK -> ECL_AUTOPROBA_AMAITUTA
+- ONDO: [Simulado] Kontrol negatiboa: jokalaririk gabe proba eten egiten da (detektatua=True, errorea=True, misioa amaitu=False, kodea=1)
+- ONDO: [Sin interacción] Release: jokalaria sortuta, cc=True debug=False ECL_JOKALARIA_SORTUTA (5.63, 0.00, 5.63) cc=True debug=False
+- ONDO: [Sin interacción] Release: nabigazioa M1-ean 
+- ONDO: [Sin interacción] Release Mision01_Laborategia: grafoaren nodoak 9743 (Editorean 9743)
+- ONDO: [Sin interacción] Release: misioa hasi da 
+- ONDO: [Sin interacción] Release: autoprobatzailerik ez, -eclipseAutoProba pasatuta ere 
+- ONDO: [Sin interacción] Release: ez du helbururik bete bere kabuz 
+- ONDO: [Sin interacción] Release: 0 akats log-ean 
+- INFO: Release, markak: ECL_JOKALARIA_SORTUTA -> ECL_NABIGAZIOA_OK -> ECL_MISIOA_HASI

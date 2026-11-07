@@ -4,13 +4,19 @@
 
 ## Ahora
 
-- **Fase:** agacharse, salto y colisiones de tuberías en M2 (sobre HUD, mapa e inventario ya publicados)
-- **Rama:** `feature/eclipse-hud`, sobre `c4e99915`; estos cambios están **sin commit**
+- **Fase:** A1 "Jokalaria Release" **cerrada** (estrategia v3.1, survival horror, entrega 25/11)
+- **Rama:** `feature/eclipse-hud`, sobre `671541e0`; A1 está **sin commit**: la publicación la hace Ion
 - **Kits:** `Sci Fi Modular Pack` (MagixBox) y `Sci-Fi Old rusty props PBR` (KMProd), en `Assets/ThirdParty/`, convertidos a URP
-- **Siguiente paso:** Ion prueba agacharse y saltar en Play con Vulkan, y decide si publica. Pendiente de decisión: añadir las escenas a Build Profiles (`ProjectSettings`, requiere autorización).
+- **Siguiente paso:** Ion publica A1 en GitHub. Después, gate de assets y A2.
+- **Estrategia vigente:** `~/Downloads/ECLIPSE_Estrategia_Definitiva_v3.1_Claude_2026-11-07.md`. `AGENTS.md` aún apunta a v2.1 y a la entrega del 20/11.
 
 ## Hecho
 
+- 07/11 — **A1 "Jokalaria Release" (informe: `docs/qa/tresnak/A1_JokalariaRelease_2026-11-07.md`).** El explorador y el HUD ya no dependen de `UNITY_EDITOR || DEVELOPMENT_BUILD`. `AutoProbaQA.cs` solo se compila con `ECLIPSE_AUTOPROBA`, símbolo que únicamente da la build QA de `BatchReleaseProba`: la Release no lo contiene.
+  - **Comprobado (batch, no validación de Ion):** EditMode 45/45; robot 211/395/311 m; HUD 66/89/69 sin fallos; reflexión con control negativo. Build QA `[Simulado]`: M1 → M3 completo, `cc=True`, `debug=False`, código 0; control negativo con error y código 1. Build Release `[Sin interacción]`: arranca M1 con jugador, `debug=False`, sin autoprobador; 60 tipos, solo difiere `AutoProbaQA`; player `nondevelopment`.
+  - **Validación manual de Ion (07/11):** ejecutó la Release Linux y completó las tres misiones; todo correcto. La prueba en Windows nativo sigue siendo de A7.
+  - **Cierre técnico:** `activeBuildTarget` devuelto a `StandaloneWindows64` y comprobado por la API; capturas de `docs/qa/kapturak` restauradas al respaldo (18 restauradas, 18 eliminadas).
+  - **Escenas, lightmaps, `Assets/Settings`, `ProjectSettings` y `Packages`:** 0 archivos cambiados frente a `~/ECLIPSE_babeskopia/a1_antes_033845`.
 - 06/11 — **Agacharse, salto y colisiones de tuberías en M2** (decisión de Ion: mantener `PF_Hodia_Grisa__005` donde está y pasar agachado, en vez de subirla).
   - **Movimiento (común a las tres misiones, `EsploratzaileProba.cs`):** Ctrl izquierdo mientras se mantiene: altura 1,10 m, 1,5 m/s, sin correr ni saltar; no se levanta si hay algo encima. Espacio: salto de 1,00 m, solo desde el suelo; el impulso se corta si choca la cabeza.
   - **Colliders añadidos en `Mision02_Energia` (`KolisioAzkenak` en `MailaDatuak`, para que sobrevivan a una regeneración):**
@@ -151,7 +157,8 @@
 ## Pendiente para la versión ejecutable del profesor
 
 - **Build Profiles:** añadir las tres escenas (`ProjectSettings`, necesita autorización). Sin ello, la misión siguiente no carga.
-- **Jugador:** el explorador solo existe en Editor o `DEVELOPMENT_BUILD`. Una build normal arranca **sin jugador**: hay que compilar como Development Build o tener el jugador definitivo.
+- **Jugador:** resuelto en A1; el explorador va en Release. Falta la partida manual de Ion.
+- **A7:** comprobar en la build final que `AutoProbaQA` no está en `Eclipse.Runtime.dll` (`grep -c -a AutoProbaQA` debe dar 0).
 - **Final de M3:** solo muestra un aviso; no hay pantalla final ni forma de salir del juego (tampoco menú ni pausa).
 - **Probar la build:** nada de esto se ha ejecutado fuera del Editor.
 
