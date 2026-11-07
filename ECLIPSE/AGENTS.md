@@ -4,10 +4,10 @@ Este archivo lo leen **todos** los agentes que trabajan en `ECLIPSE/`. Claude Co
 
 ## 1. Proyecto
 
-- **ECLIPSE:** shooter táctico en tercera persona, sci-fi, 3 sectores (Laborategia, Energia, Erreaktorea), pistola EMP, inventario ligero, robots. Proyecto final de *Garapen teknologia aurreratuak* (DAM, Tolosaldea LHII).
-- **Fuente de verdad:** `docs/Eclipse_Estrategia_Claude_v2.1_final.md`. Antes de decidir algo de diseño o arquitectura, consúltala.
+- **ECLIPSE:** survival horror sci-fi, 3 misiones en escenas independientes (Laborategia, Energia, Erreaktorea), un arma y una criatura. Proyecto final de *Garapen teknologia aurreratuak* (DAM, Tolosaldea LHII).
+- **Fuente de verdad (única estrategia vigente):** `docs/estrategia/ECLIPSE_Estrategia_Definitiva_v3.2_2026-11-07.md`. Antes de decidir algo de diseño o arquitectura, consúltala. `docs/Eclipse_Estrategia_Claude_v2.1_final.md` es solo histórica: no la uses para decidir. Los informes de QA son evidencia, no estrategia.
 - **Estado del trabajo:** `docs/estado.md`. Léelo al empezar cada sesión.
-- **Entregas:** escenario el **6/11/2026 a las 14:15**; juego el **20/11/2026 a las 14:15**.
+- **Entrega:** **25/11/2026**.
 - **Roles:** el agente implementa; GPT revisa; **Ion decide, prueba en Unity y hace los commits**.
 
 ## 2. Entorno
@@ -16,7 +16,7 @@ Este archivo lo leen **todos** los agentes que trabajan en `ECLIPSE/`. Claude Co
 - Editor: `~/Unity/Hub/Editor/6000.6.0f1/Editor/Unity`.
 - Portátil con GPU híbrida: Unity se lanza **siempre** en la NVIDIA con
   `__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia __VK_LAYER_NV_optimus=NVIDIA_only` y `-force-vulkan`.
-- Repo: `GarapenTeknologiaAurreratuak_Unity` (público), rama **`feature/eclipse`**. ECLIPSE es una carpeta más, junto a los juegos anteriores.
+- Repo: `GarapenTeknologiaAurreratuak_Unity` (público), rama de trabajo **`feature/eclipse-hud`**. ECLIPSE es una carpeta más, junto a los juegos anteriores.
 
 ## 3. Límites (no negociables)
 
@@ -28,22 +28,23 @@ Este archivo lo leen **todos** los agentes que trabajan en `ECLIPSE/`. Claude Co
 | Otras carpetas del repo (`Laberintoa3D_Final/`, `Plataformak2D*/`, `SpaceInvaders2D*/`, `tools/`) | **Intocables.** Solo lectura, como referencia |
 | `.unity`, `.prefab`, `.meta`, `.asset`, `.mat`, `.controller`, `.anim`, `.lighting` | **Nunca** editar como texto el YAML. Los cambios en escenas y assets se hacen con herramientas de Editor (sección 5) o los hace Ion en Unity |
 
-- **Git:** nunca `push`, `reset --hard`, `clean`, `rebase` ni borrar ramas. **Los commits los hace Ion** después de probar en Play.
+- **Git:** nunca `push`, `reset --hard`, `clean`, `rebase` ni borrar ramas; tampoco `add`, `commit`, `reset`, `checkout` ni limpiezas sin encargo explícito. **Los commits los hace Ion** después de probar en Play. Evitar `git add -A`.
 - **Batchmode:** solo con Unity cerrado para este proyecto. Comprobar antes que no existe `Temp/UnityLockfile`.
+- **Archivos protegidos:** copia y hashes antes de procesos batch sensibles. Nunca restaurar, resetear ni borrar automáticamente archivos originales: presentar las diferencias y pedir decisión a Ion.
 - **Terceros:** no descargar, instalar ni importar nada sin que Ion lo apruebe. Revisar en solo lectura antes de abrir en Unity: un paquete con scripts de `Editor/` ejecuta código al importarlo.
 - **No inventar:** distinguir siempre **comprobado**, **hipótesis** y **pendiente**. Si no se ha probado en Unity, no está hecho.
 
 ## 4. Código
 
-- Carpetas (estrategia, sección 9.1): `Assets/_Eclipse/{Eszenak,Scriptak,Datuak,Prefabak,Editor,Tests}`.
+- Carpetas: `Assets/_Eclipse/{Eszenak,Scriptak,Datuak,Prefabak,Editor,Tests}`.
 - Ensamblados: `Eclipse.Runtime`, `Eclipse.Editor`, `Eclipse.Tests.EditMode`, `Eclipse.Tests.PlayMode`. La lógica pura no depende de `MonoBehaviour` y tiene tests EditMode.
-- Nombres de clases según los contratos de la estrategia (sección 9.2): `GameManager`, `GameSession`, `Inbentarioa`, `EMPLogika`…
+- Nombres de clases: los existentes (`GameManager`, `GameSession`, `Inbentarioa`…) y los de la estrategia, sección 2 (`ArmaLogika`, `BizitzaLogika`, `EtsaiEgoeraMakina`, `AtalLogika`).
 - **Comentarios, documentación XML y textos de interfaz en euskera.** Explicaciones a Ion, en español.
 - KISS y DRY; validar antes de modificar; resultados explícitos; nunca un `catch` vacío.
 - Suscripciones a `GameEvents` en `OnEnable` y bajas en `OnDisable`; ningún estado de escena en campos `static`.
 - **Sectores autónomos:** cada sector vive en su raíz (`Sektorea1`, `Sektorea2`, `Sektorea3`); ningún objeto apunta a otro sector; nada persistente dentro de un sector.
 
-## 5. Herramientas de Editor (estrategia, sección 12.1)
+## 5. Herramientas de Editor
 
 Lo repetitivo o masivo dentro de Unity se hace con una herramienta de Editor en C#, menú `ECLIPSE/…`, que sigue **siempre** este patrón:
 

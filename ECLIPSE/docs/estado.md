@@ -4,14 +4,15 @@
 
 ## Ahora
 
-- **Fase:** A1 "Jokalaria Release" **cerrada** (estrategia v3.1, survival horror, entrega 25/11)
-- **Rama:** `feature/eclipse-hud`, sobre `671541e0`; A1 está **sin commit**: la publicación la hace Ion
+- **Fase:** A1 "Jokalaria Release" cerrada y publicada; A2 sin empezar (estrategia v3.2, entrega 25/11)
+- **Rama:** `feature/eclipse-hud`; `HEAD = origin = 716365f9` (A1 `7992940e`, lista de escenas de A0 `716365f9`)
 - **Kits:** `Sci Fi Modular Pack` (MagixBox) y `Sci-Fi Old rusty props PBR` (KMProd), en `Assets/ThirdParty/`, convertidos a URP
-- **Siguiente paso:** Ion publica A1 en GitHub. Después, gate de assets y A2.
-- **Estrategia vigente:** `~/Downloads/ECLIPSE_Estrategia_Definitiva_v3.1_Claude_2026-11-07.md`. `AGENTS.md` aún apunta a v2.1 y a la entrega del 20/11.
+- **Siguiente paso:** decisiones de la sección "Antes de A2" y plan de A2 en Plan Mode.
+- **Estrategia vigente:** `docs/estrategia/ECLIPSE_Estrategia_Definitiva_v3.2_2026-11-07.md`. Sustituye a v3.1 y a los prompts temporales de A1; `docs/Eclipse_Estrategia_Claude_v2.1_final.md` es solo histórica.
 
 ## Hecho
 
+- 07/11 — **Estrategia v3.2 incorporada:** copia en `docs/estrategia/`; `AGENTS.md` la declara única vigente, con entrega 25/11 y rama de trabajo actualizadas (se retiran las citas a secciones de v2.1 que ya no existen, y `EMPLogika`); `/Build_Windows/` añadido a `ECLIPSE/.gitignore`. Comprobado: `HEAD = origin = 716365f9`; `7992940e` contiene A1 y `716365f9` solo `EditorBuildSettings` (M1, M2, M3).
 - 07/11 — **A1 "Jokalaria Release" (informe: `docs/qa/tresnak/A1_JokalariaRelease_2026-11-07.md`).** El explorador y el HUD ya no dependen de `UNITY_EDITOR || DEVELOPMENT_BUILD`. `AutoProbaQA.cs` solo se compila con `ECLIPSE_AUTOPROBA`, símbolo que únicamente da la build QA de `BatchReleaseProba`: la Release no lo contiene.
   - **Comprobado (batch, no validación de Ion):** EditMode 45/45; robot 211/395/311 m; HUD 66/89/69 sin fallos; reflexión con control negativo. Build QA `[Simulado]`: M1 → M3 completo, `cc=True`, `debug=False`, código 0; control negativo con error y código 1. Build Release `[Sin interacción]`: arranca M1 con jugador, `debug=False`, sin autoprobador; 60 tipos, solo difiere `AutoProbaQA`; player `nondevelopment`.
   - **Validación manual de Ion (07/11):** ejecutó la Release Linux y completó las tres misiones; todo correcto. La prueba en Windows nativo sigue siendo de A7.
@@ -130,7 +131,7 @@
 
 ## Pendiente que requiere a Ion
 
-- Build Profiles: añadir las tres escenas (`ProjectSettings`). En el Editor la transición funciona sin ello; en una build no.
+- Build Profiles: lista de escenas publicada en `716365f9`. Queda el perfil Windows (ver "Antes de A2").
 
 ## Defectos conocidos y pendientes (sin bakes nuevos)
 
@@ -156,15 +157,22 @@
 
 ## Pendiente para la versión ejecutable del profesor
 
-- **Build Profiles:** añadir las tres escenas (`ProjectSettings`, necesita autorización). Sin ello, la misión siguiente no carga.
+- **Lista de escenas:** resuelta en `716365f9`.
+- **Perfil Windows:** tiene `m_Development: 1`; la build entregable debe generarse sin Development.
 - **Jugador:** resuelto en A1; el explorador va en Release. Falta la partida manual de Ion.
 - **A7:** comprobar en la build final que `AutoProbaQA` no está en `Eclipse.Runtime.dll` (`grep -c -a AutoProbaQA` debe dar 0).
 - **Final de M3:** solo muestra un aviso; no hay pantalla final ni forma de salir del juego (tampoco menú ni pausa).
 - **Probar la build:** nada de esto se ha ejecutado fuera del Editor.
 
+## Antes de A2 (decisiones de Ion, estrategia v3.2)
+
+- **Protagonista Humanoid y clips** (idle, caminar, correr, agacharse, apuntar): modelo, origen, licencia y compatibilidad. Registrar en `LICENSES/ThirdParty.md`, que aún no existe.
+- **`V` al apuntar:** mantener libre primera/tercera persona o forzar tercera. Se decide tras probar el prototipo.
+- **Cuatro archivos gráficos sin commit** (`DefaultVolumeProfile`, `PC_RPAsset`, `UniversalRenderPipelineGlobalSettings`, `GraphicsSettings`) y **perfil Windows** (sin seguimiento): auditar y acordar qué versionar. Los prefiltros de `PC_RPAsset` pueden alterar variantes de shaders; no descartar ni versionar por inercia.
+- **Licencia de `Creep`:** sin validar; no bloquea A2 pero sí su importación en A3.
+
 ## Decisiones para Ion
 
 - **Tubería naranja `PF_Hodia_Laranja__000`:** sin collider; roza la cabeza 5 cm en la pasarela este. Con collider se pasaría agachado. Queda sin tocar salvo que Ion lo pida.
 - **Salida sin indicador visual:** la sala `Irteera` no tiene nada que marque la salida (solo el trigger y el texto del HUD). ¿Puerta, señal o baliza? No se ha añadido por no ser un defecto, sino diseño.
-- **Build Profiles:** añadir las tres escenas (`ProjectSettings`). En el Editor la transición funciona sin ello; en una build, no.
 - **Oclusión o no:** queda activa. Si en Play se ve algo raro, `BatchOklusioKendu` la retira sin tocar la iluminación.
