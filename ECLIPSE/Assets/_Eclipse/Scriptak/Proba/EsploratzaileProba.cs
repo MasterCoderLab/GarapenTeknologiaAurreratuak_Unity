@@ -77,8 +77,11 @@ namespace Eclipse.Proba
         }
     }
 
-    /// <summary>Mugimendua, begirada eta bi kamera-moduak. Sarrera Input System-etik zuzenean (proiektuan hori bakarrik dago aktibo).</summary>
-    public sealed class EsploratzaileKontrola : MonoBehaviour
+    /// <summary>
+    /// Mugimendua, begirada eta bi kamera-moduak. Sarrera Input System-etik zuzenean (proiektuan hori bakarrik dago aktibo).
+    /// Itxura: HypJo v2 (<see cref="Jokalaria.JokalariBisuala"/>), eta kargatu ezin bada, kapsula zaharra.
+    /// </summary>
+    public sealed class EsploratzaileKontrola : MonoBehaviour, Jokalaria.IJokalariEgoera
     {
         private const float Altuera = 1.8f;
         private const float MakurAltuera = 1.1f;
@@ -91,8 +94,13 @@ namespace Eclipse.Proba
         private const float KorrikaAbiadura = 6f;
         private const float Grabitatea = -19.6f;
         private const float Sentikortasuna = 0.1f;
-        private const float HirugarrenDistantzia = 3f;
         private const float KameraErradioa = 0.2f;
+
+        /// <summary>Kamera hirugarren pertsonan, buruaren espazioan: sorbaldaren gainetik (A2). Aurrekoa, erreferentzia gisa: (0, 0, -3), erdian.</summary>
+        private static readonly Vector3 SorbaldaDesplazamendua = new Vector3(0.45f, 0f, -2.2f);
+
+        /// <summary>Kamera burutik hau baino hurbilago (horma baten kontra): eredua ezkutatu.</summary>
+        private const float KameraHurbilMuga = 0.8f;
         private const float ErorketaMuga = -10f;
         private const int IgnoreRaycastGeruza = 2;
 
@@ -100,6 +108,7 @@ namespace Eclipse.Proba
         private Transform _burua;
         private Camera _kamera;
         private Renderer _gorputza;
+        private Jokalaria.JokalariBisuala _bisuala;
         private Vector3 _hasiera;
         private Quaternion _hasierakoBiraketa;
         private float _pitch;
@@ -124,6 +133,18 @@ namespace Eclipse.Proba
         }
 
         public float UnekoAltuera => _altuera;
+
+        /// <summary>CharacterController-aren azken abiadura (geruza bisualerako; irakurtzeko bakarrik).</summary>
+        public Vector3 UnekoAbiadura => _kontrolagailua != null ? _kontrolagailua.velocity : Vector3.zero;
+
+        public bool Lurrean => _kontrolagailua != null && _kontrolagailua.isGrounded;
+
+        public bool HirugarrenPertsona => _hirugarrena;
+
+        public float BegiradaYaw => transform.eulerAngles.y;
+
+        /// <summary>HypJo-ren geruza bisuala, edo null kapsula erabiltzen bada.</summary>
+        public Jokalaria.JokalariBisuala Bisuala => _bisuala;
 
         /// <summary>Makurtuta edo zutitzen: oraindik ezin da korrika egin ez jauzi.</summary>
         public bool Makurtuta => _makurtuNahi || _altuera < Altuera;
@@ -178,14 +199,12 @@ namespace Eclipse.Proba
             _kontrolagailua.stepOffset = 0.3f;
             _kontrolagailua.minMoveDistance = 0f;
 
-            GameObject gorputza = GameObject.CreatePrimitive(PrimitiveType.Capsule);
-            DestroyImmediate(gorputza.GetComponent<Collider>());
-            gorputza.name = "Gorputza";
-            gorputza.layer = IgnoreRaycastGeruza;
-            gorputza.transform.SetParent(transform, false);
-            gorputza.transform.localPosition = Vector3.up * (Altuera * 0.5f);
-            gorputza.transform.localScale = new Vector3(Erradioa * 2f, Altuera * 0.5f, Erradioa * 2f);
-            _gorputza = gorputza.GetComponent<Renderer>();
+            // HypJo v2; kargatu ezin bada, kapsula zaharra (ordezko funtzionala).
+            _bisuala = Jokalaria.JokalariBisuala.Sortu(transform, this);
+            if (_bisuala == null)
+            {
+                KapsulaSortu();
+            }
 
             _burua = new GameObject("Burua").transform;
             _burua.SetParent(transform, false);
@@ -251,15 +270,22 @@ namespace Eclipse.Proba
                 return;
             }
 
-            // Kamera atzera, baina horma baten aurretik geldituta. Trigger-ak (Gela_*) ez dira kontuan hartzen.
-            Vector3 atzera = -_burua.forward;
-            float distantzia = HirugarrenDistantzia;
-            if (Physics.SphereCast(_burua.position, KameraErradioa, atzera, out RaycastHit jo, HirugarrenDistantzia, Physics.DefaultRaycastLayers, QueryTriggerInteraction.Ignore))
+            // Kamera sorbaldaren atzean, baina horma baten aurretik geldituta: SphereCast bakarra burutik helburura,
+            // beraz burutik kamerarainoko zuzena beti libre dago. Trigger-ak (Gela_*) ez dira kontuan hartzen.
+            Vector3 helburua = _burua.TransformDirection(SorbaldaDesplazamendua);
+            float luzera = helburua.magnitude;
+            Vector3 norabidea = helburua / luzera;
+            float distantzia = luzera;
+            if (Physics.SphereCast(_burua.position, KameraErradioa, norabidea, out RaycastHit jo, luzera, Physics.DefaultRaycastLayers, QueryTriggerInteraction.Ignore))
             {
                 distantzia = Mathf.Max(jo.distance - 0.05f, 0f);
             }
 
-            _kamera.transform.SetPositionAndRotation(_burua.position + atzera * distantzia, _burua.rotation);
+            _kamera.transform.SetPositionAndRotation(_burua.position + norabidea * distantzia, _burua.rotation);
+            if (_bisuala != null)
+            {
+                _bisuala.KameraHurbil(distantzia < KameraHurbilMuga);
+            }
         }
 
         private void OnDisable()
@@ -342,15 +368,42 @@ namespace Eclipse.Proba
             _altuera = Mathf.MoveTowards(_altuera, helburua, AltueraAbiadura * Time.deltaTime);
             _kontrolagailua.height = _altuera;
             _kontrolagailua.center = Vector3.up * (_altuera * 0.5f);
-            _gorputza.transform.localPosition = Vector3.up * (_altuera * 0.5f);
-            _gorputza.transform.localScale = new Vector3(Erradioa * 2f, _altuera * 0.5f, Erradioa * 2f);
+            if (_gorputza != null)
+            {
+                _gorputza.transform.localPosition = Vector3.up * (_altuera * 0.5f);
+                _gorputza.transform.localScale = new Vector3(Erradioa * 2f, _altuera * 0.5f, Erradioa * 2f);
+            }
+
             _burua.localPosition = Vector3.up * (_altuera - BegiTartea);
+        }
+
+        /// <summary>Itxura zaharra: talkarik gabeko kapsula. HypJo kargatu ezin denean bakarrik.</summary>
+        private void KapsulaSortu()
+        {
+            GameObject gorputza = GameObject.CreatePrimitive(PrimitiveType.Capsule);
+            DestroyImmediate(gorputza.GetComponent<Collider>());
+            gorputza.name = "Gorputza";
+            gorputza.layer = IgnoreRaycastGeruza;
+            gorputza.transform.SetParent(transform, false);
+            gorputza.transform.localPosition = Vector3.up * (Altuera * 0.5f);
+            gorputza.transform.localScale = new Vector3(Erradioa * 2f, Altuera * 0.5f, Erradioa * 2f);
+            _gorputza = gorputza.GetComponent<Renderer>();
         }
 
         private void KameraModuaEzarri(bool hirugarrena)
         {
             _hirugarrena = hirugarrena;
-            _gorputza.enabled = hirugarrena;
+            if (_gorputza != null)
+            {
+                _gorputza.enabled = hirugarrena;
+            }
+
+            if (_bisuala != null)
+            {
+                _bisuala.KameraHurbil(false);
+                _bisuala.PertsonaModua(hirugarrena);
+            }
+
             if (!hirugarrena)
             {
                 // Lehen pertsona: kamera kapsularen barruan dago, beraz ezin du hormarik zeharkatu.

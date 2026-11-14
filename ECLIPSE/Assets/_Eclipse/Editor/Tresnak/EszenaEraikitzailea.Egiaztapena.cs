@@ -750,14 +750,16 @@ namespace Eclipse.EditorTresnak
 
                 // Kamera: V eta hirugarren pertsona.
                 Camera kamera = Camera.main;
-                Renderer gorputza = t.Find("Gorputza").GetComponent<Renderer>();
+                // A2: gorputza HypJo da (JokalariBisuala); kapsula zaharra, HypJo kargatu ezin bada bakarrik. Irizpidea bera da: ikusgai ala ez.
+                Transform kapsula = t.Find("Gorputza");
+                Func<bool> gorputzaIkusgai = () => kapsula != null ? kapsula.GetComponent<Renderer>().enabled : _esploratzailea.Bisuala != null && _esploratzailea.Bisuala.Ikusgai;
                 yield return Kokatu(libre, 0f);
-                Oharra("Lehen pertsonan hasi: gorputza ezkutuan", !gorputza.enabled);
+                Oharra("Lehen pertsonan hasi: gorputza ezkutuan", !gorputzaIkusgai());
                 Metodoa("KameraModuaEzarri").Invoke(_esploratzailea, new object[] { true });
                 yield return null;
                 yield return null;
                 float urruntasuna = Vector3.Distance(kamera.transform.position, _burua.position);
-                Oharra("Hirugarren pertsona: gorputza ikusgai, kamera atzean", gorputza.enabled && urruntasuna > 0.5f && urruntasuna <= 3.05f, $"{urruntasuna:0.00} m");
+                Oharra("Hirugarren pertsona: gorputza ikusgai, kamera atzean", gorputzaIkusgai() && urruntasuna > 0.5f && urruntasuna <= 3.05f, $"{urruntasuna:0.00} m");
 
                 // Kamera hormen barruan ez dela sartzen: gela eta pasillo guztietan, 8 norabide eta 3 pitch.
                 int ikuspegiak = 0;
@@ -821,7 +823,7 @@ namespace Eclipse.EditorTresnak
                 Metodoa("KameraModuaEzarri").Invoke(_esploratzailea, new object[] { false });
                 yield return null;
                 yield return null;
-                Oharra("Lehen pertsonara itzuli", !gorputza.enabled && Vector3.Distance(kamera.transform.position, _burua.position) < 0.01f);
+                Oharra("Lehen pertsonara itzuli", !gorputzaIkusgai() && Vector3.Distance(kamera.transform.position, _burua.position) < 0.01f);
                 Lerroak.Add("OHARRA: V, Esc eta klik teklak Cursor.lockState-ren menpe daude; batch-ean ezin dira probatu: Ion-en proba.");
 
                 // Bilduma.
