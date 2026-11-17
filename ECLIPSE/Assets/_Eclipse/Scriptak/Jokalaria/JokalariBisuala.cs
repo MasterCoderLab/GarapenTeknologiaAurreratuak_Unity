@@ -84,10 +84,18 @@ namespace Eclipse.Jokalaria
             }
         }
 
+        /// <summary>Umeak gehitu ondoren (adib. arma): malla-errendatzaileen zerrenda berritu eta ikusgaitasuna aplikatu.
+        /// Izpiak eta partikulak ez dira sartzen: lehen pertsonan ere ikusi behar dira.</summary>
+        public void ErrendatzaileakEguneratu()
+        {
+            _errendatzaileak = System.Array.FindAll(GetComponentsInChildren<Renderer>(true), r => r is MeshRenderer || r is SkinnedMeshRenderer);
+            IkusgaitasunaAplikatu();
+        }
+
         private void Konfiguratu(Transform gurasoa, IJokalariEgoera egoera)
         {
             _egoera = egoera;
-            _errendatzaileak = GetComponentsInChildren<Renderer>(true);
+            _errendatzaileak = System.Array.FindAll(GetComponentsInChildren<Renderer>(true), r => r is MeshRenderer || r is SkinnedMeshRenderer);
             foreach (Transform t in GetComponentsInChildren<Transform>(true))
             {
                 t.gameObject.layer = gurasoa.gameObject.layer;

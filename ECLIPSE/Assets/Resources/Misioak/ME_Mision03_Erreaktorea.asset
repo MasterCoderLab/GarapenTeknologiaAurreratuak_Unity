@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c8e164accf5de36bef589223abdc49, type: 3}
+  m_Name: ME_Mision03_Erreaktorea
+  m_EditorClassIdentifier: Eclipse.Runtime::Eclipse.Misioak.MisioEdukia
+  _eszena: Mision03_Erreaktorea
+  _atrezzoAktibo: 1
+  _borrokaAktibo: 1
+  _etsaiKopurua: -1
+  _etsaiAurrefab: Borroka/PF_Etsaia_Proba
+  _npcak: []
+  _amaieraEszena: 07_AmaieraZinematika

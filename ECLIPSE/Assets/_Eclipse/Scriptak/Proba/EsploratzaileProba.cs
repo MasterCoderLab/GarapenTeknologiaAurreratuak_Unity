@@ -143,6 +143,19 @@ namespace Eclipse.Proba
 
         public float BegiradaYaw => transform.eulerAngles.y;
 
+        /// <summary>Begiradaren pitch-a gradutan: positiboa = gora (armaren apuntaturako).</summary>
+        public float BegiradaPitch => -_pitch;
+
+        /// <summary>
+        /// Hirugarren pertsonako kameraren lekua buruaren espazioan. Lehenetsia: sorbalda. Armak apuntatzean hurbiltzen du;
+        /// SphereCast-a berdin aplikatzen da.
+        /// </summary>
+        public Vector3 KameraDesplazamendua { get; set; } = SorbaldaDesplazamendua;
+
+        public static Vector3 SorbaldaLehenetsia => SorbaldaDesplazamendua;
+
+        public Camera Kamera => _kamera;
+
         /// <summary>HypJo-ren geruza bisuala, edo null kapsula erabiltzen bada.</summary>
         public Jokalaria.JokalariBisuala Bisuala => _bisuala;
 
@@ -272,7 +285,7 @@ namespace Eclipse.Proba
 
             // Kamera sorbaldaren atzean, baina horma baten aurretik geldituta: SphereCast bakarra burutik helburura,
             // beraz burutik kamerarainoko zuzena beti libre dago. Trigger-ak (Gela_*) ez dira kontuan hartzen.
-            Vector3 helburua = _burua.TransformDirection(SorbaldaDesplazamendua);
+            Vector3 helburua = _burua.TransformDirection(KameraDesplazamendua);
             float luzera = helburua.magnitude;
             Vector3 norabidea = helburua / luzera;
             float distantzia = luzera;

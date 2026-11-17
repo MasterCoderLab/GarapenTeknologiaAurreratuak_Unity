@@ -1,0 +1,284 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 511512b48cd41f3a284458ae6e1c1623, type: 3}
+  m_Name: AD_Mision01_Laborategia
+  m_EditorClassIdentifier: Eclipse.Runtime::Eclipse.Atrezzo.AtrezzoDatuak
+  _eszena: Mision01_Laborategia
+  _elementuak:
+  - Pieza: PF_At_Kontsola
+    Lekua: {x: 7.946119, y: 0, z: 66.84693}
+    Yaw: 180
+    Gela: Gela_Biltegia
+  - Pieza: PF_At_HormaMonitorea
+    Lekua: {x: 10.746119, y: 0, z: 67.19694}
+    Yaw: 180
+    Gela: Gela_Biltegia
+  - Pieza: PF_At_OheMedikoa
+    Lekua: {x: 13.546119, y: 0, z: 66.771935}
+    Yaw: 180
+    Gela: Gela_Biltegia
+  - Pieza: PF_At_LabMahaia
+    Lekua: {x: 16.346119, y: 0, z: 66.796936}
+    Yaw: 180
+    Gela: Gela_Biltegia
+  - Pieza: PF_At_Seinalea_Protokoloa
+    Lekua: {x: 0.2830584, y: 0, z: 54.84611}
+    Yaw: 90
+    Gela: Gela_Biltegia
+  - Pieza: PF_At_LabMahaia
+    Lekua: {x: 13.764788, y: 0, z: 56.753876}
+    Yaw: 270
+    Gela: Gela_Biltegia
+  - Pieza: PF_At_HormaMonitorea
+    Lekua: {x: 75.30305, y: 0, z: 2.3461165}
+    Yaw: 90
+    Gela: Gela_Biologia
+  - Pieza: PF_At_HormaMonitorea
+    Lekua: {x: 75.30305, y: 0, z: 5.1461163}
+    Yaw: 90
+    Gela: Gela_Biologia
+  - Pieza: PF_At_OheMedikoa
+    Lekua: {x: 75.72805, y: 0, z: 7.9461164}
+    Yaw: 90
+    Gela: Gela_Biologia
+  - Pieza: PF_At_LaginTankea
+    Lekua: {x: 80.14611, y: 0, z: 10.52194}
+    Yaw: 180
+    Gela: Gela_Biologia
+  - Pieza: PF_At_LabMahaia
+    Lekua: {x: 84.34611, y: 0, z: 10.546941}
+    Yaw: 180
+    Gela: Gela_Biologia
+  - Pieza: PF_At_Kontsola
+    Lekua: {x: 82.503876, y: 0, z: 0.6530584}
+    Yaw: -0
+    Gela: Gela_Biologia
+  - Pieza: PF_At_LaginTankea
+    Lekua: {x: 79.70387, y: 0, z: 0.7280584}
+    Yaw: -0
+    Gela: Gela_Biologia
+  - Pieza: PF_At_Erakustokia
+    Lekua: {x: 53.103054, y: 0, z: 68.89611}
+    Yaw: 90
+    Gela: Gela_Borroka
+  - Pieza: PF_At_LabMahaia
+    Lekua: {x: 53.203053, y: 0, z: 71.69611}
+    Yaw: 90
+    Gela: Gela_Borroka
+  - Pieza: PF_At_Apalategia
+    Lekua: {x: 52.978054, y: 0, z: 74.49611}
+    Yaw: 90
+    Gela: Gela_Borroka
+  - Pieza: PF_At_OheMedikoa
+    Lekua: {x: 53.228054, y: 0, z: 77.29611}
+    Yaw: 90
+    Gela: Gela_Borroka
+  - Pieza: PF_At_HormaMonitorea
+    Lekua: {x: 52.803055, y: 0, z: 80.096115}
+    Yaw: 90
+    Gela: Gela_Borroka
+  - Pieza: PF_At_Apalategia
+    Lekua: {x: 70.771935, y: 0, z: 80.15388}
+    Yaw: 270
+    Gela: Gela_Borroka
+  - Pieza: PF_At_HormaMonitorea
+    Lekua: {x: 70.94694, y: 0, z: 74.55387}
+    Yaw: 270
+    Gela: Gela_Borroka
+  - Pieza: PF_At_Seinalea_Bioarriskua
+    Lekua: {x: 60.3833, y: 0, z: 86.09999}
+    Yaw: 90
+    Gela: Gela_C_Pasilloa_Borroka_Kontrola
+  - Pieza: PF_At_HormaMonitorea
+    Lekua: {x: 60.4033, y: 0, z: 88.899994}
+    Yaw: 90
+    Gela: Gela_C_Pasilloa_Borroka_Kontrola
+  - Pieza: PF_At_Seinalea_Protokoloa
+    Lekua: {x: 32.949997, y: 0, z: 4.1333065}
+    Yaw: -0
+    Gela: Gela_C_Pasilloa_Esnatzea_Harrera
+  - Pieza: PF_At_Seinalea_Protokoloa
+    Lekua: {x: 30.149996, y: 0, z: 4.1333065}
+    Yaw: -0
+    Gela: Gela_C_Pasilloa_Esnatzea_Harrera
+  - Pieza: PF_At_Seinalea_Bioarriskua
+    Lekua: {x: 27.349997, y: 0, z: 4.1333065}
+    Yaw: -0
+    Gela: Gela_C_Pasilloa_Esnatzea_Harrera
+  - Pieza: PF_At_HormaMonitorea
+    Lekua: {x: 4.1533065, y: 0, z: 14.85}
+    Yaw: 90
+    Gela: Gela_C_Pasilloa_Esnatzea_Mantentzea
+  - Pieza: PF_At_Seinalea_Protokoloa
+    Lekua: {x: 4.1333065, y: 0, z: 17.65}
+    Yaw: 90
+    Gela: Gela_C_Pasilloa_Esnatzea_Mantentzea
+  - Pieza: PF_At_Seinalea_Bioarriskua
+    Lekua: {x: 37.8833, y: 0, z: 12.05}
+    Yaw: 90
+    Gela: Gela_C_Pasilloa_Harrera_J1
+  - Pieza: PF_At_Seinalea_Bioarriskua
+    Lekua: {x: 37.8833, y: 0, z: 14.85}
+    Yaw: 90
+    Gela: Gela_C_Pasilloa_Harrera_J1
+  - Pieza: PF_At_HormaMonitorea
+    Lekua: {x: 49.549995, y: 0, z: 7.0966926}
+    Yaw: 180
+    Gela: Gela_C_Pasilloa_Harrera_Lab1
+  - Pieza: PF_At_Seinalea_Bioarriskua
+    Lekua: {x: 52.35, y: 0, z: 7.1166925}
+    Yaw: 180
+    Gela: Gela_C_Pasilloa_Harrera_Lab1
+  - Pieza: PF_At_Seinalea_Protokoloa
+    Lekua: {x: 40.86669, y: 0, z: 39.049995}
+    Yaw: 270
+    Gela: Gela_C_Pasilloa_J1_J2
+  - Pieza: PF_At_HormaMonitorea
+    Lekua: {x: 40.84669, y: 0, z: 36.249996}
+    Yaw: 270
+    Gela: Gela_C_Pasilloa_J1_J2
+  - Pieza: PF_At_Erakustokia
+    Lekua: {x: 0.6030584, y: 0, z: 3.7461166}
+    Yaw: 90
+    Gela: Gela_Esnatzea
+  - Pieza: PF_At_Apalategia
+    Lekua: {x: 0.4780584, y: 0, z: 6.5461164}
+    Yaw: 90
+    Gela: Gela_Esnatzea
+  - Pieza: PF_At_Apalategia
+    Lekua: {x: 7.5038815, y: 0, z: 0.4780584}
+    Yaw: -0
+    Gela: Gela_Esnatzea
+  - Pieza: PF_At_OheMedikoa
+    Lekua: {x: 4.7038817, y: 0, z: 0.7280584}
+    Yaw: -0
+    Gela: Gela_Esnatzea
+  - Pieza: PF_At_OheMedikoa
+    Lekua: {x: 43.096115, y: 0, z: 10.52194}
+    Yaw: 180
+    Gela: Gela_Harrera
+  - Pieza: PF_At_OheMedikoa
+    Lekua: {x: 45.896114, y: 0, z: 10.52194}
+    Yaw: 180
+    Gela: Gela_Harrera
+  - Pieza: PF_At_Erakustokia
+    Lekua: {x: 45.003876, y: 0, z: 0.6030584}
+    Yaw: -0
+    Gela: Gela_Harrera
+  - Pieza: PF_At_LaginTankea
+    Lekua: {x: 43.603878, y: 0, z: 0.7280584}
+    Yaw: -0
+    Gela: Gela_Harrera
+  - Pieza: PF_At_LaginTankea
+    Lekua: {x: 42.203876, y: 0, z: 0.7280584}
+    Yaw: -0
+    Gela: Gela_Harrera
+  - Pieza: PF_At_OheMedikoa
+    Lekua: {x: 90.003876, y: 0, z: 75.72805}
+    Yaw: -0
+    Gela: Gela_Irteera
+  - Pieza: PF_At_Apalategia
+    Lekua: {x: 84.40388, y: 0, z: 75.47805}
+    Yaw: -0
+    Gela: Gela_Irteera
+  - Pieza: PF_At_Apalategia
+    Lekua: {x: 89.49611, y: 0, z: 85.771935}
+    Yaw: 180
+    Gela: Gela_Irteera
+  - Pieza: PF_At_Kontsola
+    Lekua: {x: 93.09693, y: 0, z: 76.90388}
+    Yaw: 270
+    Gela: Gela_Irteera
+  - Pieza: PF_At_Erakustokia
+    Lekua: {x: 79.35305, y: 0, z: 81.54611}
+    Yaw: 90
+    Gela: Gela_Irteera
+  - Pieza: PF_At_LaginTankea
+    Lekua: {x: 38.446114, y: 0, z: 66.771935}
+    Yaw: 180
+    Gela: Gela_J5
+  - Pieza: PF_At_LaginTankea
+    Lekua: {x: 85.521935, y: 0, z: 100.30387}
+    Yaw: 270
+    Gela: Gela_J6
+  - Pieza: PF_At_Erakustokia
+    Lekua: {x: 53.103054, y: 0, z: 94.69611}
+    Yaw: 90
+    Gela: Gela_Kontrola
+  - Pieza: PF_At_Apalategia
+    Lekua: {x: 52.978054, y: 0, z: 101.69611}
+    Yaw: 90
+    Gela: Gela_Kontrola
+  - Pieza: PF_At_OheMedikoa
+    Lekua: {x: 66.103874, y: 0, z: 0.7280584}
+    Yaw: -0
+    Gela: Gela_Lab1
+  - Pieza: PF_At_Erakustokia
+    Lekua: {x: 63.303875, y: 0, z: 0.6030584}
+    Yaw: -0
+    Gela: Gela_Lab1
+  - Pieza: PF_At_LaginTankea
+    Lekua: {x: 70.521935, y: 0, z: 10.303882}
+    Yaw: 270
+    Gela: Gela_Lab1
+  - Pieza: PF_At_Apalategia
+    Lekua: {x: 70.771935, y: 0, z: 7.5038815}
+    Yaw: 270
+    Gela: Gela_Lab1
+  - Pieza: PF_At_Erakustokia
+    Lekua: {x: 70.646935, y: 0, z: 4.7038817}
+    Yaw: 270
+    Gela: Gela_Lab1
+  - Pieza: PF_At_LaginTankea
+    Lekua: {x: 63.02194, y: 0, z: 50.153877}
+    Yaw: 270
+    Gela: Gela_LabNagusia
+  - Pieza: PF_At_Kontsola
+    Lekua: {x: 63.09694, y: 0, z: 44.55388}
+    Yaw: 270
+    Gela: Gela_LabNagusia
+  - Pieza: PF_At_Erakustokia
+    Lekua: {x: 63.14694, y: 0, z: 41.753876}
+    Yaw: 270
+    Gela: Gela_LabNagusia
+  - Pieza: PF_At_Kontsola
+    Lekua: {x: 58.603878, y: 0, z: 38.153053}
+    Yaw: -0
+    Gela: Gela_LabNagusia
+  - Pieza: PF_At_Kontsola
+    Lekua: {x: 55.80388, y: 0, z: 38.153053}
+    Yaw: -0
+    Gela: Gela_LabNagusia
+  - Pieza: PF_At_LabMahaia
+    Lekua: {x: 8.129999, y: 0, z: 36.046116}
+    Yaw: 90
+    Gela: Gela_Mantentzea
+  - Pieza: PF_At_Kontsola
+    Lekua: {x: 64.40305, y: 0, z: 39.846115}
+    Yaw: 90
+    Gela: Gela_Zerbitzariak
+  - Pieza: PF_At_LabMahaia
+    Lekua: {x: 73.603874, y: 0, z: 38.203053}
+    Yaw: -0
+    Gela: Gela_Zerbitzariak
+  - Pieza: PF_At_LabMahaia
+    Lekua: {x: 70.80387, y: 0, z: 38.203053}
+    Yaw: -0
+    Gela: Gela_Zerbitzariak
+  - Pieza: PF_At_LabMahaia
+    Lekua: {x: 66.603874, y: 0, z: 38.203053}
+    Yaw: -0
+    Gela: Gela_Zerbitzariak
+  - Pieza: PF_At_Kontsola
+    Lekua: {x: 78.09693, y: 0, z: 42.203876}
+    Yaw: 270
+    Gela: Gela_Zerbitzariak

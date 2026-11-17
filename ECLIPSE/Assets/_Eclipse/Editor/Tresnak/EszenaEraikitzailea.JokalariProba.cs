@@ -290,8 +290,8 @@ namespace Eclipse.EditorTresnak
                 _burua = _cc.transform.Find("Burua");
                 _kamera = Camera.main;
                 string proiektua = Path.GetFullPath(Path.Combine(Application.dataPath, ".."));
-                _kapturak = Path.Combine(proiektua, "docs", "qa", "kapturak", "A2_Jokalaria");
-                _sekuentziak = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "ECLIPSE_babeskopia", "a2_blender", "temporales", "a2_proba", _aurrizkia);
+                _kapturak = QaKapturak.Azpikarpeta("A2_Jokalaria");
+                _sekuentziak = Path.Combine(QaKapturak.Karpeta, "sekuentziak", _aurrizkia);
                 Directory.CreateDirectory(_kapturak);
 
                 if (_kapsula)
@@ -537,7 +537,7 @@ namespace Eclipse.EditorTresnak
                 kamera.targetTexture = aurrekoa;
                 string helburua = karpeta ?? _kapturak;
                 Directory.CreateDirectory(helburua);
-                File.WriteAllBytes(Path.Combine(helburua, karpeta == null ? $"{_aurrizkia}_{izena}.png" : $"{izena}.png"), irudia.EncodeToPNG());
+                QaKapturak.Gorde(irudia.EncodeToPNG(), helburua, karpeta == null ? $"{_aurrizkia}_{izena}.png" : $"{izena}.png");
                 Destroy(irudia);
                 rt.Release();
                 Destroy(rt);

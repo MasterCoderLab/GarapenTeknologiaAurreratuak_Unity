@@ -28,7 +28,8 @@ namespace Eclipse.EditorTresnak
             "Wall12", "Floor1", "TopWall4", "DoorFrame", "WallIntersection",
         };
 
-        private static string Karpeta => Path.GetFullPath(Path.Combine(Application.dataPath, "..", "docs", "qa", "kapturak"));
+        /// <summary>Exekuzio bakoitzaren karpeta (QaKapturak): ez da docs/qa/kapturak gainidazten. Aukeratutakoak eskuz kopiatzen dira docs-era.</summary>
+        private static string Karpeta => QaKapturak.Karpeta;
 
         /// <summary>Modulu bakoitza: parteen zerrenda (informea) eta bi ikuspegi aurkakoak (irudi bakarra).</summary>
         public static void BatchModuluak()
@@ -770,7 +771,7 @@ namespace Eclipse.EditorTresnak
                 throw new InvalidOperationException($"{izena}: irudi uniformea; errendatzeak huts egin du.");
             }
 
-            File.WriteAllBytes(Path.Combine(Karpeta, izena), irudia.EncodeToPNG());
+            QaKapturak.Gorde(irudia.EncodeToPNG(), Karpeta, izena);
         }
 
         private static Bounds KaxaLortu(GameObject objektua)

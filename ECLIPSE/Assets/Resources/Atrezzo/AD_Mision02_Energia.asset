@@ -1,0 +1,316 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 511512b48cd41f3a284458ae6e1c1623, type: 3}
+  m_Name: AD_Mision02_Energia
+  m_EditorClassIdentifier: Eclipse.Runtime::Eclipse.Atrezzo.AtrezzoDatuak
+  _eszena: Mision02_Energia
+  _elementuak:
+  - Pieza: PF_At_HormaHodiak
+    Lekua: {x: 5.1461167, y: 0, z: 70.796936}
+    Yaw: 180
+    Gela: Gela_Biltegia
+  - Pieza: PF_At_Erretura
+    Lekua: {x: 9.346117, y: 0, z: 69.59693}
+    Yaw: 180
+    Gela: Gela_Biltegia
+  - Pieza: PF_At_Seinalea_Ebakuazioa
+    Lekua: {x: 0.3530584, y: 0, z: 65.14611}
+    Yaw: 90
+    Gela: Gela_Biltegia
+  - Pieza: PF_At_Erretura
+    Lekua: {x: 13.34694, y: 0, z: 64.70387}
+    Yaw: 270
+    Gela: Gela_Biltegia
+  - Pieza: PF_At_Barrera
+    Lekua: {x: 1.4538813, y: 0, z: 60.478054}
+    Yaw: -0
+    Gela: Gela_Biltegia
+  - Pieza: PF_At_HornidurKaxak
+    Lekua: {x: 92.99693, y: 3.0830796, z: 42.203876}
+    Yaw: 270
+    Gela: Gela_Bobinak
+  - Pieza: PF_At_Barrera
+    Lekua: {x: 93.271935, y: 3.0830796, z: 39.403877}
+    Yaw: 270
+    Gela: Gela_Bobinak
+  - Pieza: PF_At_Barrera
+    Lekua: {x: 93.271935, y: 3.0830796, z: 36.603878}
+    Yaw: 270
+    Gela: Gela_Bobinak
+  - Pieza: PF_At_Erretura
+    Lekua: {x: 92.09693, y: 3.0830796, z: 33.80388}
+    Yaw: 270
+    Gela: Gela_Bobinak
+  - Pieza: PF_At_Barrera
+    Lekua: {x: 79.22805, y: 3.0830796, z: 36.546116}
+    Yaw: 90
+    Gela: Gela_Bobinak
+  - Pieza: PF_At_Erretura
+    Lekua: {x: 80.40305, y: 3.0830796, z: 40.746117}
+    Yaw: 90
+    Gela: Gela_Bobinak
+  - Pieza: PF_At_KableSorta
+    Lekua: {x: 82.49611, y: 3.0830796, z: 48.34694}
+    Yaw: 180
+    Gela: Gela_Bobinak
+  - Pieza: PF_At_KableSorta
+    Lekua: {x: 91.40388, y: 3.0830796, z: 30.403057}
+    Yaw: -0
+    Gela: Gela_Bobinak
+  - Pieza: PF_At_Seinalea_Tentsioa
+    Lekua: {x: 55.449997, y: 0, z: 82.8833}
+    Yaw: -0
+    Gela: Gela_C_Pasilloa_Fusibleak1_Osagaiak
+  - Pieza: PF_At_Erretura
+    Lekua: {x: 52.649994, y: 0, z: 84.2533}
+    Yaw: -0
+    Gela: Gela_C_Pasilloa_Fusibleak1_Osagaiak
+  - Pieza: PF_At_Seinalea_Ebakuazioa
+    Lekua: {x: 49.849995, y: 0, z: 82.9533}
+    Yaw: -0
+    Gela: Gela_C_Pasilloa_Fusibleak1_Osagaiak
+  - Pieza: PF_At_Seinalea_Ebakuazioa
+    Lekua: {x: 69.05, y: 0, z: -3.296693}
+    Yaw: -0
+    Gela: Gela_C_Pasilloa_Fusibleak2_Mantentzea
+  - Pieza: PF_At_Erretura
+    Lekua: {x: 64.850006, y: 0, z: -1.996693}
+    Yaw: -0
+    Gela: Gela_C_Pasilloa_Fusibleak2_Mantentzea
+  - Pieza: PF_At_Seinalea_Tentsioa
+    Lekua: {x: 60.65, y: 0, z: -3.3666933}
+    Yaw: -0
+    Gela: Gela_C_Pasilloa_Fusibleak2_Mantentzea
+  - Pieza: PF_At_Seinalea_Ebakuazioa
+    Lekua: {x: 56.45, y: 0, z: -3.296693}
+    Yaw: -0
+    Gela: Gela_C_Pasilloa_Fusibleak2_Mantentzea
+  - Pieza: PF_At_Seinalea_Ebakuazioa
+    Lekua: {x: 32.949997, y: 0, z: 15.453305}
+    Yaw: -0
+    Gela: Gela_C_Pasilloa_Hodiak_J3
+  - Pieza: PF_At_Erretura
+    Lekua: {x: 30.149996, y: 0, z: 16.753305}
+    Yaw: -0
+    Gela: Gela_C_Pasilloa_Hodiak_J3
+  - Pieza: PF_At_KableSorta
+    Lekua: {x: 27.349997, y: 0, z: 15.5033045}
+    Yaw: -0
+    Gela: Gela_C_Pasilloa_Hodiak_J3
+  - Pieza: PF_At_KableSorta
+    Lekua: {x: 23.149996, y: 0, z: 15.5033045}
+    Yaw: -0
+    Gela: Gela_C_Pasilloa_Hodiak_J3
+  - Pieza: PF_At_Erretura
+    Lekua: {x: 35.746693, y: 0, z: 59.199997}
+    Yaw: 270
+    Gela: Gela_C_Pasilloa_J1_J2
+  - Pieza: PF_At_KableSorta
+    Lekua: {x: 36.996693, y: 0, z: 56.399994}
+    Yaw: 270
+    Gela: Gela_C_Pasilloa_J1_J2
+  - Pieza: PF_At_Seinalea_Tentsioa
+    Lekua: {x: 37.11669, y: 0, z: 53.599995}
+    Yaw: 270
+    Gela: Gela_C_Pasilloa_J1_J2
+  - Pieza: PF_At_Seinalea_Tentsioa
+    Lekua: {x: 46.549995, y: 0, z: 41.6333}
+    Yaw: -0
+    Gela: Gela_C_Pasilloa_J1_Sorgailuak
+  - Pieza: PF_At_KableSorta
+    Lekua: {x: 43.749996, y: 0, z: 41.7533}
+    Yaw: -0
+    Gela: Gela_C_Pasilloa_J1_Sorgailuak
+  - Pieza: PF_At_Erretura
+    Lekua: {x: 40.949997, y: 0, z: 43.0033}
+    Yaw: -0
+    Gela: Gela_C_Pasilloa_J1_Sorgailuak
+  - Pieza: PF_At_KableSorta
+    Lekua: {x: 31.549995, y: 0, z: 60.5033}
+    Yaw: -0
+    Gela: Gela_C_Pasilloa_J2_Biltegia
+  - Pieza: PF_At_Seinalea_Tentsioa
+    Lekua: {x: 25.949995, y: 0, z: 60.3833}
+    Yaw: -0
+    Gela: Gela_C_Pasilloa_J2_Biltegia
+  - Pieza: PF_At_KableSorta
+    Lekua: {x: 21.749996, y: 0, z: 60.5033}
+    Yaw: -0
+    Gela: Gela_C_Pasilloa_J2_Biltegia
+  - Pieza: PF_At_Erretura
+    Lekua: {x: 18.949995, y: 0, z: 61.7533}
+    Yaw: -0
+    Gela: Gela_C_Pasilloa_J2_Biltegia
+  - Pieza: PF_At_KableSorta
+    Lekua: {x: 36.996693, y: 0, z: 68.59999}
+    Yaw: 270
+    Gela: Gela_C_Pasilloa_J2_Fusibleak1
+  - Pieza: PF_At_Transformadorea
+    Lekua: {x: 44.246937, y: 0, z: 79.70387}
+    Yaw: 270
+    Gela: Gela_Fusibleak1
+  - Pieza: PF_At_Transformadorea
+    Lekua: {x: 44.246937, y: 0, z: 76.90388}
+    Yaw: 270
+    Gela: Gela_Fusibleak1
+  - Pieza: PF_At_HornidurKaxak
+    Lekua: {x: 34.196114, y: 0, z: 85.49693}
+    Yaw: 180
+    Gela: Gela_Fusibleak1
+  - Pieza: PF_At_Transformadorea
+    Lekua: {x: 38.396114, y: 0, z: 85.49693}
+    Yaw: 180
+    Gela: Gela_Fusibleak1
+  - Pieza: PF_At_Barrera
+    Lekua: {x: 41.196114, y: 0, z: 85.771935}
+    Yaw: 180
+    Gela: Gela_Fusibleak1
+  - Pieza: PF_At_Sorgailua
+    Lekua: {x: 42.653877, y: 0, z: -6.046941}
+    Yaw: -0
+    Gela: Gela_Fusibleak2
+  - Pieza: PF_At_KontrolKoadroa
+    Lekua: {x: 38.453876, y: 0, z: -6.971941}
+    Yaw: -0
+    Gela: Gela_Fusibleak2
+  - Pieza: PF_At_Barrera
+    Lekua: {x: 35.653877, y: 0, z: -7.021941}
+    Yaw: -0
+    Gela: Gela_Fusibleak2
+  - Pieza: PF_At_HormaHodiak
+    Lekua: {x: 31.453876, y: 0, z: -7.046941}
+    Yaw: -0
+    Gela: Gela_Fusibleak2
+  - Pieza: PF_At_KontrolKoadroa
+    Lekua: {x: 26.778057, y: 0, z: -5.1538825}
+    Yaw: 90
+    Gela: Gela_Fusibleak2
+  - Pieza: PF_At_HormaHodiak
+    Lekua: {x: 26.703058, y: 0, z: -0.9538826}
+    Yaw: 90
+    Gela: Gela_Fusibleak2
+  - Pieza: PF_At_Barrera
+    Lekua: {x: 8.903881, y: 0, z: 11.728058}
+    Yaw: -0
+    Gela: Gela_Hodiak
+  - Pieza: PF_At_Barrera
+    Lekua: {x: 3.3038816, y: 0, z: 11.728058}
+    Yaw: -0
+    Gela: Gela_Hodiak
+  - Pieza: PF_At_HormaHodiak
+    Lekua: {x: 0.4530584, y: 0, z: 13.596115}
+    Yaw: 90
+    Gela: Gela_Hodiak
+  - Pieza: PF_At_HornidurKaxak
+    Lekua: {x: 0.7530584, y: 0, z: 17.796116}
+    Yaw: 90
+    Gela: Gela_Hodiak
+  - Pieza: PF_At_KontrolKoadroa
+    Lekua: {x: 0.5280584, y: 0, z: 20.596115}
+    Yaw: 90
+    Gela: Gela_Hodiak
+  - Pieza: PF_At_KontrolKoadroa
+    Lekua: {x: 0.5280584, y: 0, z: 23.396114}
+    Yaw: 90
+    Gela: Gela_Hodiak
+  - Pieza: PF_At_HormaHodiak
+    Lekua: {x: 10.796941, y: 0, z: 23.903881}
+    Yaw: 270
+    Gela: Gela_Hodiak
+  - Pieza: PF_At_KontrolKoadroa
+    Lekua: {x: 74.99611, y: 0, z: 89.47193}
+    Yaw: 180
+    Gela: Gela_Irteera
+  - Pieza: PF_At_KontrolKoadroa
+    Lekua: {x: 76.39611, y: 0, z: 89.47193}
+    Yaw: 180
+    Gela: Gela_Irteera
+  - Pieza: PF_At_HormaHodiak
+    Lekua: {x: 79.19611, y: 0, z: 89.546936}
+    Yaw: 180
+    Gela: Gela_Irteera
+  - Pieza: PF_At_KontrolKoadroa
+    Lekua: {x: 84.79611, y: 0, z: 89.47193}
+    Yaw: 180
+    Gela: Gela_Irteera
+  - Pieza: PF_At_KontrolKoadroa
+    Lekua: {x: 87.596115, y: 0, z: 89.47193}
+    Yaw: 180
+    Gela: Gela_Irteera
+  - Pieza: PF_At_HormaHodiak
+    Lekua: {x: 89.546936, y: 0, z: 86.253876}
+    Yaw: 270
+    Gela: Gela_Irteera
+  - Pieza: PF_At_HornidurKaxak
+    Lekua: {x: 89.24693, y: 0, z: 80.65388}
+    Yaw: 270
+    Gela: Gela_Irteera
+  - Pieza: PF_At_Transformadorea
+    Lekua: {x: 85.49693, y: 0, z: 16.403881}
+    Yaw: 270
+    Gela: Gela_J5
+  - Pieza: PF_At_Transformadorea
+    Lekua: {x: 81.74693, y: 0, z: 65.15388}
+    Yaw: 270
+    Gela: Gela_J6
+  - Pieza: PF_At_Transformadorea
+    Lekua: {x: 49.503056, y: 0, z: 65.14611}
+    Yaw: 90
+    Gela: Gela_Kontrola
+  - Pieza: PF_At_Transformadorea
+    Lekua: {x: 49.503056, y: 0, z: 69.34611}
+    Yaw: 90
+    Gela: Gela_Kontrola
+  - Pieza: PF_At_Transformadorea
+    Lekua: {x: 76.39611, y: 0, z: -0.68}
+    Yaw: 180
+    Gela: Gela_Mantentzea
+  - Pieza: PF_At_Sorgailua
+    Lekua: {x: 80.59611, y: 0, z: -1.3800001}
+    Yaw: 180
+    Gela: Gela_Mantentzea
+  - Pieza: PF_At_HornidurKaxak
+    Lekua: {x: 84.853874, y: 0, z: -6.8199997}
+    Yaw: -0
+    Gela: Gela_Mantentzea
+  - Pieza: PF_At_HornidurKaxak
+    Lekua: {x: 80.65388, y: 0, z: -6.8199997}
+    Yaw: -0
+    Gela: Gela_Mantentzea
+  - Pieza: PF_At_Sorgailua
+    Lekua: {x: 76.45387, y: 0, z: -6.1199994}
+    Yaw: -0
+    Gela: Gela_Mantentzea
+  - Pieza: PF_At_Sorgailua
+    Lekua: {x: 58.59611, y: 0.9324724, z: 92.296936}
+    Yaw: 180
+    Gela: Gela_Osagaiak
+  - Pieza: PF_At_HormaHodiak
+    Lekua: {x: 64.19611, y: 0.9324724, z: 93.296936}
+    Yaw: 180
+    Gela: Gela_Osagaiak
+  - Pieza: PF_At_HornidurKaxak
+    Lekua: {x: 69.79611, y: 0.9324724, z: 92.99693}
+    Yaw: 180
+    Gela: Gela_Osagaiak
+  - Pieza: PF_At_HormaHodiak
+    Lekua: {x: 56.703053, y: 0.9324724, z: 89.04611}
+    Yaw: 90
+    Gela: Gela_Osagaiak
+  - Pieza: PF_At_HornidurKaxak
+    Lekua: {x: 67.503876, y: 0.9324724, z: 83.25305}
+    Yaw: -0
+    Gela: Gela_Osagaiak
+  - Pieza: PF_At_Sorgailua
+    Lekua: {x: 61.903873, y: 0.9324724, z: 83.95305}
+    Yaw: -0
+    Gela: Gela_Osagaiak

@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c8e164accf5de36bef589223abdc49, type: 3}
+  m_Name: ME_Mision02_Energia
+  m_EditorClassIdentifier: Eclipse.Runtime::Eclipse.Misioak.MisioEdukia
+  _eszena: Mision02_Energia
+  _atrezzoAktibo: 1
+  _borrokaAktibo: 1
+  _etsaiKopurua: 2
+  _etsaiAurrefab: Borroka/PF_Etsaia_Proba
+  _npcak:
+  - Rola: 1
+    Lekua: {x: 35.624996, y: 0.049999997, z: 43.124996}
+    Yaw: 308.4619
+    LanLekuaDu: 0
+    LanLekua: {x: 0, y: 0, z: 0}
+    LanYaw: 0
+    Patruila:
+    - {x: 35.624996, y: 0.049999997, z: 43.124996}
+    - {x: 7.3, y: 0.049999997, z: 65.62499}
+  - Rola: 1
+    Lekua: {x: 58.124992, y: 0.049999997, z: 65.62499}
+    Yaw: 12.225142
+    LanLekuaDu: 0
+    LanLekua: {x: 0, y: 0, z: 0}
+    LanYaw: 0
+    Patruila:
+    - {x: 58.124992, y: 0.049999997, z: 65.62499}
+    - {x: 63, y: 0.049999997, z: 88.12499}
+  _amaieraEszena: 

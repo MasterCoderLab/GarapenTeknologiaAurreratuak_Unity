@@ -4,13 +4,54 @@
 
 ## Ahora
 
-- **Fase:** A1 "Jokalaria Release" cerrada y publicada; A2 sin empezar (estrategia v3.2, entrega 25/11)
-- **Rama:** `feature/eclipse-hud`; `HEAD = origin = 716365f9` (A1 `7992940e`, lista de escenas de A0 `716365f9`)
-- **Kits:** `Sci Fi Modular Pack` (MagixBox) y `Sci-Fi Old rusty props PBR` (KMProd), en `Assets/ThirdParty/`, convertidos a URP
-- **Siguiente paso:** decisiones de la sección "Antes de A2" y plan de A2 en Plan Mode.
+- **Fase:** A2 "Protagonista HypJo" **aprobada por Ion** y publicada (`09d2c73a`). En curso: A3, primer bloque (núcleo de combate en escena aislada). Entrega 25/11.
+- **Rama:** `feature/eclipse-hud`; `HEAD = origin = 09d2c73a` (A2), sobre `80d18f06` (estrategia v3.2), `716365f9` (A0) y `7992940e` (A1)
+- **Kits:** `Sci Fi Modular Pack` (MagixBox) y `Sci-Fi Old rusty props PBR` (KMProd), en `Assets/ThirdParty/`, convertidos a URP. Protagonista: `Assets/ThirdParty/{HypJo_Cyborg,Quaternius_UAL}` (fuera de Git; respaldo privado `~/ECLIPSE_babeskopia/A2_ThirdParty_09d2c73a/`)
+- **Visión fijada por Ion (14/11):** survival horror sci-fi inspirado en la atmósfera de Dead Space 3, sin copiar sus recursos.
+  - **M1:** científicos y soldados; atmósfera y presentación.
+  - **M2:** soldados, colapso y primer monstruo, con el primer combate real.
+  - **M3:** invasión de monstruos, variantes, gore y huida.
+  - Los NPC no son hostiles por defecto. Los encuentros se deciden por misión.
+- **Siguiente paso:** A3, primer bloque:
+  - lógica pura y tests;
+  - pistola EMP, apuntado y enemigo provisional;
+  - `04_BorrokaProba`.
+  Revisión de Ion **antes** de tocar las misiones o introducir personajes definitivos.
 - **Estrategia vigente:** `docs/estrategia/ECLIPSE_Estrategia_Definitiva_v3.2_2026-11-07.md`. Sustituye a v3.1 y a los prompts temporales de A1; `docs/Eclipse_Estrategia_Claude_v2.1_final.md` es solo histórica.
 
 ## Hecho
+
+- 14/11 — **A3, primer bloque (sin commit, pendiente de la revisión de Ion jugando).** Informe: `docs/qa/tresnak/A3_Borroka_LehenBlokea_2026-11-14.md`.
+  - **Qué hay:**
+    - Lógica pura con 19 tests: `ArmaLogika`, `BizitzaLogika`, `GorputzKalteLogika` (zonas y partes separables) y `EtsaiEgoeraMakina`.
+    - Pistola EMP: apuntado con la capa "Arma", disparo desde la retícula con comprobación pecho → boca → impacto, SFX de SoX.
+    - Enemigo provisional (maniquí UAL CC0, 10 zonas) que aparece en runtime sobre `MailaMarka`, con NavMesh generado de los colliders.
+    - Escena `Eszenak/Proba/04_BorrokaProba.unity`.
+  - **Misiones:** sin cambios. El combate solo existe en la escena de pruebas.
+  - **Comprobado (batch):**
+    - EditMode 74/74; `BatchBorrokaProba` 42/42.
+    - HypJo 54/21/21/21; HUD 66/89/69; interacción 25×3; robot 211/395/311 m.
+    - Release y QA sin Development, target restaurado.
+    - 0 cambios en escenas, lightmaps, `Assets/Settings`, `ProjectSettings` y `Packages`.
+  - **Pendiente de Ion:**
+    - Probar `04_BorrokaProba` con ratón, R y V.
+    - Decidir qué hacer con las capturas que reescriben las regresiones (respaldadas en `~/ECLIPSE_babeskopia/a3_lehen_blokea_20261114_183802/regresio_kapturak/`).
+- 14/11 — **A2 "Protagonista HypJo" cerrada (commit `09d2c73a`, validada por Ion jugando).** Informe: `docs/qa/tresnak/A2_JokalariaHypJo_2026-11-14.md`.
+  - **Qué es:** HypJo v2 es la **capa visual** del `EsploratzaileKontrola` de siempre. La carga `Resources/Jokalaria/PF_Jokalaria_HypJo.prefab`, y si no se puede, se usa la cápsula.
+  - **Qué no cambia:** ninguna `.unity` de las misiones; mapa, inventario, HUD, V y controles siguen igual.
+  - **Cámara al hombro:** (0,45; 0; −2,2) m. El modelo se orienta hacia el movimiento.
+  - **Animator:** blend tree con la velocidad natural de los clips UAL y Foot IK. El modelo se baja lo que mide el `skinWidth`.
+  - **Comprobado (batch):**
+    - EditMode 55/55; escena neutra `03_JokalariProba` 54/54; M1, M2 y M3 21/21 cada una.
+    - HUD 66/89/69; cámara 13 056 vistas sin atravesar paredes; robot 211/395/311 m.
+    - Vuelta a la cápsula 9/9.
+    - Release y QA sin Development, con el target devuelto a Windows.
+    - 0 cambios en escenas, lightmaps, `Assets/Settings`, `ProjectSettings` y `Packages`.
+  - **Validación de Ion:** probado jugando y aceptado.
+  - **Limpieza del 14/11 (respaldo en `~/ECLIPSE_babeskopia/a3_garbiketa_20261114_182054/`):**
+    - Restauradas desde Git las 20 capturas `HUD_*` y `M*_uholdea` que habían sobrescrito las regresiones.
+    - Retiradas las 18 capturas extra y 12 informes intermedios.
+    - Se versionan los 19 informes finales de A2.
 
 - 07/11 — **Estrategia v3.2 incorporada:** copia en `docs/estrategia/`; `AGENTS.md` la declara única vigente, con entrega 25/11 y rama de trabajo actualizadas (se retiran las citas a secciones de v2.1 que ya no existen, y `EMPLogika`); `/Build_Windows/` añadido a `ECLIPSE/.gitignore`. Comprobado: `HEAD = origin = 716365f9`; `7992940e` contiene A1 y `716365f9` solo `EditorBuildSettings` (M1, M2, M3).
 - 07/11 — **A1 "Jokalaria Release" (informe: `docs/qa/tresnak/A1_JokalariaRelease_2026-11-07.md`).** El explorador y el HUD ya no dependen de `UNITY_EDITOR || DEVELOPMENT_BUILD`. `AutoProbaQA.cs` solo se compila con `ECLIPSE_AUTOPROBA`, símbolo que únicamente da la build QA de `BatchReleaseProba`: la Release no lo contiene.
@@ -98,6 +139,9 @@
 | Fecha | Decisión | Quién |
 | --- | --- | --- |
 | 05/11 | ECLIPSE es una carpeta del repo de la asignatura, rama `feature/eclipse`; el kit va en `Assets/ThirdParty/` y no se publica | Ion |
+| 14/11 | A2: HypJo v2 es la capa visual del controlador existente, cargada desde `Resources` (sin tocar escenas). Assets originales en `ThirdParty/` (no se publican). Cámara al hombro (0,45; 0; −2,2). Sin clips laterales: solo gira el modelo | Ion |
+| 14/11 | Visión: progresión M1 (científicos y soldados, atmósfera) → M2 (soldados, primer monstruo, primer combate) → M3 (invasión, variantes, gore, huida). NPC no hostiles por defecto. Desmembramiento: primero la arquitectura de zonas; las piezas visuales, después del combate básico | Ion |
+| 14/11 | A3: NPC y enemigos por aparición en runtime y herramientas de Editor, reutilizando los marcadores `MailaMarka`; las escenas definitivas no se reconstruyen | Ion |
 | 05/11 | Hasta el 20/11 se trabaja con Claude Code CLI en `ECLIPSE/`; AI Assistant como cuaderno de decisiones | Ion |
 | 05/11 | Kits: `Sci Fi Modular Pack` (MagixBox) y `Sci-Fi Old rusty props PBR` (KMProd) | Ion |
 | 05/11 | Planos: S1 Sarrera–Korridorea–Laborategia; S2 Fusibleak–Korridorea–Sorgailua; S3 Korridorea–Erreaktorea; en línea sobre X. Las salas de S2 y S3 van sin techo ni props | Ion |
@@ -131,7 +175,7 @@
 
 ## Pendiente que requiere a Ion
 
-- Build Profiles: lista de escenas publicada en `716365f9`. Queda el perfil Windows (ver "Antes de A2").
+- Build Profiles: lista de escenas publicada en `716365f9`. Queda el perfil Windows (ver "Antes de A3").
 
 ## Defectos conocidos y pendientes (sin bakes nuevos)
 
@@ -164,15 +208,69 @@
 - **Final de M3:** solo muestra un aviso; no hay pantalla final ni forma de salir del juego (tampoco menú ni pausa).
 - **Probar la build:** nada de esto se ha ejecutado fuera del Editor.
 
-## Antes de A2 (decisiones de Ion, estrategia v3.2)
+## Antes de A3 (decisiones de Ion, estrategia v3.2)
 
-- **Protagonista Humanoid y clips** (idle, caminar, correr, agacharse, apuntar): modelo, origen, licencia y compatibilidad. Registrar en `LICENSES/ThirdParty.md`, que aún no existe.
-- **`V` al apuntar:** mantener libre primera/tercera persona o forzar tercera. Se decide tras probar el prototipo.
-- **Cuatro archivos gráficos sin commit** (`DefaultVolumeProfile`, `PC_RPAsset`, `UniversalRenderPipelineGlobalSettings`, `GraphicsSettings`) y **perfil Windows** (sin seguimiento): auditar y acordar qué versionar. Los prefiltros de `PC_RPAsset` pueden alterar variantes de shaders; no descartar ni versionar por inercia.
-- **Licencia de `Creep`:** sin validar; no bloquea A2 pero sí su importación en A3.
+- **Resuelto en A2 (14/11):** protagonista HypJo v2 + rig Mixamo + clips UAL (CC0); licencias en `LICENSES/ThirdParty.md`.
+- **Cuatro archivos gráficos** (`DefaultVolumeProfile`, `PC_RPAsset`, `UniversalRenderPipelineGlobalSettings`, `GraphicsSettings`): auditados el 14/11.
+  - **Qué son:** campos de serialización de Unity 6000.6/URP 17.6 y el prefiltrado de variantes, que URP recalcula en cada build.
+  - **Propuesta:** versionarlos tal cual, en un commit aparte. Son los valores con los que se han validado las Release del 07/11 y del 14/11.
+- **Perfil Windows** (`Build Profiles/Windows.asset`, sin seguimiento): mantiene `m_Development: 1`. Se corrige en A7, antes de la build entregable; hasta entonces no se versiona.
+- **`V` al apuntar:** propuesta: no forzar nada. El clic derecho apunta en la cámara activa; en tercera persona, la cámara al hombro se acerca. Lo decide Ion tras probar A3.
+- **Licencia de `Creep`:** sin validar.
+  - **Además,** por la cláusula de IA del EULA, Claude no puede revisarlo visualmente.
+  - **A3** usa un enemigo provisional CC0: el maniquí de Quaternius UAL.
+  - **La criatura definitiva** se elige después.
 
 ## Decisiones para Ion
 
 - **Tubería naranja `PF_Hodia_Laranja__000`:** sin collider; roza la cabeza 5 cm en la pasarela este. Con collider se pasaría agachado. Queda sin tocar salvo que Ion lo pida.
 - **Salida sin indicador visual:** la sala `Irteera` no tiene nada que marque la salida (solo el trigger y el texto del HUD). ¿Puerta, señal o baliza? No se ha añadido por no ser un defecto, sino diseño.
 - **Oclusión o no:** queda activa. Si en Play se ve algo raro, `BatchOklusioKendu` la retira sin tocar la iluminación.
+
+## A3 saio luzea (14/11/2026) — egoera (Claude; Ion-en Play proba falta)
+
+Txosten osoa: `docs/qa/tresnak/A3_SaioLuzea_Txostena_2026-11-14.md`. Commit-proposamena: `docs/qa/tresnak/A3_CommitProposamena_2026-11-14.md`.
+
+**Eginda (batch-en probatuta; Unity-n Ion-ek jokatu gabe):**
+- A: babeskopiak egiaztatuta, kaptura bertsionatuak leheneratuta, QA kapturak `Recordings/qa/<exekuzioa>/`-n (ez dute ezer gainidazten).
+- B: borroka-prototipoa (`04_BorrokaProba`, 47/47) eta misio-demoa Editorean bakarrik (`ECLIPSE/Borroka/Demoa`, M1 0 / M2 2 / M3 6 etsai). EMP: v3.2 (munizioa/birkarga), ez da aldatu.
+- C: sektore-atrezzoa runtime-n, Editorean aktibatuta (`ECLIPSE/Atrezzo/Demoa`); robotaren ibilbidea ez du oztopatzen (211/395/311 m atrezzoarekin).
+- D: arma eta ontzi aktiboen ikerketa (`A3_D_ArmaEtaOntziAktiboak_2026-11-14.md`); ezer ez deskargatuta.
+- E: NPC rolak eta desmenbratze modularra, `06_NpcProba` (36/36). Misioetan ez.
+- F: amaierako zinematika `07_AmaieraZinematika` (Timeline 28 s, 18/18). Erreaktorea ez da ukitu.
+- Erregresio osoa: 23 proba OK (Jokalaria 0–3, HUD 66/91/69, Interakzioa 25×3, Robota 211/395/311, Borroka 47, demo M1–M3, NPC, zinematika, konpilazioa, EditMode 89/89, Release + target leheneratuta). 373 fitxategi babestu hash berdinarekin.
+
+**Erabakiak Ion-entzat:** amaierako testua («JARRAITUKO DU…» AGENTS-en arabera vs «CONTINUARÁ…»); NPC-en fuego amigo-a; aktiboen deskargak (D); M3 garaipena → 07 lotzea (EditorBuildSettings, baimena behar); tarteko txostenak babeskopiara eramatea.
+
+**Pendiente:** Ion-en Play proba (04, 06, 07, demoak); borroka misioetan integratzea Ion-ek onartu ondoren; ontziaren eta armen eredu behin betikoak.
+
+## A4 (15/11/2026) — contenido de misión en runtime y plan (Claude; sin commit)
+
+Ion autorizó (14/11, noche) modificar moderadamente las misiones y pidió primero auditoría, lista de assets y plan: `docs/plan/A4_Auditoria_Assets_Plan_2026-11-15.md`. **Ninguna escena de misión se ha tocado.**
+
+**Hecho y probado en batch:**
+- `MisioEdukia` (`Resources/Misioak/ME_Mision0X.asset`) + `MisioEdukiKargatzailea` (runtime, Editor y build) + `MisioEdukiTresna` (`ECLIPSE/Misioak/Edukia`, idempotente, posiciones de NPC calculadas desde la escena y validadas con NavMesh).
+- Narrativa activa sin menús: M1 atrezzo + 3 científicos + 2 soldados (sin arma); M2 atrezzo + EMP + 2 monstruos + 2 soldados; M3 atrezzo + EMP + 6 monstruos y, al salir, `07_AmaieraZinematika` (solo en Editor hasta añadirla a Build Settings: permiso pendiente).
+- Personajes y enemigos siguen siendo **provisionales** (maniquíes); el sistema cambia de prefab por nombre.
+- Pruebas: `BatchMisioEdukiProba` M1 14/14, M2 13/13, M3 13/13. Regresión completa con el contenido activo: Jokalaria (sin contenido, prueba del modelo) 54/21/21/21, HUD 66/91/69, Interakzio 25×3, Robota 211/395/311 (con `-eclipseEtsairikGabe`), Borroka 47, NPC 36, Zinematika 18, EditMode 89/89, Release OK, 373 protegidos sin cambios. `BorrokaDemoProba` adaptado: en M2 los soldados pueden abatir al primer monstruo antes de que llegue al jugador (narrativa).
+- Hallazgo: las misiones se generan desde `EszenaEraikitzailea.MailaDatuak.cs`; el rediseño arquitectónico es editar datos + reconstruir + rebake (~10 min GPU por misión), no mover objetos a mano.
+
+**Decisiones de Ion (ver plan, sección 7):** descargas (nada descargado), piloto arquitectónico en M1, científicos (Mixamo + bata propia o Synty), mantener maniquíes mientras tanto, `07` en Build Settings, texto final («JARRAITUKO DU…»/«CONTINUARÁ…»).
+
+**Pendiente/observado:** ~~`Biologia` (M1) no es alcanzable por el NavMesh~~ **corregido el 17/11: sí es alcanzable** (ver A5); el científico no se colocó allí por las distancias a puntos de interés. Soldados de M2 matan al monstruo en ~4 s (12 de daño × 2): ajustar daño o vida para que el jugador llegue a combatir.
+
+## A5 (17/11/2026) — auditoría real y plan maestro (Claude; sin commit; **misiones sin tocar**)
+
+Documento: `docs/plan/A5_Auditoria_PlanMaestro_2026-11-17.md`. Espera la aprobación de Ion.
+
+**Comprobado hoy:**
+- Git: 16 modificados y 634 sin seguimiento; copia verificable en `~/ECLIPSE_babeskopia/a4_auditoria_20261117/` (tar de 653 archivos + parche + SHA-256). 373 protegidos sin cambios.
+- Entorno (`comprobar_entorno.sh --unirig`): 0 herramientas ausentes; UniRig con CUDA y checkpoints.
+- Assets nuevos no Asset Store, auditados y renderizados en `a2_blender` (`assets_candidatos/a4_candidatos/`, `renders/a4/`, `scripts/a4_candidato.py`): 3 armas CC BY 4.0 (pistola aceptada como EMP; dos fusiles a escala ×4, adaptables), Blood Decals de Weasel Whistle (aceptados), MegaKit y Essentials de Quaternius CC0 (aceptados con adaptación), Modular Sci Fi Guns (descartado).
+- `BatchNavMeshAuditoria` (nueva, solo lectura): `Biologia` accesible; **`Irteera` (M1–M3) y `J6` (M1–M2) inalcanzables para agentes** (NavMesh horneado con la puerta de bloqueo cerrada).
+- Medido en los mapas: 28–32 % de la superficie transitable es pasillo; 23/23/17 pasillos de ~16–19 m; en M1 la sala mayor es el laberinto (288 m²) y `LabNagusia` solo 111 m².
+- Build: solo M1–M3 en la lista; Release validada en Linux64, **Windows nunca generada**; `PC_Renderer` sin Decal Renderer Feature.
+
+**No hecho por regla vigente:** paquetes de la Asset Store (Creep, zombis, PolygonR, Blood VFX) sin abrir; Ion debe elegir A/B/C (plan, sección 0).
+
+**Propuesta:** salas emblemáticas con salas adosadas (nueva conexión `Irekidura` en el generador), menos pasillos y cruces, laberinto solo en M3; piloto en M1.

@@ -26,11 +26,11 @@ namespace Eclipse.EditorTresnak
         private const string Tresna = "JokalariBisuala";
         private const string Marka = "ECL_JOKALARIBISUALA";
 
-        private const string HypJoKarpeta = "Assets/ThirdParty/HypJo_Cyborg";
+        internal const string HypJoKarpeta = "Assets/ThirdParty/HypJo_Cyborg";
         private const string Fbx = HypJoKarpeta + "/Cyborg_ECLIPSE_v2_RigMixamo65_Tpose.fbx";
-        private const string Ual = "Assets/ThirdParty/Quaternius_UAL/UAL1_Standard.fbx";
-        private const string DatuKarpeta = "Assets/_Eclipse/Datuak/Jokalaria";
-        private const string ProbaKarpeta = DatuKarpeta + "/Proba";
+        internal const string Ual = "Assets/ThirdParty/Quaternius_UAL/UAL1_Standard.fbx";
+        internal const string DatuKarpeta = "Assets/_Eclipse/Datuak/Jokalaria";
+        internal const string ProbaKarpeta = DatuKarpeta + "/Proba";
         private const string GorputzMat = DatuKarpeta + "/M_HypJo_Gorputza.mat";
         private const string ZapiMat = DatuKarpeta + "/M_HypJo_Lepozapia.mat";
         private const string Kontrolagailua = DatuKarpeta + "/AC_Jokalaria.controller";
@@ -56,69 +56,105 @@ namespace Eclipse.EditorTresnak
         // ---------- Animator-aren definizioa ----------
         // UAL klipen abiadura naturala, root motion bertsiotik neurtua (Blender, ~/ECLIPSE_babeskopia/a2_blender/informes/a2/a2_ual_abiadurak.json):
         // Walk 0,975; Jog 5,357; Sprint 8,25; Crouch_Fwd 0,75 m/s. Atalasea = abiadura naturala: oinak ez dira irristatzen.
-        private sealed class UmeDef
-        {
-            public string Klipa;
-            public float Atalasea;
-            public float Denbora = 1f;
-        }
+        // A3: "Arma" geruza (gorputzaren goiko aldea, maskararekin), lehenetsiz 0 pisua: JokalariArma-k 1 jartzen du pistola duenean.
+        private const string Maskara = DatuKarpeta + "/AM_GorputzGoikoa.mask";
 
-        private sealed class EgoeraDef
-        {
-            public string Izena;
-            public string Parametroa;
-            public UmeDef[] Umeak;
-            public string Klipa;
-            public bool OinIK;
-            public Vector3 Kokapena;
-        }
+        private static (string, AnimatorConditionMode, float)[] B(string param, bool balioa) =>
+            new[] { (param, balioa ? AnimatorConditionMode.If : AnimatorConditionMode.IfNot, 0f) };
 
-        private static readonly (string Izena, AnimatorControllerParameterType Mota)[] Parametroak =
-        {
-            ("Abiadura", AnimatorControllerParameterType.Float),
-            ("AbiaduraX", AnimatorControllerParameterType.Float),
-            ("AbiaduraZ", AnimatorControllerParameterType.Float),
-            ("Makurtuta", AnimatorControllerParameterType.Bool),
-            ("Airean", AnimatorControllerParameterType.Bool),
-        };
+        private static (string, AnimatorConditionMode, float)[] B(string p1, bool b1, string p2, bool b2) =>
+            new[] { (p1, b1 ? AnimatorConditionMode.If : AnimatorConditionMode.IfNot, 0f), (p2, b2 ? AnimatorConditionMode.If : AnimatorConditionMode.IfNot, 0f) };
 
-        private static readonly EgoeraDef[] Egoerak =
+        private static AnimKontrolDef KontrolDefinizioa(AvatarMask goikoa) => new AnimKontrolDef
         {
-            new EgoeraDef
+            Parametroak = new[]
             {
-                Izena = "Zutik", Parametroa = "Abiadura", OinIK = true, Kokapena = new Vector3(300f, 0f),
-                Umeak = new[]
+                ("Abiadura", AnimatorControllerParameterType.Float),
+                ("AbiaduraX", AnimatorControllerParameterType.Float),
+                ("AbiaduraZ", AnimatorControllerParameterType.Float),
+                ("Makurtuta", AnimatorControllerParameterType.Bool),
+                ("Airean", AnimatorControllerParameterType.Bool),
+                ("Apuntatzen", AnimatorControllerParameterType.Bool),
+                ("ApuntuPitch", AnimatorControllerParameterType.Float),
+                ("Tiro", AnimatorControllerParameterType.Trigger),
+                ("Birkarga", AnimatorControllerParameterType.Trigger),
+                ("Kaltea", AnimatorControllerParameterType.Trigger),
+            },
+            Geruzak = new[]
+            {
+                new AnimGeruzaDef
                 {
-                    new UmeDef { Klipa = "Idle_Loop", Atalasea = 0f },
-                    new UmeDef { Klipa = "Walk_Loop", Atalasea = 0.975f },
-                    new UmeDef { Klipa = "Jog_Fwd_Loop", Atalasea = 5.357f },
-                    new UmeDef { Klipa = "Sprint_Loop", Atalasea = 8.25f },
+                    Izena = "Oinarria", Lehenetsia = "Zutik",
+                    Egoerak = new[]
+                    {
+                        new AnimEgoeraDef
+                        {
+                            Izena = "Zutik", Parametroa = "Abiadura", OinIK = true, Kokapena = new Vector3(300f, 0f),
+                            Umeak = new[]
+                            {
+                                new AnimUmeDef { Klipa = "Idle_Loop", Atalasea = 0f },
+                                new AnimUmeDef { Klipa = "Walk_Loop", Atalasea = 0.975f },
+                                new AnimUmeDef { Klipa = "Jog_Fwd_Loop", Atalasea = 5.357f },
+                                new AnimUmeDef { Klipa = "Sprint_Loop", Atalasea = 8.25f },
+                            },
+                        },
+                        new AnimEgoeraDef
+                        {
+                            // Makurtuta 1,5 m/s (EsploratzaileKontrola); klipa 0,75 m/s: bi aldiz azkarrago.
+                            Izena = "Makurtuta", Parametroa = "Abiadura", OinIK = true, Kokapena = new Vector3(300f, 120f),
+                            Umeak = new[]
+                            {
+                                new AnimUmeDef { Klipa = "Crouch_Idle_Loop", Atalasea = 0f },
+                                new AnimUmeDef { Klipa = "Crouch_Fwd_Loop", Atalasea = 1.5f, Denbora = 2f },
+                            },
+                        },
+                        new AnimEgoeraDef { Izena = "Airean", Klipa = "Jump_Loop", Kokapena = new Vector3(560f, 60f) },
+                    },
+                    Trantsizioak = new[]
+                    {
+                        new AnimTrantsizioDef { Nondik = "Zutik", Nora = "Makurtuta", Baldintzak = B("Makurtuta", true) },
+                        new AnimTrantsizioDef { Nondik = "Makurtuta", Nora = "Zutik", Baldintzak = B("Makurtuta", false) },
+                        new AnimTrantsizioDef { Nondik = "Zutik", Nora = "Airean", Baldintzak = B("Airean", true) },
+                        new AnimTrantsizioDef { Nondik = "Makurtuta", Nora = "Airean", Baldintzak = B("Airean", true) },
+                        new AnimTrantsizioDef { Nondik = "Airean", Nora = "Zutik", Baldintzak = B("Airean", false, "Makurtuta", false) },
+                        new AnimTrantsizioDef { Nondik = "Airean", Nora = "Makurtuta", Baldintzak = B("Airean", false, "Makurtuta", true) },
+                    },
+                },
+                new AnimGeruzaDef
+                {
+                    Izena = "Arma", Maskara = goikoa, Pisua = 0f, Lehenetsia = "Eutsi",
+                    Egoerak = new[]
+                    {
+                        new AnimEgoeraDef { Izena = "Eutsi", Klipa = "Pistol_Idle_Loop", Kokapena = new Vector3(300f, 0f) },
+                        new AnimEgoeraDef
+                        {
+                            Izena = "Apuntatu", Parametroa = "ApuntuPitch", Kokapena = new Vector3(300f, 120f),
+                            Umeak = new[]
+                            {
+                                new AnimUmeDef { Klipa = "Pistol_Aim_Down", Atalasea = -45f },
+                                new AnimUmeDef { Klipa = "Pistol_Aim_Neutral", Atalasea = 0f },
+                                new AnimUmeDef { Klipa = "Pistol_Aim_Up", Atalasea = 45f },
+                            },
+                        },
+                        new AnimEgoeraDef { Izena = "Tiro", Klipa = "Pistol_Shoot", Kokapena = new Vector3(560f, 120f) },
+                        new AnimEgoeraDef { Izena = "Birkarga", Klipa = "Pistol_Reload", Kokapena = new Vector3(560f, 0f) },
+                        new AnimEgoeraDef { Izena = "Kaltea", Klipa = "Hit_Chest", Kokapena = new Vector3(560f, 240f) },
+                    },
+                    Trantsizioak = new[]
+                    {
+                        new AnimTrantsizioDef { Nondik = "Eutsi", Nora = "Apuntatu", Baldintzak = B("Apuntatzen", true), Iraupena = 0.12f },
+                        new AnimTrantsizioDef { Nondik = "Apuntatu", Nora = "Eutsi", Baldintzak = B("Apuntatzen", false), Iraupena = 0.2f },
+                        new AnimTrantsizioDef { Nondik = AnimatorEraikitzailea.Any, Nora = "Tiro", Baldintzak = B("Tiro", true), Iraupena = 0.05f },
+                        new AnimTrantsizioDef { Nondik = "Tiro", Nora = "Apuntatu", Baldintzak = B("Apuntatzen", true), Irteera = 0.7f, Iraupena = 0.1f },
+                        new AnimTrantsizioDef { Nondik = "Tiro", Nora = "Eutsi", Baldintzak = B("Apuntatzen", false), Irteera = 0.7f, Iraupena = 0.2f },
+                        new AnimTrantsizioDef { Nondik = AnimatorEraikitzailea.Any, Nora = "Birkarga", Baldintzak = B("Birkarga", true), Iraupena = 0.1f },
+                        new AnimTrantsizioDef { Nondik = "Birkarga", Nora = "Eutsi", Irteera = 0.95f, Iraupena = 0.15f },
+                        new AnimTrantsizioDef { Nondik = AnimatorEraikitzailea.Any, Nora = "Kaltea", Baldintzak = B("Kaltea", true), Iraupena = 0.05f },
+                        new AnimTrantsizioDef { Nondik = "Kaltea", Nora = "Eutsi", Irteera = 0.8f, Iraupena = 0.15f },
+                    },
                 },
             },
-            new EgoeraDef
-            {
-                // Makurtuta 1,5 m/s (EsploratzaileKontrola); klipa 0,75 m/s: bi aldiz azkarrago.
-                Izena = "Makurtuta", Parametroa = "Abiadura", OinIK = true, Kokapena = new Vector3(300f, 120f),
-                Umeak = new[]
-                {
-                    new UmeDef { Klipa = "Crouch_Idle_Loop", Atalasea = 0f },
-                    new UmeDef { Klipa = "Crouch_Fwd_Loop", Atalasea = 1.5f, Denbora = 2f },
-                },
-            },
-            new EgoeraDef { Izena = "Airean", Klipa = "Jump_Loop", OinIK = false, Kokapena = new Vector3(560f, 60f) },
         };
-
-        private static readonly (string Nondik, string Nora, (string Param, bool Balioa)[] Baldintzak)[] Trantsizioak =
-        {
-            ("Zutik", "Makurtuta", new[] { ("Makurtuta", true) }),
-            ("Makurtuta", "Zutik", new[] { ("Makurtuta", false) }),
-            ("Zutik", "Airean", new[] { ("Airean", true) }),
-            ("Makurtuta", "Airean", new[] { ("Airean", true) }),
-            ("Airean", "Zutik", new[] { ("Airean", false), ("Makurtuta", false) }),
-            ("Airean", "Makurtuta", new[] { ("Airean", false), ("Makurtuta", true) }),
-        };
-
-        private const float TrantsizioDenbora = 0.15f;
 
         [MenuItem("ECLIPSE/Jokalaria/Bisuala: aurrebista")]
         private static void MenuAurrebista() => Exekutatu(false);
@@ -163,7 +199,13 @@ namespace Eclipse.EditorTresnak
                 Material zapia = Materiala(ZapiMat, true, aplikatu, aldaketak);
                 HypJoInportazioa(gorputza, zapia, aplikatu, aldaketak, egiaztapenak);
                 UalInportazioa(aplikatu, aldaketak, egiaztapenak);
-                AnimatorController kontrolagailua = KontrolagailuaEgiaztatu(aplikatu, aldaketak);
+                AvatarMask goikoa = AnimatorEraikitzailea.GoikoMaskara(Maskara, aplikatu, aldaketak);
+                Dictionary<string, AnimationClip> klipak = UalKlipak();
+                AnimKontrolDef definizioa = KontrolDefinizioa(goikoa);
+                if (AnimatorEraikitzailea.Egiaztatu(Kontrolagailua, definizioa, k => klipak.TryGetValue(k, out AnimationClip c) ? c : null, aplikatu, out AnimatorController kontrolagailua))
+                {
+                    aldaketak.Add($"Animator Controller {(aplikatu ? "eraikia" : "eraikiko litzateke")}: {Kontrolagailua} — Oinarria (3 egoera) + Arma (5 egoera, maskara, pisua 0)");
+                }
                 AurrefabrikatuaEgiaztatu(kontrolagailua, gorputza, zapia, aplikatu, aldaketak, egiaztapenak);
                 ProbaEszenaEgiaztatu(aplikatu, aldaketak);
 
@@ -186,7 +228,7 @@ namespace Eclipse.EditorTresnak
             }
         }
 
-        private static string Sha256(string assetBidea)
+        internal static string Sha256(string assetBidea)
         {
             string fitxategia = Path.GetFullPath(assetBidea);
             if (!File.Exists(fitxategia))
@@ -438,7 +480,8 @@ namespace Eclipse.EditorTresnak
             if (aplikatu || zuzena)
             {
                 Dictionary<string, AnimationClip> klipakIzenez = UalKlipak();
-                string[] behar = Egoerak.SelectMany(e => e.Umeak != null ? e.Umeak.Select(u => u.Klipa) : new[] { e.Klipa }).ToArray();
+                string[] behar = KontrolDefinizioa(null).Geruzak.SelectMany(g => g.Egoerak)
+                    .SelectMany(e => e.Umeak != null ? e.Umeak.Select(u => u.Klipa) : e.Klipa != null ? new[] { e.Klipa } : Array.Empty<string>()).ToArray();
                 string[] faltan = behar.Where(b => !klipakIzenez.ContainsKey(b)).ToArray();
                 if (faltan.Length > 0)
                 {
@@ -453,166 +496,10 @@ namespace Eclipse.EditorTresnak
         /// <summary>FBX-ko hartzearen izena aurrizkirik gabe: "Armature|Idle_Loop" → "Idle_Loop".</summary>
         private static string KlipIzena(string hartzea) => hartzea.Substring(hartzea.LastIndexOf('|') + 1);
 
-        private static Dictionary<string, AnimationClip> UalKlipak() =>
+        internal static Dictionary<string, AnimationClip> UalKlipak() =>
             AssetDatabase.LoadAllAssetRepresentationsAtPath(Ual).OfType<AnimationClip>()
                 .Where(k => !k.name.StartsWith("__preview__", StringComparison.Ordinal))
                 .GroupBy(k => k.name).ToDictionary(g => g.Key, g => g.First());
-
-        /// <summary>Lerroak ordenatuta: Unity-k egoeraka gordetzen ditu trantsizioak, definizioak zerrendaka.</summary>
-        private static string Sinadura(IEnumerable<string> lerroak) => string.Join("\n", lerroak.OrderBy(l => l, StringComparer.Ordinal));
-
-        private static IEnumerable<string> HelburuSinadura()
-        {
-            foreach ((string izena, AnimatorControllerParameterType mota) in Parametroak)
-            {
-                yield return $"P {izena} {mota}";
-            }
-
-            foreach (EgoeraDef e in Egoerak)
-            {
-                string mugimendua = e.Umeak != null
-                    ? $"BT {e.Parametroa} " + string.Join(";", e.Umeak.Select(u => $"{u.Klipa}@{u.Atalasea:0.###}x{u.Denbora:0.###}"))
-                    : $"K {e.Klipa}";
-                yield return $"E {e.Izena} ik={e.OinIK} {mugimendua}";
-            }
-
-            foreach ((string nondik, string nora, (string Param, bool Balioa)[] baldintzak) in Trantsizioak)
-            {
-                yield return $"T {nondik}>{nora} {TrantsizioDenbora:0.###} " + string.Join(",", baldintzak.Select(b => $"{b.Param}={b.Balioa}"));
-            }
-
-            yield return "D Zutik";
-        }
-
-        private static IEnumerable<string> BenetakoSinadura(AnimatorController ac)
-        {
-            foreach (AnimatorControllerParameter p in ac.parameters)
-            {
-                yield return $"P {p.name} {p.type}";
-            }
-
-            AnimatorStateMachine sm = ac.layers[0].stateMachine;
-            foreach (ChildAnimatorState c in sm.states)
-            {
-                string mugimendua = c.state.motion is BlendTree bt
-                    ? $"BT {bt.blendParameter} " + string.Join(";", bt.children.Select(u => $"{(u.motion != null ? u.motion.name : "null")}@{u.threshold:0.###}x{u.timeScale:0.###}"))
-                    : $"K {(c.state.motion != null ? c.state.motion.name : "null")}";
-                yield return $"E {c.state.name} ik={c.state.iKOnFeet} {mugimendua}";
-            }
-
-            foreach (ChildAnimatorState c in sm.states)
-            {
-                foreach (AnimatorStateTransition t in c.state.transitions)
-                {
-                    if (t.hasExitTime)
-                    {
-                        yield return $"T {c.state.name}>{t.destinationState?.name} exitTime";
-                        continue;
-                    }
-
-                    yield return $"T {c.state.name}>{t.destinationState?.name} {t.duration:0.###} " + string.Join(",", t.conditions.Select(b => $"{b.parameter}={b.mode == AnimatorConditionMode.If}"));
-                }
-            }
-
-            yield return $"D {sm.defaultState?.name}";
-        }
-
-        private static AnimatorController KontrolagailuaEgiaztatu(bool aplikatu, List<string> aldaketak)
-        {
-            var ac = AssetDatabase.LoadAssetAtPath<AnimatorController>(Kontrolagailua);
-            if (ac != null && Sinadura(BenetakoSinadura(ac)) == Sinadura(HelburuSinadura()))
-            {
-                return ac;
-            }
-
-            aldaketak.Add($"Animator Controller {(ac == null ? "berria" : "berreraikia (definizioa aldatu da)")}: {Kontrolagailua} — {Egoerak.Length} egoera, {Trantsizioak.Length} trantsizio, Foot IK lurrean");
-            if (!aplikatu)
-            {
-                return ac;
-            }
-
-            if (ac != null)
-            {
-                AssetDatabase.DeleteAsset(Kontrolagailua);
-            }
-
-            Dictionary<string, AnimationClip> klipak = UalKlipak();
-            ac = AnimatorController.CreateAnimatorControllerAtPath(Kontrolagailua);
-            foreach ((string izena, AnimatorControllerParameterType mota) in Parametroak)
-            {
-                ac.AddParameter(izena, mota);
-            }
-
-            AnimatorControllerLayer[] geruzak = ac.layers;
-            geruzak[0].name = "Oinarria";
-            ac.layers = geruzak;
-            AnimatorStateMachine sm = ac.layers[0].stateMachine;
-            var egoerak = new Dictionary<string, AnimatorState>();
-            foreach (EgoeraDef e in Egoerak)
-            {
-                AnimatorState egoera;
-                if (e.Umeak != null)
-                {
-                    egoera = ac.CreateBlendTreeInController(e.Izena, out BlendTree zuhaitza, 0);
-                    zuhaitza.name = e.Izena;
-                    zuhaitza.blendType = BlendTreeType.Simple1D;
-                    zuhaitza.blendParameter = e.Parametroa;
-                    zuhaitza.useAutomaticThresholds = false;
-                    foreach (UmeDef u in e.Umeak)
-                    {
-                        zuhaitza.AddChild(klipak[u.Klipa], u.Atalasea);
-                    }
-
-                    ChildMotion[] umeak = zuhaitza.children;
-                    for (int i = 0; i < umeak.Length; i++)
-                    {
-                        umeak[i].timeScale = e.Umeak[i].Denbora;
-                    }
-
-                    zuhaitza.children = umeak;
-                }
-                else
-                {
-                    egoera = sm.AddState(e.Izena);
-                    egoera.motion = klipak[e.Klipa];
-                }
-
-                egoera.iKOnFeet = e.OinIK;
-                egoera.writeDefaultValues = true;
-                egoerak[e.Izena] = egoera;
-            }
-
-            // Kokapenak grafoan, Ion-ek editorean irakurtzeko.
-            ChildAnimatorState[] umeEgoerak = sm.states;
-            for (int i = 0; i < umeEgoerak.Length; i++)
-            {
-                umeEgoerak[i].position = Egoerak.First(e => e.Izena == umeEgoerak[i].state.name).Kokapena;
-            }
-
-            sm.states = umeEgoerak;
-            sm.defaultState = egoerak["Zutik"];
-            foreach ((string nondik, string nora, (string Param, bool Balioa)[] baldintzak) in Trantsizioak)
-            {
-                AnimatorStateTransition t = egoerak[nondik].AddTransition(egoerak[nora]);
-                t.hasExitTime = false;
-                t.hasFixedDuration = true;
-                t.duration = TrantsizioDenbora;
-                foreach ((string param, bool balioa) in baldintzak)
-                {
-                    t.AddCondition(balioa ? AnimatorConditionMode.If : AnimatorConditionMode.IfNot, 0f, param);
-                }
-            }
-
-            EditorUtility.SetDirty(ac);
-            AssetDatabase.SaveAssets();
-            string benetakoa = Sinadura(BenetakoSinadura(ac));
-            if (benetakoa != Sinadura(HelburuSinadura()))
-            {
-                throw new InvalidOperationException($"Animator Controller-a ez dator bat definizioarekin:\n{benetakoa}");
-            }
-
-            return ac;
-        }
 
         private static Transform EskuinEskua(Transform erroa) =>
             erroa.GetComponentsInChildren<Transform>(true).FirstOrDefault(t => t.name == "mixamorig:RightHand");
@@ -759,7 +646,7 @@ namespace Eclipse.EditorTresnak
             }
         }
 
-        private static Material ProbaMateriala(string izena, Color kolorea, Texture2D testura = null, float teilak = 1f)
+        internal static Material ProbaMateriala(string izena, Color kolorea, Texture2D testura = null, float teilak = 1f)
         {
             string bidea = $"{ProbaKarpeta}/{izena}.mat";
             Material m = AssetDatabase.LoadAssetAtPath<Material>(bidea);
@@ -781,7 +668,7 @@ namespace Eclipse.EditorTresnak
             return m;
         }
 
-        private static Texture2D Laukiak()
+        internal static Texture2D Laukiak()
         {
             string bidea = $"{ProbaKarpeta}/T_Proba_Laukiak.asset";
             var testura = AssetDatabase.LoadAssetAtPath<Texture2D>(bidea);
@@ -810,7 +697,7 @@ namespace Eclipse.EditorTresnak
             return testura;
         }
 
-        private static GameObject Kubo(string izena, Transform gurasoa, Vector3 erdia, Vector3 tamaina, Material materiala, float biraketaX = 0f)
+        internal static GameObject Kubo(string izena, Transform gurasoa, Vector3 erdia, Vector3 tamaina, Material materiala, float biraketaX = 0f)
         {
             GameObject kuboa = GameObject.CreatePrimitive(PrimitiveType.Cube);
             kuboa.name = izena;
@@ -821,20 +708,15 @@ namespace Eclipse.EditorTresnak
             return kuboa;
         }
 
-        private static void ProbaEszenaEraiki()
+        /// <summary>Proba-eszenen argiztapen neutroa (03 eta 04): giro-argia, bi argi zuzen eta islapen-zunda denbora errealean.</summary>
+        internal static void ArgiNeutroak(Transform erroa)
         {
-            // Laukiak: 2x2 lauki testurako, 20 teila 40 m-tan → lauki bakoitza 1 m.
-            Material zorua = ProbaMateriala("M_Proba_Zorua", Color.white, Laukiak(), 20f);
-            Material horma = ProbaMateriala("M_Proba_Horma", new Color(0.55f, 0.57f, 0.6f));
-            Material oztopoa = ProbaMateriala("M_Proba_Oztopoa", new Color(0.95f, 0.45f, 0.1f));
-
             RenderSettings.skybox = null;
             RenderSettings.ambientMode = AmbientMode.Trilight;
             RenderSettings.ambientSkyColor = new Color(0.42f, 0.45f, 0.5f);
             RenderSettings.ambientEquatorColor = new Color(0.3f, 0.32f, 0.35f);
             RenderSettings.ambientGroundColor = new Color(0.15f, 0.15f, 0.16f);
 
-            var erroa = new GameObject("JokalariProba").transform;
             var argiak = new GameObject("Argiak").transform;
             argiak.SetParent(erroa, false);
             var eguzkia = new GameObject("Argi_Nagusia").AddComponent<Light>();
@@ -856,6 +738,17 @@ namespace Eclipse.EditorTresnak
             zunda.refreshMode = ReflectionProbeRefreshMode.OnAwake;
             zunda.timeSlicingMode = ReflectionProbeTimeSlicingMode.NoTimeSlicing;
             zunda.size = new Vector3(40f, 8f, 40f);
+        }
+
+        private static void ProbaEszenaEraiki()
+        {
+            // Laukiak: 2x2 lauki testurako, 20 teila 40 m-tan → lauki bakoitza 1 m.
+            Material zorua = ProbaMateriala("M_Proba_Zorua", Color.white, Laukiak(), 20f);
+            Material horma = ProbaMateriala("M_Proba_Horma", new Color(0.55f, 0.57f, 0.6f));
+            Material oztopoa = ProbaMateriala("M_Proba_Oztopoa", new Color(0.95f, 0.45f, 0.1f));
+
+            var erroa = new GameObject("JokalariProba").transform;
+            ArgiNeutroak(erroa);
 
             var geometria = new GameObject("Geometria").transform;
             geometria.SetParent(erroa, false);

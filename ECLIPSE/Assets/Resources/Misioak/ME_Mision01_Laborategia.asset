@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1c8e164accf5de36bef589223abdc49, type: 3}
+  m_Name: ME_Mision01_Laborategia
+  m_EditorClassIdentifier: Eclipse.Runtime::Eclipse.Misioak.MisioEdukia
+  _eszena: Mision01_Laborategia
+  _atrezzoAktibo: 1
+  _borrokaAktibo: 0
+  _etsaiKopurua: -1
+  _etsaiAurrefab: Borroka/PF_Etsaia_Proba
+  _npcak:
+  - Rola: 0
+    Lekua: {x: 62.48639, y: 0.049999997, z: 2.5005922}
+    Yaw: 237.01022
+    LanLekuaDu: 1
+    LanLekua: {x: 62.48639, y: 0.049999997, z: 2.5005922}
+    LanYaw: 237.01022
+    Patruila: []
+  - Rola: 0
+    Lekua: {x: 71.24999, y: 0.099999994, z: 43.124996}
+    Yaw: 0
+    LanLekuaDu: 1
+    LanLekua: {x: 71.24999, y: 0.099999994, z: 43.124996}
+    LanYaw: 0
+    Patruila: []
+  - Rola: 0
+    Lekua: {x: 55, y: 0.049999997, z: 40.4135}
+    Yaw: 232.4339
+    LanLekuaDu: 1
+    LanLekua: {x: 55, y: 0.049999997, z: 40.4135}
+    LanYaw: 232.4339
+    Patruila: []
+  - Rola: 1
+    Lekua: {x: 41.249996, y: 0.049999997, z: 5.6}
+    Yaw: 87.204575
+    LanLekuaDu: 0
+    LanLekua: {x: 0, y: 0, z: 0}
+    LanYaw: 0
+    Patruila:
+    - {x: 41.249996, y: 0.049999997, z: 5.6}
+    - {x: 66.85, y: 0.049999997, z: 6.8500013}
+  - Rola: 1
+    Lekua: {x: 61.874992, y: 0.049999997, z: 73.12499}
+    Yaw: 187.7029
+    LanLekuaDu: 0
+    LanLekua: {x: 0, y: 0, z: 0}
+    LanYaw: 0
+    Patruila:
+    - {x: 61.874992, y: 0.049999997, z: 73.12499}
+    - {x: 58.124996, y: 0.049999997, z: 45.4}
+  _amaieraEszena: 

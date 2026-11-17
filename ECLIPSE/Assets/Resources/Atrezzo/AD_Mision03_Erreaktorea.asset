@@ -1,0 +1,240 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 511512b48cd41f3a284458ae6e1c1623, type: 3}
+  m_Name: AD_Mision03_Erreaktorea
+  m_EditorClassIdentifier: Eclipse.Runtime::Eclipse.Atrezzo.AtrezzoDatuak
+  _eszena: Mision03_Erreaktorea
+  _elementuak:
+  - Pieza: PF_At_Hondakinak
+    Lekua: {x: 96.09611, y: 4.505466, z: 66.546936}
+    Yaw: 180
+    Gela: Gela_AzkenBorroka
+  - Pieza: PF_At_Hondakinak
+    Lekua: {x: 98.89611, y: 4.505466, z: 66.546936}
+    Yaw: 180
+    Gela: Gela_AzkenBorroka
+  - Pieza: PF_At_Barrikada
+    Lekua: {x: 101.69611, y: 4.505466, z: 66.796936}
+    Yaw: 180
+    Gela: Gela_AzkenBorroka
+  - Pieza: PF_At_OdolOrbana
+    Lekua: {x: 104.49611, y: 4.505466, z: 66.046936}
+    Yaw: 180
+    Gela: Gela_AzkenBorroka
+  - Pieza: PF_At_Barrikada
+    Lekua: {x: 107.29611, y: 4.505466, z: 66.796936}
+    Yaw: 180
+    Gela: Gela_AzkenBorroka
+  - Pieza: PF_At_Seinalea_Kontenzioa
+    Lekua: {x: 110.09611, y: 4.505466, z: 67.146935}
+    Yaw: 180
+    Gela: Gela_AzkenBorroka
+  - Pieza: PF_At_KontenzioHautsia
+    Lekua: {x: 114.29611, y: 4.505466, z: 66.646935}
+    Yaw: 180
+    Gela: Gela_AzkenBorroka
+  - Pieza: PF_At_Seinalea_Kontenzioa
+    Lekua: {x: 118.49611, y: 4.505466, z: 67.146935}
+    Yaw: 180
+    Gela: Gela_AzkenBorroka
+  - Pieza: PF_At_OdolOrbana
+    Lekua: {x: 95.20305, y: 4.505466, z: 49.69611}
+    Yaw: 90
+    Gela: Gela_AzkenBorroka
+  - Pieza: PF_At_Seinalea_Kontenzioa
+    Lekua: {x: 127.64998, y: 0, z: 56.7033}
+    Yaw: -0
+    Gela: Gela_C_Pasilloa_AzkenBorroka_Irteera
+  - Pieza: PF_At_Seinalea_Kontenzioa
+    Lekua: {x: 123.59999, y: 0, z: 59.54669}
+    Yaw: 180
+    Gela: Gela_C_Pasilloa_AzkenBorroka_Irteera
+  - Pieza: PF_At_OdolOrbana
+    Lekua: {x: 126.39999, y: 0, z: 58.446693}
+    Yaw: 180
+    Gela: Gela_C_Pasilloa_AzkenBorroka_Irteera
+  - Pieza: PF_At_Seinalea_Kontenzioa
+    Lekua: {x: 48.899994, y: 0, z: 37.9533}
+    Yaw: -0
+    Gela: Gela_C_Pasilloa_Deskontaminazioa_J1
+  - Pieza: PF_At_OdolOrbana
+    Lekua: {x: 95.799995, y: 0, z: 35.3033}
+    Yaw: -0
+    Gela: Gela_C_Pasilloa_Erreaktorea_J6
+  - Pieza: PF_At_OdolOrbana
+    Lekua: {x: 63.9, y: 0, z: 39.0533}
+    Yaw: -0
+    Gela: Gela_C_Pasilloa_J1_Erreaktorea
+  - Pieza: PF_At_OdolOrbana
+    Lekua: {x: 54.696693, y: 0, z: 59.199997}
+    Yaw: 270
+    Gela: Gela_C_Pasilloa_J1_J2
+  - Pieza: PF_At_OdolOrbana
+    Lekua: {x: 61.6, y: 0, z: 61.5533}
+    Yaw: -0
+    Gela: Gela_C_Pasilloa_J2_J4
+  - Pieza: PF_At_OdolOrbana
+    Lekua: {x: 38.299995, y: 0, z: 62.196693}
+    Yaw: 180
+    Gela: Gela_C_Pasilloa_J2_Kontrola1
+  - Pieza: PF_At_OdolOrbana
+    Lekua: {x: 54.696693, y: 0, z: 32.499996}
+    Yaw: 270
+    Gela: Gela_C_Pasilloa_J3_J1
+  - Pieza: PF_At_OdolOrbana
+    Lekua: {x: 62.65, y: 0, z: 13.446692}
+    Yaw: 180
+    Gela: Gela_C_Pasilloa_J3_J5
+  - Pieza: PF_At_HormaZainak
+    Lekua: {x: 38.903877, y: 0, z: 34.153053}
+    Yaw: -0
+    Gela: Gela_Deskontaminazioa
+  - Pieza: PF_At_HormaZainak
+    Lekua: {x: 36.103878, y: 0, z: 34.153053}
+    Yaw: -0
+    Gela: Gela_Deskontaminazioa
+  - Pieza: PF_At_KontenzioHautsia
+    Lekua: {x: 34.696114, y: 0, z: 44.14694}
+    Yaw: 180
+    Gela: Gela_Deskontaminazioa
+  - Pieza: PF_At_KontenzioHautsia
+    Lekua: {x: 37.496113, y: 0, z: 44.14694}
+    Yaw: 180
+    Gela: Gela_Deskontaminazioa
+  - Pieza: PF_At_KontenzioHautsia
+    Lekua: {x: 68.35305, y: 0, z: 27.196114}
+    Yaw: 90
+    Gela: Gela_Erreaktorea
+  - Pieza: PF_At_HormaZainak
+    Lekua: {x: 67.90305, y: 0, z: 29.996115}
+    Yaw: 90
+    Gela: Gela_Erreaktorea
+  - Pieza: PF_At_HormaZainak
+    Lekua: {x: 67.90305, y: 0, z: 32.796116}
+    Yaw: 90
+    Gela: Gela_Erreaktorea
+  - Pieza: PF_At_KontenzioHautsia
+    Lekua: {x: 68.35305, y: 0, z: 45.396114}
+    Yaw: 90
+    Gela: Gela_Erreaktorea
+  - Pieza: PF_At_Barrikada
+    Lekua: {x: 89.296936, y: 0, z: 46.403877}
+    Yaw: 270
+    Gela: Gela_Erreaktorea
+  - Pieza: PF_At_InfestazioHazkundea
+    Lekua: {x: 89.296936, y: 0, z: 32.403877}
+    Yaw: 270
+    Gela: Gela_Erreaktorea
+  - Pieza: PF_At_KontenzioHautsia
+    Lekua: {x: 145.30386, y: 0, z: 53.353054}
+    Yaw: -0
+    Gela: Gela_Irteera
+  - Pieza: PF_At_KontenzioHautsia
+    Lekua: {x: 142.50386, y: 0, z: 53.353054}
+    Yaw: -0
+    Gela: Gela_Irteera
+  - Pieza: PF_At_HormaZainak
+    Lekua: {x: 139.70387, y: 0, z: 52.903053}
+    Yaw: -0
+    Gela: Gela_Irteera
+  - Pieza: PF_At_KontenzioHautsia
+    Lekua: {x: 136.90387, y: 0, z: 53.353054}
+    Yaw: -0
+    Gela: Gela_Irteera
+  - Pieza: PF_At_HormaZainak
+    Lekua: {x: 134.10387, y: 0, z: 52.903053}
+    Yaw: -0
+    Gela: Gela_Irteera
+  - Pieza: PF_At_Barrikada
+    Lekua: {x: 137.7961, y: 0, z: 63.04694}
+    Yaw: 180
+    Gela: Gela_Irteera
+  - Pieza: PF_At_Hondakinak
+    Lekua: {x: 145.29692, y: 0, z: 61.403877}
+    Yaw: 270
+    Gela: Gela_Irteera
+  - Pieza: PF_At_Barrikada
+    Lekua: {x: 53.903877, y: 0, z: 11.953057}
+    Yaw: -0
+    Gela: Gela_J3
+  - Pieza: PF_At_InfestazioHazkundea
+    Lekua: {x: 76.40388, y: 0, z: 11.953057}
+    Yaw: -0
+    Gela: Gela_J5
+  - Pieza: PF_At_Hondakinak
+    Lekua: {x: 107.796936, y: 0, z: 35.153877}
+    Yaw: 270
+    Gela: Gela_J6
+  - Pieza: PF_At_InfestazioHazkundea
+    Lekua: {x: 23.203058, y: 0, z: 58.59611}
+    Yaw: 90
+    Gela: Gela_Kontrola1
+  - Pieza: PF_At_HormaZainak
+    Lekua: {x: 22.903057, y: 0, z: 61.39611}
+    Yaw: 90
+    Gela: Gela_Kontrola1
+  - Pieza: PF_At_HormaZainak
+    Lekua: {x: 22.903057, y: 0, z: 64.19611}
+    Yaw: 90
+    Gela: Gela_Kontrola1
+  - Pieza: PF_At_Barrikada
+    Lekua: {x: 35.153877, y: 0, z: 56.953053}
+    Yaw: -0
+    Gela: Gela_Kontrola1
+  - Pieza: PF_At_Hondakinak
+    Lekua: {x: 32.353878, y: 0, z: 57.203053}
+    Yaw: -0
+    Gela: Gela_Kontrola1
+  - Pieza: PF_At_Barrikada
+    Lekua: {x: 29.553877, y: 0, z: 56.953053}
+    Yaw: -0
+    Gela: Gela_Kontrola1
+  - Pieza: PF_At_Barrikada
+    Lekua: {x: 35.153877, y: 0, z: 8.203058}
+    Yaw: -0
+    Gela: Gela_Kontrola2
+  - Pieza: PF_At_InfestazioHazkundea
+    Lekua: {x: 32.353878, y: 0, z: 8.203058}
+    Yaw: -0
+    Gela: Gela_Kontrola2
+  - Pieza: PF_At_HormaZainak
+    Lekua: {x: 26.753878, y: 0, z: 7.903058}
+    Yaw: -0
+    Gela: Gela_Kontrola2
+  - Pieza: PF_At_InfestazioHazkundea
+    Lekua: {x: 23.203058, y: 0, z: 9.846117}
+    Yaw: 90
+    Gela: Gela_Kontrola2
+  - Pieza: PF_At_Hondakinak
+    Lekua: {x: 23.453058, y: 0, z: 14.046117}
+    Yaw: 90
+    Gela: Gela_Kontrola2
+  - Pieza: PF_At_InfestazioHazkundea
+    Lekua: {x: 23.203058, y: 0, z: 16.846117}
+    Yaw: 90
+    Gela: Gela_Kontrola2
+  - Pieza: PF_At_Hondakinak
+    Lekua: {x: 104.04611, y: 0, z: 14.119999}
+    Yaw: 180
+    Gela: Gela_Mantentzea
+  - Pieza: PF_At_InfestazioHazkundea
+    Lekua: {x: 106.84611, y: 0, z: 14.369999}
+    Yaw: 180
+    Gela: Gela_Mantentzea
+  - Pieza: PF_At_InfestazioHazkundea
+    Lekua: {x: 101.87999, y: 0, z: 10.296119}
+    Yaw: 90
+    Gela: Gela_Mantentzea
+  - Pieza: PF_At_Hondakinak
+    Lekua: {x: 107.869995, y: 0, z: 11.753881}
+    Yaw: 270
+    Gela: Gela_Mantentzea

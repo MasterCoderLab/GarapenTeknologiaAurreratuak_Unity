@@ -44,6 +44,9 @@ namespace Eclipse.Misioak
 
         public bool MisioaAmaituta => _amaierakoa;
 
+        /// <summary>Hurrengo misioaren eszena (hutsik azken misioan).</summary>
+        public string HurrengoEszena => _hurrengoEszena;
+
         public Vector3 SpawnPuntua => _spawn != null ? _spawn.position : transform.position;
 
         public int Bildumak => _bildumak;

@@ -3,7 +3,10 @@
     "rootNamespace": "Eclipse.EditorTresnak",
     "references": [
         "Eclipse.Runtime",
-        "Unity.InputSystem"
+        "Unity.InputSystem",
+        "Unity.AI.Navigation",
+        "Unity.Timeline",
+        "UnityEngine.UI"
     ],
     "includePlatforms": [
         "Editor"

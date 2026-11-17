@@ -282,6 +282,32 @@ namespace Eclipse.EditorTresnak
             return zatiak;
         }
 
+        /// <summary>Uholdearen eremua: gela/korridore bakoitzaren kaxa, horizontalean 1,6 m zabalduta.</summary>
+        private static List<Bounds> GelaAztarna(IEnumerable<BoxCollider> gelak) => gelak.Select(k =>
+        {
+            Bounds b = k.bounds;
+            b.Expand(new Vector3(1.6f, 0f, 1.6f));
+            return b;
+        }).ToList();
+
+        /// <summary>
+        /// Robotaren misio-ibilbidearen puntuak (BatchMailaRobota-k Play-ren aurretik kalkulatzen duen bera), eszena irekita dagoela.
+        /// Beste tresnek (atrezzoa) ibilbidea ez oztopatzeko erabiltzen dute. Hutsik, ibilbidea ezin bada kalkulatu.
+        /// </summary>
+        private static List<Vector3> RobotIbilbidePuntuak(MailaDef d, List<string> hutsak)
+        {
+            GameObject erroa = SceneManager.GetActiveScene().GetRootGameObjects().FirstOrDefault(o => o.name == d.Erroa);
+            if (erroa == null)
+            {
+                hutsak.Add($"{d.Erroa} erroa ez dago eszenan.");
+                return new List<Vector3>();
+            }
+
+            Physics.SyncTransforms();
+            List<Bounds> aztarna = GelaAztarna(erroa.GetComponentsInChildren<BoxCollider>(true).Where(k => k.name.StartsWith("Gela_", StringComparison.Ordinal)));
+            return MisioIbilbidea(d, aztarna, hutsak, new List<string>()).SelectMany(z => z.Puntuak).ToList();
+        }
+
         private static List<Vector3> BideaLortu(UholdeNodo helmuga)
         {
             var bidea = new List<Vector3>();
@@ -341,12 +367,7 @@ namespace Eclipse.EditorTresnak
 
             // Gela guztiak, aztarna eta sabaia.
             BoxCollider[] gelak = erroa.GetComponentsInChildren<BoxCollider>(true).Where(k => k.name.StartsWith("Gela_", StringComparison.Ordinal)).ToArray();
-            List<Bounds> aztarna = gelak.Select(k =>
-            {
-                Bounds b = k.bounds;
-                b.Expand(new Vector3(1.6f, 0f, 1.6f));
-                return b;
-            }).ToList();
+            List<Bounds> aztarna = GelaAztarna(gelak);
 
             foreach (BoxCollider gela in gelak)
             {
@@ -504,9 +525,8 @@ namespace Eclipse.EditorTresnak
                 }
             }
 
-            string karpeta = Path.GetFullPath(Path.Combine(Application.dataPath, "..", "docs", "qa", "kapturak"));
-            Directory.CreateDirectory(karpeta);
-            File.WriteAllBytes(Path.Combine(karpeta, fitxategia), irudia.EncodeToPNG());
+            // Exekuzio bakoitzaren karpetan (QaKapturak): ez da docs/qa/kapturak-eko bertsioa gainidazten.
+            QaKapturak.Gorde(irudia.EncodeToPNG(), QaKapturak.Karpeta, fitxategia);
             UnityEngine.Object.DestroyImmediate(irudia);
         }
 

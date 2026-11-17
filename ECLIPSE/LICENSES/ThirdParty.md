@@ -43,6 +43,18 @@
 
 CC0 no obliga a atribuir. Se cita igualmente: "Animations: Universal Animation Library by Quaternius (CC0)".
 
+**A3 (14/11/2026):**
+- El **maniquí incluido en `UAL1_Standard.fbx`** (mismo paquete, CC0) es el **enemigo provisional** de las pruebas de combate (`Assets/Resources/Borroka/PF_Etsaia_Proba.prefab`).
+  - Usa material propio y clips `Idle_Loop`, `Walk_Loop`, `Jog_Fwd_Loop`, `Punch_Cross`, `Hit_Chest` y `Death01`.
+  - Se sustituirá por una criatura definitiva.
+- El protagonista usa además `Pistol_Idle_Loop`, `Pistol_Aim_Down`, `Pistol_Aim_Neutral`, `Pistol_Aim_Up`, `Pistol_Shoot`, `Pistol_Reload` y `Hit_Chest`.
+
+## 3 bis. Recursos propios de ECLIPSE (A3)
+
+- **Pistola EMP** (`Assets/_Eclipse/Datuak/Borroka/SM_EmpPistola.asset`): malla generada por `BorrokaTresna` a partir de primitivas de Unity. Diseño propio, sin referencias a armas de otros juegos.
+- **Efectos de sonido** (`Assets/_Eclipse/Audioa/Borroka/SFX_*.wav`): sintetizados con SoX (ondas y ruido) y normalizados con FFmpeg + SoX. Son propios y no tienen licencia de terceros.
+- **Efectos visuales** (rayo, chispas, sangre): partículas y `LineRenderer` de Unity con la textura de partícula incluida en el editor.
+
 ## 4. Escenario (registrado antes de A2; no revisado en esta fecha)
 
 - `Sci Fi Modular Pack` (MagixBox) y `Sci-Fi Old rusty props PBR` (KMProd), de la Unity Asset Store, con los términos del **EULA de la Asset Store**. Están en `Assets/ThirdParty/` y no se publican.
